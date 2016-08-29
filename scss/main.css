@@ -5,11 +5,16 @@ html {
   font-size: 2vw; }
 
 body {
-  font-family: 'Montserrat', serif;
+  font-family: "Montserrat", sans-serif;
   color: rgba(0, 0, 0, 0.85); }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Bungee', serif;
+  font-family: "Bungee", serif; }
+
+.warm h1, h2, h3, h4, h5 {
+  color: #30528B; }
+
+.cool h1, h2, h3, h4, h5 {
   color: #CC412C; }
 
 /*# sourceMappingURL=main.css.map */
