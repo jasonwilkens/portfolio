@@ -1,0 +1,27 @@
+// Spacing
+// -------------------------
+
+// Default
+// -------------------------
+* + * {
+	margin-top: 			$default-spacing;
+	margin-bottom: 		0;
+}
+
+// Type
+// -------------------------
+h1 { margin-bottom: 0; }
+
+h1 + p,h2 + p,h3 + p,h4 + p,h5 + p {
+	margin-top: 			$header-spacing;
+}
+
+p + p {
+	margin-top: 			$paragraph-spacing;
+}
+
+// Grid
+// -------------------------
+.margins-off > * {
+	margin-top: 0;
+}

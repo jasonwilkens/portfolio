@@ -1,20 +1,149 @@
 body {
-  background-color: #EEE; }
+  background-color: white; }
 
-html {
-  font-size: 2vw; }
-
+/**
+ * Profound Grid
+ * 
+ * Built in Sass (SCSS) this responsive/adaptive grid supports both fixed and fluid layouts, 
+ * relative and fixed gutters, as well as your choice of semantic markup or generic '.grid-x' classes.
+ * 
+ * The biggest difference to other grid systems is the use of negative margins for column
+ * placements, avoiding the subpixel rounding issues that usually break/uglify fluid layouts
+ * in some browsers.
+ * 
+ * Nested columns are supported too, without having to reset the grid on each level. 
+ *
+ * Credits/Inspiration:
+ * -------------------
+ * Semantic Grid: http://www.semantic.gs
+ * Susy: http://susy.oddbird.net
+ * Negative Grid: http://chrisplaneta.com/freebies/negativegrid-fluid-css-grid-by-chris-planeta/
+ *
+ * @author Profound Creative Studio
+ * @url http://www.profoundgrid.com
+ * @url http://www.weareprofound.com 
+ */
+/**
+ * Clearfix
+ */
+/**
+ * Legacy Clearfix
+ */
+/**
+ * Establish the grid-containing element.
+ */
+/**
+ * Align an element to the grid.
+ */
+/**
+ * Apply to any column to make it the last one of the current row.
+ */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   color: rgba(0, 0, 0, 0.85); }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Bungee", serif; }
+  font-family: "Lora", serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85); }
 
-.warm h1, h2, h3, h4, h5 {
-  color: #CC412C; }
+.small {
+  color: rgba(0, 0, 0, 0.45);
+  font-weight: bold; }
 
-.cool h1, h2, h3, h4, h5 {
-  color: #30528B; }
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  line-height: 1; }
+
+p, span {
+  padding: 0;
+  line-height: 1.5; }
+
+body p, body span {
+  font-size: 1.125rem; }
+body h1 {
+  font-size: 1.60181rem; }
+body h2 {
+  font-size: 1.42383rem; }
+body h3 {
+  font-size: 1.26563rem; }
+body h4 {
+  font-size: 1.125rem; }
+body h5 {
+  font-size: 1rem; }
+body .small {
+  font-size: 0.88889rem; }
+body p, body span {
+  font-size: 1rem; }
+  @media screen and (min-width: 50rem) {
+    body p, body span {
+      font-size: calc(1rem + 0.25 * ((100vw - 50rem) / 35)); } }
+  @media screen and (min-width: 85rem) {
+    body p, body span {
+      font-size: 1.25rem; } }
+body h1 {
+  font-size: 1.80203rem; }
+  @media screen and (min-width: 50rem) {
+    body h1 {
+      font-size: calc(1.80203rem + 1.24973 * ((100vw - 50rem) / 35)); } }
+  @media screen and (min-width: 85rem) {
+    body h1 {
+      font-size: 3.05176rem; } }
+body h2 {
+  font-size: 1.60181rem; }
+  @media screen and (min-width: 50rem) {
+    body h2 {
+      font-size: calc(1.60181rem + 0.8396 * ((100vw - 50rem) / 35)); } }
+  @media screen and (min-width: 85rem) {
+    body h2 {
+      font-size: 2.44141rem; } }
+body h3 {
+  font-size: 1.42383rem; }
+  @media screen and (min-width: 50rem) {
+    body h3 {
+      font-size: calc(1.42383rem + 0.5293 * ((100vw - 50rem) / 35)); } }
+  @media screen and (min-width: 85rem) {
+    body h3 {
+      font-size: 1.95313rem; } }
+body h4 {
+  font-size: 1.26563rem; }
+  @media screen and (min-width: 50rem) {
+    body h4 {
+      font-size: calc(1.26563rem + 0.29688 * ((100vw - 50rem) / 35)); } }
+  @media screen and (min-width: 85rem) {
+    body h4 {
+      font-size: 1.5625rem; } }
+body h5 {
+  font-size: 1.125rem; }
+  @media screen and (min-width: 50rem) {
+    body h5 {
+      font-size: calc(1.125rem + 0.125 * ((100vw - 50rem) / 35)); } }
+  @media screen and (min-width: 85rem) {
+    body h5 {
+      font-size: 1.25rem; } }
+body .small {
+  font-size: 0.88889rem; }
+  @media screen and (min-width: 50rem) {
+    body .small {
+      font-size: calc(0.88889rem + 0.11111 * ((100vw - 50rem) / 35)); } }
+  @media screen and (min-width: 85rem) {
+    body .small {
+      font-size: 1rem; } }
+
+* + * {
+  margin-top: 1.5rem;
+  margin-bottom: 0; }
+
+h1 {
+  margin-bottom: 0; }
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
+  margin-top: 0.75rem; }
+
+p + p {
+  margin-top: 0.75em; }
+
+.margins-off > * {
+  margin-top: 0; }
 
 /*# sourceMappingURL=main.css.map */

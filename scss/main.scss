@@ -1,0 +1,48 @@
+// Variables
+// -------------------------
+
+// Colors
+// -------------------------
+$black85: 					rgba(0,0,0,.85);
+$black45: 					rgba(0,0,0,.45);
+$brightblue:				#30528B;
+$brightred:					#CC412C;
+$gold:							#E1AD73;
+$lightgray:         #EEE;
+$mint:							#7FDBB6;
+$palegreen:					#D8E9E3;
+
+// Grid
+// -------------------------
+$total_width: 			100%;
+$container_margin: 	3.85%;
+$gutter_width: 			3.85%;
+$max_width: 				1233px;
+
+// Type
+// -------------------------
+$copy-font:					'Lato', sans-serif;
+$lora:							'Lora', serif;
+
+// Type Scales
+// -------------------------
+$mod_1: 						1.125; // small-screen scale
+$mod_2: 						1.250; // large-screen scale
+$min-fluid: 				50rem; // minimum width for fluid scale
+$max-fluid:					85rem; // max width for fluid scale
+
+// Spacing
+// -------------------------
+$default-spacing:		1.5rem;
+$header-spacing:		.75rem;
+$paragraph-spacing:	.75em;
+
+// Site Defaults
+// -------------------------
+body { background-color: white; }
+
+// SCSS Imports
+// -------------------------
+@import 'grid';
+@import 'type';
+@import 'spacing';
