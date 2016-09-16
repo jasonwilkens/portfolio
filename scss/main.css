@@ -39,17 +39,18 @@ body {
  * Apply to any column to make it the last one of the current row.
  */
 body {
-  font-family: "Lato", sans-serif;
-  color: rgba(0, 0, 0, 0.85); }
+  font-family: "Open Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 300; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Lora", serif;
-  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
   color: rgba(0, 0, 0, 0.85); }
 
 .small {
   color: rgba(0, 0, 0, 0.45);
-  font-weight: bold; }
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5 {
   padding: 0;

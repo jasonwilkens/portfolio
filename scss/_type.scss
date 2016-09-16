@@ -1,23 +1,27 @@
 // Type Defaults
 // -------------------------
 body {
-	font-family: 			$copy-font;
-	color: 						$black85;
+  font-family: 	$copy-font;
+  color: 			$black85;
+  font-weight:    300;
 }
 
 // Header Styles
 // -------------------------
 h1,h2,h3,h4,h5 { 
-	font-family: 			$lora;
-	font-weight: 			bold;
-	color: 						$black85;
+  font-family: 	    $playfair-display;
+  font-weight: 	    900;
+  color: 			$black85;
 }
 
 // Styles
 // -------------------------
 .small { 
-	color: 						$black45;
-	font-weight: 			bold;
+  color: 			$black45;
+  font-weight: 	400;
+}
+.big {
+  
 }
 
 
@@ -36,7 +40,7 @@ h1,h2,h3,h4,h5 {
 
   @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
     & {
-      font-size: 		$min-font-size;
+      font-size: 	$min-font-size;
       @media screen and (min-width: $min-vw) {
         font-size: 	calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
       }
@@ -55,39 +59,39 @@ h1,h2,h3,h4,h5 { padding: 0; line-height: 1; }
 p,span { padding: 0; line-height: 1.5; }
 
 body{
-	p,span { font-size: $mod_1 *1rem; }
-	h1{ font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem }
-	h2{ font-size: $mod_1*$mod_1*$mod_1 *1rem }
-	h3{ font-size: $mod_1*$mod_1 *1rem }
-	h4{ font-size: $mod_1 *1rem }
-	h5{ font-size: 1rem }
-	.small { font-size: 1/$mod_1 *1rem }
-	
-	p,span {
-		@include fluid-type($min-fluid, $max-fluid, 1rem, $mod_2 *1rem);	
-	}
+  p,span { font-size: $mod_1 *1rem; }
+  h1{ font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem }
+  h2{ font-size: $mod_1*$mod_1*$mod_1 *1rem }
+  h3{ font-size: $mod_1*$mod_1 *1rem }
+  h4{ font-size: $mod_1 *1rem }
+  h5{ font-size: 1rem }
+  .small { font-size: 1/$mod_1 *1rem }
 
-	h1 { 
-		@include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *1rem);
-	}
-	
-	h2 { 
-		@include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2*$mod_2 *1rem);
-	}
-	
-	h3 { 
-		@include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2 *1rem);
-	}
-	
-	h4 { 
-		@include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1 *1rem, $mod_2*$mod_2 *1rem);
-	}
-	
-	h5 { 
-		@include fluid-type($min-fluid, $max-fluid, $mod_1 *1rem, $mod_2 *1rem);
-	}
-	
-	.small {	
-		@include fluid-type($min-fluid, $max-fluid, 1/$mod_1 *1rem, 1rem);
-	}	
+  p,span {
+    @include fluid-type($min-fluid, $max-fluid, 1rem, $mod_2 *1rem);	
+  }
+
+  h1 { 
+    @include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *1rem);
+  }
+
+  h2 { 
+    @include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2*$mod_2 *1rem);
+  }
+
+  h3 { 
+    @include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2 *1rem);
+  }
+
+  h4 { 
+    @include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1 *1rem, $mod_2*$mod_2 *1rem);
+  }
+
+  h5 { 
+    @include fluid-type($min-fluid, $max-fluid, $mod_1 *1rem, $mod_2 *1rem);
+  }
+
+  .small {	
+    @include fluid-type($min-fluid, $max-fluid, 1/$mod_1 *1rem, 1rem);
+  }
 }
