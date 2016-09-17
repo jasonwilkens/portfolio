@@ -2,14 +2,12 @@
 // -------------------------
 
 // Default
-// -------------------------
 * + * {
   margin-top: 	    $default-spacing;
   margin-bottom: 	0;
 }
 
 // Type
-// -------------------------
 h1 { margin-bottom: 0; }
 
 h1 + p,h2 + p,h3 + p,h4 + p,h5 + p {
@@ -20,8 +18,7 @@ p + p {
   margin-top: 	    $paragraph-spacing;
 }
 
-// Grid
-// -------------------------
+// Remove default spacing
 .margins-off > * {
   margin-top:       0;
 }

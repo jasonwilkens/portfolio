@@ -1,5 +1,6 @@
 body {
-  background-color: white; }
+  background-color: white;
+  margin-top: 0; }
 
 /**
  * Profound Grid
@@ -38,13 +39,188 @@ body {
 /**
  * Apply to any column to make it the last one of the current row.
  */
+.grid-max-width {
+  max-width: 1128px;
+  margin-bottom: 2%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  /* Helper Class: Container */
+  /* Helper Class: Columns */
+  /* Helper Class: Horizontal Position */ }
+  .grid-max-width .row {
+    width: 100%;
+    margin: 0 auto; }
+  .grid-max-width .col1 {
+    float: left;
+    margin-right: -100%;
+    width: 6.5%; }
+  .grid-max-width .col2 {
+    float: left;
+    margin-right: -100%;
+    width: 15%; }
+  .grid-max-width .col3 {
+    float: left;
+    margin-right: -100%;
+    width: 23.5%; }
+  .grid-max-width .col4 {
+    float: left;
+    margin-right: -100%;
+    width: 32%; }
+  .grid-max-width .col5 {
+    float: left;
+    margin-right: -100%;
+    width: 40.5%; }
+  .grid-max-width .col6 {
+    float: left;
+    margin-right: -100%;
+    width: 49%; }
+  .grid-max-width .col7 {
+    float: left;
+    margin-right: -100%;
+    width: 57.5%; }
+  .grid-max-width .col8 {
+    float: left;
+    margin-right: -100%;
+    width: 66%; }
+  .grid-max-width .col9 {
+    float: left;
+    margin-right: -100%;
+    width: 74.5%; }
+  .grid-max-width .col10 {
+    float: left;
+    margin-right: -100%;
+    width: 83%; }
+  .grid-max-width .col11 {
+    float: left;
+    margin-right: -100%;
+    width: 91.5%; }
+  .grid-max-width .col12 {
+    float: left;
+    margin-right: -100%;
+    width: 100%; }
+  .grid-max-width .push0 {
+    margin-left: 0%; }
+  .grid-max-width .push1 {
+    margin-left: 8.5%; }
+  .grid-max-width .push2 {
+    margin-left: 17%; }
+  .grid-max-width .push3 {
+    margin-left: 25.5%; }
+  .grid-max-width .push4 {
+    margin-left: 34%; }
+  .grid-max-width .push5 {
+    margin-left: 42.5%; }
+  .grid-max-width .push6 {
+    margin-left: 51%; }
+  .grid-max-width .push7 {
+    margin-left: 59.5%; }
+  .grid-max-width .push8 {
+    margin-left: 68%; }
+  .grid-max-width .push9 {
+    margin-left: 76.5%; }
+  .grid-max-width .push10 {
+    margin-left: 85%; }
+  .grid-max-width .push11 {
+    margin-left: 93.5%; }
+  .grid-max-width + .grid-max-width {
+    margin-top: 2%; }
+
+.grid-flex {
+  margin: 0;
+  max-width: 100%;
+  margin-bottom: 2%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  /* Helper Class: Container */
+  /* Helper Class: Columns */
+  /* Helper Class: Horizontal Position */ }
+  .grid-flex .row {
+    width: 100%;
+    margin: 0 auto; }
+  .grid-flex .col1 {
+    float: left;
+    margin-right: -100%;
+    width: 6.5%; }
+  .grid-flex .col2 {
+    float: left;
+    margin-right: -100%;
+    width: 15%; }
+  .grid-flex .col3 {
+    float: left;
+    margin-right: -100%;
+    width: 23.5%; }
+  .grid-flex .col4 {
+    float: left;
+    margin-right: -100%;
+    width: 32%; }
+  .grid-flex .col5 {
+    float: left;
+    margin-right: -100%;
+    width: 40.5%; }
+  .grid-flex .col6 {
+    float: left;
+    margin-right: -100%;
+    width: 49%; }
+  .grid-flex .col7 {
+    float: left;
+    margin-right: -100%;
+    width: 57.5%; }
+  .grid-flex .col8 {
+    float: left;
+    margin-right: -100%;
+    width: 66%; }
+  .grid-flex .col9 {
+    float: left;
+    margin-right: -100%;
+    width: 74.5%; }
+  .grid-flex .col10 {
+    float: left;
+    margin-right: -100%;
+    width: 83%; }
+  .grid-flex .col11 {
+    float: left;
+    margin-right: -100%;
+    width: 91.5%; }
+  .grid-flex .col12 {
+    float: left;
+    margin-right: -100%;
+    width: 100%; }
+  .grid-flex .push0 {
+    margin-left: 0%; }
+  .grid-flex .push1 {
+    margin-left: 8.5%; }
+  .grid-flex .push2 {
+    margin-left: 17%; }
+  .grid-flex .push3 {
+    margin-left: 25.5%; }
+  .grid-flex .push4 {
+    margin-left: 34%; }
+  .grid-flex .push5 {
+    margin-left: 42.5%; }
+  .grid-flex .push6 {
+    margin-left: 51%; }
+  .grid-flex .push7 {
+    margin-left: 59.5%; }
+  .grid-flex .push8 {
+    margin-left: 68%; }
+  .grid-flex .push9 {
+    margin-left: 76.5%; }
+  .grid-flex .push10 {
+    margin-left: 85%; }
+  .grid-flex .push11 {
+    margin-left: 93.5%; }
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 300; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 900;
   color: rgba(0, 0, 0, 0.85); }
 
@@ -52,6 +228,15 @@ h1, h2, h3, h4, h5 {
   color: rgba(0, 0, 0, 0.45);
   font-weight: 400; }
 
+p {
+  width: 100%; }
+
+@media screen and (min-width: 50rem) {
+  p {
+    width: 50rem; } }
+@media screen and (min-width: 85rem) {
+  p {
+    width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
   line-height: 1; }
