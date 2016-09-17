@@ -52,7 +52,8 @@ h1,h2,h3,h4,h5 {
 // Line Lenth
 p { width: 100%; }
 @media screen and (min-width: $min-fluid) {
-  p { width: 	$min-line-length; }
+//  p { width: 	$min-line-length; }
+	p { width: calc(#{$min-line-length} + #{strip-unit($max-line-length - $min-line-length)} * ((100vw - #{$min-fluid}) / #{strip-unit($max-fluid - $min-fluid)})) };
 }
 @media screen and (min-width: $max-fluid) {
   p { width: 	$max-line-length; }

@@ -233,7 +233,7 @@ p {
 
 @media screen and (min-width: 50rem) {
   p {
-    width: 50rem; } }
+    width: calc(50rem + 0 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
   p {
     width: 50rem; } }
