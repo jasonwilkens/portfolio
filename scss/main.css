@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  margin-top: 0; }
+  margin: 0; }
 
 /**
  * Profound Grid
@@ -128,11 +128,10 @@ body {
     margin-top: 2%; }
 
 .grid-flex {
-  margin: 0;
   max-width: 100%;
   margin-bottom: 2%;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 0;
   overflow: hidden;
   *zoom: 1;
   /* Helper Class: Container */
@@ -140,7 +139,7 @@ body {
   /* Helper Class: Horizontal Position */ }
   .grid-flex .row {
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 0; }
   .grid-flex .col1 {
     float: left;
     margin-right: -100%;
@@ -214,6 +213,14 @@ body {
   .grid-flex .push11 {
     margin-left: 93.5%; }
 
+.grid-flex > div {
+  background-color: #7FDBB6;
+  min-height: 5rem;
+  margin-top: 0; }
+
+.grid-flex + .grid-flex {
+  margin-top: 2%; }
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.85);
@@ -228,14 +235,17 @@ h1, h2, h3, h4, h5 {
   color: rgba(0, 0, 0, 0.45);
   font-weight: 400; }
 
-p {
+p, h1, h2, h3, h4, h5 {
+  margin: auto; }
+
+p, h1, h2, h3, h4, h5 {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p {
+  p, h1, h2, h3, h4, h5 {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
-  p {
+  p, h1, h2, h3, h4, h5 {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
@@ -326,10 +336,19 @@ h1 {
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
   margin-top: 0.75rem; }
 
+p + h1, p + h2, p + h3, p + h4, p + h5 {
+  margin-top: 1.5rem; }
+
 p + p {
   margin-top: 0.75em; }
 
+.grid-flex + .grid-max-width, .grid-max-width + .grid-flex {
+  margin-top: 1.5rem; }
+
 .margins-off > * {
   margin-top: 0; }
+
+.header {
+  height: 6vmin; }
 
 /*# sourceMappingURL=main.css.map */

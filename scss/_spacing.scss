@@ -4,7 +4,7 @@
 // Default
 * + * {
   margin-top: 	    $default-spacing;
-  margin-bottom: 	0;
+  margin-bottom: 	  0;
 }
 
 // Type
@@ -14,8 +14,17 @@ h1 + p,h2 + p,h3 + p,h4 + p,h5 + p {
   margin-top: 	    $header-spacing;
 }
 
+p + h1,p + h2,p + h3,p +h4, p+h5 {
+  margin-top:       $default-spacing;
+}
+
 p + p {
   margin-top: 	    $paragraph-spacing;
+}
+
+// Grids
+.grid-flex + .grid-max-width, .grid-max-width + .grid-flex {
+  margin-top:       1.5rem;
 }
 
 // Remove default spacing
