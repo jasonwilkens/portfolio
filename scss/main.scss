@@ -2,15 +2,15 @@
 // -------------------------
 
 // Colors
-$black85: 			    rgba(0,0,0,.85);
-$black45: 			    rgba(0,0,0,.45);
+$black85:           rgba(0,0,0,.85);
+$black45:           rgba(0,0,0,.45);
 $white85:           rgba(255,255,255,.85);
-$brightblue:		    #30528B;
-$brightred:			    #CC412C;
-$gold:				      #E1AD73;
+$brightblue:        #30528B;
+$brightred:         #CC412C;
+$gold:              #E1AD73;
 $lightgray:         #EEE;
-$mint:				      #7FDBB6;
-$palegreen:		      #D8E9E3;
+$mint:              #7FDBB6;
+$palegreen:         #D8E9E3;
 
 // Dr Pepper color scheme
 $drpepper1:         #660707;
@@ -20,20 +20,20 @@ $drpepper4:         #E61818;
 $drpepper5:         #FF0E0E;
 
 // Type
-$copy-font:			    'Open Sans', Arial, sans-serif;
+$copy-font:         'Open Sans', Arial, sans-serif;
 $playfair-display:  'Playfair Display', Georgia, serif;
 
 // Type Scales
-$mod_1: 			      1.125; // small-screen scale
-$mod_2: 			      1.250; // large-screen scale
-$min-fluid: 		    50rem; // minimum width for fluid scale
-$max-fluid:			    85rem; // max width for fluid scale
+$mod_1:             1.125; // small-screen scale
+$mod_2:             1.250; // large-screen scale
+$min-fluid:         50rem; // minimum width for fluid scale
+$max-fluid:         85rem; // max width for fluid scale
 $min-line-length:   35rem; // minimum line length for fluid scale
 $max-line-length:   50rem; // max line length for fluid scale
 
 // Spacing
-$default-spacing:	  1.5rem;
-$header-spacing:	  .75rem;
+$default-spacing:   1.5rem;
+$header-spacing:    .75rem;
 $paragraph-spacing:	.75em;
 
 // Site Defaults
@@ -50,3 +50,4 @@ body {
 @import 'type';
 @import 'spacing';
 @import 'sketchpad';
+@import 'tables';

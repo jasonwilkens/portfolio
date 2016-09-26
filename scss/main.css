@@ -126,6 +126,8 @@ body {
     margin-left: 93.5%; }
   .grid-max-width + .grid-max-width {
     margin-top: 2%; }
+  .grid-max-width article {
+    padding: 0 1rem; }
 
 .grid-flex {
   max-width: 100%;
@@ -350,5 +352,8 @@ p + p {
 
 .header {
   height: 6vmin; }
+
+table {
+  margin: 1rem auto; }
 
 /*# sourceMappingURL=main.css.map */

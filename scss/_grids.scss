@@ -2,10 +2,10 @@
 // -------------------------
 
 // Grid 1, fluid with max-width
-$total_width: 		  100%;
+$total_width:       100%;
 $container_margin: 	auto;
-$gutter_width: 		  2%;
-$max_width: 		    1128px;
+$gutter_width:      2%;
+$max_width:         1128px;
 
 .grid-max-width {
   max-width:        $max_width;
@@ -16,13 +16,15 @@ $max_width: 		    1128px;
   &+ .grid-max-width {
     margin-top:     $gutter_width;
   }
+  
+  article { padding: 0 1rem; }
 }
 
 // Grid 2, fluid
-$total_width: 		  100%;
+$total_width:       100%;
 $container_margin: 	0;
-$gutter_width: 		  2%;
-$max_width: 		    100%;
+$gutter_width:      2%;
+$max_width:         100%;
 
 .grid-flex {
   max-width:        $max_width;

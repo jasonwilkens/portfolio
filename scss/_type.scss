@@ -2,7 +2,7 @@
 // -------------------------
 body {
   font-family: 	    $copy-font;
-  color: 			      $black85;
+  color:            $black85;
   font-weight:      300;
 }
 
@@ -10,19 +10,19 @@ body {
 h1,h2,h3,h4,h5 { 
   font-family: 	    $playfair-display;
   font-weight: 	    900;
-  color: 			      $black85;
+  color:            $black85;
 }
 
 // Styles
 .small { 
-  color: 			      $black45;
+  color:            $black45;
   font-weight: 	    400;
 }
 .big {
 // To do
 }
 
-// Within Grid
+// Center block-level type elements within grid within Grid
 p,h1,h2,h3,h4,h5 { margin: auto; }
 
 // Fluid Scales
@@ -57,7 +57,7 @@ p,h1,h2,h3,h4,h5 { width: 100%; }
 	p,h1,h2,h3,h4,h5 { width: calc(#{$min-line-length} + #{strip-unit($max-line-length - $min-line-length)} * ((100vw - #{$min-fluid}) / #{strip-unit($max-fluid - $min-fluid)})) };
 }
 @media screen and (min-width: $max-fluid) {
-  p,h1,h2,h3,h4,h5 { width: 	$max-line-length; }
+  p,h1,h2,h3,h4,h5 { width: $max-line-length; }
 }
 
 
