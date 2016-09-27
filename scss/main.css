@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   line-height: 1; }
 
-p, span {
+p, span, td {
   padding: 0;
   line-height: 1.5; }
 
@@ -271,13 +271,13 @@ body h5 {
   font-size: 1rem; }
 body .small {
   font-size: 0.88889rem; }
-body p, body span {
+body p, body span, body td {
   font-size: 1rem; }
   @media screen and (min-width: 50rem) {
-    body p, body span {
+    body p, body span, body td {
       font-size: calc(1rem + 0.25 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    body p, body span {
+    body p, body span, body td {
       font-size: 1.25rem; } }
 body h1 {
   font-size: 1.80203rem; }
@@ -354,6 +354,22 @@ p + p {
   height: 6vmin; }
 
 table {
-  margin: 1rem auto; }
+  margin: 1rem auto;
+  border-collapse: collapse; }
+  table td {
+    padding-bottom: .75rem; }
+  table tr + tr td {
+    padding-top: .75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.15); }
+  table td + td {
+    padding-left: 6rem; }
+  table tr:last-child td {
+    padding-bottom: 0; }
+
+.emoji {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: -.4em;
+  margin: 0 .3em; }
 
 /*# sourceMappingURL=main.css.map */
