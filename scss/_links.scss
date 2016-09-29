@@ -1,0 +1,23 @@
+a {
+  text-decoration:  none;
+  color:            inherit;
+  border-bottom:    .1em solid $mint;
+  -webkit-transition: background .10s cubic-bezier(.33,.66,.66,1);
+  transition:       background .10s cubic-bezier(.33,.66,.66,1);
+  box-shadow:       inset 0 -.2em 0 $mint;
+}
+
+a:hover {
+  background:       $mint;
+}
+
+a:active {
+  background:       $purple;
+  box-shadow:       inset 0 -.2em 0 $purple;
+  border-bottom:    .1em solid $purple;
+  color:            white;
+}
+
+:focus {
+  outline-color:    $purple;
+}
