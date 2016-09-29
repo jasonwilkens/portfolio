@@ -4,6 +4,14 @@ body {
   font-family: 	    $copy-font;
   color:            $black85;
   font-weight:      300;
+  ::-moz-selection { 
+    background-color: $purple;
+    color:          white;
+  }
+  ::selection {
+    background-color: $purple;
+    color:          white;
+  }
 }
 
 // Header Styles

@@ -227,6 +227,12 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 300; }
+  body ::-moz-selection {
+    background-color: #011F7F;
+    color: white; }
+  body ::selection {
+    background-color: #011F7F;
+    color: white; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", Georgia, serif;
@@ -351,7 +357,14 @@ p + p {
   margin-top: 0; }
 
 .header {
-  height: 6vmin; }
+  min-height: 24vmin;
+  padding: 1rem;
+  background-color: white;
+  border: 1rem solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
+  border-image: linear-gradient(to bottom right, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
+  border-image-slice: 1; }
 
 table {
   margin: 1rem auto;

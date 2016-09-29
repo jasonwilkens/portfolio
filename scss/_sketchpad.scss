@@ -1,5 +1,12 @@
 // This is where I play with styles before finalizing them
 
 .header {
-  height: 6vmin;
+  min-height: 24vmin;
+  padding: 1rem;
+  background-color: white;
+  border: 1rem solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, $mint 20%, $purple 50%, $mint 80%);
+  -webkit-border-image: -webkit-linear-gradient(top left, $mint 20%, $purple 50%, $mint 80%);
+  border-image: linear-gradient(to bottom right, $mint 20%, $purple 50%, $mint 80%);
+  border-image-slice: 1;
 }
