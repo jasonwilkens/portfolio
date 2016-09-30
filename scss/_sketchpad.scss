@@ -12,5 +12,5 @@
   background-image: url(/images/header-bg.png);
   background-size:  cover;
   background-repeat: no-repeat;
-  background-origin: border-box;
+  background-clip:  content-box;
 }
