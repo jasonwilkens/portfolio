@@ -384,7 +384,7 @@ table {
   border-image-slice: 1;
   background-image: url(/images/header-bg.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: content-box; }
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=main.css.map */
