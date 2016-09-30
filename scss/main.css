@@ -382,7 +382,7 @@ table {
   -webkit-border-image: -webkit-linear-gradient(top left, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
   border-image: linear-gradient(to bottom right, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
   border-image-slice: 1;
-  background-image: linear-gradient(to right, #7FDBB6 0%, #011F7F 100%), url(/images/header-bg.png);
+  background-image: linear-gradient(to right, #7fdbb6 0%, #011f7f 100%), url(/images/header-bg.png);
   background-size: cover;
   background-position: center 40%;
   background-repeat: no-repeat;

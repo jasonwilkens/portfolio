@@ -9,7 +9,7 @@
   -webkit-border-image: -webkit-linear-gradient(top left, $mint 20%, $purple 50%, $mint 80%);
   border-image:     linear-gradient(to bottom right, $mint 20%, $purple 50%, $mint 80%);
   border-image-slice: 1;
-  background-image: linear-gradient(to right, $mint 0%, $purple 100%), url(/images/header-bg.png);
+  background-image: linear-gradient(to right, rgba(127,219,182,40) 0%, rgba(1,31,127,40) 100%), url(/images/header-bg.png);
   background-size:  cover;
   background-position: center 40%;
   background-repeat: no-repeat;
