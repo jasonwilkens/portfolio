@@ -377,10 +377,10 @@ table {
   min-height: 24vmin;
   padding: 1rem;
   background-color: white;
-  border: 1rem solid transparent;
-  -moz-border-image: -moz-linear-gradient(top left, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
-  -webkit-border-image: -webkit-linear-gradient(top left, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
-  border-image: linear-gradient(to bottom right, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
+  border: .8rem solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, #7FDBB6 30%, #011F7F 60%, #7FDBB6 90%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #7FDBB6 20%, #011F7F 60%, #7FDBB6 90%);
+  border-image: linear-gradient(to bottom right, #7FDBB6 30%, #011F7F 60%, #7FDBB6 90%);
   border-image-slice: 1; }
 
 /*# sourceMappingURL=main.css.map */
