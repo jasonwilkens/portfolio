@@ -381,6 +381,9 @@ table {
   -moz-border-image: -moz-linear-gradient(top left, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
   -webkit-border-image: -webkit-linear-gradient(top left, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
   border-image: linear-gradient(to bottom right, #7FDBB6 20%, #011F7F 50%, #7FDBB6 80%);
-  border-image-slice: 1; }
+  border-image-slice: 1;
+  background-image: url(/images/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=main.css.map */
