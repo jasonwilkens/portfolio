@@ -1,7 +1,7 @@
 // This is where I play with styles before finalizing them
 
 .header {
-  min-height:       24vmin;
+  min-height:       18vmin;
   padding:          1rem;
   background-color: white;
   border:           1rem solid transparent;
@@ -9,9 +9,9 @@
   -webkit-border-image: -webkit-linear-gradient(top left, $mint 20%, $purple 50%, $mint 80%);
   border-image:     linear-gradient(to bottom right, $mint 20%, $purple 50%, $mint 80%);
   border-image-slice: 1;
-  background-image: linear-gradient(to right, rgba(127,219,182,1) 0%, rgba(1,31,127,.85) 100%), url(https://quiet-dusk-35598.herokuapp.com/images/header-bg.jpg);
+  background-image: linear-gradient(to right, rgba(127,219,182,1) 0%, rgba(127,219,182,.85) 100%), url(https://quiet-dusk-35598.herokuapp.com/images/header-bg.jpg);
   background-size:  cover;
   background-position: center 60%;
   background-repeat: no-repeat;
-//  background-blend-mode: color-dodge;
+  background-blend-mode: darken;
 }
