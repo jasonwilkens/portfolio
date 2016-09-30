@@ -384,6 +384,7 @@ table {
   border-image-slice: 1;
   background-image: url(/images/header-bg.png);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-origin: border-box; }
 
 /*# sourceMappingURL=main.css.map */
