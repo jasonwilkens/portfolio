@@ -9,8 +9,9 @@
   -webkit-border-image: -webkit-linear-gradient(top left, $mint 20%, $purple 50%, $mint 80%);
   border-image:     linear-gradient(to bottom right, $mint 20%, $purple 50%, $mint 80%);
   border-image-slice: 1;
-  background-image: url(/images/header-bg.png);
+  background-image: linear-gradient(to right, $mint 0%, $purple 100%), url(/images/header-bg.png);
   background-size:  cover;
   background-position: center 40%;
   background-repeat: no-repeat;
+  background-blend-mode: color-dodge;
 }
