@@ -216,6 +216,10 @@ h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 900;
   color: rgba(0, 0, 0, 0.85); }
+  h1 small, h2 small, h3 small, h4 small, h5 small {
+    color: rgba(0, 0, 0, 0.15);
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400; }
 
 .small {
   color: rgba(0, 0, 0, 0.45);
@@ -235,9 +239,9 @@ p, h1, h2, h3, h4, h5 {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
-  line-height: 1; }
+  line-height: 1.25; }
 
-p, span, td {
+p, span, td, th {
   padding: 0;
   line-height: 1.5; }
 
@@ -255,13 +259,13 @@ body h5 {
   font-size: 1rem; }
 body .small {
   font-size: 0.88889rem; }
-body p, body span, body td {
+body p, body span, body td, body th {
   font-size: 1rem; }
   @media screen and (min-width: 50rem) {
-    body p, body span, body td {
+    body p, body span, body td, body th {
       font-size: calc(1rem + 0.25 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    body p, body span, body td {
+    body p, body span, body td, body th {
       font-size: 1.25rem; } }
 body h1 {
   font-size: 1.80203rem; }
@@ -357,6 +361,9 @@ a:active {
 table {
   margin: 1rem auto;
   border-collapse: collapse; }
+  table th {
+    text-align: left;
+    padding: 0 .3em; }
   table td {
     padding-bottom: .75rem; }
   table tr + tr td {
@@ -364,8 +371,6 @@ table {
     border-top: 1px solid rgba(0, 0, 0, 0.15); }
   table td + td {
     padding-left: 6rem; }
-  table tr:last-child td {
-    padding-bottom: 0; }
 
 .emoji {
   height: 1.5em;

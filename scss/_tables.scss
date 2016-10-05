@@ -1,6 +1,10 @@
 table {
   margin:           1rem auto;
   border-collapse:  collapse;
+  th {
+    text-align:     left;
+    padding:        0 .3em;
+  }
   td {
     padding-bottom: .75rem;
   }
@@ -10,8 +14,5 @@ table {
   }
   td + td {
     padding-left:   6rem;
-  }
-  tr:last-child td {
-    padding-bottom: 0;
   }
 }

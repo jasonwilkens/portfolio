@@ -19,6 +19,11 @@ h1,h2,h3,h4,h5 {
   font-family: 	    $playfair-display;
   font-weight: 	    900;
   color:            $black85;
+  small {
+    color:          $black15;
+    font-family:    $copy-font;
+    font-weight:    400;
+  }
 }
 
 // Styles
@@ -69,8 +74,8 @@ p,h1,h2,h3,h4,h5 { width: 100%; }
 }
 
 
-h1,h2,h3,h4,h5 { padding: 0; line-height: 1; }
-p,span,td { padding: 0; line-height: 1.5; }
+h1,h2,h3,h4,h5 { padding: 0; line-height: 1.25; }
+p,span,td,th { padding: 0; line-height: 1.5; }
 
 body{
   p,span { font-size: $mod_1 *1rem; }
@@ -81,7 +86,7 @@ body{
   h5{ font-size: 1rem; }
   .small { font-size: 1/$mod_1 *1rem; }
 
-  p,span,td {
+  p,span,td,th {
     @include fluid-type($min-fluid, $max-fluid, 1rem, $mod_2 *1rem);	
   }
 
