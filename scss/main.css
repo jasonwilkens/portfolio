@@ -211,13 +211,13 @@ body {
     background-color: white;
     min-height: inherit;
     text-align: center;
-    height: 2.5rem; }
+    height: 3.5rem; }
     .nav div.active {
       font-weight: 400;
       border-bottom: 0.3rem solid rgba(0, 0, 0, 0.85);
       box-sizing: border-box; }
   .nav a {
-    line-height: 2.5rem;
+    line-height: 3.5rem;
     border-bottom: none;
     box-shadow: none;
     display: block; }
