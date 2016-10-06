@@ -1,5 +1,6 @@
 .nav {
-  border-bottom:    1px solid $black45;
+  border-bottom:    1px solid $black15;
+  box-shadow:       0 .2rem 1rem 0px $black15;
   .nav-max {
     margin:         auto;
   }
@@ -8,15 +9,15 @@
     background-color: white;
     min-height:     inherit;
     text-align:     center;
-    height:         2.5em;
+    height:         2.5rem;
     &.active {
       font-weight:  400;
-      border-bottom: .3em solid $black85;
+      border-bottom: .3rem solid $black85;
       box-sizing:   border-box;
     }
   }
   a {
-    line-height:    2em;
+    line-height:    2.5rem;
     border-bottom:  none;
     box-shadow:     none;
     display:        block;
