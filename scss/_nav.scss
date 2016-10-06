@@ -1,0 +1,24 @@
+.nav {
+  border-bottom:    1px solid $black45;
+  .nav-max {
+    margin:         auto;
+  }
+  div {
+    margin-top:     0;
+    background-color: white;
+    min-height:     inherit;
+    text-align:     center;
+    height:         2.5em;
+    &.active {
+      font-weight:  400;
+      border-bottom: .3em solid $black85;
+      box-sizing:   border-box;
+    }
+  }
+  a {
+    line-height:    2em;
+    border-bottom:  none;
+    box-shadow:     none;
+    display:        block;
+  }
+}

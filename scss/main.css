@@ -201,6 +201,26 @@ body {
 .grid-flex + .grid-flex {
   margin-top: 2%; }
 
+.nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45); }
+  .nav .nav-max {
+    margin: auto; }
+  .nav div {
+    margin-top: 0;
+    background-color: white;
+    min-height: inherit;
+    text-align: center;
+    height: 2.5em; }
+    .nav div.active {
+      font-weight: 400;
+      border-bottom: 0.3em solid rgba(0, 0, 0, 0.85);
+      box-sizing: border-box; }
+  .nav a {
+    line-height: 2em;
+    border-bottom: none;
+    box-shadow: none;
+    display: block; }
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.85);
@@ -228,14 +248,14 @@ h1, h2, h3, h4, h5 {
 p, h1, h2, h3, h4, h5 {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, .nav-max {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5 {
+  p, h1, h2, h3, h4, h5, .nav-max {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
-  p, h1, h2, h3, h4, h5 {
+  p, h1, h2, h3, h4, h5, .nav-max {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
