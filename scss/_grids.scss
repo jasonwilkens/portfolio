@@ -20,13 +20,31 @@ $max_width:         1128px;
   article { padding: 0 1rem; }
 }
 
-// Grid 2, wider max-width
+// Grid 2, fluid
+$total_width:       100%;
+$container_margin: 	0;
+$gutter_width:      0%;
+$max_width:         $wide-grid-width;
+
+.grid-flex {
+  max-width:        100%;
+  margin-bottom:    3rem;
+  @include container();
+  @include clearfix();
+  @include generate_helper_classes();
+  img {
+    width:          100%;
+    vertical-align: middle;
+  }
+}
+
+// Grid 3, wider max-width
 $total_width:       100%;
 $container_margin: 	auto;
 $gutter_width:      2%;
-$max_width:         1600px;
+$max_width:         $wide-grid-width;
 
-.grid-flex {
+.grid-wide {
   max-width:        $max_width;
   margin-bottom:    $gutter_width;
   @include container();
@@ -38,15 +56,9 @@ $max_width:         1600px;
   }
 }
 
-.grid-flex > div { 
+.grid-wide > div, .grid-flex > div { 
   background-color: $mint;
   min-height:       3rem;
   margin-top:       0;
 }
 
-.grid-flex + .grid-flex {
-  margin-top:       $gutter_width;
-  @media screen and (min-width: $max-fluid) {
-    margin-top:     32px;
-  }
-}

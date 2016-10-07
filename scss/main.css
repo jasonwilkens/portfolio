@@ -108,7 +108,96 @@ body {
     padding: 0 1rem; }
 
 .grid-flex {
-  max-width: 1600px;
+  max-width: 100%;
+  margin-bottom: 3rem;
+  width: 100%;
+  margin: 0 0;
+  overflow: hidden;
+  *zoom: 1;
+  /* Helper Class: Container */
+  /* Helper Class: Columns */
+  /* Helper Class: Horizontal Position */ }
+  .grid-flex .row {
+    width: 100%;
+    margin: 0 0; }
+  .grid-flex .col1 {
+    float: left;
+    margin-right: -100%;
+    width: 8.33%; }
+  .grid-flex .col2 {
+    float: left;
+    margin-right: -100%;
+    width: 16.67%; }
+  .grid-flex .col3 {
+    float: left;
+    margin-right: -100%;
+    width: 25%; }
+  .grid-flex .col4 {
+    float: left;
+    margin-right: -100%;
+    width: 33.33%; }
+  .grid-flex .col5 {
+    float: left;
+    margin-right: -100%;
+    width: 41.67%; }
+  .grid-flex .col6 {
+    float: left;
+    margin-right: -100%;
+    width: 50%; }
+  .grid-flex .col7 {
+    float: left;
+    margin-right: -100%;
+    width: 58.33%; }
+  .grid-flex .col8 {
+    float: left;
+    margin-right: -100%;
+    width: 66.67%; }
+  .grid-flex .col9 {
+    float: left;
+    margin-right: -100%;
+    width: 75%; }
+  .grid-flex .col10 {
+    float: left;
+    margin-right: -100%;
+    width: 83.33%; }
+  .grid-flex .col11 {
+    float: left;
+    margin-right: -100%;
+    width: 91.67%; }
+  .grid-flex .col12 {
+    float: left;
+    margin-right: -100%;
+    width: 100%; }
+  .grid-flex .push0 {
+    margin-left: 0%; }
+  .grid-flex .push1 {
+    margin-left: 8.33%; }
+  .grid-flex .push2 {
+    margin-left: 16.67%; }
+  .grid-flex .push3 {
+    margin-left: 25%; }
+  .grid-flex .push4 {
+    margin-left: 33.33%; }
+  .grid-flex .push5 {
+    margin-left: 41.67%; }
+  .grid-flex .push6 {
+    margin-left: 50%; }
+  .grid-flex .push7 {
+    margin-left: 58.33%; }
+  .grid-flex .push8 {
+    margin-left: 66.67%; }
+  .grid-flex .push9 {
+    margin-left: 75%; }
+  .grid-flex .push10 {
+    margin-left: 83.33%; }
+  .grid-flex .push11 {
+    margin-left: 91.67%; }
+  .grid-flex img {
+    width: 100%;
+    vertical-align: middle; }
+
+.grid-wide {
+  max-width: 1400px;
   margin-bottom: 2%;
   width: 100%;
   margin: 0 auto;
@@ -117,95 +206,89 @@ body {
   /* Helper Class: Container */
   /* Helper Class: Columns */
   /* Helper Class: Horizontal Position */ }
-  .grid-flex .row {
+  .grid-wide .row {
     width: 100%;
     margin: 0 auto; }
-  .grid-flex .col1 {
+  .grid-wide .col1 {
     float: left;
     margin-right: -100%;
     width: 6.5%; }
-  .grid-flex .col2 {
+  .grid-wide .col2 {
     float: left;
     margin-right: -100%;
     width: 15%; }
-  .grid-flex .col3 {
+  .grid-wide .col3 {
     float: left;
     margin-right: -100%;
     width: 23.5%; }
-  .grid-flex .col4 {
+  .grid-wide .col4 {
     float: left;
     margin-right: -100%;
     width: 32%; }
-  .grid-flex .col5 {
+  .grid-wide .col5 {
     float: left;
     margin-right: -100%;
     width: 40.5%; }
-  .grid-flex .col6 {
+  .grid-wide .col6 {
     float: left;
     margin-right: -100%;
     width: 49%; }
-  .grid-flex .col7 {
+  .grid-wide .col7 {
     float: left;
     margin-right: -100%;
     width: 57.5%; }
-  .grid-flex .col8 {
+  .grid-wide .col8 {
     float: left;
     margin-right: -100%;
     width: 66%; }
-  .grid-flex .col9 {
+  .grid-wide .col9 {
     float: left;
     margin-right: -100%;
     width: 74.5%; }
-  .grid-flex .col10 {
+  .grid-wide .col10 {
     float: left;
     margin-right: -100%;
     width: 83%; }
-  .grid-flex .col11 {
+  .grid-wide .col11 {
     float: left;
     margin-right: -100%;
     width: 91.5%; }
-  .grid-flex .col12 {
+  .grid-wide .col12 {
     float: left;
     margin-right: -100%;
     width: 100%; }
-  .grid-flex .push0 {
+  .grid-wide .push0 {
     margin-left: 0%; }
-  .grid-flex .push1 {
+  .grid-wide .push1 {
     margin-left: 8.5%; }
-  .grid-flex .push2 {
+  .grid-wide .push2 {
     margin-left: 17%; }
-  .grid-flex .push3 {
+  .grid-wide .push3 {
     margin-left: 25.5%; }
-  .grid-flex .push4 {
+  .grid-wide .push4 {
     margin-left: 34%; }
-  .grid-flex .push5 {
+  .grid-wide .push5 {
     margin-left: 42.5%; }
-  .grid-flex .push6 {
+  .grid-wide .push6 {
     margin-left: 51%; }
-  .grid-flex .push7 {
+  .grid-wide .push7 {
     margin-left: 59.5%; }
-  .grid-flex .push8 {
+  .grid-wide .push8 {
     margin-left: 68%; }
-  .grid-flex .push9 {
+  .grid-wide .push9 {
     margin-left: 76.5%; }
-  .grid-flex .push10 {
+  .grid-wide .push10 {
     margin-left: 85%; }
-  .grid-flex .push11 {
+  .grid-wide .push11 {
     margin-left: 93.5%; }
-  .grid-flex img {
+  .grid-wide img {
     width: 100%;
     vertical-align: middle; }
 
-.grid-flex > div {
+.grid-wide > div, .grid-flex > div {
   background-color: #7FDBB6;
   min-height: 3rem;
   margin-top: 0; }
-
-.grid-flex + .grid-flex {
-  margin-top: 2%; }
-  @media screen and (min-width: 85rem) {
-    .grid-flex + .grid-flex {
-      margin-top: 32px; } }
 
 .nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -359,8 +442,14 @@ p + h1, p + h2, p + h3, p + h4, p + h5 {
 p + p {
   margin-top: 0.75em; }
 
-.grid-flex + .grid-max-width, .grid-max-width + .grid-flex {
+.grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-wide, .grid-wide + .grid-max-width {
   margin-top: 1.5rem; }
+
+.grid-wide + .grid-wide {
+  margin-top: 2%; }
+  @media screen and (min-width: 85rem) {
+    .grid-wide + .grid-wide {
+      margin-top: 28px; } }
 
 .margins-off > * {
   margin-top: 0; }

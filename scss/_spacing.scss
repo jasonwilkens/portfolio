@@ -23,8 +23,15 @@ p + p {
 }
 
 // Grids
-.grid-flex + .grid-max-width, .grid-max-width + .grid-flex {
+.grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-wide, .grid-wide + .grid-max-width {
   margin-top:       1.5rem;
+}
+
+.grid-wide + .grid-wide {
+  margin-top:       $gutter_width;
+  @media screen and (min-width: $max-fluid) {
+    margin-top:     ($wide-grid-width * .02);
+  }
 }
 
 // Remove default spacing

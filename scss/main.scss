@@ -12,6 +12,11 @@ $purple:            #011F7F;
 
 // Gradients
 
+// Bizo colors
+$bizo-dark-blue:    #006386;
+$bizo-light-blue:   #0095D5;
+$bizo-red:          #E82529;
+$bize-green:        #A6D379;
 
 // Dr Pepper color scheme
 $drpepper1:         #660707;
@@ -37,13 +42,19 @@ $default-spacing:   1.5rem;
 $header-spacing:    .75rem;
 $paragraph-spacing:	.75em;
 
+// Nav
+$nav-height:        3.5rem;
+
+// Grids
+$wide-grid-width:   1400px;
+
 // Site Defaults
 // -------------------------
-$nav-height:         3.5rem;
 body { 
   background-color: white;
   margin:           0;
 }
+
 
 // SCSS Imports
 // -------------------------
