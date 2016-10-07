@@ -504,4 +504,7 @@ table {
   border-image: linear-gradient(to bottom right, #7FDBB6 30%, #011F7F 60%, #7FDBB6 90%);
   border-image-slice: 1; }
 
+.work-header-img {
+  background-image: url("/images/work/header-bg.png"); }
+
 /*# sourceMappingURL=main.css.map */
