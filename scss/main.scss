@@ -4,6 +4,7 @@
 // Colors
 $black85:           rgba(0,0,0,.85);
 $black45:           rgba(0,0,0,.45);
+$black25:           rgba(0,0,0,.25);
 $black15:           rgba(0,0,0,.15);
 $white85:           rgba(255,255,255,.85);
 $mint:              #7FDBB6;
@@ -38,6 +39,7 @@ $paragraph-spacing:	.75em;
 
 // Site Defaults
 // -------------------------
+$nav-height:         3.5rem;
 body { 
   background-color: white;
   margin:           0;

@@ -9,7 +9,7 @@
     background-color: white;
     min-height:     inherit;
     text-align:     center;
-    height:         3.5rem;
+    height:         $nav-height;
     &.active {
       font-weight:  400;
       border-bottom: .3rem solid $black85;
@@ -17,7 +17,7 @@
     }
   }
   a {
-    line-height:    3.5rem;
+    line-height:    $nav-height;
     border-bottom:  none;
     box-shadow:     none;
     display:        block;

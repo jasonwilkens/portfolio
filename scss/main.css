@@ -108,10 +108,10 @@ body {
     padding: 0 1rem; }
 
 .grid-flex {
-  max-width: 100%;
+  max-width: 1600px;
   margin-bottom: 2%;
   width: 100%;
-  margin: 0 0;
+  margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
   /* Helper Class: Container */
@@ -119,7 +119,7 @@ body {
   /* Helper Class: Horizontal Position */ }
   .grid-flex .row {
     width: 100%;
-    margin: 0 0; }
+    margin: 0 auto; }
   .grid-flex .col1 {
     float: left;
     margin-right: -100%;
@@ -192,14 +192,20 @@ body {
     margin-left: 85%; }
   .grid-flex .push11 {
     margin-left: 93.5%; }
+  .grid-flex img {
+    width: 100%;
+    vertical-align: middle; }
 
 .grid-flex > div {
   background-color: #7FDBB6;
-  min-height: 5rem;
+  min-height: 3rem;
   margin-top: 0; }
 
 .grid-flex + .grid-flex {
   margin-top: 2%; }
+  @media screen and (min-width: 85rem) {
+    .grid-flex + .grid-flex {
+      margin-top: 32px; } }
 
 .nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -238,7 +244,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 900;
   color: rgba(0, 0, 0, 0.85); }
   h1 small, h2 small, h3 small, h4 small, h5 small {
-    color: rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.25);
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 400; }
 

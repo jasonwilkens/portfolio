@@ -20,11 +20,11 @@ $max_width:         1128px;
   article { padding: 0 1rem; }
 }
 
-// Grid 2, fluid
+// Grid 2, wider max-width
 $total_width:       100%;
-$container_margin: 	0;
+$container_margin: 	auto;
 $gutter_width:      2%;
-$max_width:         100%;
+$max_width:         1600px;
 
 .grid-flex {
   max-width:        $max_width;
@@ -32,14 +32,21 @@ $max_width:         100%;
   @include container();
   @include clearfix();
   @include generate_helper_classes();
+  img {
+    width:          100%;
+    vertical-align: middle;
+  }
 }
 
 .grid-flex > div { 
   background-color: $mint;
-  min-height:       5rem;
+  min-height:       3rem;
   margin-top:       0;
 }
 
 .grid-flex + .grid-flex {
   margin-top:       $gutter_width;
+  @media screen and (min-width: $max-fluid) {
+    margin-top:     32px;
+  }
 }
