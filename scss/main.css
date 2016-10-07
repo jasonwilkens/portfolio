@@ -505,6 +505,9 @@ table {
   border-image-slice: 1; }
 
 .work-header-img {
-  background-image: url("/images/work/header-bg.png"); }
+  background-image: url("/images/work/header-bg.png");
+  background-position: 0% 50%;
+  background-size: cover;
+  height: 10vh; }
 
 /*# sourceMappingURL=main.css.map */
