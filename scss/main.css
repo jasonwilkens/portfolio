@@ -504,10 +504,15 @@ table {
   border-image: linear-gradient(to bottom right, #7FDBB6 30%, #011F7F 60%, #7FDBB6 90%);
   border-image-slice: 1; }
 
-.work-header-img {
-  background-image: url("/images/work/header-bg.png");
+.header-img {
   background-position: 0% 50%;
   background-size: cover;
   height: 10vh; }
+
+.header-img.work {
+  background-image: url("http://quiet-dusk-35598.herokuapp.com/images/work/header-bg.png"); }
+
+.header-img.process {
+  background-image: url("http://quiet-dusk-35598.herokuapp.com/images/process/header-bg.png"); }
 
 /*# sourceMappingURL=main.css.map */
