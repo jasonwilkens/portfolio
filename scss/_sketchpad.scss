@@ -30,3 +30,31 @@
 .header-img.process {
   background-image: url("http://quiet-dusk-35598.herokuapp.com/images/process/header-bg.png")
 }
+
+.grid-flex .cover {
+  width:            100vw;
+  height:           100vh;
+  background-color: darken($purple, 10%);
+  position:         relative;
+  ul {
+    position:       absolute;
+    padding:        0;
+    top:            calc(50vh - 12rem);
+    left:           calc(50vw - 4rem)
+  }
+  li + li {
+    border-top:     dashed 1px white;
+    padding-top:    1.5rem;
+  }
+  li {
+    list-style-type: none;
+    text-align:     center;
+    font-family:    $playfair-display;
+    font-size:      4vh;
+  }
+  a {
+    color:          white;
+    border-bottom:  none;
+    box-shadow:     none;
+  }
+}

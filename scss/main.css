@@ -515,4 +515,27 @@ table {
 .header-img.process {
   background-image: url("http://quiet-dusk-35598.herokuapp.com/images/process/header-bg.png"); }
 
+.grid-flex .cover {
+  width: 100vw;
+  height: 100vh;
+  background-color: #01134c;
+  position: relative; }
+  .grid-flex .cover ul {
+    position: absolute;
+    padding: 0;
+    top: calc(50vh - 12rem);
+    left: calc(50vw - 4rem); }
+  .grid-flex .cover li + li {
+    border-top: dashed 1px white;
+    padding-top: 1.5rem; }
+  .grid-flex .cover li {
+    list-style-type: none;
+    text-align: center;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 4vh; }
+  .grid-flex .cover a {
+    color: white;
+    border-bottom: none;
+    box-shadow: none; }
+
 /*# sourceMappingURL=main.css.map */
