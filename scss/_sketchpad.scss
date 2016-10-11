@@ -24,13 +24,14 @@
   .cover-background {
     background-image: url("http://quiet-dusk-35598.herokuapp.com/images/landing-page-cover.jpg");
     background-size: cover;
-    filter:         opacity(50%);
+    filter:         opacity(40%);
+    height:         100%;
   }
   ul {
     position:       absolute;
     padding:        0;
     top:            calc(50vh - 12rem);
-    left:           calc(50vw - 5rem);
+    left:           calc(50vw - 5em);
   }
   li + li {
     border-top:     dashed 1px white;
@@ -40,7 +41,7 @@
     list-style-type: none;
     text-align:     center;
     font-family:    $playfair-display;
-    font-size:      4vh;
+    font-size:      2.5rem;
   }
   a {
     color:          white;

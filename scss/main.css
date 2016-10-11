@@ -523,12 +523,13 @@ table {
   .grid-flex .cover .cover-background {
     background-image: url("http://quiet-dusk-35598.herokuapp.com/images/landing-page-cover.jpg");
     background-size: cover;
-    filter: opacity(50%); }
+    filter: opacity(40%);
+    height: 100%; }
   .grid-flex .cover ul {
     position: absolute;
     padding: 0;
     top: calc(50vh - 12rem);
-    left: calc(50vw - 5rem); }
+    left: calc(50vw - 5em); }
   .grid-flex .cover li + li {
     border-top: dashed 1px white;
     padding-top: 1.5rem; }
@@ -536,7 +537,7 @@ table {
     list-style-type: none;
     text-align: center;
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 4vh; }
+    font-size: 2.5rem; }
   .grid-flex .cover a {
     color: white;
     border-bottom: none;
