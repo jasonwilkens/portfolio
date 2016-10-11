@@ -311,6 +311,17 @@ body {
     box-shadow: none;
     display: block; }
 
+.header-img {
+  background-position: 0% 50%;
+  background-size: cover;
+  height: 10vh; }
+
+.header-img.work {
+  background-image: url("http://quiet-dusk-35598.herokuapp.com/images/work/header-bg.png"); }
+
+.header-img.process {
+  background-image: url("http://quiet-dusk-35598.herokuapp.com/images/process/header-bg.png"); }
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.85);
@@ -504,17 +515,6 @@ table {
   border-image: linear-gradient(to bottom right, #7FDBB6 30%, #011F7F 60%, #7FDBB6 90%);
   border-image-slice: 1; }
 
-.header-img {
-  background-position: 0% 50%;
-  background-size: cover;
-  height: 10vh; }
-
-.header-img.work {
-  background-image: url("http://quiet-dusk-35598.herokuapp.com/images/work/header-bg.png"); }
-
-.header-img.process {
-  background-image: url("http://quiet-dusk-35598.herokuapp.com/images/process/header-bg.png"); }
-
 .grid-flex .cover {
   width: 100vw;
   height: 100vh;
@@ -524,7 +524,7 @@ table {
     position: absolute;
     padding: 0;
     top: calc(50vh - 12rem);
-    left: calc(50vw - 4rem); }
+    left: calc(50vw - 5rem); }
   .grid-flex .cover li + li {
     border-top: dashed 1px white;
     padding-top: 1.5rem; }
