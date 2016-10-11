@@ -22,7 +22,9 @@
   background-color: darken($purple, 10%);
   position:         relative;
   .cover-background {
-    
+    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/landing-page-cover.jpg");
+    background-size: cover;
+    filter:         opacity(50%);
   }
   ul {
     position:       absolute;
