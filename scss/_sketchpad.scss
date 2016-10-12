@@ -31,21 +31,35 @@
     position:       absolute;
     padding:        0;
     top:            calc(50vh - 12rem);
-    left:           calc(50vw - 5em);
+    left:           calc(50vw - 4em);
   }
   li + li {
-    border-top:     dashed 1px white;
+    border-top:     dashed 1px $mint;
     padding-top:    1.5rem;
   }
   li {
     list-style-type: none;
     text-align:     center;
-    font-family:    $playfair-display;
-    font-size:      2.5rem;
+    font-weight:    400;
+    font-size:      2rem;
   }
   a {
     color:          white;
     border-bottom:  none;
     box-shadow:     none;
+  }
+  @media screen and (min-width: $max-fluid) {
+    ul {
+      left:         calc(50vw - 24em);
+    }
+    li {
+      display:      inline-block;
+      padding:      0 2rem 0 2rem;
+    }
+    li + li {
+      border-left:  dashed 1px $mint;
+      border-top:   none;
+      padding-top:  0;
+    }
   }
 }
