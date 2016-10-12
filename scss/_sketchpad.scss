@@ -35,7 +35,7 @@
   }
   li + li {
     border-top:     dashed 1px $mint;
-    padding-top:    1.5rem;
+    padding-top:    $default-spacing;
   }
   li {
     list-style-type: none;
@@ -52,11 +52,12 @@
     color:          $white85;
     position:       absolute;
     bottom:         0;
-    right:          0;
-    padding:        0 2rem 0 1rem;
+    right:          2rem;
+    padding:        0 1rem;
     border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem;
   }
-  @media screen and (min-width: $max-fluid) {
+  @media screen and (min-width: $min-fluid) {
     ul {
       top:          3rem;
       left:         4rem;

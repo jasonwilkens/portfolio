@@ -546,10 +546,11 @@ table {
     color: rgba(255, 255, 255, 0.85);
     position: absolute;
     bottom: 0;
-    right: 0;
-    padding: 0 2rem 0 1rem;
-    border-top-left-radius: .4rem; }
-  @media screen and (min-width: 85rem) {
+    right: 2rem;
+    padding: 0 1rem;
+    border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem; }
+  @media screen and (min-width: 50rem) {
     .grid-flex .cover ul {
       top: 3rem;
       left: 4rem; }
