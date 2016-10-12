@@ -536,15 +536,23 @@ table {
   .grid-flex .cover li {
     list-style-type: none;
     text-align: center;
-    font-weight: 400;
     font-size: 2rem; }
   .grid-flex .cover a {
     color: white;
     border-bottom: none;
     box-shadow: none; }
+  .grid-flex .cover .credit {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 2rem 0 1rem;
+    border-top-left-radius: .4rem; }
   @media screen and (min-width: 85rem) {
     .grid-flex .cover ul {
-      left: calc(50vw - 24em); }
+      top: 3rem;
+      left: 4rem; }
     .grid-flex .cover li {
       display: inline-block;
       padding: 0 2rem 0 2rem; }

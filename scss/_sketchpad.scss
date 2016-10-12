@@ -40,7 +40,6 @@
   li {
     list-style-type: none;
     text-align:     center;
-    font-weight:    400;
     font-size:      2rem;
   }
   a {
@@ -48,9 +47,19 @@
     border-bottom:  none;
     box-shadow:     none;
   }
+  .credit {
+    background-color: $black45;
+    color:          $white85;
+    position:       absolute;
+    bottom:         0;
+    right:          0;
+    padding:        0 2rem 0 1rem;
+    border-top-left-radius: .4rem;
+  }
   @media screen and (min-width: $max-fluid) {
     ul {
-      left:         calc(50vw - 24em);
+      top:          3rem;
+      left:         4rem;
     }
     li {
       display:      inline-block;
