@@ -523,7 +523,7 @@ table {
   .grid-flex .cover .cover-background {
     background-image: url("http://quiet-dusk-35598.herokuapp.com/images/landing-page-cover.jpg");
     background-size: cover;
-    filter: opacity(40%);
+    filter: opacity(50%);
     height: 100%; }
   .grid-flex .cover ul {
     position: absolute;
@@ -552,11 +552,12 @@ table {
     border-top-right-radius: .4rem; }
   @media screen and (min-width: 50rem) {
     .grid-flex .cover ul {
-      top: 3rem;
-      left: 4rem; }
+      top: 0;
+      left: 2rem; }
     .grid-flex .cover li {
       display: inline-block;
-      padding: 0 2rem 0 2rem; }
+      padding: 0 2rem 0 2rem;
+      font-size: 1.5rem; }
     .grid-flex .cover li + li {
       border-left: dashed 1px #7FDBB6;
       border-top: none;
