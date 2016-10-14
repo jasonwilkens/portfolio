@@ -23,8 +23,12 @@ p + p {
 }
 
 // Grids
-.grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-wide, .grid-wide + .grid-max-width {
+.grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-wide, .grid-wide + .grid-max-width, .nav + .grid-max-width {
   margin-top:       1.5rem;
+}
+
+.grid-max-width + .grid-max-width {
+  margin-top:       3rem;
 }
 
 .grid-wide + .grid-wide {

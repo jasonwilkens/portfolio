@@ -102,8 +102,6 @@ body {
     margin-left: 85%; }
   .grid-max-width .push11 {
     margin-left: 93.5%; }
-  .grid-max-width + .grid-max-width {
-    margin-top: 2%; }
   .grid-max-width article {
     padding: 0 1rem; }
 
@@ -453,8 +451,11 @@ p + h1, p + h2, p + h3, p + h4, p + h5 {
 p + p {
   margin-top: 0.75em; }
 
-.grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-wide, .grid-wide + .grid-max-width {
+.grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-wide, .grid-wide + .grid-max-width, .nav + .grid-max-width {
   margin-top: 1.5rem; }
+
+.grid-max-width + .grid-max-width {
+  margin-top: 3rem; }
 
 .grid-wide + .grid-wide {
   margin-top: 2%; }

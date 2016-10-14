@@ -13,10 +13,6 @@ $max_width:         1128px;
   @include container();
   @include clearfix();
   @include generate_helper_classes();
-  &+ .grid-max-width {
-    margin-top:     $gutter_width;
-  }
-  
   article { padding: 0 1rem; }
 }
 
