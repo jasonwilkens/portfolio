@@ -289,25 +289,23 @@ body {
   margin-top: 0; }
 
 .nav-bar {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.2rem 1rem 0px rgba(0, 0, 0, 0.15);
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
   background-color: white; }
   .nav-bar .nav-max {
     margin: auto;
     overflow: hidden; }
-  .nav-bar a.identity {
+  .nav-bar .identity {
     margin: 0;
     float: left;
     height: 3.5rem;
-    padding: .3rem;
-    filter: grayscale(100); }
-    .nav-bar a.identity:hover {
-      background: inherit;
-      filter: grayscale(0); }
-    .nav-bar a.identity img {
+    padding: .3rem; }
+    .nav-bar .identity:hover a {
+      background: white; }
+    .nav-bar .identity img {
       height: 2.9rem;
       width: 2.9rem;
       border-radius: 15%; }
@@ -322,15 +320,15 @@ body {
     .nav-bar div.active {
       font-weight: 400;
       box-sizing: border-box; }
-      .nav-bar div.active a {
-        border-bottom: 0.1em solid rgba(0, 0, 0, 0.85);
-        transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
-        box-shadow: inset 0 -0.2em 0 rgba(0, 0, 0, 0.85); }
   .nav-bar a {
     line-height: 3.5rem;
     border-bottom: none;
     box-shadow: none;
     display: block; }
+  .nav-bar a.active, .nav-bar .active a {
+    border-bottom: 0.1em solid rgba(0, 0, 0, 0.85);
+    transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
+    box-shadow: inset 0 -0.2em 0 rgba(0, 0, 0, 0.85); }
 
 .header-img {
   background-position: 0% 50%;
@@ -551,45 +549,5 @@ table {
     background-position: center;
     filter: opacity(80%);
     height: 100%; }
-  .grid-flex .cover ul {
-    position: absolute;
-    padding: 0;
-    top: calc(50vh - 18rem);
-    left: calc(50vw - 4em); }
-  .grid-flex .cover li img {
-    height: 6rem;
-    width: 6rem;
-    border-radius: 15%;
-    box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.15); }
-  .grid-flex .cover li + li {
-    border-top: dashed 1px #7FDBB6;
-    padding-top: 1.5rem; }
-  .grid-flex .cover li:nth-child(2) {
-    border-top: none;
-    padding-top: 0; }
-  .grid-flex .cover li {
-    list-style-type: none;
-    text-align: center;
-    font-size: 2rem; }
-  .grid-flex .cover a {
-    color: white;
-    border-bottom: none;
-    box-shadow: none; }
-  @media screen and (min-width: 50rem) {
-    .grid-flex .cover ul {
-      top: 2rem;
-      left: 2rem; }
-    .grid-flex .cover li {
-      display: inline-block;
-      padding: 0 2rem 0 2rem;
-      font-size: 1.5rem; }
-    .grid-flex .cover li + li {
-      border-left: dashed 1px #7FDBB6;
-      border-top: none;
-      padding-top: 0; }
-    .grid-flex .cover li:first-child {
-      padding-right: 0; }
-    .grid-flex .cover li:nth-child(2) {
-      border-left: none; } }
 
 /*# sourceMappingURL=main.css.map */

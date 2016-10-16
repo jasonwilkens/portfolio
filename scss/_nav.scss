@@ -1,23 +1,23 @@
 .nav-bar {
-  border-bottom:    1px solid $black15;
   box-shadow:       0 .2rem 1rem 0px $black15;
   position:         fixed;
   top:              0;
   width:            100%;
+  z-index:          100;
   background-color: white;
   .nav-max {
     margin:         auto;
     overflow:       hidden;
   }
-  a.identity {
+  .identity {
     margin:         0;
     float:          left;
     height:         $nav-height;
     padding:        .3rem;
-    filter:         grayscale(100);
     &:hover {
-      background:   inherit;
-      filter:     grayscale(0);
+      a {
+        background: white;
+      }
     }
     img {
       height:       $nav-height - .6rem;
@@ -38,11 +38,6 @@
       font-weight:  400;
 //      border-bottom: .3rem solid $black85;
       box-sizing:   border-box;
-      a {
-        border-bottom: .1em solid $black85;
-        transition: background .10s cubic-bezier(.33,.66,.66,1);
-        box-shadow: inset 0 -.2em 0 $black85;
-      }
     }
   }
   a {
@@ -50,5 +45,10 @@
     border-bottom:  none;
     box-shadow:     none;
     display:        block;
+  }
+  a.active, .active a {
+    border-bottom: .1em solid $black85;
+    transition: background .10s cubic-bezier(.33,.66,.66,1);
+    box-shadow: inset 0 -.2em 0 $black85;
   }
 }
