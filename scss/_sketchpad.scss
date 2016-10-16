@@ -19,23 +19,34 @@
 .grid-flex .cover {
   width:            100vw;
   height:           100vh;
-//  background-color: darken($purple, 10%);
+  background-image: $gradient-left-right;
   position:         relative;
   .cover-background {
-    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/landing-page-cover.jpg");
+    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover.jpg");
     background-size: cover;
-    filter:         opacity(50%);
+    background-position: center;
+    filter:         opacity(80%);
     height:         100%;
   }
   ul {
     position:       absolute;
     padding:        0;
-    top:            calc(50vh - 12rem);
+    top:            calc(50vh - 18rem);
     left:           calc(50vw - 4em);
+  }
+  li img {
+    height:         6rem;
+    width:          6rem;
+    border-radius:  15%;
+    box-shadow:       0 0 1rem .25rem $black15;
   }
   li + li {
     border-top:     dashed 1px $mint;
     padding-top:    $default-spacing;
+  }
+  li:nth-child(2) {
+    border-top:     none;
+    padding-top:    0;
   }
   li {
     list-style-type: none;
@@ -47,19 +58,9 @@
     border-bottom:  none;
     box-shadow:     none;
   }
-  .credit {
-    background-color: $black45;
-    color:          $white85;
-    position:       absolute;
-    bottom:         0;
-    right:          2rem;
-    padding:        0 1rem;
-    border-top-left-radius: .4rem;
-    border-top-right-radius: .4rem;
-  }
   @media screen and (min-width: $min-fluid) {
     ul {
-      top:          0;
+      top:          2rem;
       left:         2rem;
     }
     li {
@@ -72,5 +73,11 @@
       border-top:   none;
       padding-top:  0;
     }
+    li:first-child {
+      padding-right: 0;
+    }
+    li:nth-child(2) {
+      border-left:    none;
+    }    
   }
 }

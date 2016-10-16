@@ -288,22 +288,45 @@ body {
   min-height: 3rem;
   margin-top: 0; }
 
-.nav {
+.nav-bar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.2rem 1rem 0px rgba(0, 0, 0, 0.15); }
-  .nav .nav-max {
-    margin: auto; }
-  .nav div {
+  box-shadow: 0 0.2rem 1rem 0px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; }
+  .nav-bar .nav-max {
+    margin: auto;
+    overflow: hidden; }
+  .nav-bar a.identity {
+    margin: 0;
+    float: left;
+    height: 3.5rem;
+    padding: .3rem;
+    filter: grayscale(100); }
+    .nav-bar a.identity:hover {
+      background: inherit;
+      filter: grayscale(0); }
+    .nav-bar a.identity img {
+      height: 2.9rem;
+      width: 2.9rem;
+      border-radius: 15%; }
+  .nav-bar .nav-links {
+    display: flex; }
+  .nav-bar div {
     margin-top: 0;
     background-color: white;
     min-height: inherit;
     text-align: center;
     height: 3.5rem; }
-    .nav div.active {
+    .nav-bar div.active {
       font-weight: 400;
-      border-bottom: 0.3rem solid rgba(0, 0, 0, 0.85);
       box-sizing: border-box; }
-  .nav a {
+      .nav-bar div.active a {
+        border-bottom: 0.1em solid rgba(0, 0, 0, 0.85);
+        transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
+        box-shadow: inset 0 -0.2em 0 rgba(0, 0, 0, 0.85); }
+  .nav-bar a {
     line-height: 3.5rem;
     border-bottom: none;
     box-shadow: none;
@@ -440,6 +463,7 @@ body .small {
   margin-bottom: 0; }
 
 h1 {
+  margin-top: 6.5rem;
   margin-bottom: 0; }
 
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
@@ -519,20 +543,30 @@ table {
 .grid-flex .cover {
   width: 100vw;
   height: 100vh;
+  background-image: linear-gradient(to right, #011F7F 0%, #7FDBB6 100%);
   position: relative; }
   .grid-flex .cover .cover-background {
-    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/landing-page-cover.jpg");
+    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover.jpg");
     background-size: cover;
-    filter: opacity(50%);
+    background-position: center;
+    filter: opacity(80%);
     height: 100%; }
   .grid-flex .cover ul {
     position: absolute;
     padding: 0;
-    top: calc(50vh - 12rem);
+    top: calc(50vh - 18rem);
     left: calc(50vw - 4em); }
+  .grid-flex .cover li img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 15%;
+    box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.15); }
   .grid-flex .cover li + li {
     border-top: dashed 1px #7FDBB6;
     padding-top: 1.5rem; }
+  .grid-flex .cover li:nth-child(2) {
+    border-top: none;
+    padding-top: 0; }
   .grid-flex .cover li {
     list-style-type: none;
     text-align: center;
@@ -541,18 +575,9 @@ table {
     color: white;
     border-bottom: none;
     box-shadow: none; }
-  .grid-flex .cover .credit {
-    background-color: rgba(0, 0, 0, 0.45);
-    color: rgba(255, 255, 255, 0.85);
-    position: absolute;
-    bottom: 0;
-    right: 2rem;
-    padding: 0 1rem;
-    border-top-left-radius: .4rem;
-    border-top-right-radius: .4rem; }
   @media screen and (min-width: 50rem) {
     .grid-flex .cover ul {
-      top: 0;
+      top: 2rem;
       left: 2rem; }
     .grid-flex .cover li {
       display: inline-block;
@@ -561,6 +586,10 @@ table {
     .grid-flex .cover li + li {
       border-left: dashed 1px #7FDBB6;
       border-top: none;
-      padding-top: 0; } }
+      padding-top: 0; }
+    .grid-flex .cover li:first-child {
+      padding-right: 0; }
+    .grid-flex .cover li:nth-child(2) {
+      border-left: none; } }
 
 /*# sourceMappingURL=main.css.map */
