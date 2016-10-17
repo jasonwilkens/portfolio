@@ -5,7 +5,7 @@
 $total_width:       100%;
 $container_margin: 	auto;
 $gutter_width:      2%;
-$max_width:         1128px;
+$max_width:         $reading-width;
 
 .grid-max-width {
   max-width:        $max_width;
@@ -17,13 +17,12 @@ $max_width:         1128px;
 }
 
 // Grid 2, fluid
-$total_width:       100%;
 $container_margin: 	0;
 $gutter_width:      0%;
-$max_width:         $wide-grid-width;
+$max_width:         100%;
 
 .grid-flex {
-  max-width:        100%;
+  max-width:        $max_width;
   margin-bottom:    3rem;
   @include container();
   @include clearfix();
@@ -34,27 +33,44 @@ $max_width:         $wide-grid-width;
   }
 }
 
-// Grid 3, wider max-width
-$total_width:       100%;
+// Grid 3, responsive project showcase
 $container_margin: 	auto;
 $gutter_width:      2%;
 $max_width:         $wide-grid-width;
 
-.grid-wide {
-  max-width:        $max_width;
-  margin-bottom:    $gutter_width;
+.grid-showcase {
+  max-width:        $max-width;
   @include container();
   @include clearfix();
-  @include generate_helper_classes();
+  div{@include column(12);}
+  @include generate_grid_positions(div, 12);
   img {
     width:          100%;
     vertical-align: middle;
   }
 }
 
-.grid-wide > div, .grid-flex > div { 
+@media screen and (min-width: $showcase-1-max) {
+  $max_width:       $showcase-1-max;
+
+  .grid-showcase {
+    max-width:      $showcase-1-max;
+    margin-bottom:  $gutter-width;
+  }
+}
+
+@media screen and (min-width: $showcase-3-column) {
+  $max_width:       $wide-grid-width;
+
+  .grid-showcase {
+    max-width:      $max-width;
+    div{@include column(4);}
+    @include generate_grid_positions(div, 4);
+  }
+}
+
+.grid-flex > div, .grid-showcase > div { 
   background-color: $mint;
   min-height:       3rem;
   margin-top:       0;
 }
-

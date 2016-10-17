@@ -26,7 +26,7 @@ p + p {
 }
 
 // Grids
-.grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-wide, .grid-wide + .grid-max-width, .nav + .grid-max-width {
+.grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-showcase, .grid-showcase + .grid-max-width, .nav + .grid-max-width {
   margin-top:       1.5rem;
 }
 
@@ -34,7 +34,7 @@ p + p {
   margin-top:       3rem;
 }
 
-.grid-wide + .grid-wide {
+.grid-showcase + .grid-showcase {
   margin-top:       $gutter_width;
   @media screen and (min-width: $max-fluid) {
     margin-top:     ($wide-grid-width * .02);
