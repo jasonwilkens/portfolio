@@ -7,13 +7,12 @@
   background-color: white;
   .nav-max {
     margin:         auto;
-    overflow:       hidden;
   }
   .identity {
     margin:         0;
     float:          left;
-    height:         $nav-height;
-    padding:        .3rem;
+    height:         2.9rem;
+    margin:         .3rem;
     &:hover {
       a {
         background: white;
@@ -27,28 +26,28 @@
   } 
   .nav-links {
     display:        flex;
+    a {
+      line-height:  $nav-height;
+    }
+    .active a {
+      border-bottom: .1em solid $black85;
+      transition: background .10s cubic-bezier(.33,.66,.66,1);
+      box-shadow: inset 0 -.2em 0 $black85;
+    }
   }
   div {
     margin-top:     0;
     background-color: white;
-    min-height:     inherit;
     text-align:     center;
     height:         $nav-height;
     &.active {
       font-weight:  400;
-//      border-bottom: .3rem solid $black85;
       box-sizing:   border-box;
     }
   }
   a {
-    line-height:    $nav-height;
     border-bottom:  none;
     box-shadow:     none;
     display:        block;
-  }
-  a.active, .active a {
-    border-bottom: .1em solid $black85;
-    transition: background .10s cubic-bezier(.33,.66,.66,1);
-    box-shadow: inset 0 -.2em 0 $black85;
   }
 }
