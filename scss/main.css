@@ -235,13 +235,7 @@ body {
     .grid-showcase div:nth-child(3n+3) {
       margin-left: 68%;
       margin-bottom: 2%;
-      clear: none; }
-    .grid-showcase div:first-child {
-      border-top-left-radius: .5rem;
-      border-bottom-left-radius: .5rem; }
-    .grid-showcase div:last-child {
-      border-top-right-radius: .5rem;
-      border-bottom-right-radius: .5rem; } }
+      clear: none; } }
 .grid-flex > div, .grid-showcase > div {
   background-color: #7FDBB6;
   min-height: 3rem;
@@ -521,9 +515,5 @@ table {
   color: white;
   line-height: 3rem;
   padding: 0 1rem; }
-.grid-showcase a:hover p {
-  color: #7FDBB6; }
-.grid-showcase a:active p {
-  color: #011F7F; }
 
 /*# sourceMappingURL=main.css.map */
