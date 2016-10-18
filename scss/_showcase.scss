@@ -1,0 +1,24 @@
+.grid-showcase {
+  img {
+    width:          100%;
+    vertical-align: middle;
+  }
+  div {
+    position:       relative;
+  }
+  p {
+    position:       absolute;
+    bottom:         0;
+    width:          100%;
+    background-color: $black45;
+    color:          white;
+    line-height:    3rem;
+    padding:        0 1rem;
+  }
+  a:hover p {
+    color:          $mint;
+  }
+  a:active p {
+    color:          $purple;
+  }
+}

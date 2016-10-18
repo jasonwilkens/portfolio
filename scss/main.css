@@ -210,9 +210,6 @@ body {
     clear: both;
     overflow: hidden;
     *zoom: 1; }
-  .grid-showcase img {
-    width: 100%;
-    vertical-align: middle; }
 
 @media screen and (min-width: 32rem) {
   .grid-showcase {
@@ -238,7 +235,13 @@ body {
     .grid-showcase div:nth-child(3n+3) {
       margin-left: 68%;
       margin-bottom: 2%;
-      clear: none; } }
+      clear: none; }
+    .grid-showcase div:first-child {
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem; }
+    .grid-showcase div:last-child {
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem; } }
 .grid-flex > div, .grid-showcase > div {
   background-color: #7FDBB6;
   min-height: 3rem;
@@ -504,5 +507,23 @@ table {
     background-position: center;
     filter: opacity(80%);
     height: 100%; }
+
+.grid-showcase img {
+  width: 100%;
+  vertical-align: middle; }
+.grid-showcase div {
+  position: relative; }
+.grid-showcase p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: white;
+  line-height: 3rem;
+  padding: 0 1rem; }
+.grid-showcase a:hover p {
+  color: #7FDBB6; }
+.grid-showcase a:active p {
+  color: #011F7F; }
 
 /*# sourceMappingURL=main.css.map */
