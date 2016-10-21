@@ -13,7 +13,6 @@ $max_width:         $reading-width;
   @include container();
   @include clearfix();
   @include generate_helper_classes();
-  article { padding: 0 1rem; }
 }
 
 // Grid 2, fluid
