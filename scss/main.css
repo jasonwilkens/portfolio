@@ -4,6 +4,9 @@ body {
   body img {
     width: 100%; }
 
+article {
+  padding: 0 1rem; }
+
 /**
  * Clearfix
  */
@@ -104,8 +107,6 @@ body {
     margin-left: 85%; }
   .grid-max-width .push11 {
     margin-left: 93.5%; }
-  .grid-max-width article {
-    padding: 0 1rem; }
 
 .grid-flex {
   max-width: 100%;
@@ -503,6 +504,14 @@ table {
     background-position: center;
     filter: opacity(80%);
     height: 100%; }
+
+.guide {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding-top: 1.5rem;
+  padding-bottom: 4.5rem;
+  color: white; }
+  .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
+    color: white; }
 
 .grid-showcase img {
   width: 100%;
