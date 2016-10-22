@@ -41,6 +41,12 @@ p + p {
   }
 }
 
+// Nav + Template container
+
+#nav + div {
+  margin-top: 0;
+}
+
 // Remove default spacing
 .margins-off > * {
   margin-top:       0;

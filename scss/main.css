@@ -440,6 +440,9 @@ p + p {
     .grid-showcase + .grid-showcase {
       margin-top: 1.76rem; } }
 
+#nav + div {
+  margin-top: 0; }
+
 .margins-off > * {
   margin-top: 0; }
 
@@ -506,12 +509,15 @@ table {
     height: 100%; }
 
 .guide {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: black;
   padding-top: 1.5rem;
   padding-bottom: 4.5rem;
   color: white; }
   .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
     color: white; }
+
+#templates {
+  display: none; }
 
 .grid-showcase img {
   width: 100%;
