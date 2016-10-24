@@ -28,11 +28,9 @@
     filter:         opacity(80%);
     height:         100%;
     .lettering {
-      background-image: url("http://quiet-dusk-35598.herokuapp.com/images/satnh.svg");
-      background-size: cover;
-      background-position: center;
+      width:        80vw;
+      padding-top:  calc(50vh - 30vw);
       filter:       opacity(80%);
-      height:       100%;
     }
   }
 }

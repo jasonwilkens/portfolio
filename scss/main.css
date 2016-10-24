@@ -506,11 +506,9 @@ table {
     filter: opacity(80%);
     height: 100%; }
     .grid-flex .cover .cover-background .lettering {
-      background-image: url("http://quiet-dusk-35598.herokuapp.com/images/satnh.svg");
-      background-size: cover;
-      background-position: center;
-      filter: opacity(80%);
-      height: 100%; }
+      width: 80vw;
+      padding-top: calc(50vh - 30vw);
+      filter: opacity(80%); }
 
 .guide {
   background-color: black;
