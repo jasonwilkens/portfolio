@@ -1,6 +1,8 @@
-<svg id="satnh" x="0px" y="0px" viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg id="satnh" x="0px" y="20vh" viewBox="0 0 960 800" xmlns="http://www.w3.org/2000/svg" version="1.1">
   <style>
-    fill: white;
+    /* <![CDATA[ */
+    g { fill: white; }
+    /* ]]> */
   </style>
   <g>
     <path d="M307.376,444.364c10.237-0.419,22.454-7.326,25.618-17.526c1.377-4.439,1.585-9.427-1.718-13.01
