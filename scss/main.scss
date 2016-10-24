@@ -64,12 +64,18 @@ body {
 
 article { padding: 0 1rem; }
 
+// Vue Templates
+// -------------------------
+#templates {
+  display:          none;
+}
 
 // SCSS Imports
 // -------------------------
 @import 'profound-grid';
 @import 'grids';
 @import 'nav';
+@import 'cover';
 @import 'headers';
 @import 'type';
 @import 'spacing';
@@ -78,3 +84,4 @@ article { padding: 0 1rem; }
 @import 'emoji';
 @import 'sketchpad';
 @import 'showcase';
+@import 'guides';

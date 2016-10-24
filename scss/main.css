@@ -7,6 +7,9 @@ body {
 article {
   padding: 0 1rem; }
 
+#templates {
+  display: none; }
+
 /**
  * Clearfix
  */
@@ -283,6 +286,32 @@ article {
     box-shadow: none;
     display: block; }
 
+.grid-flex .cover {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, #011F7F 0%, #7FDBB6 100%);
+  position: relative; }
+  .grid-flex .cover .cover-background {
+    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: opacity(80%);
+    height: 100%; }
+    .grid-flex .cover .cover-background .lettering {
+      width: 100vw;
+      padding-top: calc(50vh - 30vw);
+      filter: opacity(80%); }
+
+.header {
+  min-height: 24vmin;
+  padding: 1rem;
+  background-color: white;
+  border: .8rem solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, #7FDBB6 30%, #011F7F 60%, #7FDBB6 90%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #7FDBB6 20%, #011F7F 60%, #7FDBB6 90%);
+  border-image: linear-gradient(to bottom right, #7FDBB6 30%, #011F7F 60%, #7FDBB6 90%);
+  border-image-slice: 1; }
+
 .header-img {
   background-position: 0% 50%;
   background-size: cover;
@@ -484,43 +513,6 @@ table {
   vertical-align: -.4em;
   margin: 0 .3em; }
 
-.header {
-  min-height: 24vmin;
-  padding: 1rem;
-  background-color: white;
-  border: .8rem solid transparent;
-  -moz-border-image: -moz-linear-gradient(top left, #7FDBB6 30%, #011F7F 60%, #7FDBB6 90%);
-  -webkit-border-image: -webkit-linear-gradient(top left, #7FDBB6 20%, #011F7F 60%, #7FDBB6 90%);
-  border-image: linear-gradient(to bottom right, #7FDBB6 30%, #011F7F 60%, #7FDBB6 90%);
-  border-image-slice: 1; }
-
-.grid-flex .cover {
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(to right, #011F7F 0%, #7FDBB6 100%);
-  position: relative; }
-  .grid-flex .cover .cover-background {
-    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover.jpg");
-    background-size: cover;
-    background-position: center;
-    filter: opacity(80%);
-    height: 100%; }
-    .grid-flex .cover .cover-background .lettering {
-      width: 80vw;
-      padding-top: calc(50vh - 30vw);
-      filter: opacity(80%); }
-
-.guide {
-  background-color: black;
-  padding-top: 1.5rem;
-  padding-bottom: 4.5rem;
-  color: white; }
-  .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
-    color: white; }
-
-#templates {
-  display: none; }
-
 .grid-showcase img {
   width: 100%;
   vertical-align: middle; }
@@ -534,5 +526,13 @@ table {
   color: white;
   line-height: 3rem;
   padding: 0 1rem; }
+
+.guide {
+  background-color: black;
+  padding-top: 1.5rem;
+  padding-bottom: 4.5rem;
+  color: white; }
+  .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
