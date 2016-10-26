@@ -14,6 +14,10 @@ const router = new VueRouter({
   routes
 })
 
+router.afterEach(() => {
+  scroll(0,0);
+})
+
 const app = new Vue({
   router
 }).$mount('#app');
