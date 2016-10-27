@@ -47,4 +47,14 @@
     box-shadow:     none;
     display:        block;
   }
+  .work-nav {
+    text-align:     left;
+    #back {
+      height:       $nav-height;
+      width:        $nav-height;
+      #arrow {
+        fill:       $black15;
+      }
+    }
+  }
 }

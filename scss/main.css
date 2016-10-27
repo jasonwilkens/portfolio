@@ -282,6 +282,13 @@ article {
     border-bottom: none;
     box-shadow: none;
     display: block; }
+  .nav-bar .work-nav {
+    text-align: left; }
+    .nav-bar .work-nav #back {
+      height: 3.5rem;
+      width: 3.5rem; }
+      .nav-bar .work-nav #back #arrow {
+        fill: rgba(0, 0, 0, 0.15); }
 
 .grid-flex .cover {
   width: 100vw;
