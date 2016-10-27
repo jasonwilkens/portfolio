@@ -5,56 +5,93 @@
   width:            100%;
   z-index:          100;
   background-color: white;
-  .nav-max {
-    margin:         auto;
+  a {
+    border-bottom:  none;
+    box-shadow:     none;
   }
-  .identity {
-    margin:         0;
-    float:          left;
-    height:         2.9rem;
-    margin:         .3rem;
-    &:hover {
-      a {
-        background: white;
+  #global-nav {
+    margin:         auto;
+    a {
+      display:      block;
+    }
+    .identity {
+      margin:       0;
+      float:        left;
+      height:       2.9rem;
+      margin:       .3rem;
+      &:hover {
+        a {
+          background: white;
+        }
+      }
+      img {
+        height:     $nav-height - .6rem;
+        width:      $nav-height - .6rem;
+        border-radius: 15%;
       }
     }
-    img {
-      height:       $nav-height - .6rem;
-      width:        $nav-height - .6rem;
-      border-radius: 15%;
-    }
-  } 
-  .nav-links {
-    display:        flex;
-    a {
-      line-height:  $nav-height;
-    }
-    .router-link-active {
-      font-weight:  400;
-      border-bottom: .1em solid $black85;
-      transition: background .10s cubic-bezier(.33,.66,.66,1);
-      box-shadow: inset 0 -.2em 0 $black85;
+    .nav-links {
+      display:      flex;
+      div {
+      text-align:   center;
+      }
+      a {
+        line-height: $nav-height;
+      }
+      .router-link-active {
+        font-weight: 400;
+        border-bottom: .1em solid $black85;
+        transition: background .10s cubic-bezier(.33,.66,.66,1);
+        box-shadow: inset 0 -.2em 0 $black85;
+      }
     }
   }
   div {
     margin-top:     0;
     background-color: white;
-    text-align:     center;
     height:         $nav-height;
   }
-  a {
-    border-bottom:  none;
-    box-shadow:     none;
-    display:        block;
-  }
-  .work-nav {
+  #work-nav {
     text-align:     left;
+    margin:         auto;
+    overflow:       hidden;
+    text-overflow:  ellipsis;
+    a {
+      float:        left;
+    }
+    a:hover {
+      background-color: transparent;
+      #back #arrow {
+        fill:       $mint;
+        transition: fill .10s cubic-bezier(.33,.66,.66,1);
+      }
+    }
+    a:active {
+      border-bottom: none;
+      box-shadow: none;
+      #back #arrow {
+        fill:       $purple;
+        transition: fill .10s cubic-bezier(.33,.66,.66,1);
+      }
+    }
+    div {
+      display:      block;
+      overflow:     hidden;
+      text-overflow: ellipsis;
+    }
     #back {
       height:       $nav-height;
       width:        $nav-height;
       #arrow {
         fill:       $black15;
       }
+    }
+    #project-name {
+      line-height:  $nav-height;
+      border-left:  1px solid $black15;
+      padding-left: 1.5rem;
+      word-wrap:    break-word;
+      white-space:  nowrap;
     }
   }
 }
