@@ -353,6 +353,7 @@ article {
 
 .header-img {
   background-size: cover;
+  background-position: center;
   height: 10vh; }
 
 .header-img.work {
