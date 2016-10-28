@@ -238,7 +238,13 @@ article {
     .grid-showcase div:nth-child(3n+3) {
       margin-left: 68%;
       margin-bottom: 2%;
-      clear: none; } }
+      clear: none; }
+
+  .grid-flex + .job, .job + .job {
+    margin-top: 4.5rem; }
+
+  .job + .guide {
+    margin-top: 4.5rem; } }
 .grid-flex > div, .grid-showcase > div {
   background-color: #7FDBB6;
   min-height: 3rem;
@@ -313,6 +319,7 @@ article {
         fill: rgba(0, 0, 0, 0.15); }
     .nav-bar #work-nav #project-name {
       line-height: 3.5rem;
+      font-weight: 400;
       border-left: 1px solid rgba(0, 0, 0, 0.15);
       padding-left: 1.5rem;
       word-wrap: break-word;
