@@ -26,6 +26,8 @@ const app = new Vue({
   router
 }).$mount('#app');
 
+// Headroom JS
+
 const navElement = document.querySelector(".nav-bar");
 const headroom = new Headroom(navElement);
 headroom.init();
