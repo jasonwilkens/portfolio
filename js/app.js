@@ -1,3 +1,5 @@
+// Vue Routes
+
 const Home = { template: '#home' };
 const Work = { template: '#work' };
 const Process = { template: '#process' };
@@ -18,6 +20,12 @@ router.afterEach(() => {
   scroll(0,0);
 })
 
+// Create Vue App
+
 const app = new Vue({
   router
 }).$mount('#app');
+
+const navElement = document.querySelector(".nav-bar");
+const headroom = new Headroom(navElement);
+headroom.init();

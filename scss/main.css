@@ -574,4 +574,14 @@ table {
   .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
     color: white; }
 
+.headroom {
+  will-change: transform;
+  transition: transform 300ms linear; }
+
+.headroom--pinned {
+  transform: translateY(0%); }
+
+.headroom--unpinned {
+  transform: translateY(-100%); }
+
 /*# sourceMappingURL=main.css.map */
