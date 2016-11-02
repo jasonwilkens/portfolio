@@ -1,33 +1,54 @@
 // Vue Routes
 
-const Home = { template: '#home' };
-const Work = { template: '#work' };
-const Process = { template: '#process' };
-const About = { template: '#about' };
+var Home = { template: '#home' };
+var Work = { template: '#work' };
+var Process = { template: '#process' };
+var About = { template: '#about' };
 
-const routes = [
+var routes = [
   { path: '/', component: Home },
   { path: '/work', component: Work },
   { path: '/process', component: Process },
   { path: '/about', component: About }
 ];
 
-const router = new VueRouter({
+var router = new VueRouter({
   routes
-})
+});
 
-router.afterEach(() => {
+router.afterEach(function () {
   scroll(0,0);
-})
+});
+
+// Greeting
+
+var date = new Date();
+var hour = date.getHours();
+var greeting = function () {
+  if (hour < 12) {
+    return 'Good morning';
+  } else if (hour < 18) {
+    return 'Good afternoon';
+  } else {
+    return 'Good evening';
+  }
+};
+
+Vue.component('greeting', {
+  template: '<h2>{{ message }}</h2>',
+  data: function () {
+    return {
+      message: greeting()
+    };
+  }
+});
 
 // Create Vue App
 
-const app = new Vue({
-  router
-}).$mount('#app');
+var app = new Vue({ router }).$mount('#app');
 
 // Headroom JS
 
-const navElement = document.querySelector(".nav-bar");
-const headroom = new Headroom(navElement);
+var navElement = document.querySelector('.nav-bar');
+var headroom = new Headroom(navElement);
 headroom.init();
