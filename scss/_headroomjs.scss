@@ -1,6 +1,6 @@
 .headroom {
   will-change:      transform;
-  transition:       transform 100ms linear;
+  transition:       transform .20s cubic-bezier(.33,.66,.66,1);
 }
 
 .headroom--pinned {

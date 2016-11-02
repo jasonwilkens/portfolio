@@ -576,7 +576,7 @@ table {
 
 .headroom {
   will-change: transform;
-  transition: transform 100ms linear; }
+  transition: transform 0.2s cubic-bezier(0.33, 0.66, 0.66, 1); }
 
 .headroom--pinned {
   transform: translateY(0%); }
