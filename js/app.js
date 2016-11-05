@@ -4,7 +4,7 @@ var home = { template: '#home' },
     work = { template: '#work' },
     process = { template: '#process' },
     about = { template: '#about' },
-    leadAccelerator = { template: '#lead-accelerator' }
+    leadAccelerator = { template: '#lead-accelerator' },
     routes = [
       { path: '/', component: home, meta: { project: false } },
       { path: '/work', component: work, meta: { project: false } },
