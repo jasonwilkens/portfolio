@@ -341,13 +341,16 @@ article {
     height: 100%; }
     .grid-flex .cover .cover-background .lettering {
       padding-left: 10vw;
-      width: 80vw;
       padding-top: calc(50vh - 10vw);
+      width: 80vw;
       filter: opacity(80%); }
       @media screen and (min-width: 50rem) {
         .grid-flex .cover .cover-background .lettering {
           padding-left: 25vw;
           width: 50vw; } }
+      @media screen and (min-width: 85rem) {
+        .grid-flex .cover .cover-background .lettering {
+          padding-top: 35vh; } }
 
 .header {
   min-height: 24vmin;
