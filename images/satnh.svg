@@ -1,6 +1,6 @@
 <svg id="satnh" x="0px" y="200px" viewBox="0 0 650 545" xmlns="http://www.w3.org/2000/svg" version="1.1">
   <style>
-    g { fill: white; }
+    g { fill: black; }
   </style>
 <g>
 	<path fill-rule="evenodd" clip-rule="evenodd" d="M28.648,224.866c4.176-1.244,8.874-5.293,12.887-5.788
