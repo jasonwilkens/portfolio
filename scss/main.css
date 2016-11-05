@@ -7,6 +7,9 @@ body {
 article {
   padding: 0 1rem; }
 
+.hide {
+  display: none; }
+
 /**
  * Clearfix
  */
@@ -506,7 +509,7 @@ p + p {
     .grid-showcase + .grid-showcase {
       margin-top: 1.76rem; } }
 
-#nav + div {
+#nav-bar + div {
   margin-top: 0; }
 
 .margins-off > * {

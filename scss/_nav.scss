@@ -68,7 +68,7 @@
     }
     a:active {
       border-bottom: none;
-      box-shadow: none;
+      box-shadow:   none;
       #back #arrow {
         fill:       $purple;
         transition: fill .10s cubic-bezier(.33,.66,.66,1);

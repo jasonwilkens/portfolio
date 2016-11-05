@@ -11,8 +11,24 @@
   </head>
   <body>
     <div id="app">
-      <div id="nav" class="nav-bar">
-        <div id="global-nav">
+      <nav-bar></nav-bar>
+      <router-view></router-view>
+    </div>
+    <script type="text/x-template" id="nav">
+      <div id="nav-bar" class="nav-bar" v-bind:is-project-prop="isProjectProp">
+        <div id="work-nav" v-if="isProjectProp">
+          <router-link to="/work">
+            <svg id="back" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <g id="arrow">
+                <path  d="M285.977922,343.933766 L407.918008,343.933766 C413.437365,343.933766 417.911688,348.413043 417.911688,353.94054 L417.911688,377.904915 C417.911688,383.431503 413.431008,387.911688 407.918008,387.911688 L251.993681,387.911688 C249.236181,387.911688 246.739527,386.793637 244.931366,384.985401 C243.118279,383.168984 242,380.672332 242,377.918008 L242,221.993681 C242,216.474323 246.479277,212 252.006773,212 L275.971149,212 C281.497737,212 285.977922,216.48068 285.977922,221.993681 L285.977922,343.933766 Z" transform="translate(329.955844, 299.955844) rotate(-315.000000) translate(-329.955844, -299.955844)"/>
+              </g>
+            </svg>
+          </router-link>
+          <div>
+            <span id="project-name">Project Name</span>
+          </div>
+        </div>
+        <div id="global-nav" v-else>
           <div class="nav-max">
             <div class="identity">
               <router-link to="/"><img src="images/jason-face.jpg" alt="small portrait"></router-link>
@@ -35,21 +51,8 @@
             </div>
           </div>
         </div>
-        <div id="work-nav" style="display:none;">
-          <a href="#">
-            <svg id="back" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" version="1.1">
-              <g id="arrow">
-                <path  d="M285.977922,343.933766 L407.918008,343.933766 C413.437365,343.933766 417.911688,348.413043 417.911688,353.94054 L417.911688,377.904915 C417.911688,383.431503 413.431008,387.911688 407.918008,387.911688 L251.993681,387.911688 C249.236181,387.911688 246.739527,386.793637 244.931366,384.985401 C243.118279,383.168984 242,380.672332 242,377.918008 L242,221.993681 C242,216.474323 246.479277,212 252.006773,212 L275.971149,212 C281.497737,212 285.977922,216.48068 285.977922,221.993681 L285.977922,343.933766 Z" transform="translate(329.955844, 299.955844) rotate(-315.000000) translate(-329.955844, -299.955844)"/>
-              </g>
-            </svg>
-          </a>
-          <div>
-            <span id="project-name">Project Name</span>
-          </div>
-        </div>
       </div>
-      <router-view></router-view>
-    </div>
+    </script>
     <script type="text/x-template" id="home">
       <div v-once>
         <div class="grid-flex">
@@ -86,10 +89,10 @@
           </div>
           <div class="grid-showcase">
             <div>
-              <a href="#">
+              <router-link to="/work/lead-accelerator">
                 <img src="http://placehold.it/900x600">
                 <p>Lead Accelerator</p>
-              </a>
+              </router-link>
             </div>
             <div>
               <a href="#">
@@ -288,6 +291,16 @@
             <h2>Up next: Contact</h2>
             <p>Looks like you've seen most of the site. All that's left is telling me what you thought of it.</p>
             <p><a href="#">Complaint form</a></p>
+          </article>
+        </div>
+      </div>
+    </script>
+    <script type="text/x-template" id="lead-accelerator">
+      <div v-once>
+        <div class="grid-max-width">
+          <article>
+            <h1>Lead Accelerator</h1>
+            <p>All about Lead Accelerator.</p>
           </article>
         </div>
       </div>
