@@ -340,8 +340,9 @@ article {
     filter: opacity(80%);
     height: 100%; }
     .grid-flex .cover .cover-background .lettering {
-      width: 100vw;
-      padding-top: calc(50vh - 30vw);
+      padding-left: 25vw;
+      width: 50vw;
+      padding-top: calc(50vh - 10vw);
       filter: opacity(80%); }
 
 .header {
