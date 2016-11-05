@@ -334,11 +334,17 @@ article {
   background-image: linear-gradient(to right, #011F7F 0%, #7FDBB6 100%);
   position: relative; }
   .grid-flex .cover .cover-background {
-    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover.jpg");
+    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover-28rem.jpg");
     background-size: cover;
     background-position: center;
     filter: opacity(80%);
     height: 100%; }
+    @media screen and (min-width: 28rem) {
+      .grid-flex .cover .cover-background {
+        background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover-50rem.jpg"); } }
+    @media screen and (min-width: 50rem) {
+      .grid-flex .cover .cover-background {
+        background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover.jpg"); } }
     .grid-flex .cover .cover-background .lettering {
       padding-left: 10vw;
       padding-top: calc(50vh - 10vw);
