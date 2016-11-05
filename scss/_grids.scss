@@ -62,6 +62,14 @@ $max_width:         $wide-grid-width;
     div{@include column(4);}
     @include generate_grid_positions(div, 4);
   }
+  
+  .grid-flex + .job, .job + .job { 
+    margin-top: $default-spacing * 3; 
+  }
+  
+  .job + .guide {
+    margin-top: $default-spacing * 3;
+  }
 }
 
 .grid-flex > div, .grid-showcase > div { 

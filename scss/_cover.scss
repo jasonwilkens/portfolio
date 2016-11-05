@@ -1,0 +1,18 @@
+.grid-flex .cover {
+  width:            100vw;
+  height:           100vh;
+  background-image: $gradient-left-right;
+  position:         relative;
+  .cover-background {
+    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    filter:         opacity(80%);
+    height:         100%;
+    .lettering {
+      width:        100vw;
+      padding-top:  calc(50vh - 30vw);
+      filter:       opacity(80%);
+    }
+  }
+}

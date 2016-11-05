@@ -1,0 +1,12 @@
+.headroom {
+  will-change:      transform;
+  transition:       transform .20s cubic-bezier(.33,.66,.66,1);
+}
+
+.headroom--pinned {
+  transform:        translateY(0%);
+}
+
+.headroom--unpinned {
+  transform:        translateY(-100%);
+}
