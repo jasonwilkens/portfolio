@@ -10,8 +10,12 @@
     filter:         opacity(80%);
     height:         100%;
     .lettering {
-      padding-left: 25vw;
-      width:        50vw;
+      padding-left: 10vw;
+      width:        80vw;
+      @media screen and (min-width: $min-fluid) {
+        padding-left: 25vw;
+        width:      50vw;
+      }
       padding-top:  calc(50vh - 10vw);
       filter:       opacity(80%);
     }
