@@ -69,5 +69,6 @@ var app = new Vue({ router, data: { isProjectRoot: isProjectVariable }, }).$moun
 
 var navElement = document.querySelector('.nav-bar'),
     headroom = new Headroom(navElement);
+    headroom.offset = 56;
 
 headroom.init();
