@@ -63,7 +63,13 @@ Vue.component('greeting', {
 
 // Create Vue App
 
-var app = new Vue({ router, data: { isProjectRoot: isProjectVariable }, }).$mount('#app');
+var app = new Vue({
+  el: '#app',
+  router,
+  data: {
+    onProject: isProjectVariable
+  }
+});
 
 // Headroom JS
 
