@@ -17,31 +17,32 @@ var home = { template: '#home' },
     });
 
 router.afterEach(function () {
+  debugger;
   scroll(0,0);
 });
 
 // Nav
 
-var isProjectVariable,
-    projectTitle
-    projectTitleMap = {
-      leadAccelerator: 'Lead Accelerator'
-    };
+var isProjectVariable;
 
 router.beforeEach(function (to, from, next) {
-  isProjectVariable = to.meta.project;
+  this.isProjectVariable = to.meta.project;
+  debugger;
   next();
 });
 
 Vue.component('nav-bar', {
-  props: ['isProjectProp'],
-  template: '#nav'
+  template: '#nav',
+  data: function () {
+    return {
+      isProject: isProjectVariable
+    }
+  }
 });
 
 // Greeting
 
-var date = new Date(),
-    hour = date.getHours(),
+var hour = new Date().getHours(),
     greeting = function () {
       if (hour < 12) {
         return 'Good morning';
@@ -66,15 +67,13 @@ Vue.component('greeting', {
 var app = new Vue({
   el: '#app',
   router,
-  data: {
-    onProject: isProjectVariable
-  }
+  data: {}
 });
 
 // Headroom JS
 
 var navElement = document.querySelector('.nav-bar'),
     headroom = new Headroom(navElement);
-    headroom.offset = 56;
 
+headroom.offset = 56;
 headroom.init();

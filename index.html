@@ -15,8 +15,8 @@
       <router-view></router-view>
     </div>
     <script type="text/x-template" id="nav">
-      <div id="nav-bar" class="nav-bar" v-bind:is-project-prop="isProjectProp">
-        <div id="work-nav" v-if="isProjectProp">
+      <div id="nav-bar" class="nav-bar">
+        <div id="work-nav" v-if="isProject">
           <router-link to="/work">
             <svg id="back" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" version="1.1">
               <g id="arrow">
@@ -54,7 +54,7 @@
       </div>
     </script>
     <script type="text/x-template" id="home">
-      <div v-once>
+      <div>
         <div class="grid-flex">
           <div class="cover">
             <div class="cover-background">
@@ -65,7 +65,7 @@
       </div>
     </script>
     <script type="text/x-template" id="work">
-      <div v-once>
+      <div>
         <div class="grid-max-width">
           <div>
             <article>
@@ -178,7 +178,7 @@
       </div>
     </script>
     <script type="text/x-template" id="process">
-      <div v-once>
+      <div>
         <div class="grid-max-width">
           <div>
             <article>
@@ -296,7 +296,7 @@
       </div>
     </script>
     <script type="text/x-template" id="lead-accelerator">
-      <div v-once>
+      <div>
         <div class="grid-max-width">
           <article>
             <h1>Lead Accelerator</h1>
