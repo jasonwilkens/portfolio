@@ -17,7 +17,6 @@ var home = { template: '#home' },
     });
 
 router.afterEach(function () {
-  debugger;
   scroll(0,0);
 });
 
@@ -27,7 +26,6 @@ var isProjectVariable;
 
 router.beforeEach(function (to, from, next) {
   this.isProjectVariable = to.meta.project;
-  debugger;
   next();
 });
 
