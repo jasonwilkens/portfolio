@@ -575,20 +575,28 @@ table {
   margin: 0 .3em; }
 
 .grid-showcase a {
+  color: white;
   font-weight: 300; }
+  .grid-showcase a:hover p {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #7FDBB6; }
+  .grid-showcase a:focus p, .grid-showcase a:active p {
+    background-color: #011F7F; }
 .grid-showcase img {
   width: 100%;
   vertical-align: middle; }
 .grid-showcase div {
-  position: relative; }
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  background-clip: content-box; }
 .grid-showcase p {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.65);
   line-height: 3rem;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  transition: background-color .3s, filter .3s; }
 
 .guide {
   border-top: 0.4em dashed rgba(0, 0, 0, 0.85);

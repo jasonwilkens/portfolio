@@ -1,6 +1,16 @@
 .grid-showcase {
   a {
+    color:          white;
     font-weight:    300;
+    &:hover {
+      p { 
+        background-color: $black85;
+        color:      $mint;
+      }
+    }
+    &:focus, &:active {
+      p { background-color: $purple; }
+    }
   }
   img {
     width:          100%;
@@ -8,14 +18,16 @@
   }
   div {
     position:       relative;
+    border-top:     1px solid $black15;
+    background-clip: content-box;
   }
   p {
     position:       absolute;
     bottom:         0;
     width:          100%;
-    background-color: $black45;
-    color:          white;
+    background-color: $black65;
     line-height:    3rem;
     padding:        0 1rem;
+    transition:     background-color .3s, filter .3s;
   }
 }
