@@ -20,11 +20,11 @@
       padding-top:  calc(50vh - 10vw);
       width:        80vw;
       @media screen and (min-width: $min-fluid) {
-        padding-left: 25vw;
-        width:      50vw;
+        padding-left: 30vw;
+        width:      40vw;
       }
       @media screen and (min-width: $max-fluid) {
-        padding-top: 35vh;
+        padding-top: 40vh;
       }
       filter:       opacity(80%);
     }

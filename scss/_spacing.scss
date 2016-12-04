@@ -34,6 +34,10 @@ p + p {
   margin-top:       3rem;
 }
 
+.grid-max-width + .grid-flex.guide {
+  margin-top:       3rem;
+}
+
 .grid-showcase + .grid-showcase {
   margin-top:       $gutter_width;
   @media screen and (min-width: $max-fluid) {
@@ -42,7 +46,6 @@ p + p {
 }
 
 // Nav + Template container
-
 #nav-bar + div {
   margin-top: 0;
 }

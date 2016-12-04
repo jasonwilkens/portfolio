@@ -352,11 +352,11 @@ article {
       filter: opacity(80%); }
       @media screen and (min-width: 50rem) {
         .grid-flex .cover .cover-background .lettering {
-          padding-left: 25vw;
-          width: 50vw; } }
+          padding-left: 30vw;
+          width: 40vw; } }
       @media screen and (min-width: 85rem) {
         .grid-flex .cover .cover-background .lettering {
-          padding-top: 35vh; } }
+          padding-top: 40vh; } }
 
 .header {
   min-height: 24vmin;
@@ -389,6 +389,8 @@ body {
   body ::selection {
     background-color: #011F7F;
     color: white; }
+  body strong {
+    font-weight: 400; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", Georgia, serif;
@@ -517,6 +519,9 @@ p + p {
 .grid-max-width + .grid-max-width {
   margin-top: 3rem; }
 
+.grid-max-width + .grid-flex.guide {
+  margin-top: 3rem; }
+
 .grid-showcase + .grid-showcase {
   margin-top: 2%; }
   @media screen and (min-width: 85rem) {
@@ -530,9 +535,9 @@ p + p {
   margin-top: 0; }
 
 a {
+  font-weight: 400;
   text-decoration: none;
   color: inherit;
-  border-bottom: 0.1em solid #7FDBB6;
   -webkit-transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
   transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
   box-shadow: inset 0 -0.2em 0 #7FDBB6; }
@@ -569,6 +574,8 @@ table {
   vertical-align: -.4em;
   margin: 0 .3em; }
 
+.grid-showcase a {
+  font-weight: 300; }
 .grid-showcase img {
   width: 100%;
   vertical-align: middle; }
@@ -584,12 +591,9 @@ table {
   padding: 0 1rem; }
 
 .guide {
-  background-color: black;
-  padding-top: 1.5rem;
-  padding-bottom: 4.5rem;
-  color: white; }
-  .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
-    color: white; }
+  border-top: 0.4em dashed rgba(0, 0, 0, 0.85);
+  padding-top: 4.5rem;
+  padding-bottom: 7.5rem; }
 
 .headroom {
   will-change: transform;
