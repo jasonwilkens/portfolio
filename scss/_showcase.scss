@@ -17,9 +17,9 @@
     vertical-align: middle;
   }
   div {
+    background-color: $black15;
     position:       relative;
-    border-top:     1px solid $black15;
-    background-clip: content-box;
+    background-clip: border-box;
   }
   p {
     position:       absolute;

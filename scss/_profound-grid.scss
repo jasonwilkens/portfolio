@@ -90,7 +90,7 @@ $class_push:        'push';		//				//
   float: left; 
   margin-right: -100%;
   $_width_perc: element_width($_columns_width);
-  width: $_width_perc;       
+  width: $_width_perc;
 
   @if($_padding_columns != null){
     @include push($_padding_columns);
@@ -101,6 +101,7 @@ $class_push:        'push';		//				//
  * Apply to any column to make it the last one of the current row.
  */
 @mixin column_omega(){}
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // MARGIN MIXINS
