@@ -244,10 +244,10 @@ article {
       clear: none; }
 
   .grid-flex + .job, .job + .job {
-    margin-top: 4.5rem; }
+    margin-top: 0; }
 
   .job + .guide {
-    margin-top: 4.5rem; } }
+    margin-top: 0; } }
 .grid-flex > div, .grid-showcase > div {
   background-color: #7FDBB6;
   min-height: 3rem;
@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5 {
   h1 small, h2 small, h3 small, h4 small, h5 small {
     color: rgba(0, 0, 0, 0.25);
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 400; }
+    font-weight: 300; }
 
 .small {
   color: rgba(0, 0, 0, 0.45);
@@ -573,6 +573,48 @@ table {
   width: 1.5em;
   vertical-align: -.4em;
   margin: 0 .3em; }
+
+.job {
+  padding-top: 4.5rem; }
+
+.job.linkedin {
+  background-color: #303336;
+  color: rgba(255, 255, 255, 0.7); }
+  .job.linkedin h1, .job.linkedin h2, .job.linkedin h3, .job.linkedin h4, .job.linkedin h5 {
+    color: white; }
+  .job.linkedin h1 small, .job.linkedin h2 small {
+    color: #0084bf; }
+  .job.linkedin .grid-showcase a:hover p {
+    color: #0084bf; }
+  .job.linkedin .grid-showcase a:focus p, .job.linkedin .grid-show-case a:active p {
+    background-color: white;
+    color: #0084bf; }
+
+.job.bizo {
+  background-color: #006386;
+  color: rgba(255, 255, 255, 0.8); }
+  .job.bizo h1, .job.bizo h2, .job.bizo h3, .job.bizo h4, .job.bizo h5 {
+    color: white; }
+  .job.bizo h1 small, .job.bizo h2 small {
+    color: white; }
+  .job.bizo .grid-showcase a:hover p {
+    color: #0095D5; }
+  .job.bizo .grid-showcase a:focus p, .job.bizo .grid-show-case a:active p {
+    background-color: #0095D5;
+    color: white; }
+
+.job.esurance {
+  background-color: #EEE;
+  color: #585149; }
+  .job.esurance h1, .job.esurance h2, .job.esurance h3, .job.esurance h4, .job.esurance h5 {
+    color: #170939; }
+  .job.esurance h1 small, .job.esurance h2 small {
+    color: #585149; }
+  .job.esurance .grid-showcase a:hover p {
+    color: #6699FF; }
+  .job.esurance .grid-showcase a:focus p, .job.esurance .grid-show-case a:active p {
+    background-color: white;
+    color: #6699FF; }
 
 .grid-showcase a {
   color: white;

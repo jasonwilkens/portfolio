@@ -1,15 +1,59 @@
+.job {
+  padding-top:      $default-spacing * 3;
+}
+
+.job.linkedin {
+  background-color: $linkedin-bg;
+  color:            $linkedin-copy;
+  h1,h2,h3,h4,h5    { color: $linkedin-headline; }
+  h1 small, h2 small { color: $linkedin-subhead; }
+  .grid-showcase {
+    a:hover p { color: $linkedin-link; }
+  }
+  .grid-showcase a:focus p, .grid-show-case a:active p {
+    background-color: white;
+    color:          $linkedin-blue;
+  }
+}
+
+.job.bizo {
+  background-color: $bizo-bg;
+  color:            $bizo-copy;
+  h1,h2,h3,h4,h5    { color: $bizo-headline; }
+  h1 small, h2 small { color: $bizo-subhead; }
+  .grid-showcase {
+    a:hover p { color: $bizo-light-blue; }
+  }
+  .grid-showcase a:focus p, .grid-show-case a:active p {
+    background-color: $bizo-light-blue;
+    color:          white;
+  }
+}
+
+.job.esurance {
+  background-color: $esurance-bg;
+  color:            $esurance-copy;
+  h1,h2,h3,h4,h5    { color: $esurance-headline; }
+  h1 small, h2 small { color: $esurance-subhead; }
+  .grid-showcase {
+    a:hover p { color: $esurance-blue; }
+  }
+  .grid-showcase a:focus p, .grid-show-case a:active p {
+    background-color: white;
+    color:          $esurance-blue;
+  }
+}
+
 .grid-showcase {
   a {
     color:          white;
     font-weight:    300;
-    &:hover {
-      p { 
-        background-color: $black85;
-        color:      $mint;
-      }
+    &:hover p {
+      background-color: $black85;
+      color:        $mint;
     }
-    &:focus, &:active {
-      p { background-color: $purple; }
+    &:focus p, &:active p {
+      background-color: $purple;
     }
   }
   img {

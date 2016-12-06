@@ -64,11 +64,11 @@ $max_width:         $wide-grid-width;
   }
   
   .grid-flex + .job, .job + .job { 
-    margin-top: $default-spacing * 3; 
+    margin-top: 0; 
   }
   
   .job + .guide {
-    margin-top: $default-spacing * 3;
+    margin-top: 0;
   }
 }
 
