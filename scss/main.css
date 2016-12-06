@@ -217,10 +217,16 @@ article {
     overflow: hidden;
     *zoom: 1; }
 
+.grid-flex + .job, .job + .job {
+  margin-top: 0; }
+
+.job + .guide {
+  margin-top: 0; }
+
 @media screen and (min-width: 32rem) {
   .grid-showcase {
     max-width: 32rem;
-    margin-bottom: 4%; } }
+    margin-bottom: 0; } }
 @media screen and (min-width: 75rem) {
   .grid-showcase {
     max-width: 88rem; }
@@ -241,13 +247,7 @@ article {
     .grid-showcase div:nth-child(3n+3) {
       margin-left: 69.33%;
       margin-bottom: 4%;
-      clear: none; }
-
-  .grid-flex + .job, .job + .job {
-    margin-top: 0; }
-
-  .job + .guide {
-    margin-top: 0; } }
+      clear: none; } }
 .grid-flex > div, .grid-showcase > div {
   background-color: #7FDBB6;
   min-height: 3rem;
@@ -575,7 +575,8 @@ table {
   margin: 0 .3em; }
 
 .job {
-  padding-top: 4.5rem; }
+  padding-top: 4.5rem;
+  padding-bottom: 1.5rem; }
 
 .job.linkedin {
   background-color: #303336;
@@ -584,9 +585,9 @@ table {
     color: white; }
   .job.linkedin h1 small, .job.linkedin h2 small {
     color: #0084bf; }
-  .job.linkedin .grid-showcase a:hover p {
+  .job.linkedin a:hover p {
     color: #0084bf; }
-  .job.linkedin .grid-showcase a:focus p, .job.linkedin .grid-show-case a:active p {
+  .job.linkedin a:focus p, .job.linkedin a:active p {
     background-color: white;
     color: #0084bf; }
 
@@ -597,9 +598,9 @@ table {
     color: white; }
   .job.bizo h1 small, .job.bizo h2 small {
     color: white; }
-  .job.bizo .grid-showcase a:hover p {
+  .job.bizo a:hover p {
     color: #0095D5; }
-  .job.bizo .grid-showcase a:focus p, .job.bizo .grid-show-case a:active p {
+  .job.bizo a:focus p, .job.bizo a:active p {
     background-color: #0095D5;
     color: white; }
 
@@ -610,9 +611,9 @@ table {
     color: #170939; }
   .job.esurance h1 small, .job.esurance h2 small {
     color: #585149; }
-  .job.esurance .grid-showcase a:hover p {
+  .job.esurance a:hover p {
     color: #6699FF; }
-  .job.esurance .grid-showcase a:focus p, .job.esurance .grid-show-case a:active p {
+  .job.esurance a:focus p, .job.esurance a:active p {
     background-color: white;
     color: #6699FF; }
 

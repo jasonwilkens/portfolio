@@ -1,5 +1,6 @@
 .job {
   padding-top:      $default-spacing * 3;
+  padding-bottom:   $default-spacing;
 }
 
 .job.linkedin {
@@ -7,10 +8,8 @@
   color:            $linkedin-copy;
   h1,h2,h3,h4,h5    { color: $linkedin-headline; }
   h1 small, h2 small { color: $linkedin-subhead; }
-  .grid-showcase {
-    a:hover p { color: $linkedin-link; }
-  }
-  .grid-showcase a:focus p, .grid-show-case a:active p {
+  a:hover p { color: $linkedin-link; }
+  a:focus p, a:active p {
     background-color: white;
     color:          $linkedin-blue;
   }
@@ -21,10 +20,8 @@
   color:            $bizo-copy;
   h1,h2,h3,h4,h5    { color: $bizo-headline; }
   h1 small, h2 small { color: $bizo-subhead; }
-  .grid-showcase {
-    a:hover p { color: $bizo-light-blue; }
-  }
-  .grid-showcase a:focus p, .grid-show-case a:active p {
+  a:hover p { color: $bizo-light-blue; }
+  a:focus p, a:active p {
     background-color: $bizo-light-blue;
     color:          white;
   }
@@ -35,10 +32,8 @@
   color:            $esurance-copy;
   h1,h2,h3,h4,h5    { color: $esurance-headline; }
   h1 small, h2 small { color: $esurance-subhead; }
-  .grid-showcase {
-    a:hover p { color: $esurance-blue; }
-  }
-  .grid-showcase a:focus p, .grid-show-case a:active p {
+  a:hover p { color: $esurance-blue; }
+  a:focus p, a:active p {
     background-color: white;
     color:          $esurance-blue;
   }

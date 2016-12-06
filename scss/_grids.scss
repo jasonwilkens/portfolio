@@ -45,12 +45,20 @@ $max_width:         $wide-grid-width;
   @include generate_grid_positions(div, 12);
 }
 
+.grid-flex + .job, .job + .job { 
+  margin-top: 0; 
+}
+
+.job + .guide {
+  margin-top: 0;
+}
+
 @media screen and (min-width: $showcase-1-max) {
   $max_width:       $showcase-1-max;
 
   .grid-showcase {
     max-width:      $showcase-1-max;
-    margin-bottom:  $gutter-width;
+    margin-bottom:  0;
   }
 }
 
@@ -61,14 +69,6 @@ $max_width:         $wide-grid-width;
     max-width:      $max-width;
     div{@include column(4);}
     @include generate_grid_positions(div, 4);
-  }
-  
-  .grid-flex + .job, .job + .job { 
-    margin-top: 0; 
-  }
-  
-  .job + .guide {
-    margin-top: 0;
   }
 }
 
