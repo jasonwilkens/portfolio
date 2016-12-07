@@ -1,6 +1,6 @@
 .job {
   padding-top:      $default-spacing * 3;
-  padding-bottom:   $default-spacing;
+  padding-bottom:   $default-spacing * 1.5;
 }
 
 .job.linkedin {
@@ -40,7 +40,12 @@
 }
 
 .grid-showcase {
+  article {
+    padding:        1rem .5rem 0;
+  }
   a {
+    display:        block;
+    position:       relative;
     color:          white;
     font-weight:    300;
     &:hover p {
@@ -50,15 +55,19 @@
     &:focus p, &:active p {
       background-color: $purple;
     }
+    &:active {
+      box-shadow:   none;
+      border-bottom: none;
+      background:   none;
+    }
   }
   img {
     width:          100%;
     vertical-align: middle;
   }
   div {
-    background-color: $black15;
-    position:       relative;
-    background-clip: border-box;
+    background-color: transparent;
+    background-clip: content-box;
   }
   p {
     position:       absolute;
@@ -66,7 +75,9 @@
     width:          100%;
     background-color: $black65;
     line-height:    3rem;
-    padding:        0 1rem;
     transition:     background-color .3s, filter .3s;
+    span {
+      padding:      0 1rem;
+    }
   }
 }
