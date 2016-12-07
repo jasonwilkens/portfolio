@@ -20,10 +20,13 @@
   color:            $bizo-copy;
   h1,h2,h3,h4,h5    { color: $bizo-headline; }
   h1 small, h2 small { color: $bizo-subhead; }
-  a:hover p { color: $bizo-light-blue; }
-  a:focus p, a:active p {
+  a:hover p {
     background-color: $bizo-light-blue;
-    color:          white;
+    color:          white;    
+  }
+  a:focus p, a:active p {
+    background-color: white;
+    color:            $bizo-light-blue;
   }
 }
 
@@ -32,7 +35,10 @@
   color:            $esurance-copy;
   h1,h2,h3,h4,h5    { color: $esurance-headline; }
   h1 small, h2 small { color: $esurance-subhead; }
-  a:hover p { color: $esurance-blue; }
+  a:hover p {
+    background-color: $esurance-blue;
+    color:          white;
+  }
   a:focus p, a:active p {
     background-color: white;
     color:          $esurance-blue;

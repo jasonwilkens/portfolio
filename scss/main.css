@@ -599,10 +599,11 @@ table {
   .job.bizo h1 small, .job.bizo h2 small {
     color: white; }
   .job.bizo a:hover p {
-    color: #0095D5; }
-  .job.bizo a:focus p, .job.bizo a:active p {
     background-color: #0095D5;
     color: white; }
+  .job.bizo a:focus p, .job.bizo a:active p {
+    background-color: white;
+    color: #0095D5; }
 
 .job.esurance {
   background-color: #EEE;
@@ -612,7 +613,8 @@ table {
   .job.esurance h1 small, .job.esurance h2 small {
     color: #585149; }
   .job.esurance a:hover p {
-    color: #6699FF; }
+    background-color: #6699FF;
+    color: white; }
   .job.esurance a:focus p, .job.esurance a:active p {
     background-color: white;
     color: #6699FF; }
