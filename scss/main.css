@@ -642,9 +642,13 @@ table {
   transition: background-color .3s, filter .3s; }
 
 .guide {
-  border-top: 0.4em dashed rgba(0, 0, 0, 0.85);
+  color: white;
+  border-top: .4em double white;
+  background-image: linear-gradient(-90deg, #14243D, #7E2D2A);
   padding-top: 4.5rem;
   padding-bottom: 7.5rem; }
+  .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
+    color: white; }
 
 .headroom {
   will-change: transform;

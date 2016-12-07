@@ -1,5 +1,8 @@
 .guide {
-  border-top:       .4em dashed $black85;
+  color:            white;
+  h1,h2,h3,h4,h5 { color: white; }
+  border-top:       .4em double white;
+  background-image: linear-gradient(-90deg, $midnight, $brick);
   padding-top:      $default-spacing * 3;
   padding-bottom:   $default-spacing * 5;
 }

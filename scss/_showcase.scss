@@ -8,7 +8,7 @@
   color:            $linkedin-copy;
   h1,h2,h3,h4,h5    { color: $linkedin-headline; }
   h1 small, h2 small { color: $linkedin-subhead; }
-  a:hover p { color: $linkedin-link; }
+  a:hover p { color: $linkedin-blue; }
   a:focus p, a:active p {
     background-color: white;
     color:          $linkedin-blue;

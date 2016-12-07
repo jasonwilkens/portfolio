@@ -10,9 +10,13 @@ $black15:           rgba(0,0,0,.15);
 $white85:           rgba(255,255,255,.85);
 $mint:              #7FDBB6;
 $purple:            #011F7F;
+$brick:             #7E2D2A;
+$orange:            #C16544;
+$midnight:          #14243D;
 
 // Gradients
-$gradient-left-right: linear-gradient(to right, #011F7F 0%, #7FDBB6 100%);
+$gradient-left-right: linear-gradient(to right, $purple 0%, $mint 100%);
+$gradient-diagonal: linear-gradient(-90deg, $midnight, $brick);
 
 // Bizo colors
 $bizo-dark-blue:    #006386;
@@ -46,7 +50,6 @@ $linkedin-bg:       $linkedin-dark-gray;
 $linkedin-headline: white;
 $linkedin-subhead:  $linkedin-blue;
 $linkedin-copy:     $linkedin-white-70;
-$linkedin-link:     $linkedin-blue;
 
 // Dr Pepper color scheme
 $drpepper1:         #660707;
