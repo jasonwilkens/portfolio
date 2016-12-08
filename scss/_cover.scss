@@ -5,10 +5,10 @@
   position:         relative;
   .cover-background {
     background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover-28rem.jpg");
-    @media screen and (min-width: 28rem) {
+    @media screen and (min-width: $phone-size) {
       background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover-50rem.jpg");
     }
-    @media screen and (min-width: 50rem) {
+    @media screen and (min-width: $tablet-size) {
       background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover.jpg");
     }
     background-size: cover;
