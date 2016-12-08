@@ -576,7 +576,7 @@ table {
 
 .job {
   position: relative;
-  padding-bottom: 2.25rem; }
+  padding-bottom: 7.5rem; }
   .job .background {
     position: absolute;
     width: 100%;
@@ -588,7 +588,7 @@ table {
       filter: opacity(0.1);
       background-position: center; }
   .job .grid-max-width {
-    padding-top: 4.5rem;
+    padding-top: 7.5rem;
     position: relative; }
 
 .job.linkedin {
@@ -625,7 +625,7 @@ table {
 
 .job.esurance {
   background-color: #EEE;
-  color: #585149; }
+  color: rgba(0, 0, 0, 0.65); }
   .job.esurance h1, .job.esurance h2, .job.esurance h3, .job.esurance h4, .job.esurance h5 {
     color: #170939; }
   .job.esurance h1 small, .job.esurance h2 small {
