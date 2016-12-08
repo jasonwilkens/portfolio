@@ -1,7 +1,7 @@
 .job {
   position:         relative;
   padding-bottom:   $default-spacing;
-  @media screen and (min-width: $phone-size) {
+  @media screen and (min-width: $tablet-size) {
     padding-bottom:   $default-spacing * 5;
   }
   .background {
@@ -19,7 +19,7 @@
   .grid-max-width {
     position:       relative;
     padding-top:    $default-spacing * 2;
-    @media screen and (min-width: $phone-size) {
+    @media screen and (min-width: $tablet-size) {
       padding-top: $default-spacing * 5;
     }
   }

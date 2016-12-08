@@ -576,7 +576,7 @@ table {
 .job {
   position: relative;
   padding-bottom: 1.5rem; }
-  @media screen and (min-width: 28rem) {
+  @media screen and (min-width: 50rem) {
     .job {
       padding-bottom: 7.5rem; } }
   .job .background {
@@ -592,7 +592,7 @@ table {
   .job .grid-max-width {
     position: relative;
     padding-top: 3rem; }
-    @media screen and (min-width: 28rem) {
+    @media screen and (min-width: 50rem) {
       .job .grid-max-width {
         padding-top: 7.5rem; } }
 
