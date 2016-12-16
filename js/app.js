@@ -10,7 +10,7 @@ var home = { template: '#home' },
       { path: '/work', component: work, meta: { project: false } },
       { path: '/process', component: process, meta: { project: false } },
       { path: '/about', component: about, meta: { project: false } },
-      { path: '/work/lead-accelerator', component: leadAccelerator, meta: { project: true }}
+      { path: '/work/lead-accelerator', component: leadAccelerator, meta: { project: true, title: 'Lead Accelerator' }}
     ],
     router = new VueRouter({
       routes
@@ -22,18 +22,29 @@ router.afterEach(function () {
 
 // Nav
 
-var isProjectVariable;
+var bus = new Vue();
+//var isProjectVariable;
 
 router.beforeEach(function (to, from, next) {
-  this.isProjectVariable = to.meta.project;
+  debugger;
+  bus.$emit('route-change', to.meta);
+//  this.isProjectVariable = to.meta.project;
   next();
 });
 
 Vue.component('nav-bar', {
   template: '#nav',
+  created: function() {
+    bus.$on('route-change', function (meta) {
+      debugger;
+      this.isProject = meta.project;
+      this.title = meta.title;
+    })
+  },
   data: function () {
     return {
-      isProject: isProjectVariable
+      isProject: false,
+      title: ''
     }
   }
 });
@@ -64,8 +75,7 @@ Vue.component('greeting', {
 
 var app = new Vue({
   el: '#app',
-  router,
-  data: {}
+  router
 });
 
 // Headroom JS
