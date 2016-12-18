@@ -388,8 +388,9 @@ body {
   body ::selection {
     background-color: #011F7F;
     color: white; }
-  body strong {
-    font-weight: 400; }
+
+strong {
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", Georgia, serif;
@@ -424,75 +425,88 @@ p, span, td, th {
   padding: 0;
   line-height: 1.5; }
 
-body p, body span {
+p, span {
   font-size: 1.125rem; }
-body h1 {
+
+h1 {
   font-size: 1.60181rem; }
-body h2 {
+
+h2 {
   font-size: 1.42383rem; }
-body h3 {
+
+h3 {
   font-size: 1.26563rem; }
-body h4 {
+
+h4 {
   font-size: 1.125rem; }
-body h5 {
+
+h5 {
   font-size: 1rem; }
-body .small {
+
+.small {
   font-size: 0.88889rem; }
-body p, body span, body td, body th {
+
+p, span, td, th {
   font-size: 1rem; }
   @media screen and (min-width: 50rem) {
-    body p, body span, body td, body th {
+    p, span, td, th {
       font-size: calc(1rem + 0.25 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    body p, body span, body td, body th {
+    p, span, td, th {
       font-size: 1.25rem; } }
-body h1 {
+
+h1 {
   font-size: 1.80203rem; }
   @media screen and (min-width: 50rem) {
-    body h1 {
+    h1 {
       font-size: calc(1.80203rem + 1.24973 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    body h1 {
+    h1 {
       font-size: 3.05176rem; } }
-body h2 {
+
+h2 {
   font-size: 1.60181rem; }
   @media screen and (min-width: 50rem) {
-    body h2 {
+    h2 {
       font-size: calc(1.60181rem + 0.8396 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    body h2 {
+    h2 {
       font-size: 2.44141rem; } }
-body h3 {
+
+h3 {
   font-size: 1.42383rem; }
   @media screen and (min-width: 50rem) {
-    body h3 {
+    h3 {
       font-size: calc(1.42383rem + 0.5293 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    body h3 {
+    h3 {
       font-size: 1.95313rem; } }
-body h4 {
+
+h4 {
   font-size: 1.26563rem; }
   @media screen and (min-width: 50rem) {
-    body h4 {
+    h4 {
       font-size: calc(1.26563rem + 0.29688 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    body h4 {
+    h4 {
       font-size: 1.5625rem; } }
-body h5 {
+
+h5 {
   font-size: 1.125rem; }
   @media screen and (min-width: 50rem) {
-    body h5 {
+    h5 {
       font-size: calc(1.125rem + 0.125 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    body h5 {
+    h5 {
       font-size: 1.25rem; } }
-body .small {
+
+.small {
   font-size: 0.88889rem; }
   @media screen and (min-width: 50rem) {
-    body .small {
+    .small {
       font-size: calc(0.88889rem + 0.11111 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    body .small {
+    .small {
       font-size: 1rem; } }
 
 * + * {
