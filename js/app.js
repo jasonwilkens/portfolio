@@ -26,10 +26,13 @@ Vue.component('nav-bar', {
   template: '#nav'
 });
 
-// Greeting
+// Greeting on About page
 
-var hour = new Date().getHours(),
-    greeting = function () {
+Vue.component('greeting', {
+  template: '<h2>{{ message() }}</h2>',
+  methods: {
+    message: function () {
+      var hour = new Date().getHours;
       if (hour < 12) {
         return 'Good morning';
       } else if (hour < 18) {
@@ -37,14 +40,7 @@ var hour = new Date().getHours(),
       } else {
         return 'Good evening';
       }
-    };
-
-Vue.component('greeting', {
-  template: '<h2>{{ message }}</h2>',
-  data: function () {
-    return {
-      message: greeting()
-    };
+    }
   }
 });
 
