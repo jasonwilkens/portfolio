@@ -32,7 +32,7 @@ Vue.component('greeting', {
   template: '<h2>{{ message() }}</h2>',
   methods: {
     message: function () {
-      var hour = new Date().getHours;
+      var hour = new Date().getHours();
       if (hour < 12) {
         return 'Good morning';
       } else if (hour < 18) {
