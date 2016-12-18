@@ -22,31 +22,8 @@ router.afterEach(function () {
 
 // Nav
 
-var bus = new Vue();
-//var isProjectVariable;
-
-router.beforeEach(function (to, from, next) {
-  debugger;
-  bus.$emit('route-change', to.meta);
-//  this.isProjectVariable = to.meta.project;
-  next();
-});
-
 Vue.component('nav-bar', {
-  template: '#nav',
-  created: function() {
-    bus.$on('route-change', function (meta) {
-      debugger;
-      this.isProject = meta.project;
-      this.title = meta.title;
-    })
-  },
-  data: function () {
-    return {
-      isProject: false,
-      title: ''
-    }
-  }
+  template: '#nav'
 });
 
 // Greeting

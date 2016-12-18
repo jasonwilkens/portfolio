@@ -11,12 +11,12 @@
   </head>
   <body>
     <div id="app">
-      <nav-bar v-bind="isProject"></nav-bar>
+      <nav-bar></nav-bar>
       <router-view></router-view>
     </div>
     <script type="text/x-template" id="nav">
       <div id="nav-bar" class="nav-bar">
-        <div id="work-nav" v-if="isProject">
+        <div id="work-nav" v-if="$route.meta.project">
           <router-link to="/work">
             <svg id="back" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" version="1.1">
               <g id="arrow">
@@ -25,7 +25,7 @@
             </svg>
           </router-link>
           <div>
-            <span id="project-name">{{ title }}</span>
+            <span id="project-name">{{ $route.meta.title }}</span>
           </div>
         </div>
         <div id="global-nav" v-else>
