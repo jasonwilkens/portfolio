@@ -260,9 +260,12 @@ article {
   width: 100%;
   z-index: 100;
   background-color: white; }
-  .nav-bar a:active {
+  .nav-bar a {
     border-bottom: none;
     box-shadow: none; }
+    .nav-bar a:active {
+      border-bottom: none;
+      box-shadow: none; }
   .nav-bar #global-nav {
     margin: auto; }
     .nav-bar #global-nav a {

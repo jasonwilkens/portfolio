@@ -5,9 +5,13 @@
   width:            100%;
   z-index:          100;
   background-color: white;
-  a:active {
+  a {
     border-bottom:  none;
     box-shadow:     none;
+    &:active {
+      border-bottom:  none;
+      box-shadow:     none;
+    }
   }
   #global-nav {
     margin:         auto;
