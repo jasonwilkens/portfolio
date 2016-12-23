@@ -363,7 +363,8 @@ article {
     background-image: url("./../images/contact/contact-bg-28rem.jpg");
     background-size: cover;
     background-position: center;
-    height: 100%; }
+    height: 100%;
+    filter: brightness(0.85); }
     @media screen and (min-width: 28rem) {
       .grid-flex .cover .contact-background {
         background-image: url("./../images/contact/contact-bg-50rem.jpg"); } }
@@ -721,5 +722,10 @@ table {
 
 .headroom--unpinned {
   transform: translateY(-100%); }
+
+.contact-background form {
+  margin: auto;
+  text-align: center;
+  padding-top: 20vh; }
 
 /*# sourceMappingURL=main.css.map */
