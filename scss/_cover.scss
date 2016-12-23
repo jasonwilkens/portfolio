@@ -4,17 +4,17 @@
   background-image: $gradient-left-right;
   position:         relative;
   .cover-background {
-    background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover-28rem.jpg");
+    background-image: url("./../images/monument-cover-28rem.jpg");
     @media screen and (min-width: $phone-size) {
-      background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover-50rem.jpg");
+      background-image: url("./../images/monument-cover-50rem.jpg");
     }
     @media screen and (min-width: $tablet-size) {
-      background-image: url("http://quiet-dusk-35598.herokuapp.com/images/monument-cover.jpg");
+      background-image: url("./../images/monument-cover.jpg");
     }
     background-size: cover;
     background-position: center;
-    filter:         opacity(80%);
     height:         100%;
+    filter:         opacity(80%);
     .lettering {
       padding-left: 10vw;
       padding-top:  calc(50vh - 10vw);
@@ -28,5 +28,17 @@
       }
       filter:       opacity(80%);
     }
+  }
+  .contact-background {
+    background-image: url("./../images/contact/contact-bg-28rem.jpg");
+    @media screen and (min-width: $phone-size) {
+      background-image: url("./../images/contact/contact-bg-50rem.jpg");
+    }
+    @media screen and (min-width: $tablet-size) {
+      background-image: url("./../images/contact/contact-bg.jpg");
+    }
+    background-size: cover;
+    background-position: center;
+    height:         100%;
   }
 }
