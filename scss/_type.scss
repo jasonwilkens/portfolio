@@ -1,22 +1,16 @@
 // Type Defaults
 // -------------------------
-body {
+body,textarea,input {
   font-family: 	    $copy-font;
   color:            $black85;
   font-weight:      300;
-  ::-moz-selection { 
-    background-color: $purple;
-    color:          white;
-  }
   ::selection {
     background-color: $purple;
     color:          white;
   }
 }
 
-strong {
-  font-weight:      400;
-}
+strong { font-weight: 400; }
 
 // Header Styles
 h1,h2,h3,h4,h5 { 
@@ -40,7 +34,7 @@ h1,h2,h3,h4,h5 {
 }
 
 // Center block-level type elements within grid within Grid
-p,h1,h2,h3,h4,h5 { margin: auto; }
+p,h1,h2,h3,h4,h5,textarea,input { margin: auto; }
 
 // Fluid Scales
 @function strip-unit($value) {
@@ -69,12 +63,12 @@ p,h1,h2,h3,h4,h5 { margin: auto; }
 }
 
 // Line Lenth
-p,h1,h2,h3,h4,h5,.nav-max, { width: 100%; }
+p,h1,h2,h3,h4,h5,.nav-max { width: 100%; }
 @media screen and (min-width: $min-line-length) {
-  p,h1,h2,h3,h4,h5,#global-nav,#work-nav { width: calc(#{$min-line-length} + #{strip-unit($max-line-length - $min-line-length)} * ((100vw - #{$min-fluid}) / #{strip-unit($max-fluid - $min-fluid)})) };
+  p,h1,h2,h3,h4,h5,#global-nav,#work-nav,textarea,input,button { width: calc(#{$min-line-length} + #{strip-unit($max-line-length - $min-line-length)} * ((100vw - #{$min-fluid}) / #{strip-unit($max-fluid - $min-fluid)})) };
 }
 @media screen and (min-width: $max-fluid) {
-  p,h1,h2,h3,h4,h5,#global-nav,#work-nav { width: $max-line-length; }
+  p,h1,h2,h3,h4,h5,#global-nav,#work-nav,textarea,input,button { width: $max-line-length; }
 }
 
 
@@ -87,7 +81,11 @@ p,span,td,th {
   line-height:      1.5;
 }
 
-p,span { font-size: $mod_1 *1rem; }
+textarea {
+  line-height: 1.5;
+}
+
+p,span,textarea,input { font-size: $mod_1 *1rem; }
 h1{ font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; }
 h2{ font-size: $mod_1*$mod_1*$mod_1 *1rem; }
 h3{ font-size: $mod_1*$mod_1 *1rem; }
@@ -95,7 +93,7 @@ h4{ font-size: $mod_1 *1rem; }
 h5{ font-size: 1rem; }
 .small { font-size: 1/$mod_1 *1rem; }
 
-p,span,td,th {
+p,span,td,th,textarea,input {
   @include fluid-type($min-fluid, $max-fluid, 1rem, $mod_2 *1rem);
 }
 

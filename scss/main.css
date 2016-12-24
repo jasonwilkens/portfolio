@@ -359,18 +359,6 @@ article {
       @media screen and (min-width: 85rem) {
         .grid-flex .cover .cover-background .lettering {
           padding-top: 40vh; } }
-  .grid-flex .cover .contact-background {
-    background-image: url("./../images/contact/contact-bg-28rem.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    filter: brightness(0.85); }
-    @media screen and (min-width: 28rem) {
-      .grid-flex .cover .contact-background {
-        background-image: url("./../images/contact/contact-bg-50rem.jpg"); } }
-    @media screen and (min-width: 50rem) {
-      .grid-flex .cover .contact-background {
-        background-image: url("./../images/contact/contact-bg.jpg"); } }
 
 .header {
   min-height: 24vmin;
@@ -393,14 +381,11 @@ article {
 .header-img.process {
   background-image: url("http://quiet-dusk-35598.herokuapp.com/images/process/header-pano-bg-color.jpg"); }
 
-body {
+body, textarea, input {
   font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 300; }
-  body ::-moz-selection {
-    background-color: #011F7F;
-    color: white; }
-  body ::selection {
+  body ::selection, textarea ::selection, input ::selection {
     background-color: #011F7F;
     color: white; }
 
@@ -420,17 +405,17 @@ h1, h2, h3, h4, h5 {
   color: rgba(0, 0, 0, 0.45);
   font-weight: 400; }
 
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, textarea, input {
   margin: auto; }
 
 p, h1, h2, h3, h4, h5, .nav-max {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav {
+  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, input, button {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav {
+  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, input, button {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
@@ -440,7 +425,10 @@ p, span, td, th {
   padding: 0;
   line-height: 1.5; }
 
-p, span {
+textarea {
+  line-height: 1.5; }
+
+p, span, textarea, input {
   font-size: 1.125rem; }
 
 h1 {
@@ -461,13 +449,13 @@ h5 {
 .small {
   font-size: 0.88889rem; }
 
-p, span, td, th {
+p, span, td, th, textarea, input {
   font-size: 1rem; }
   @media screen and (min-width: 50rem) {
-    p, span, td, th {
+    p, span, td, th, textarea, input {
       font-size: calc(1rem + 0.25 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    p, span, td, th {
+    p, span, td, th, textarea, input {
       font-size: 1.25rem; } }
 
 h1 {
@@ -723,9 +711,53 @@ table {
 .headroom--unpinned {
   transform: translateY(-100%); }
 
-.contact-background form {
-  margin: auto;
-  text-align: center;
-  padding-top: 20vh; }
+.contact-background {
+  background-image: url("./../images/contact/contact-bg-28rem.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%; }
+  @media screen and (min-width: 28rem) {
+    .contact-background {
+      background-image: url("./../images/contact/contact-bg-50rem.jpg"); } }
+  @media screen and (min-width: 50rem) {
+    .contact-background {
+      background-image: url("./../images/contact/contact-bg.jpg"); } }
+  .contact-background form {
+    margin: auto;
+    padding-top: 20vh; }
+
+textarea, input {
+  display: block;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+  border: none;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 1rem;
+  box-sizing: border-box; }
+  textarea:focus, input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1rem #011F7F; }
+
+textarea {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+  height: 30vh; }
+
+input {
+  background-color: rgba(255, 255, 255, 0.45); }
+
+::-webkit-input-placeholder {
+  color: #7FDBB6; }
+
+::-moz-placeholder {
+  color: #7FDBB6; }
+
+:-ms-input-placeholder {
+  color: #7FDBB6; }
+
+textarea + input {
+  margin-top: 2rem; }
 
 /*# sourceMappingURL=main.css.map */

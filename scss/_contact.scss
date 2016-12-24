@@ -1,7 +1,48 @@
 .contact-background {
+  background-image: url("./../images/contact/contact-bg-28rem.jpg");
+  @media screen and (min-width: $phone-size) {
+    background-image: url("./../images/contact/contact-bg-50rem.jpg");
+  }
+  @media screen and (min-width: $tablet-size) {
+    background-image: url("./../images/contact/contact-bg.jpg");
+  }
+  background-size:  cover;
+  background-position: center;
+  height:           100%;
   form {
-    margin:           auto;
-    text-align:       center;
-    padding-top:      20vh;
+    margin:         auto;
+    padding-top:    20vh;
   }
 }
+
+textarea,input {
+  display:          block;
+  font-weight:      400;
+  color:            $black65;
+  border:           none;
+  resize:           none;
+  background-color: $white25;
+  padding:          1rem;
+  box-sizing:       border-box;
+  &:focus {
+    outline:  none;
+    box-shadow: 0 0 0 .1rem $purple;
+  }
+}
+
+textarea {
+  background-color: $white25;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+  height:           30vh;
+}
+
+input {
+  background-color: $white45;
+}
+
+::-webkit-input-placeholder { color: $mint; }
+::-moz-placeholder { color: $mint; }
+:-ms-input-placeholder { color: $mint; }
+
+textarea + input { margin-top: 2rem; }
