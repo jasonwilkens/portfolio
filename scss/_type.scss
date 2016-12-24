@@ -63,7 +63,7 @@ p,h1,h2,h3,h4,h5,textarea,input { margin: auto; }
 }
 
 // Line Lenth
-p,h1,h2,h3,h4,h5,.nav-max { width: 100%; }
+p,h1,h2,h3,h4,h5,.nav-max,textarea,input { width: 100%; }
 @media screen and (min-width: $min-line-length) {
   p,h1,h2,h3,h4,h5,#global-nav,#work-nav,textarea,input,button { width: calc(#{$min-line-length} + #{strip-unit($max-line-length - $min-line-length)} * ((100vw - #{$min-fluid}) / #{strip-unit($max-fluid - $min-fluid)})) };
 }
