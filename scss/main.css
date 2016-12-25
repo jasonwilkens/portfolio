@@ -728,11 +728,10 @@ table {
 
 textarea, input {
   display: block;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.65);
-  border: none;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.85);
   resize: none;
-  background-color: rgba(255, 255, 255, 0.25);
   padding: 1rem;
   box-sizing: border-box; }
   textarea:focus, input:focus {
@@ -740,13 +739,9 @@ textarea, input {
     box-shadow: 0 0 0 0.1rem #011F7F; }
 
 textarea {
-  background-color: rgba(255, 255, 255, 0.25);
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem;
   height: 30vh; }
-
-input {
-  background-color: rgba(255, 255, 255, 0.45); }
 
 ::-webkit-input-placeholder {
   color: #7FDBB6; }
@@ -758,6 +753,6 @@ input {
   color: #7FDBB6; }
 
 textarea + input {
-  margin-top: 2rem; }
+  margin-top: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
