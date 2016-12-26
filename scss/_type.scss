@@ -1,6 +1,6 @@
 // Type Defaults
 // -------------------------
-body,textarea,input {
+body,textarea,input,button {
   font-family: 	    $copy-font;
   color:            $black85;
   font-weight:      300;
@@ -63,7 +63,7 @@ p,h1,h2,h3,h4,h5,textarea,input { margin: auto; }
 }
 
 // Line Lenth
-p,h1,h2,h3,h4,h5,.nav-max,textarea,input { width: 100%; }
+p,h1,h2,h3,h4,h5,.nav-max,textarea,input,button { width: 100%; }
 @media screen and (min-width: $min-line-length) {
   p,h1,h2,h3,h4,h5,#global-nav,#work-nav,textarea,input,button { width: calc(#{$min-line-length} + #{strip-unit($max-line-length - $min-line-length)} * ((100vw - #{$min-fluid}) / #{strip-unit($max-fluid - $min-fluid)})) };
 }
@@ -81,11 +81,7 @@ p,span,td,th {
   line-height:      1.5;
 }
 
-textarea {
-  line-height: 1.5;
-}
-
-p,span,textarea,input { font-size: $mod_1 *1rem; }
+p,span,textarea,input,button { font-size: $mod_1 *1rem; }
 h1{ font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; }
 h2{ font-size: $mod_1*$mod_1*$mod_1 *1rem; }
 h3{ font-size: $mod_1*$mod_1 *1rem; }
@@ -93,7 +89,7 @@ h4{ font-size: $mod_1 *1rem; }
 h5{ font-size: 1rem; }
 .small { font-size: 1/$mod_1 *1rem; }
 
-p,span,td,th,textarea,input {
+p,span,td,th,textarea,input,button {
   @include fluid-type($min-fluid, $max-fluid, 1rem, $mod_2 *1rem);
 }
 

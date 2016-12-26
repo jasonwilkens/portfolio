@@ -381,11 +381,11 @@ article {
 .header-img.process {
   background-image: url("http://quiet-dusk-35598.herokuapp.com/images/process/header-pano-bg-color.jpg"); }
 
-body, textarea, input {
+body, textarea, input, button {
   font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 300; }
-  body ::selection, textarea ::selection, input ::selection {
+  body ::selection, textarea ::selection, input ::selection, button ::selection {
     background-color: #011F7F;
     color: white; }
 
@@ -408,7 +408,7 @@ h1, h2, h3, h4, h5 {
 p, h1, h2, h3, h4, h5, textarea, input {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5, .nav-max, textarea, input {
+p, h1, h2, h3, h4, h5, .nav-max, textarea, input, button {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
@@ -425,10 +425,7 @@ p, span, td, th {
   padding: 0;
   line-height: 1.5; }
 
-textarea {
-  line-height: 1.5; }
-
-p, span, textarea, input {
+p, span, textarea, input, button {
   font-size: 1.125rem; }
 
 h1 {
@@ -449,13 +446,13 @@ h5 {
 .small {
   font-size: 0.88889rem; }
 
-p, span, td, th, textarea, input {
+p, span, td, th, textarea, input, button {
   font-size: 1rem; }
   @media screen and (min-width: 50rem) {
-    p, span, td, th, textarea, input {
+    p, span, td, th, textarea, input, button {
       font-size: calc(1rem + 0.25 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
-    p, span, td, th, textarea, input {
+    p, span, td, th, textarea, input, button {
       font-size: 1.25rem; } }
 
 h1 {
@@ -630,7 +627,7 @@ table {
 
 .job.bizo {
   background-color: #006386;
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255, 0.85); }
   .job.bizo h1, .job.bizo h2, .job.bizo h3, .job.bizo h4, .job.bizo h5 {
     color: white; }
   .job.bizo h1 small, .job.bizo h2 small {
@@ -649,9 +646,9 @@ table {
   background-color: #EEE;
   color: #585149; }
   .job.esurance h1, .job.esurance h2, .job.esurance h3, .job.esurance h4, .job.esurance h5 {
-    color: #170939; }
+    color: #746b88; }
   .job.esurance h1 small, .job.esurance h2 small {
-    color: #585149; }
+    color: #170939; }
   .job.esurance a:hover p {
     background-color: #6699FF;
     color: white; }
@@ -724,13 +721,31 @@ table {
       background-image: url("./../images/contact/contact-bg.jpg"); } }
   .contact-background form {
     margin: auto;
-    padding-top: 20vh; }
+    padding: 20vh 0 1rem; }
+
+button {
+  margin: auto;
+  display: block;
+  border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  line-height: 3.5rem;
+  background-color: #6bd5ab;
+  border: none;
+  color: white;
+  transition: background-color .3s; }
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1rem #011F7F; }
+  button:active, button:hover:active {
+    background-color: #011F7F; }
+  button:hover {
+    background-color: #7FDBB6; }
 
 textarea, input {
   display: block;
-  background-color: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: rgba(0, 0, 0, 0.85);
   resize: none;
   padding: 1rem;
   box-sizing: border-box; }
@@ -741,18 +756,22 @@ textarea, input {
 textarea {
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem;
-  height: 30vh; }
+  height: 30vh;
+  line-height: 1.5rem; }
 
 ::-webkit-input-placeholder {
-  color: #7FDBB6; }
+  color: rgba(0, 0, 0, 0.65); }
 
 ::-moz-placeholder {
-  color: #7FDBB6; }
+  color: rgba(0, 0, 0, 0.65); }
 
 :-ms-input-placeholder {
-  color: #7FDBB6; }
+  color: rgba(0, 0, 0, 0.65); }
 
 textarea + input {
-  margin-top: 1.5rem; }
+  margin-top: 0.75rem; }
+
+input + button {
+  margin-top: 0.75rem; }
 
 /*# sourceMappingURL=main.css.map */

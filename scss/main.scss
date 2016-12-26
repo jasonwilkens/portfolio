@@ -25,23 +25,23 @@ $gradient-diagonal: linear-gradient(-90deg, $midnight, $brick);
 $bizo-dark-blue:    #006386;
 $bizo-light-blue:   #0095D5;
 $bizo-red:          #E82529;
-$bizo-dark-red:     darken(#E82529, 10%);
 $bizo-green:        #A6D379;
 
 $bizo-bg:           $bizo-dark-blue;
 $bizo-headline:     white;
 $bizo-subhead:      white;
-$bizo-copy:         rgba(255,255,255,0.8);
+$bizo-copy:         $white85;
 
 // Esurance colors
 $esurance-purple:   #170939;
 $esurance-gray:     #585149;
+$esurance-light-purple: #746b88;
 $esurance-light-gray: #EEE;
 $esurance-blue:     #6699FF;
 
 $esurance-bg:       $esurance-light-gray;
-$esurance-headline: $esurance-purple;
-$esurance-subhead:  $esurance-gray;
+$esurance-headline: $esurance-light-purple;
+$esurance-subhead:  $esurance-purple;
 $esurance-copy:     $esurance-gray;
 
 

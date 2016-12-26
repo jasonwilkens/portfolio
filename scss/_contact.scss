@@ -11,21 +11,43 @@
   height:           100%;
   form {
     margin:         auto;
-    padding-top:    20vh;
+    padding:        20vh 0 1rem;
+  }
+}
+
+button {
+  margin:           auto;
+  display:          block;
+  border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  line-height:      3.5rem;
+  background-color: darken($mint, 5%);
+  border:           none;
+  color:            white;
+  transition:       background-color .3s;
+  &:focus {
+    outline:        none;
+    box-shadow:     0 0 0 .1rem $purple;
+  }
+  &:active, &:hover:active {
+    background-color: $purple;
+  }
+  &:hover {
+    background-color: $mint;
   }
 }
 
 textarea,input {
   display:          block;
-  background-color: $black45;
-  border:           1px solid $white65;
-  color:            $white85;
+  background-color: $white65;
+  border:           1px solid $white45;
+  color:            $black85;
   resize:           none;
   padding:          1rem;
   box-sizing:       border-box;
   &:focus {
-    outline:  none;
-    box-shadow: 0 0 0 .1rem $purple;
+    outline:        none;
+    box-shadow:     0 0 0 .1rem $purple;
   }
 }
 
@@ -33,12 +55,12 @@ textarea {
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem;
   height:           30vh;
+  line-height:      1.5rem;
 }
 
-input {}
+::-webkit-input-placeholder { color: $black65; }
+::-moz-placeholder { color: $black65; }
+:-ms-input-placeholder { color: $black65 }
 
-::-webkit-input-placeholder { color: $mint; }
-::-moz-placeholder { color: $mint; }
-:-ms-input-placeholder { color: $mint }
-
-textarea + input { margin-top: $default-spacing; }
+textarea + input { margin-top: $default-spacing / 2; }
+input + button { margin-top: $default-spacing / 2; }
