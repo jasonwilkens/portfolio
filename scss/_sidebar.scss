@@ -1,0 +1,17 @@
+.sidebar {
+  float:            right;
+  width:            20rem;
+  margin-left:      $default-spacing;
+  margin-bottom:    $default-spacing;
+  padding-top:      $default-spacing / 2;
+  border-top:       .3rem solid $black85;
+  font-weight:      400;
+  color:            $black65;
+  p {
+    width:          inherit;
+  }
+}
+
+.sidebar + p {
+  margin-top:       $default-spacing / 2;
+}
