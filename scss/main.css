@@ -547,6 +547,16 @@ p + p {
 .margins-off > * {
   margin-top: 0; }
 
+.headroom {
+  will-change: transform;
+  transition: transform 0.2s cubic-bezier(0.33, 0.66, 0.66, 1); }
+
+.headroom--pinned {
+  transform: translateY(0%); }
+
+.headroom--unpinned {
+  transform: translateY(-100%); }
+
 a {
   font-weight: 400;
   text-decoration: none;
@@ -698,15 +708,17 @@ table {
   .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
     color: white; }
 
-.headroom {
-  will-change: transform;
-  transition: transform 0.2s cubic-bezier(0.33, 0.66, 0.66, 1); }
+.img-container-25 {
+  max-width: 25rem;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto; }
+  .img-container-25 p {
+    width: inherit;
+    color: rgba(0, 0, 0, 0.65); }
 
-.headroom--pinned {
-  transform: translateY(0%); }
-
-.headroom--unpinned {
-  transform: translateY(-100%); }
+div[class^="img-container-"] + p {
+  margin-top: 0.75rem; }
 
 .sidebar {
   float: right;

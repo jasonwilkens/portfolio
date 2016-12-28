@@ -1,0 +1,18 @@
+@mixin img-container($width) {
+  max-width:        $width;
+  text-align:       center;
+  margin-right:     auto;
+  margin-left:      auto;
+  p {
+    width:          inherit;
+    color:          $black65;
+  }
+}
+
+.img-container-25 {
+  @include img-container(25rem);
+}
+
+div[class^="img-container-"] + p {
+  margin-top:       $default-spacing / 2;
+}
