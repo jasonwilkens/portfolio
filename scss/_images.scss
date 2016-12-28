@@ -13,6 +13,10 @@
   @include img-container(25rem);
 }
 
+.img-container-35 {
+  @include img-container(35rem);
+}
+
 div[class^="img-container-"] + p {
   margin-top:       $default-spacing / 2;
 }

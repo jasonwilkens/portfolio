@@ -717,6 +717,15 @@ table {
     width: inherit;
     color: rgba(0, 0, 0, 0.65); }
 
+.img-container-35 {
+  max-width: 35rem;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto; }
+  .img-container-35 p {
+    width: inherit;
+    color: rgba(0, 0, 0, 0.65); }
+
 div[class^="img-container-"] + p {
   margin-top: 0.75rem; }
 
