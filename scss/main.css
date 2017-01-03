@@ -612,7 +612,7 @@ table {
   padding-bottom: 1.5rem; }
   @media screen and (min-width: 50rem) {
     .job {
-      padding-bottom: 7.5rem; } }
+      padding-bottom: 5.25rem; } }
   .job .background {
     position: absolute;
     width: 100%;
@@ -628,7 +628,7 @@ table {
     padding-top: 3rem; }
     @media screen and (min-width: 50rem) {
       .job .grid-max-width {
-        padding-top: 7.5rem; } }
+        padding-top: 5.25rem; } }
 
 .job.linkedin {
   background-color: #303336;

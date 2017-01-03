@@ -2,7 +2,7 @@
   position:         relative;
   padding-bottom:   $default-spacing;
   @media screen and (min-width: $tablet-size) {
-    padding-bottom: $default-spacing * 5;
+    padding-bottom: $default-spacing * 3.5;
   }
   .background {
     position:       absolute;
@@ -20,7 +20,7 @@
     position:       relative;
     padding-top:    $default-spacing * 2;
     @media screen and (min-width: $tablet-size) {
-      padding-top: $default-spacing * 5;
+      padding-top: $default-spacing * 3.5;
     }
   }
 }
