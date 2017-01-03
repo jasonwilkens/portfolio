@@ -265,7 +265,13 @@
           <article>
             <h1>About</h1>
           </article>
-          <img src="images/about/portrait.jpg" alt="Picture of Jason and Gloria">
+          <img
+            srcset="images/about/self-portrait.jpg 2048w,
+                    images/about/self-portrait-50rem.jpg 1600w,
+                    images/about/self-portrait-28rem.jpg 896w"
+            sizes="(min-width:70rem) 1120w, 100vw"
+            src="images/about/self-portrait.jpg" alt="Picture of Jason"
+          />
           <article>
             <greeting></greeting>
             <p>I'm Jason Wilkens, a designer and developer of products and experiences on the web.</p>
