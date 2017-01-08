@@ -838,11 +838,16 @@ input + button {
     font-weight: 400; }
   .bizstrap-table .label {
     width: 10rem; }
+  .bizstrap-table td:nth-child(n+4), .bizstrap-table th:nth-child(n+3) {
+    text-align: right; }
 
 tr.message td:first-child, tr.creative td:first-child {
   background-color: white; }
 tr.message td:nth-child(2), tr.creative td:nth-child(2) {
   width: 1em; }
+
+tr.creative td:nth-child(3) {
+  text-align: right; }
 
 .message {
   background-color: #f9f9f9; }

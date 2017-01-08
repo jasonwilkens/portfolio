@@ -19,6 +19,9 @@
   .label {
     width:          10rem;
   }
+  td:nth-child(n+4),th:nth-child(n+3) {
+    text-align:     right;
+  }
 }
 
 tr.message,tr.creative {
@@ -27,6 +30,12 @@ tr.message,tr.creative {
   }
   td:nth-child(2) {
     width:          1em;
+  }
+}
+
+tr.creative {
+  td:nth-child(3) {
+    text-align:     right;
   }
 }
 
