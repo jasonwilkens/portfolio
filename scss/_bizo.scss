@@ -19,8 +19,15 @@
   .label {
     width:          10rem;
   }
+  td:first-child {
+    text-align:     center;
+  }
   td:nth-child(n+4),th:nth-child(n+3) {
     text-align:     right;
+  }
+  input[type="checkbox"] {
+    display:        inline-block;
+    width:          auto;
   }
 }
 

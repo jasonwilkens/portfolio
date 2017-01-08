@@ -838,8 +838,13 @@ input + button {
     font-weight: 400; }
   .bizstrap-table .label {
     width: 10rem; }
+  .bizstrap-table td:first-child {
+    text-align: center; }
   .bizstrap-table td:nth-child(n+4), .bizstrap-table th:nth-child(n+3) {
     text-align: right; }
+  .bizstrap-table input[type="checkbox"] {
+    display: inline-block;
+    width: auto; }
 
 tr.message td:first-child, tr.creative td:first-child {
   background-color: white; }
