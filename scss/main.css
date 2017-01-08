@@ -855,4 +855,7 @@ tr.creative td:nth-child(3) {
 .creative {
   background-color: #f0f0f0; }
 
+tr.creative .label {
+  padding-left: 1.5em; }
+
 /*# sourceMappingURL=main.css.map */
