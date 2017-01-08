@@ -1,0 +1,39 @@
+.bizstrap-table {
+  border:           1px solid $bizo-light-gray;
+  border-collapse:  separate;
+  border-left:      0;
+  border-top:       0;
+  background-color: white;
+  border-spacing:   0;
+  td,th {
+    border-left:    1px solid $bizo-light-gray;
+    border-top:     1px solid $bizo-light-gray;
+    padding:        .3em .5em;
+    vertical-align: top;
+    min-width:      1em;
+    white-space:    nowrap;
+  }
+  th {
+    font-weight:    400;
+  }
+  .label {
+    width:          10rem;
+  }
+}
+
+tr.message,tr.creative {
+  td:first-child {
+    background-color: white;
+  }
+  td:nth-child(2) {
+    width:          1em;
+  }
+}
+
+.message {
+  background-color: $message-row;
+}
+
+.creative {
+  background-color: $creative-row;
+}

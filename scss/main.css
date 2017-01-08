@@ -418,14 +418,14 @@ h1, h2, h3, h4, h5 {
 p, h1, h2, h3, h4, h5, textarea, input {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5, .nav-max, textarea, input, button {
+p, h1, h2, h3, h4, h5, .nav-max, textarea, input, button, .bizstrap-table {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, input, button {
+  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, input, button, .bizstrap-table {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, input, button {
+  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, input, button, .bizstrap-table {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
@@ -819,5 +819,35 @@ textarea + input {
 
 input + button {
   margin-top: 0.75rem; }
+
+.bizstrap-table {
+  border: 1px solid #e0e2e4;
+  border-collapse: separate;
+  border-left: 0;
+  border-top: 0;
+  background-color: white;
+  border-spacing: 0; }
+  .bizstrap-table td, .bizstrap-table th {
+    border-left: 1px solid #e0e2e4;
+    border-top: 1px solid #e0e2e4;
+    padding: .3em .5em;
+    vertical-align: top;
+    min-width: 1em;
+    white-space: nowrap; }
+  .bizstrap-table th {
+    font-weight: 400; }
+  .bizstrap-table .label {
+    width: 10rem; }
+
+tr.message td:first-child, tr.creative td:first-child {
+  background-color: white; }
+tr.message td:nth-child(2), tr.creative td:nth-child(2) {
+  width: 1em; }
+
+.message {
+  background-color: #f9f9f9; }
+
+.creative {
+  background-color: #f0f0f0; }
 
 /*# sourceMappingURL=main.css.map */
