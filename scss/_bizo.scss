@@ -29,6 +29,9 @@
     display:        inline-block;
     width:          auto;
   }
+  path {
+    fill:           $control-icon;
+  }
 }
 
 tr.message,tr.creative {
@@ -56,4 +59,10 @@ tr.creative {
 
 tr.creative .label {
   padding-left:     1.5em;
+}
+
+tr.campaign,tr.message {
+  td:nth-child(2) {
+    padding:        .4em .5em .1em;
+  }
 }

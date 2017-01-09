@@ -845,6 +845,8 @@ input + button {
   .bizstrap-table input[type="checkbox"] {
     display: inline-block;
     width: auto; }
+  .bizstrap-table path {
+    fill: #111e32; }
 
 tr.message td:first-child, tr.creative td:first-child {
   background-color: white; }
@@ -855,12 +857,15 @@ tr.creative td:nth-child(3) {
   text-align: right; }
 
 .message {
-  background-color: #f9f9f9; }
+  background-color: #F7FAFC; }
 
 .creative {
-  background-color: #f0f0f0; }
+  background-color: #E4ECF6; }
 
 tr.creative .label {
   padding-left: 1.5em; }
+
+tr.campaign td:nth-child(2), tr.message td:nth-child(2) {
+  padding: .4em .5em .1em; }
 
 /*# sourceMappingURL=main.css.map */
