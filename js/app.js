@@ -66,7 +66,7 @@ Vue.component('greeting', {
 
 Vue.component('hierarchical-table', {
   data: function() {
-    var campaigns = {
+    var data = {
       campaigns: [
         {
           key: "Campaign 1",
@@ -102,8 +102,9 @@ Vue.component('hierarchical-table', {
           ]
         }
       ]
-    };
-    return campaigns;
+    },
+    currentMetric = '';
+    return data;
   },
   computed: {
     rows: function() {
@@ -111,7 +112,7 @@ Vue.component('hierarchical-table', {
       var tableRows = [];
       this.campaigns.forEach(function(campaign) {
         tableRows.push({key: campaign.key, display: campaign.display,
-          metric1: this.calculateTotals(campaign.messages, 'metric1')
+          metric1: this.getCampaignMetrics(campaign.messages, 'metric1')
         });
       });
     }
@@ -119,7 +120,6 @@ Vue.component('hierarchical-table', {
   template: '#hierarchical-table',
   methods: {
     findRowspan: function(rowObj) {
-      debugger;
       var rowObj = this.campaigns[0].messages[0],
           messages = rowObj.messages,
           messageRows = 0,
@@ -128,7 +128,6 @@ Vue.component('hierarchical-table', {
       if (messages) {
         messageRows = messages.length;
         messages.forEach(function(message) {
-          debugger;
           if (message.display === 'expanded') {
             creativesVisible = message.creatives.length;
           }
@@ -139,14 +138,33 @@ Vue.component('hierarchical-table', {
       rowspan += messageRows + creativesVisible;
       console.log(rowspan);
     },
-    calculateTotals: function(arr, metric) {
+    getCampaignMetrics: function(messages, metric) {
       debugger;
-      var total = arr.forEach(function(message) {
-        message.creatives.reduce(function(a,b) {
-          return a + b.metric;
-        });  
+      var campaignTotal = 0,
+          $this = this;
+      messages.forEach(function(message) {
+        debugger;  
+        campaignTotal += $this.getMessageMetrics(message.creatives, metric);
       });
-      return total;
+      debugger;
+      return campaignTotal;
+    },
+    getMessageMetrics: function(creatives, metric) {
+      debugger;
+      var $this = this,
+          messageTotal;
+      $this.currentMetric = metric;
+      
+      if (creatives.length > 1) {
+        messageTotal = creatives.reduce(function(a,b) {
+          debugger;
+          return a[$this.currentMetric] + b[$this.currentMetric];
+        });
+      } else {
+        messageTotal = creatives[0][metric];
+      }
+      debugger;
+      return messageTotal;
     }
   }
 });
