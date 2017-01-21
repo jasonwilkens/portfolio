@@ -62,6 +62,95 @@ Vue.component('greeting', {
   }
 });
 
+// Hierarchical table on Process page
+
+Vue.component('hierarchical-table', {
+  data: function() {
+    var campaigns = {
+      campaigns: [
+        {
+          key: "Campaign 1",
+          display: "expanded",
+          messages: [
+            {
+              key: "Message 1",
+              display: "expanded",
+              creatives: [
+                {key: "Creative 1", metric1: 1, metric2: 2},{key: "Creative 2", metric1: 1, metric2: 2}
+              ]
+            },
+            {
+              key: "Message 2",
+              display: "collapsed",
+              creatives: [
+                {key: "Creative 3", metric1: 1, metric2: 2}
+              ]
+            }
+          ]
+        },
+        {
+          key: "Campaign 2",
+          display: "collapsed",
+          messages: [
+            {
+              key: "Message 3",
+              display: "collapsed",
+              creatives: [
+                {key: "Creative 4", metric1: 1, metric2: 2}
+              ]
+            }
+          ]
+        }
+      ]
+    };
+    return campaigns;
+  },
+  computed: {
+    rows: function() {
+      debugger;
+      var tableRows = [];
+      this.campaigns.forEach(function(campaign) {
+        tableRows.push({key: campaign.key, display: campaign.display,
+          metric1: this.calculateTotals(campaign.messages, 'metric1')
+        });
+      });
+    }
+  },
+  template: '#hierarchical-table',
+  methods: {
+    findRowspan: function(rowObj) {
+      debugger;
+      var rowObj = this.campaigns[0].messages[0],
+          messages = rowObj.messages,
+          messageRows = 0,
+          creativesVisible = 0,
+          rowspan = 1;
+      if (messages) {
+        messageRows = messages.length;
+        messages.forEach(function(message) {
+          debugger;
+          if (message.display === 'expanded') {
+            creativesVisible = message.creatives.length;
+          }
+        });
+      } else if (rowObj.creatives) {
+        creativesVisible = rowObj.creatives.length;
+      }
+      rowspan += messageRows + creativesVisible;
+      console.log(rowspan);
+    },
+    calculateTotals: function(arr, metric) {
+      debugger;
+      var total = arr.forEach(function(message) {
+        message.creatives.reduce(function(a,b) {
+          return a + b.metric;
+        });  
+      });
+      return total;
+    }
+  }
+});
+
 // Create Vue App
 
 var app = new Vue({
