@@ -107,16 +107,50 @@ Vue.component('hierarchical-table', {
     currentMetric = '';
     return data;
   },
-  computed: {},
+  computed: {
+    rows: function() {
+      var tableRows = [],
+          that = this;
+      this.campaigns.forEach(function(campaign) {
+        tableRows.push({
+          level: 'campaign',
+          key: campaign.key,
+          display: campaign.display,
+          metric1: that.getCampaignMetrics(campaign.messages, 'metric1'),
+          metric2: that.getCampaignMetrics(campaign.messages, 'metric2')
+        });
+        campaign.messages.forEach(function(message) {
+          tableRows.push({
+            level: 'mesage',
+            key: message.key,
+            display: message.display,
+            metric1: that.getMessageMetrics(message.creatives, 'metric1'),
+            metric2: that.getMessageMetrics(message.creatives, 'metric2')
+          });
+          message.creatives.forEach(function(creative) {
+            tableRows.push({
+              level: 'creative',
+              key: creative.key,
+              metric1: creative.metric1,
+              metric2: creative.metric2
+            });
+              
+          });
+        });
+      });
+      console.log(tableRows);
+    }
+  },
   template: '#hierarchical-table',
   methods: {
     findRowspan: function(rowObj) {
-      var rowObj = this.campaigns[0].messages[0],
+      debugger;
+      var rowObj = this.campaigns[1],
           messages = rowObj.messages,
           messageRows = 0,
           creativesVisible = 0,
           rowspan = 1;
-      if (messages) {
+      if (messages && rowObj.display === 'expanded') {
         messageRows = messages.length;
         messages.forEach(function(message) {
           if (message.display === 'expanded') {
@@ -150,38 +184,6 @@ Vue.component('hierarchical-table', {
         messageTotal = creatives[0][metric];
       }
       return messageTotal;
-    },
-    rows: function() {
-      var tableRows = [],
-          that = this;
-      this.campaigns.forEach(function(campaign) {
-        tableRows.push({
-          level: 'campaign',
-          key: campaign.key,
-          display: campaign.display,
-          metric1: that.getCampaignMetrics(campaign.messages, 'metric1'),
-          metric2: that.getCampaignMetrics(campaign.messages, 'metric2')
-        });
-        campaign.messages.forEach(function(message) {
-          tableRows.push({
-            level: 'mesage',
-            key: message.key,
-            display: message.display,
-            metric1: that.getMessageMetrics(message.creatives, 'metric1'),
-            metric2: that.getMessageMetrics(message.creatives, 'metric2')
-          });
-          message.creatives.forEach(function(creative) {
-            tableRows.push({
-              level: 'creative',
-              key: creative.key,
-              metric1: creative.metric1,
-              metric2: creative.metric2
-            });
-              
-          });
-        });
-      });
-      console.log(tableRows);
     }
   }
 });
