@@ -134,7 +134,6 @@ Vue.component('hierarchical-table', {
               metric1: creative.metric1,
               metric2: creative.metric2
             });
-              
           });
         });
       });
@@ -145,19 +144,18 @@ Vue.component('hierarchical-table', {
   methods: {
     findRowspan: function(rowObj) {
       debugger;
-      var rowObj = this.campaigns[1],
-          messages = rowObj.messages,
+      var rowObj = this.campaigns[0].messages[1],
           messageRows = 0,
           creativesVisible = 0,
           rowspan = 1;
-      if (messages && rowObj.display === 'expanded') {
-        messageRows = messages.length;
-        messages.forEach(function(message) {
+      if (rowObj.messages && rowObj.display === 'expanded') {
+        messageRows = rowObj.messages.length;
+        rowObj.messages.forEach(function(message) {
           if (message.display === 'expanded') {
             creativesVisible = message.creatives.length;
           }
         });
-      } else if (rowObj.creatives) {
+      } else if (rowObj.creatives && rowObj.display === 'expanded') {
         creativesVisible = rowObj.creatives.length;
       }
       rowspan += messageRows + creativesVisible;
@@ -175,7 +173,7 @@ Vue.component('hierarchical-table', {
       var that = this,
           messageTotal;
       that.currentMetric = metric;
-      
+
       if (creatives.length > 1) {
         messageTotal = creatives.reduce(function(a,b) {
           return a[that.currentMetric] + b[that.currentMetric];
