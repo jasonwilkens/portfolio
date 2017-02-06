@@ -70,10 +70,12 @@ Vue.component('hierarchical-table', {
       campaigns: [
         {
           key: "Campaign 1",
+          id: "001",
           display: "expanded",
           messages: [
             {
               key: "Message 1",
+              id: "001A",
               display: "expanded",
               creatives: [
                 {key: "Creative 1", metric1: 1, metric2: 2},
@@ -82,6 +84,7 @@ Vue.component('hierarchical-table', {
             },
             {
               key: "Message 2",
+              id: "001B",
               display: "collapsed",
               creatives: [
                 {key: "Creative 3", metric1: 1, metric2: 2}
@@ -91,10 +94,12 @@ Vue.component('hierarchical-table', {
         },
         {
           key: "Campaign 2",
+          id: "002",
           display: "collapsed",
           messages: [
             {
               key: "Message 3",
+              id: "002A",
               display: "collapsed",
               creatives: [
                 {key: "Creative 4", metric1: 1, metric2: 2}
@@ -109,20 +114,24 @@ Vue.component('hierarchical-table', {
   },
   computed: {
     rows: function() {
+      debugger;
       var tableRows = [],
           that = this;
       this.campaigns.forEach(function(campaign) {
         tableRows.push({
           level: 'campaign',
           key: campaign.key,
+          id: campaign.id,
           display: campaign.display,
           metric1: that.getCampaignMetrics(campaign.messages, 'metric1'),
           metric2: that.getCampaignMetrics(campaign.messages, 'metric2')
         });
         campaign.messages.forEach(function(message) {
           tableRows.push({
-            level: 'mesage',
+            level: 'message',
             key: message.key,
+            id: message.id,
+            campaignId: campaign.id,
             display: message.display,
             metric1: that.getMessageMetrics(message.creatives, 'metric1'),
             metric2: that.getMessageMetrics(message.creatives, 'metric2')
@@ -131,6 +140,8 @@ Vue.component('hierarchical-table', {
             tableRows.push({
               level: 'creative',
               key: creative.key,
+              campaignId: campaign.id,
+              messageId: message.id,
               metric1: creative.metric1,
               metric2: creative.metric2
             });

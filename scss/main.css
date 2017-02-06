@@ -713,7 +713,7 @@ table {
 .guide {
   color: white;
   border-top: .4em double white;
-  background-image: linear-gradient(-90deg, #14243D, #7E2D2A);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 4.5rem 0; }
   .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
     color: white; }
