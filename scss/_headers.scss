@@ -8,11 +8,6 @@
   -webkit-border-image: -webkit-linear-gradient(top left, $mint 20%, $purple 60%, $mint 90%);
   border-image:     linear-gradient(to bottom right, $mint 30%, $purple 60%, $mint 90%);
   border-image-slice: 1;
-//  background-image: linear-gradient(to right, rgba(127,219,182,1) 0%, rgba(255,255,255,.85) 100%), url(https://quiet-dusk-35598.herokuapp.com/images/header-bg.jpg);
-//  background-size:  cover;
-//  background-position: center 65%;
-//  background-repeat: no-repeat;
-//  background-blend-mode: darken;
 }
 
 .header-img {
@@ -20,10 +15,6 @@
   height:           6rem;
   background-size:  cover;
   background-position: center;
-}
-
-.header-img.work {
-  background-image: url("http://quiet-dusk-35598.herokuapp.com/images/work/header-pano-bg-color.jpg");
 }
 
 .header-img.process {

@@ -376,9 +376,6 @@ article {
   background-size: cover;
   background-position: center; }
 
-.header-img.work {
-  background-image: url("http://quiet-dusk-35598.herokuapp.com/images/work/header-pano-bg-color.jpg"); }
-
 .header-img.process {
   background-image: url(./../images/process/process-header-28rem.jpg); }
   @media screen and (min-width: 28rem) {
