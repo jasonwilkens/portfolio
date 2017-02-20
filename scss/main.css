@@ -766,7 +766,7 @@ div[class^="img-container-"] + p {
     margin: auto;
     padding: 20vh 0 1rem; }
 
-button {
+.contact-button {
   margin: auto;
   display: block;
   border-bottom-left-radius: .3rem;
@@ -776,12 +776,12 @@ button {
   border: none;
   color: white;
   transition: background-color .3s; }
-  button:focus {
+  .contact-button:focus {
     outline: none;
     box-shadow: 0 0 0 0.1rem #011F7F; }
-  button:active, button:hover:active {
+  .contact-button:active, .contact-button:hover:active {
     background-color: #011F7F; }
-  button:hover {
+  .contact-button:hover {
     background-color: #7FDBB6; }
 
 textarea, input {
@@ -843,7 +843,16 @@ input + button {
     display: inline-block;
     width: auto; }
   .bizstrap-table path {
-    fill: #111e32; }
+    fill: #111e32;
+    -webkit-transition: fill 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
+    transition: fill 0.1s cubic-bezier(0.33, 0.66, 0.66, 1); }
+  .bizstrap-table a.row-toggle {
+    cursor: pointer;
+    box-shadow: none; }
+    .bizstrap-table a.row-toggle:hover {
+      background: none; }
+      .bizstrap-table a.row-toggle:hover path {
+        fill: #7FDBB6; }
 
 tr.message td:first-child, tr.creative td:first-child {
   background-color: white; }

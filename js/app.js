@@ -108,13 +108,12 @@ Vue.component('hierarchical-table', {
           ]
         }
       ]
-    },
+    }
     currentMetric = '';
     return data;
   },
   computed: {
     rows: function() {
-      debugger;
       var tableRows = [],
           that = this;
       this.campaigns.forEach(function(campaign) {
@@ -124,7 +123,8 @@ Vue.component('hierarchical-table', {
           id: campaign.id,
           display: campaign.display,
           metric1: that.getCampaignMetrics(campaign.messages, 'metric1'),
-          metric2: that.getCampaignMetrics(campaign.messages, 'metric2')
+          metric2: that.getCampaignMetrics(campaign.messages, 'metric2'),
+          rowspan: that.setInitialRowspan(campaign)
         });
         campaign.messages.forEach(function(message) {
           tableRows.push({
@@ -134,7 +134,8 @@ Vue.component('hierarchical-table', {
             campaignId: campaign.id,
             display: message.display,
             metric1: that.getMessageMetrics(message.creatives, 'metric1'),
-            metric2: that.getMessageMetrics(message.creatives, 'metric2')
+            metric2: that.getMessageMetrics(message.creatives, 'metric2'),
+            rowspan: that.setInitialRowspan(message)
           });
           message.creatives.forEach(function(creative) {
             tableRows.push({
@@ -148,15 +149,14 @@ Vue.component('hierarchical-table', {
           });
         });
       });
-      console.log(tableRows);
+      return tableRows;
     }
   },
   template: '#hierarchical-table',
   methods: {
-    findRowspan: function(rowObj) {
+    setInitialRowspan: function(rowObj) {
       debugger;
-      var rowObj = this.campaigns[0].messages[1],
-          messageRows = 0,
+      var messageRows = 0,
           creativesVisible = 0,
           rowspan = 1;
       if (rowObj.messages && rowObj.display === 'expanded') {
@@ -170,7 +170,7 @@ Vue.component('hierarchical-table', {
         creativesVisible = rowObj.creatives.length;
       }
       rowspan += messageRows + creativesVisible;
-      console.log(rowspan);
+      return rowspan;
     },
     getCampaignMetrics: function(messages, metric) {
       var campaignTotal = 0,
@@ -193,6 +193,31 @@ Vue.component('hierarchical-table', {
         messageTotal = creatives[0][metric];
       }
       return messageTotal;
+    },
+    showExpanded: function(rowObj) {
+      if (rowObj.level === 'campaign') {
+        return true;
+      }
+      if (rowObj.level === 'message') {
+        if (this.rows.filter(function (row) {
+          return row.id === rowObj.campaignId;
+        })[0].display === "collapsed") {
+          return false;
+        } else {
+          return true;
+        }
+      } else if (rowObj.level === 'creative') {
+        if (this.rows.filter(function (row) {
+            return row.id === rowObj.messageId;
+          })[0].display === "collapsed" ||
+          this.rows.filter(function (row) {
+            return row.id === rowObj.campaignId;
+          })[0].display === "collapsed") {
+            return false;
+        } else {
+          return true;
+        }
+      }
     }
   }
 });

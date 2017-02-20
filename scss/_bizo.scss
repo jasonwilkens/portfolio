@@ -31,6 +31,18 @@
   }
   path {
     fill:           $control-icon;
+    -webkit-transition: fill .10s cubic-bezier(.33,.66,.66,1);
+    transition:   fill .10s cubic-bezier(.33,.66,.66,1);
+  }
+  a.row-toggle {
+    cursor:         pointer;
+    box-shadow:     none;
+    &:hover {
+      background: none;
+      path {
+        fill:       $mint;
+      }
+    }
   }
 }
 

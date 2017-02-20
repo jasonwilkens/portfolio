@@ -239,86 +239,6 @@
               
               <hierarchical-table></hierarchical-table>
 
-              <table class="bizstrap-table">
-                <colgroup>
-                  <col width="1.5rem">
-                  <col width="1.5rem">
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th colspan="3">Campaigns</th>
-                    <th>Metric</th>
-                    <th>Metric</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="campaign">
-                    <td><input type="checkbox"></td>
-                    <td class="message" rowspan="5">
-                      <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <g id="triangle">
-                          <path d="M167,33 L434,300 L167,567 L167,33 Z" transform="rotate(90 300 300)" id="shape"></path>
-                        </g>
-                      </svg>
-                    </td>
-                    <td class="label" colspan="2">Campaign 1</td>
-                    <td>3</td>
-                    <td>6</td>
-                  </tr>
-                  <tr class="message">
-                    <td><input type="checkbox"></td>
-                    <td class="creative" rowspan="3">
-                      <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <g id="triangle">
-                          <path d="M167,33 L434,300 L167,567 L167,33 Z" transform="rotate(90 300 300)" id="shape"></path>
-                        </g>
-                      </svg>
-                    </td>
-                    <td class="label" >Message 1</td>
-                    <td>2</td>
-                    <td>4</td>
-                  </tr>
-                  <tr class="creative">
-                    <td><input type="checkbox"></td>
-                    <td class="label" >Creative 1</td>
-                    <td>1</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="creative">
-                    <td><input type="checkbox"></td>
-                    <td class="label" >Creative 2</td>
-                    <td>1</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="message">
-                    <td><input type="checkbox"></td>
-                    <td rowspan="1">
-                      <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <g id="triangle">
-                          <path d="M167,33 L434,300 L167,567 L167,33 Z" id="shape"></path>
-                        </g>
-                      </svg>
-                    </td>
-                    <td class="label">Message 2</td>
-                    <td>1</td>
-                    <td>2</td>
-                  </tr>
-                  <tr class="campaign">
-                    <td><input type="checkbox"></td>
-                    <td rowspan="1">
-                      <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <g id="triangle">
-                          <path d="M167,33 L434,300 L167,567 L167,33 Z" id="shape"></path>
-                        </g>
-                      </svg>
-                    </td>
-                    <td class="label" colspan="2">Campaign 2</td>
-                    <td>1</td>
-                    <td>2</td>
-                  </tr>
-                </tbody>
-              </table>
               <p>There's something very rewarding and authentic about working this way. For me it evokes Frank Lloyd Wright's architecture school, whose students don't just design structures while sitting at a desk, they go outside and build the shelters that they live in while at school. Or industrial designers creating physical prototypes. Imagination without constraints is an indispensable part of design, but so is overcoming the challenges of the medium to make real change achievable.</p>
               <h2>Creating a Culture</h2>
               <p>While working in some very different company cultures over the years, I've learned what to look for and help grow in the organizations I'm part of. The things that turn a job into a deeply fulfilling endeavor.</p>
@@ -426,7 +346,7 @@
                     <form>
                       <textarea placeholder="Your message"></textarea>
                       <input type="text" placeholder="Your email address (optional)">
-                      <button>Send</button>
+                      <button class="contact-button">Send</button>
                     </form>
                   </article>
                 </div>
@@ -554,117 +474,46 @@
       </div>
     </script>
     <script type="text/x-template" id="hierarchical-table">
-      <div>
-        <table class="bizstrap-table" id="metric-table">
-          <colgroup>
-            <col width="1.5rem">
-            <col width="1.5rem">
-          </colgroup>
-          <thead>
-            <tr>
-              <th></th>
-              <th colspan="2">Campaigns</th>
-              <th>Metric</th>
-              <th>Metric</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr data-level="0" class="campaign collapse">
-              <td><input type="checkbox"></td>
-              <td class="message">
-                <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" v-on:click="findRowspan">
-                  <g class="triangle">
-                    <path d="M167,33 L434,300 L167,567 L167,33 Z" transform="rotate(90 300 300)" class="shape"></path>
-                  </g>
-                </svg>
-              </td>
-              <td class="label">Campaign 1</td>
-              <td>3</td>
-              <td>6</td>
-            </tr>
-            <tr data-level="1" class="message collapse">
-              <td><input type="checkbox"></td>
-              <td class="creative">
+      <table class="bizstrap-table" id="metric-table">
+        <colgroup>
+          <col width="1.5rem">
+          <col width="1.5rem">
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th colspan="3">Campaigns</th>
+            <th>Metric</th>
+            <th>Metric</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in rows" v-bind:class="item.level" v-show="showExpanded(item)">
+            <td><input type="checkbox"></td>
+            <td v-if="item.level === 'campaign'" v-bind:rowspan="item.rowspan" v-bind:class="item.display === 'expanded' ? 'message' : ''">
+              <a class="row-toggle" href="#">
                 <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <g class="triangle">
-                    <path d="M167,33 L434,300 L167,567 L167,33 Z" transform="rotate(90 300 300)" class="shape"></path>
+                  <g id="triangle">
+                    <path d="M167,33 L434,300 L167,567 L167,33 Z" v-bind:transform="item.display === 'expanded' ? 'rotate(90 300 300)' : ''" id="shape"></path>
                   </g>
                 </svg>
-              </td>
-              <td class="label" >Message 1</td>
-              <td>2</td>
-              <td>4</td>
-            </tr>
-            <tr data-level="2" class="creative collapse">
-              <td><input type="checkbox"></td>
-              <td></td>
-              <td class="label" >Creative 1</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-            <tr data-level="2" class="creative collapse">
-              <td><input type="checkbox"></td>
-              <td></td>
-              <td class="label" >Creative 2</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-            <tr data-level="1" class="message collapse">
-              <td><input type="checkbox"></td>
-              <td class="creative">
+              </a>
+            </td>
+            <td v-if="item.level === 'message'" v-bind:rowspan="item.rowspan" v-bind:class="item.display === 'expanded' ? 'creative' : ''">
+              <a class="row-toggle" href="#">
                 <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <g class="triangle">
-                    <path d="M167,33 L434,300 L167,567 L167,33 Z" transform="rotate(90 300 300)" class="shape"></path>
+                  <g id="triangle">
+                    <path d="M167,33 L434,300 L167,567 L167,33 Z" v-bind:transform="item.display === 'expanded' ? 'rotate(90 300 300)' : ''" id="shape"></path>
                   </g>
                 </svg>
-              </td>
-              <td class="label">Message 2</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-            <tr data-level="2" class="creative collapse">
-              <td><input type="checkbox"></td>
-              <td></td>
-              <td class="label" >Creative 3</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-            <tr data-level="0" class="campaign collapse">
-              <td><input type="checkbox"></td>
-              <td class="message">
-                <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <g class="triangle">
-                    <path d="M167,33 L434,300 L167,567 L167,33 Z" transform="rotate(90 300 300)" class="shape"></path>
-                  </g>
-                </svg>
-              </td>
-              <td class="label">Campaign 2</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-            <tr data-level="1" class="message collapse">
-              <td><input type="checkbox"></td>
-              <td class="creative">
-                <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <g class="triangle">
-                    <path d="M167,33 L434,300 L167,567 L167,33 Z" transform="rotate(90 300 300)" class="shape"></path>
-                  </g>
-                </svg>
-              </td>
-              <td class="label">Message 3</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-            <tr data-level="2" class="creative collapse">
-              <td><input type="checkbox"></td>
-              <td></td>
-              <td class="label" >Creative 4</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+              </a>
+            </td>
+            <td class="label" v-bind:colspan="item.level === 'campaign' ? 2 : 1">{{ item.key }}</td>
+            <td>{{ item.metric1 }}</td>
+            <td>{{ item.metric2 }}</td>
+          </tr>
+        </tbody>
+      </table>
     </script>
     <script src="js/headroom.min.js"></script>
     <script src="js/app.js"></script>
