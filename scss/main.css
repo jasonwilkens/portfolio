@@ -769,7 +769,9 @@ div[class^="img-container-"] + p {
       background-image: url("./../images/contact/contact-bg.jpg"); } }
   .contact-background form {
     margin: auto;
-    padding: 20vh 0 1rem; }
+    padding: 1.5rem 0 1rem; }
+  .contact-background h1 {
+    color: rgba(255, 255, 255, 0.85); }
 
 .contact-button {
   margin: auto;
