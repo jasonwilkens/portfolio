@@ -231,12 +231,12 @@
               <p>I worked on a team that solved this problem by setting a fixed percentage of our engineering budget each sprint for design improvements. I'd collaborate and haggle with the product team, but the design tasks for this dedicated budget were prioritized by designers. If you have a design-oriented product manager you might not need to take on this responsibility, but I like having designers prioritize their design improvements. It fosters appreciation for the costs of the engineering work that provides valuable focus.</p>
               <div class="img-container-25">
                 <img src="images/process/sketch.jpg">
-                <p>starting an idea with a simple sketch...</p>
+                <p>starting an idea with a simple sketch&hellip;</p>
               </div>
               <p>Looking at the design process from an individual contributor perspective, I've always measured my work by the impact it made on users in the real world. Nice mocks for my portfolio just aren't very rewarding on their own. So I get frustrated when my final product doesn't turn out as nice as my carefully crafted Illustrator mocks. Many great designers have written persuasive arguments for designing in code. For me, the right to control the end result was what sold me.</p>
               <p>I started using image tools less often as I got better at CSS and my pattern library became more extensive. Eventually, I found that my process started with paper and pencil to explore ideas without constraints, then went directly into code to grapple with reality. There was no need to take the intermediate step of drawing my whole interface in a graphics program beforehand. I only used image tools to actually produce images to include in my designs. Using my "living styleguide" I could quickly build design prototypes of entire experiences to demo and conduct research.</p>
               <hierarchical-table></hierarchical-table>
-              <p class="floating-caption">... and bringing it to life in code</p>
+              <p class="floating-caption">&hellip;and bringing it to life in code</p>
               <p>I don't think that every designer must work the way that I do. I believe in letting people focus on their strengths, and not every designer needs to code. But many of the design decisions that have to be made for a web experience can't be shown in an image mockup, or even a prototype stitched together from static images. If you really want to control what your product looks and feels like, you have to work directly in it's medium. That will only become more true as the web becomes more fluid, animated, and dynamic.</p>
               <p>There's something very rewarding and authentic about working this way. For me it evokes Frank Lloyd Wright's architecture school, whose students don't just design structures while sitting at a desk, they go outside and build the shelters that they live in while at school. Or industrial designers creating physical prototypes. Imagination without constraints is an indispensable part of design, but so is overcoming the challenges of the medium to make real change achievable.</p>
               <h2>Creating a Culture</h2>
@@ -344,9 +344,13 @@
                   <article>
                     <h1>Contact</h1>
                     <form>
-                      <textarea placeholder="Write a message"></textarea>
-                      <input type="text" placeholder="Add your email address (optional)">
-                      <button class="contact-button">Send</button>
+                      <textarea placeholder="Write a message" tabindex="1"></textarea>
+                      <div class="input-row">
+                        <button class="contact-button" tabindex="3">Send</button>
+                        <div class="input-container">
+                          <input type="text" placeholder="Add your email address (optional)" tabindex="2">
+                        </div>
+                      </div>
                     </form>
                   </article>
                 </div>

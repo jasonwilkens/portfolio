@@ -17,9 +17,11 @@
 }
 
 .contact-button {
-  margin:           auto;
-  display:          block;
-  border-bottom-left-radius: .3rem;
+  display:          inline-block;
+  float:            right;
+  margin-left:      .75rem;
+  padding-left:     4rem;
+  padding-right:    4rem;
   border-bottom-right-radius: .3rem;
   line-height:      3.5rem;
   background-color: darken($mint, 5%);
@@ -38,8 +40,15 @@
   }
 }
 
+.input-row {
+  margin:           auto;
+}
+
+.input-container {
+  display:          flex;
+}
+
 textarea,input {
-  display:          block;
   background-color: $white85;
   border:           1px solid $white45;
   color:            $black85;
@@ -52,7 +61,14 @@ textarea,input {
   }
 }
 
+input {
+  display:          block;
+  width:            100%;
+  border-bottom-left-radius: .3rem;
+}
+
 textarea {
+  display:          block;
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem;
   height:           30vh;
@@ -63,5 +79,5 @@ textarea {
 ::-moz-placeholder { color: $black65; }
 :-ms-input-placeholder { color: $black65 }
 
-textarea + input { margin-top: $default-spacing / 2; }
-input + .contact-button { margin-top: $default-spacing / 2; }
+textarea + .input-row { margin-top: $default-spacing / 2; }
+.contact-button + .input-container { margin-top: 0; }

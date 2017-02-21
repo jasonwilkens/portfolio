@@ -417,17 +417,17 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   margin-top: none; }
 
-p, h1, h2, h3, h4, h5, textarea, input {
+p, h1, h2, h3, h4, h5, textarea {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5, .nav-max, textarea, input, button, .bizstrap-table {
+p, h1, h2, h3, h4, h5, .nav-max, textarea, .input-row, .bizstrap-table {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, input, button, .bizstrap-table {
+  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, input, button, .bizstrap-table {
+  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
@@ -774,9 +774,11 @@ div[class^="img-container-"] + p {
     color: rgba(255, 255, 255, 0.85); }
 
 .contact-button {
-  margin: auto;
-  display: block;
-  border-bottom-left-radius: .3rem;
+  display: inline-block;
+  float: right;
+  margin-left: .75rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   border-bottom-right-radius: .3rem;
   line-height: 3.5rem;
   background-color: #6bd5ab;
@@ -791,8 +793,13 @@ div[class^="img-container-"] + p {
   .contact-button:hover {
     background-color: #7FDBB6; }
 
+.input-row {
+  margin: auto; }
+
+.input-container {
+  display: flex; }
+
 textarea, input {
-  display: block;
   background-color: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.45);
   color: rgba(0, 0, 0, 0.85);
@@ -803,7 +810,13 @@ textarea, input {
     outline: none;
     box-shadow: 0 0 0 0.1rem #011F7F; }
 
+input {
+  display: block;
+  width: 100%;
+  border-bottom-left-radius: .3rem; }
+
 textarea {
+  display: block;
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem;
   height: 30vh;
@@ -818,11 +831,11 @@ textarea {
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.65); }
 
-textarea + input {
+textarea + .input-row {
   margin-top: 0.75rem; }
 
-input + .contact-button {
-  margin-top: 0.75rem; }
+.contact-button + .input-container {
+  margin-top: 0; }
 
 .bizstrap-table {
   border: 1px solid #e0e2e4;
