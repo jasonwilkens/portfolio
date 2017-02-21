@@ -123,8 +123,7 @@ Vue.component('hierarchical-table', {
           id: campaign.id,
           display: campaign.display,
           metric1: that.getCampaignMetrics(campaign.messages, 'metric1'),
-          metric2: that.getCampaignMetrics(campaign.messages, 'metric2'),
-          rowspan: that.setInitialRowspan(campaign)
+          metric2: that.getCampaignMetrics(campaign.messages, 'metric2')
         });
         campaign.messages.forEach(function(message) {
           tableRows.push({
@@ -134,8 +133,7 @@ Vue.component('hierarchical-table', {
             campaignId: campaign.id,
             display: message.display,
             metric1: that.getMessageMetrics(message.creatives, 'metric1'),
-            metric2: that.getMessageMetrics(message.creatives, 'metric2'),
-            rowspan: that.setInitialRowspan(message)
+            metric2: that.getMessageMetrics(message.creatives, 'metric2')
           });
           message.creatives.forEach(function(creative) {
             tableRows.push({
@@ -154,23 +152,30 @@ Vue.component('hierarchical-table', {
   },
   template: '#hierarchical-table',
   methods: {
-    setInitialRowspan: function(rowObj) {
+    findRowspan: function(rowObj) {
       debugger;
-      var messageRows = 0,
+      var rowSpan = 1,
+          messageRows = 0,
           creativesVisible = 0,
-          rowspan = 1;
-      if (rowObj.messages && rowObj.display === 'expanded') {
-        messageRows = rowObj.messages.length;
-        rowObj.messages.forEach(function(message) {
-          if (message.display === 'expanded') {
-            creativesVisible = message.creatives.length;
-          }
+          campaignMessages,
+          expandedMessages,
+          that = this;
+      if (rowObj.level === 'campaign' && rowObj.display === 'expanded') {
+        campaignMessages = this.rows.filter(function(row) {
+          return row.campaignId === rowObj.id && row.level === 'message';
         });
-      } else if (rowObj.creatives && rowObj.display === 'expanded') {
-        creativesVisible = rowObj.creatives.length;
+        messageRows = campaignMessages.length;
+        expandedMessages = campaignMessages.filter(function(message) {
+          return message.display === 'expanded';
+        });
+        expandedMessages.forEach(function(message) {
+          creativesVisible += that.rows.filter(function(row) { return row.messageId === message.id }).length;
+        });
+      } else if (rowObj.level === 'message' && rowObj.display === 'expanded') {
+        creativesVisible += this.rows.filter(function(row) { return row.messageId === rowObj.id }).length;
       }
-      rowspan += messageRows + creativesVisible;
-      return rowspan;
+      rowSpan += messageRows + creativesVisible;
+      return rowSpan;
     },
     getCampaignMetrics: function(messages, metric) {
       var campaignTotal = 0,

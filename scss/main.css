@@ -412,6 +412,11 @@ h1, h2, h3, h4, h5 {
   color: rgba(0, 0, 0, 0.45);
   font-weight: 400; }
 
+.floating-caption {
+  color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  margin-top: none; }
+
 p, h1, h2, h3, h4, h5, textarea, input {
   margin: auto; }
 
@@ -823,7 +828,8 @@ input + button {
   border-left: 0;
   border-top: 0;
   background-color: white;
-  border-spacing: 0; }
+  border-spacing: 0;
+  margin-bottom: 0; }
   .bizstrap-table td, .bizstrap-table th {
     border-left: 1px solid #e0e2e4;
     border-top: 1px solid #e0e2e4;
