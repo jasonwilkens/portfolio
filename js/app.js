@@ -153,7 +153,6 @@ Vue.component('hierarchical-table', {
   template: '#hierarchical-table',
   methods: {
     findRowspan: function(rowObj) {
-      debugger;
       var rowSpan = 1,
           messageRows = 0,
           creativesVisible = 0,
