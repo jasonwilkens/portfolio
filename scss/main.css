@@ -765,7 +765,7 @@ div[class^="img-container-"] + p {
       background-image: url("./../images/contact/contact-bg-50rem.jpg"); } }
   @media screen and (min-width: 50rem) {
     .contact-background {
-      background-image: url("./../images/contact/contact-bg.gif"); } }
+      background-image: url("./../images/contact/contact-bg-fw-2.jpg"); } }
   .contact-background form {
     margin: auto;
     padding: 1.5rem 0 1rem; }
