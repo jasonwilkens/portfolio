@@ -273,7 +273,7 @@ article {
     .nav-bar #global-nav .identity {
       float: left;
       height: 2.9rem;
-      margin: .3rem; }
+      margin: .3rem .3rem .3rem 0; }
       .nav-bar #global-nav .identity:hover a {
         background: white; }
       .nav-bar #global-nav .identity img {
@@ -345,12 +345,12 @@ article {
         background-image: url("./../images/monument-cover-50rem.jpg"); } }
     @media screen and (min-width: 50rem) {
       .grid-flex .cover .cover-background {
-        background-image: url("./../images/monument-cover.gif"); } }
+        background-image: url("./../images/monument-cover-fw.jpg"); } }
     .grid-flex .cover .cover-background .lettering {
       padding-left: 10vw;
       padding-top: calc(50vh - 10vw);
       width: 80vw;
-      filter: opacity(70%); }
+      filter: opacity(60%); }
       @media screen and (min-width: 50rem) {
         .grid-flex .cover .cover-background .lettering {
           padding-left: 30vw;
@@ -687,7 +687,7 @@ table {
   color: white;
   font-weight: 300; }
   .grid-showcase a:hover p {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: #16181D;
     color: #7FDBB6; }
   .grid-showcase a:focus p, .grid-showcase a:active p {
     background-color: #011F7F; }
@@ -770,7 +770,7 @@ div[class^="img-container-"] + p {
     margin: auto;
     padding: 1.5rem 0 1rem; }
   .contact-background h1 {
-    color: rgba(255, 255, 255, 0.85); }
+    color: white; }
 
 .contact-button {
   display: inline-block;

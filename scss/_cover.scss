@@ -9,7 +9,7 @@
       background-image: url("./../images/monument-cover-50rem.jpg");
     }
     @media screen and (min-width: $tablet-size) {
-      background-image: url("./../images/monument-cover.gif");
+      background-image: url("./../images/monument-cover-fw.jpg");
     }
     background-size: cover;
     background-position: center;
@@ -26,7 +26,7 @@
       @media screen and (min-width: $max-fluid) {
         padding-top: 40vh;
       }
-      filter:       opacity(70%);
+      filter:       opacity(60%);
     }
   }
 }
