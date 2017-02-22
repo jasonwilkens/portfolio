@@ -9,12 +9,12 @@
       background-image: url("./../images/monument-cover-50rem.jpg");
     }
     @media screen and (min-width: $tablet-size) {
-      background-image: url("./../images/monument-cover.jpg");
+      background-image: url("./../images/monument-cover.gif");
     }
     background-size: cover;
     background-position: center;
     height:         100%;
-    filter:         opacity(80%);
+    //filter:         opacity(80%);
     .lettering {
       padding-left: 10vw;
       padding-top:  calc(50vh - 10vw);
@@ -26,7 +26,7 @@
       @media screen and (min-width: $max-fluid) {
         padding-top: 40vh;
       }
-      filter:       opacity(80%);
+      filter:       opacity(70%);
     }
   }
 }

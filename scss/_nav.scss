@@ -43,9 +43,9 @@
       }
       .router-link-active {
         font-weight: 400;
-        border-bottom: .1em solid $black85;
+        border-bottom: .1em solid $vantablack-1;
         transition: background .10s cubic-bezier(.33,.66,.66,1);
-        box-shadow: inset 0 -.2em 0 $black85;
+        box-shadow: inset 0 -.2em 0 $vantablack-1;
       }
     }
   }
@@ -86,13 +86,13 @@
       height:       $nav-height;
       width:        $nav-height;
       #arrow {
-        fill:       $black15;
+        fill:       $vantablack-8;
       }
     }
     #project-name {
       line-height:  $nav-height;
       font-weight:  400;
-      border-left:  1px solid $black15;
+      border-left:  1px solid $vantablack-8;
       padding-left: 1.5rem;
       word-wrap:    break-word;
       white-space:  nowrap;

@@ -2,7 +2,7 @@
 // -------------------------
 body,textarea,input,button {
   font-family: 	    $copy-font;
-  color:            $black85;
+  color:            $vantablack-1;
   font-weight:      300;
   ::selection {
     background-color: $purple;
@@ -16,9 +16,9 @@ strong { font-weight: 400; }
 h1,h2,h3,h4,h5 { 
   font-family: 	    $playfair-display;
   font-weight: 	    900;
-  color:            $black85;
+  color:            $vantablack-1;
   small {
-    color:          $black25;
+    color:          $vantablack-6;
     font-family:    $copy-font;
     font-weight:    300;
   }
@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5 {
 
 // Styles
 .small { 
-  color:            $black45;
+  color:            $vantablack-6;
   font-weight: 	    400;
 }
 .big {
@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5 {
 
 // Floating caption
 .floating-caption {
-  color:            $black65;
+  color:            $vantablack-6;
   text-align:       center;
   margin-top:       none;
 }

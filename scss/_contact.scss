@@ -4,7 +4,7 @@
     background-image: url("./../images/contact/contact-bg-50rem.jpg");
   }
   @media screen and (min-width: $tablet-size) {
-    background-image: url("./../images/contact/contact-bg.jpg");
+    background-image: url("./../images/contact/contact-bg.gif");
   }
   background-size:  cover;
   background-position: center;
@@ -51,7 +51,7 @@
 textarea,input {
   background-color: $white85;
   border:           1px solid $white45;
-  color:            $black85;
+  color:            $vantablack-0;
   resize:           none;
   padding:          1rem;
   box-sizing:       border-box;
@@ -75,9 +75,9 @@ textarea {
   line-height:      1.5rem;
 }
 
-::-webkit-input-placeholder { color: $black65; }
-::-moz-placeholder { color: $black65; }
-:-ms-input-placeholder { color: $black65 }
+::-webkit-input-placeholder { color: $vantablack-5; }
+::-moz-placeholder { color: $vantablack-5; }
+:-ms-input-placeholder { color: $vantablack-5; }
 
 textarea + .input-row { margin-top: $default-spacing / 2; }
 .contact-button + .input-container { margin-top: 0; }
