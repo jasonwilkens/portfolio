@@ -859,9 +859,7 @@ textarea + .input-row {
     font-weight: 400; }
   .bizstrap-table .label {
     width: 10rem; }
-  .bizstrap-table td:first-child {
-    text-align: center; }
-  .bizstrap-table td:nth-child(n+4), .bizstrap-table th:nth-child(n+3) {
+  .bizstrap-table td:nth-child(n+3), .bizstrap-table th:nth-child(n+2) {
     text-align: right; }
   .bizstrap-table input[type="checkbox"] {
     display: inline-block;
@@ -879,11 +877,9 @@ textarea + .input-row {
         fill: #7FDBB6; }
 
 tr.message td:first-child, tr.creative td:first-child {
-  background-color: white; }
-tr.message td:nth-child(2), tr.creative td:nth-child(2) {
   width: 1em; }
 
-tr.creative td:nth-child(3) {
+tr.creative td:nth-child(2) {
   text-align: right; }
 
 .message {
@@ -895,7 +891,7 @@ tr.creative td:nth-child(3) {
 tr.creative .label {
   padding-left: 1.5em; }
 
-tr.campaign td:nth-child(2), tr.message td:nth-child(2) {
+tr.campaign td:first-child, tr.message td:first-child {
   padding: .4em .5em .1em; }
 
 /*# sourceMappingURL=main.css.map */

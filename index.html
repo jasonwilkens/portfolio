@@ -481,11 +481,9 @@
       <table class="bizstrap-table" id="metric-table">
         <colgroup>
           <col width="1.5rem">
-          <col width="1.5rem">
         </colgroup>
         <thead>
           <tr>
-            <th></th>
             <th colspan="3">Campaigns</th>
             <th>Metric</th>
             <th>Metric</th>
@@ -493,7 +491,6 @@
         </thead>
         <tbody>
           <tr v-for="item in rows" v-bind:class="item.level" v-show="showExpanded(item)">
-            <td><input type="checkbox"></td>
             <td v-if="item.level === 'campaign'" v-bind:rowspan="findRowspan(item)" v-bind:class="item.display === 'expanded' ? 'message' : ''">
               <a class="row-toggle" href="#">
                 <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
