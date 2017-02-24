@@ -203,25 +203,34 @@ Vue.component('hierarchical-table', {
         return true;
       }
       if (rowObj.level === 'message') {
-        if (this.rows.filter(function (row) {
+        if (this.rows.find(function (row) {
           return row.id === rowObj.campaignId;
-        })[0].display === "collapsed") {
+        }).display === "collapsed") {
           return false;
         } else {
           return true;
         }
       } else if (rowObj.level === 'creative') {
-        if (this.rows.filter(function (row) {
+        if (this.rows.find(function (row) {
             return row.id === rowObj.messageId;
-          })[0].display === "collapsed" ||
-          this.rows.filter(function (row) {
+          }).display === "collapsed" ||
+          this.rows.find(function (row) {
             return row.id === rowObj.campaignId;
-          })[0].display === "collapsed") {
+          }).display === "collapsed") {
             return false;
         } else {
           return true;
         }
       }
+    },
+    toggleRow: function(e) {
+      debugger;
+      var targetRow = this.rows.findIndex(function (row) {
+        return row.id === e.currentTarget.dataset.id;
+      });
+      this.rows[targetRow].display === 'expanded' ?
+        this.rows[targetRow].display = 'collapsed' :
+        this.rows[targetRow].display = 'expanded';
     }
   }
 });
