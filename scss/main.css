@@ -273,7 +273,10 @@ article {
     .nav-bar #global-nav .identity {
       float: left;
       height: 2.9rem;
-      margin: .3rem .3rem .3rem 0; }
+      margin: .3rem; }
+      @media screen and (min-width: 35rem) {
+        .nav-bar #global-nav .identity {
+          margin: .3rem .3rem .3rem 0; } }
       .nav-bar #global-nav .identity:hover a {
         background: white; }
       .nav-bar #global-nav .identity img {
