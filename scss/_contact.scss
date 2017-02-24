@@ -18,12 +18,15 @@
 
 .contact-button {
   display:          inline-block;
+  line-height:      1.5rem;
   float:            right;
   margin-left:      .75rem;
-  padding-left:     4rem;
-  padding-right:    4rem;
+  padding:          1rem 2rem;
+  @media screen and (min-width: $tablet-size) {
+    padding:        1rem 4rem;
+  }
+  box-sizing:       border-box;
   border-bottom-right-radius: .3rem;
-  line-height:      3.5rem;
   background-color: darken($mint, 5%);
   border:           none;
   color:            white;
@@ -63,6 +66,7 @@ textarea,input {
 
 input {
   display:          block;
+  height:           3.5rem;
   width:            100%;
   border-bottom-left-radius: .3rem;
 }

@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5 {
 .floating-caption {
   color: #818792;
   text-align: center;
-  margin-top: none; }
+  margin-top: .3rem; }
 
 p, h1, h2, h3, h4, h5, textarea {
   margin: auto; }
@@ -774,16 +774,19 @@ div[class^="img-container-"] + p {
 
 .contact-button {
   display: inline-block;
+  line-height: 1.5rem;
   float: right;
   margin-left: .75rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
   border-bottom-right-radius: .3rem;
-  line-height: 3.5rem;
   background-color: #6bd5ab;
   border: none;
   color: white;
   transition: background-color .3s; }
+  @media screen and (min-width: 50rem) {
+    .contact-button {
+      padding: 1rem 4rem; } }
   .contact-button:focus {
     outline: none;
     box-shadow: 0 0 0 0.1rem #011F7F; }
@@ -811,6 +814,7 @@ textarea, input {
 
 input {
   display: block;
+  height: 3.5rem;
   width: 100%;
   border-bottom-left-radius: .3rem; }
 
@@ -855,9 +859,7 @@ textarea + .input-row {
     font-weight: 400; }
   .bizstrap-table .label {
     width: 10rem; }
-  .bizstrap-table td:first-child {
-    text-align: center; }
-  .bizstrap-table td:nth-child(n+4), .bizstrap-table th:nth-child(n+3) {
+  .bizstrap-table td:nth-child(n+3), .bizstrap-table th:nth-child(n+2) {
     text-align: right; }
   .bizstrap-table input[type="checkbox"] {
     display: inline-block;
@@ -875,11 +877,9 @@ textarea + .input-row {
         fill: #7FDBB6; }
 
 tr.message td:first-child, tr.creative td:first-child {
-  background-color: white; }
-tr.message td:nth-child(2), tr.creative td:nth-child(2) {
   width: 1em; }
 
-tr.creative td:nth-child(3) {
+tr.creative td:nth-child(2) {
   text-align: right; }
 
 .message {
@@ -891,7 +891,7 @@ tr.creative td:nth-child(3) {
 tr.creative .label {
   padding-left: 1.5em; }
 
-tr.campaign td:nth-child(2), tr.message td:nth-child(2) {
+tr.campaign td:first-child, tr.message td:first-child {
   padding: .4em .5em .1em; }
 
 /*# sourceMappingURL=main.css.map */

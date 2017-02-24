@@ -20,10 +20,7 @@
   .label {
     width:          10rem;
   }
-  td:first-child {
-    text-align:     center;
-  }
-  td:nth-child(n+4),th:nth-child(n+3) {
+  td:nth-child(n+3),th:nth-child(n+2) {
     text-align:     right;
   }
   input[type="checkbox"] {
@@ -49,15 +46,12 @@
 
 tr.message,tr.creative {
   td:first-child {
-    background-color: white;
-  }
-  td:nth-child(2) {
     width:          1em;
   }
 }
 
 tr.creative {
-  td:nth-child(3) {
+  td:nth-child(2) {
     text-align:     right;
   }
 }
@@ -75,7 +69,7 @@ tr.creative .label {
 }
 
 tr.campaign,tr.message {
-  td:nth-child(2) {
+  td:first-child {
     padding:        .4em .5em .1em;
   }
 }
