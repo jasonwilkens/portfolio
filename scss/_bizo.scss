@@ -41,6 +41,13 @@
         fill:       $mint;
       }
     }
+    &:active {
+      path {
+        fill:       $purple;
+      }
+      box-shadow:       none;
+      border-bottom:    none;
+    }
   }
 }
 

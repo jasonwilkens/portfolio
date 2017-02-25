@@ -32,88 +32,8 @@ var home = { template: '#home' },
     ],
     router = new VueRouter({
       routes
-    });
-
-router.afterEach(function () {
-  scroll(0,0);
-});
-
-// Nav
-
-Vue.component('nav-bar', {
-  template: '#nav'
-});
-
-// Greeting on About page
-
-Vue.component('greeting', {
-  template: '<h2>{{ message() }}</h2>',
-  methods: {
-    message: function () {
-      var hour = new Date().getHours();
-      if (hour < 12) {
-        return 'Good morning';
-      } else if (hour < 18) {
-        return 'Good afternoon';
-      } else {
-        return 'Good evening';
-      }
-    }
-  }
-});
-
-// Hierarchical table on Process page
-
-Vue.component('hierarchical-table', {
-  data: function() {
-    var data = {
-      campaigns: [
-        {
-          key: "Campaign 1",
-          id: "001",
-          display: "expanded",
-          messages: [
-            {
-              key: "Message 1",
-              id: "001A",
-              display: "expanded",
-              creatives: [
-                {key: "Creative 1", metric1: 1, metric2: 2},
-                {key: "Creative 2", metric1: 1, metric2: 2}
-              ]
-            },
-            {
-              key: "Message 2",
-              id: "001B",
-              display: "collapsed",
-              creatives: [
-                {key: "Creative 3", metric1: 1, metric2: 2}
-              ]
-            }
-          ]
-        },
-        {
-          key: "Campaign 2",
-          id: "002",
-          display: "collapsed",
-          messages: [
-            {
-              key: "Message 3",
-              id: "002A",
-              display: "collapsed",
-              creatives: [
-                {key: "Creative 4", metric1: 1, metric2: 2}
-              ]
-            }
-          ]
-        }
-      ]
-    }
-    currentMetric = '';
-    return data;
-  },
-  computed: {
-    rows: function() {
+    }),
+    generateRows = function() {
       var tableRows = [],
           that = this;
       this.campaigns.forEach(function(campaign) {
@@ -148,7 +68,110 @@ Vue.component('hierarchical-table', {
         });
       });
       return tableRows;
+    },
+    getCampaignMetrics = function(messages, metric) {
+      var campaignTotal = 0,
+          that = this;
+      messages.forEach(function(message) {
+        campaignTotal += that.getMessageMetrics(message.creatives, metric);
+      });
+      return campaignTotal;
+    },
+    getMessageMetrics = function(creatives, metric) {
+      var that = this,
+          messageTotal;
+      that.currentMetric = metric;
+
+      if (creatives.length > 1) {
+        messageTotal = creatives.reduce(function(a,b) {
+          return a[that.currentMetric] + b[that.currentMetric];
+        });
+      } else {
+        messageTotal = creatives[0][metric];
+      }
+      return messageTotal;
+    };
+
+
+router.afterEach(function () {
+  scroll(0,0);
+});
+
+// Nav
+
+Vue.component('nav-bar', {
+  template: '#nav'
+});
+
+// Greeting on About page
+
+Vue.component('greeting', {
+  template: '<h2>{{ message() }}</h2>',
+  methods: {
+    message: function () {
+      var hour = new Date().getHours();
+      if (hour < 12) {
+        return 'Good morning';
+      } else if (hour < 18) {
+        return 'Good afternoon';
+      } else {
+        return 'Good evening';
+      }
     }
+  }
+});
+
+// Hierarchical table on Process page
+
+var campaigns = [
+      {
+        key: "Campaign 1",
+        id: "001",
+        display: "expanded",
+        messages: [
+          {
+            key: "Message 1",
+            id: "001A",
+            display: "expanded",
+            creatives: [
+              {key: "Creative 1", metric1: 1, metric2: 2},
+              {key: "Creative 2", metric1: 1, metric2: 2}
+            ]
+          },
+          {
+            key: "Message 2",
+            id: "001B",
+            display: "collapsed",
+            creatives: [
+              {key: "Creative 3", metric1: 1, metric2: 2}
+            ]
+          }
+        ]
+      },
+      {
+        key: "Campaign 2",
+        id: "002",
+        display: "collapsed",
+        messages: [
+          {
+            key: "Message 3",
+            id: "002A",
+            display: "collapsed",
+            creatives: [
+              {key: "Creative 4", metric1: 1, metric2: 2}
+            ]
+          }
+        ]
+      }
+    ],
+    currentMetric = '',
+    rows = generateRows();
+
+Vue.component('hierarchical-table', {
+  data: function() {
+    var data = {};
+    data.rows = rows;
+    return data;
   },
   template: '#hierarchical-table',
   methods: {
@@ -176,28 +199,6 @@ Vue.component('hierarchical-table', {
       rowSpan += messageRows + creativesVisible;
       return rowSpan;
     },
-    getCampaignMetrics: function(messages, metric) {
-      var campaignTotal = 0,
-          that = this;
-      messages.forEach(function(message) {
-        campaignTotal += that.getMessageMetrics(message.creatives, metric);
-      });
-      return campaignTotal;
-    },
-    getMessageMetrics: function(creatives, metric) {
-      var that = this,
-          messageTotal;
-      that.currentMetric = metric;
-
-      if (creatives.length > 1) {
-        messageTotal = creatives.reduce(function(a,b) {
-          return a[that.currentMetric] + b[that.currentMetric];
-        });
-      } else {
-        messageTotal = creatives[0][metric];
-      }
-      return messageTotal;
-    },
     showExpanded: function(rowObj) {
       if (rowObj.level === 'campaign') {
         return true;
@@ -224,7 +225,6 @@ Vue.component('hierarchical-table', {
       }
     },
     toggleRow: function(e) {
-      debugger;
       var targetRow = this.rows.findIndex(function (row) {
         return row.id === e.currentTarget.dataset.id;
       });
