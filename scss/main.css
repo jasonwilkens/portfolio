@@ -422,11 +422,11 @@ h1, h2, h3, h4, h5 {
 p, h1, h2, h3, h4, h5, textarea {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5, .nav-max, textarea, .input-row, .bizstrap-table-container {
+p, h1, h2, h3, h4, h5, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table, .bizstrap-table {
+  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
   p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
