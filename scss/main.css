@@ -754,7 +754,6 @@ div[class^="img-container-"] + p {
   margin-bottom: 1.5rem;
   padding-top: 0.75rem;
   border-top: 0.3rem solid #16181D;
-  font-weight: 400;
   color: #5D636E; }
   .sidebar p {
     width: inherit; }
