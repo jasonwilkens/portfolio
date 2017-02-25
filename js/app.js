@@ -33,6 +33,48 @@ var home = { template: '#home' },
     router = new VueRouter({
       routes
     }),
+    campaigns = [
+      {
+        key: "Campaign 1",
+        id: "001",
+        display: "expanded",
+        messages: [
+          {
+            key: "Message 1",
+            id: "001A",
+            display: "expanded",
+            creatives: [
+              {key: "Creative 1", metric1: 1, metric2: 2},
+              {key: "Creative 2", metric1: 1, metric2: 2}
+            ]
+          },
+          {
+            key: "Message 2",
+            id: "001B",
+            display: "collapsed",
+            creatives: [
+              {key: "Creative 3", metric1: 1, metric2: 2}
+            ]
+          }
+        ]
+      },
+      {
+        key: "Campaign 2",
+        id: "002",
+        display: "collapsed",
+        messages: [
+          {
+            key: "Message 3",
+            id: "002A",
+            display: "collapsed",
+            creatives: [
+              {key: "Creative 4", metric1: 1, metric2: 2}
+            ]
+          }
+        ]
+      }
+    ],
+    currentMetric = '',
     generateRows = function() {
       var tableRows = [],
           that = this;
@@ -90,7 +132,8 @@ var home = { template: '#home' },
         messageTotal = creatives[0][metric];
       }
       return messageTotal;
-    };
+    },
+    rows = generateRows();
 
 
 router.afterEach(function () {
@@ -122,50 +165,6 @@ Vue.component('greeting', {
 });
 
 // Hierarchical table on Process page
-
-var campaigns = [
-      {
-        key: "Campaign 1",
-        id: "001",
-        display: "expanded",
-        messages: [
-          {
-            key: "Message 1",
-            id: "001A",
-            display: "expanded",
-            creatives: [
-              {key: "Creative 1", metric1: 1, metric2: 2},
-              {key: "Creative 2", metric1: 1, metric2: 2}
-            ]
-          },
-          {
-            key: "Message 2",
-            id: "001B",
-            display: "collapsed",
-            creatives: [
-              {key: "Creative 3", metric1: 1, metric2: 2}
-            ]
-          }
-        ]
-      },
-      {
-        key: "Campaign 2",
-        id: "002",
-        display: "collapsed",
-        messages: [
-          {
-            key: "Message 3",
-            id: "002A",
-            display: "collapsed",
-            creatives: [
-              {key: "Creative 4", metric1: 1, metric2: 2}
-            ]
-          }
-        ]
-      }
-    ],
-    currentMetric = '',
-    rows = generateRows();
 
 Vue.component('hierarchical-table', {
   data: function() {
