@@ -422,14 +422,14 @@ h1, h2, h3, h4, h5 {
 p, h1, h2, h3, h4, h5, textarea {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5, .nav-max, textarea, .input-row, .bizstrap-table {
+p, h1, h2, h3, h4, h5, .nav-max, textarea, .input-row, .bizstrap-table-container {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table {
+  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table, .bizstrap-table {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table {
+  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
@@ -726,7 +726,9 @@ table {
   max-width: 25rem;
   text-align: center;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  padding-top: 0.75rem;
+  border-top: 0.3rem solid #16181D; }
   .img-container-25 p {
     width: inherit;
     color: #818792; }
@@ -735,7 +737,9 @@ table {
   max-width: 35rem;
   text-align: center;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  padding-top: 0.75rem;
+  border-top: 0.3rem solid #16181D; }
   .img-container-35 p {
     width: inherit;
     color: #818792; }
@@ -843,6 +847,12 @@ textarea + .input-row {
 .contact-button + .input-container {
   margin-top: 0; }
 
+.bizstrap-table-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.75rem;
+  border-top: 0.3rem solid #16181D; }
+
 .bizstrap-table {
   border: 1px solid #e0e2e4;
   border-collapse: separate;
@@ -850,7 +860,8 @@ textarea + .input-row {
   border-top: 0;
   background-color: white;
   border-spacing: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
   .bizstrap-table td, .bizstrap-table th {
     border-left: 1px solid #e0e2e4;
     border-top: 1px solid #e0e2e4;

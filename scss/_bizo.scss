@@ -1,3 +1,10 @@
+.bizstrap-table-container {
+  margin-left:      auto;
+  margin-right:     auto;
+  padding-top:      $default-spacing / 2;
+  border-top:       .3rem solid $vantablack-1;
+}
+
 .bizstrap-table {
   border:           1px solid $bizo-light-gray;
   border-collapse:  separate;
@@ -6,6 +13,7 @@
   background-color: white;
   border-spacing:   0;
   margin-bottom:    0;
+  margin-top:       0;
   td,th {
     border-left:    1px solid $bizo-light-gray;
     border-top:     1px solid $bizo-light-gray;

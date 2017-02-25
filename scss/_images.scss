@@ -3,6 +3,8 @@
   text-align:       center;
   margin-right:     auto;
   margin-left:      auto;
+  padding-top:      $default-spacing / 2;
+  border-top:       .3rem solid $vantablack-1;
   p {
     width:          inherit;
     color:          $vantablack-6;
