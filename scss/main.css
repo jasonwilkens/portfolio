@@ -419,17 +419,20 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   margin-top: .3rem; }
 
+hr {
+  border-top: 0.4em double #16181D; }
+
 p, h1, h2, h3, h4, h5, textarea {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
+p, h1, h2, h3, h4, h5, ul, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
+  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
-  p, h1, h2, h3, h4, h5, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
+  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
@@ -533,6 +536,12 @@ h1 {
 
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
   margin-top: 0.75rem; }
+
+p + hr {
+  margin-top: 3.75rem; }
+
+hr + h1, hr + h2, hr + h3, hr + h4, hr + h5 {
+  margin-top: 3.75rem; }
 
 p + h1, p + h2, p + h3, p + h4, p + h5 {
   margin-top: 1.5rem; }
@@ -718,9 +727,29 @@ table {
   color: white;
   border-top: .4em double white;
   background-color: #16181D;
-  padding: 4.5rem 0; }
+  padding: 0 0 1.5rem 0; }
   .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
-    color: white; }
+    color: white;
+    margin-top: 3rem; }
+
+ul.pills {
+  margin: auto;
+  list-style-type: none;
+  font-weight: 400;
+  margin-top: 4.5rem;
+  padding: 0;
+  color: #16181D; }
+  ul.pills li {
+    display: inline-block;
+    margin-top: 0;
+    padding: 0 .2rem;
+    border-radius: .1rem; }
+  ul.pills li.visited {
+    background-color: white; }
+  ul.pills li.unvisited {
+    background-color: #5D636E; }
+  ul.pills li + li {
+    margin-left: 0.3rem; }
 
 .img-container-25 {
   max-width: 25rem;

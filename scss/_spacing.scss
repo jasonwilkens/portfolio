@@ -17,6 +17,14 @@ h1 + p,h2 + p,h3 + p,h4 + p,h5 + p {
   margin-top: 	    $header-spacing;
 }
 
+p + hr {
+  margin-top:       $header-spacing * 5;
+}
+
+hr + h1,hr + h2,hr + h3,hr + h4,hr + h5 {
+  margin-top:       $header-spacing * 5;
+}
+
 p + h1,p + h2,p + h3,p +h4, p+h5 {
   margin-top:       $default-spacing;
 }

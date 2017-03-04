@@ -1,8 +1,35 @@
 .guide {
   color:            white;
-  h1,h2,h3,h4,h5 { color: white; }
+  h1,h2,h3,h4,h5 {
+    color: white;
+    margin-top:     $default-spacing * 2;
+  }
   border-top:       .4em double white;
   background-color: $vantablack-1;
   //background-image: linear-gradient(-90deg, $midnight, $brick);
-  padding:          ($default-spacing * 3) 0;
+  padding:          0 0 $default-spacing 0;
+}
+
+ul.pills {
+  margin:           auto;
+  list-style-type:  none;
+  font-weight:      400;
+  margin-top:       $default-spacing * 3;
+  padding:          0;
+  color:            $vantablack-1;
+  li {
+    display:        inline-block;
+    margin-top:     0;
+    padding:        0 .2rem;
+    border-radius:  .1rem;
+  }
+  li.visited {
+    background-color: white;
+  }
+  li.unvisited {
+    background-color: $vantablack-5;
+  }
+  li + li {
+    margin-left:   $default-spacing / 5;
+  }
 }
