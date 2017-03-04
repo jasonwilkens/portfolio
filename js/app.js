@@ -225,7 +225,7 @@ Vue.component('hierarchical-table', {
     },
     toggleRow: function(e) {
       var targetRow = this.rows.findIndex(function (row) {
-        return row.id === e.currentTarget.dataset.id;
+        return row.id === e.target.closest("a.row-toggle").dataset.id;
       });
       this.rows[targetRow].display === 'expanded' ?
         this.rows[targetRow].display = 'collapsed' :

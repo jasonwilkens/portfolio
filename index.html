@@ -491,10 +491,10 @@
             <th>Metric</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody v-on:click.prevent="toggleRow">
           <tr v-for="item in rows" v-bind:class="item.level" v-show="showExpanded(item)">
             <td v-if="item.level === 'campaign'" v-bind:rowspan="findRowspan(item)" v-bind:class="item.display === 'expanded' ? 'message' : ''">
-              <a class="row-toggle" href="#" v-bind:data-id="item.id" v-on:click.prevent="toggleRow">
+              <a class="row-toggle" href="#" v-bind:data-id="item.id">
                 <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
                   <g id="triangle">
                     <path d="M167,33 L434,300 L167,567 L167,33 Z" v-bind:transform="item.display === 'expanded' ? 'rotate(90 300 300)' : ''" id="shape"></path>
@@ -503,7 +503,7 @@
               </a>
             </td>
             <td v-if="item.level === 'message'" v-bind:rowspan="findRowspan(item)" v-bind:class="item.display === 'expanded' ? 'creative' : ''">
-              <a class="row-toggle" href="#" v-bind:data-id="item.id" v-on:click.prevent="toggleRow">
+              <a class="row-toggle" href="#" v-bind:data-id="item.id">
                 <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
                   <g id="triangle">
                     <path d="M167,33 L434,300 L167,567 L167,33 Z" v-bind:transform="item.display === 'expanded' ? 'rotate(90 300 300)' : ''" id="shape"></path>
