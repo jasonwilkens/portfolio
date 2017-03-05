@@ -1,10 +1,10 @@
 .contact-background {
-  background-image: url("./../images/contact/contact-bg-28rem.jpg");
+  background-image: url("./../images/contact/contact-bg-28rem-fw.jpg");
   @media screen and (min-width: $phone-size) {
-    background-image: url("./../images/contact/contact-bg-50rem.jpg");
+    background-image: url("./../images/contact/contact-bg-50rem-fw.jpg");
   }
   @media screen and (min-width: $tablet-size) {
-    background-image: url("./../images/contact/contact-bg-fw-2.jpg");
+    background-image: url("./../images/contact/contact-bg-fw.jpg");
   }
   background-size:  cover;
   background-position: center;

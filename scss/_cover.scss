@@ -4,9 +4,9 @@
   background-image: $gradient-left-right;
   position:         relative;
   .cover-background {
-    background-image: url("./../images/monument-cover-28rem.jpg");
+    background-image: url("./../images/monument-cover-28rem-fw.jpg");
     @media screen and (min-width: $phone-size) {
-      background-image: url("./../images/monument-cover-50rem.jpg");
+      background-image: url("./../images/monument-cover-50rem-fw.jpg");
     }
     @media screen and (min-width: $tablet-size) {
       background-image: url("./../images/monument-cover-fw.jpg");
@@ -20,5 +20,5 @@
 .satnh {
   margin-top:       2rem + $nav-height;
   vertical-align:   middle;
-  filter:           opacity(70%);
+  filter:           opacity(80%);
 }

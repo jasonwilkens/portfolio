@@ -274,7 +274,7 @@ article {
       float: left;
       height: 2.9rem;
       margin: .3rem;
-      filter: grayscale(100%);
+      filter: grayscale(100%) contrast(1.2);
       transition: filter 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
       @media screen and (min-width: 35rem) {
         .nav-bar #global-nav .identity {
@@ -343,13 +343,13 @@ article {
   background-image: linear-gradient(to right, #011F7F 0%, #7FDBB6 100%);
   position: relative; }
   .grid-flex .cover .cover-background {
-    background-image: url("./../images/monument-cover-28rem.jpg");
+    background-image: url("./../images/monument-cover-28rem-fw.jpg");
     background-size: cover;
     background-position: center;
     height: 100%; }
     @media screen and (min-width: 28rem) {
       .grid-flex .cover .cover-background {
-        background-image: url("./../images/monument-cover-50rem.jpg"); } }
+        background-image: url("./../images/monument-cover-50rem-fw.jpg"); } }
     @media screen and (min-width: 50rem) {
       .grid-flex .cover .cover-background {
         background-image: url("./../images/monument-cover-fw.jpg"); } }
@@ -357,7 +357,7 @@ article {
 .satnh {
   margin-top: 5.5rem;
   vertical-align: middle;
-  filter: opacity(70%); }
+  filter: opacity(80%); }
 
 .header {
   min-height: 24vmin;
@@ -376,16 +376,16 @@ article {
   background-position: center; }
 
 .header-img.process {
-  background-image: url(./../images/process/process-header-28rem.jpg); }
+  background-image: url(./../images/process/process-header-28rem-fw.jpg); }
   @media screen and (min-width: 28rem) {
     .header-img.process {
-      background-image: url(./../images/process/process-header-50rem.jpg); } }
+      background-image: url(./../images/process/process-header-50rem-fw.jpg); } }
   @media screen and (min-width: 50rem) {
     .header-img.process {
-      background-image: url(./../images/process/process-header.gif); } }
+      background-image: url(./../images/process/process-header-fw.jpg); } }
   @media screen and (min-width: 64rem) {
     .header-img.process {
-      background-image: url(./../images/process/process-header-big-screen.gif); } }
+      background-image: url(./../images/process/process-header-big-screen-fw.jpg); } }
 
 body, textarea, input, button {
   font-family: "Open Sans", Arial, sans-serif;
@@ -800,16 +800,16 @@ div[class^="img-container-"] + p {
   margin-top: 0.75rem; }
 
 .contact-background {
-  background-image: url("./../images/contact/contact-bg-28rem.jpg");
+  background-image: url("./../images/contact/contact-bg-28rem-fw.jpg");
   background-size: cover;
   background-position: center;
   height: 100%; }
   @media screen and (min-width: 28rem) {
     .contact-background {
-      background-image: url("./../images/contact/contact-bg-50rem.jpg"); } }
+      background-image: url("./../images/contact/contact-bg-50rem-fw.jpg"); } }
   @media screen and (min-width: 50rem) {
     .contact-background {
-      background-image: url("./../images/contact/contact-bg-fw-2.jpg"); } }
+      background-image: url("./../images/contact/contact-bg-fw.jpg"); } }
   .contact-background form {
     margin: auto;
     padding: 1.5rem 0 1rem; }

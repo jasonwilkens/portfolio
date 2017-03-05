@@ -18,14 +18,14 @@
 }
 
 .header-img.process {
-  background-image: url(./../images/process/process-header-28rem.jpg);
+  background-image: url(./../images/process/process-header-28rem-fw.jpg);
   @media screen and (min-width: $phone-size) {
-    background-image: url(./../images/process/process-header-50rem.jpg);
+    background-image: url(./../images/process/process-header-50rem-fw.jpg);
   }
   @media screen and (min-width: $tablet-size) {
-    background-image: url(./../images/process/process-header.gif);
+    background-image: url(./../images/process/process-header-fw.jpg);
   }
   @media screen and (min-width: $big-screen) {
-    background-image: url(./../images/process/process-header-big-screen.gif);
+    background-image: url(./../images/process/process-header-big-screen-fw.jpg);
   }
 }
