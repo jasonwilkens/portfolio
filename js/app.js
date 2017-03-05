@@ -234,6 +234,17 @@ Vue.component('hierarchical-table', {
   }
 });
 
+// Contact form
+
+Vue.component('contact-form', {
+  template: '#contact-form',
+  methods: {
+    escape: function(e) {
+      e.target.blur();
+    }
+  }
+});
+
 // Create Vue App
 
 var app = new Vue({

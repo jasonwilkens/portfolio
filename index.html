@@ -364,24 +364,27 @@
           <div class="cover">
             <div class="contact-background">
               <div class="grid-max-width">
-                <div>
-                  <article>
-                    <h1>Contact</h1>
-                    <form>
-                      <textarea placeholder="Write a message" tabindex="1"></textarea>
-                      <div class="input-row">
-                        <button class="contact-button" tabindex="3">Send</button>
-                        <div class="input-container">
-                          <input type="text" placeholder="Your email (optional)" tabindex="2">
-                        </div>
-                      </div>
-                    </form>
-                  </article>
-                </div>
+                <contact-form></contact-form>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </script>
+    <script type="text=x-template" id="contact-form">
+      <div>
+        <article>
+          <h1>Contact</h1>
+          <form>
+            <textarea placeholder="Write a message" tabindex="1" v-on:keyup.esc="escape"></textarea>
+            <div class="input-row">
+              <button class="contact-button" tabindex="3" v-on:keyup.esc="escape">Send</button>
+              <div class="input-container">
+                <input type="text" placeholder="Your email (optional)" tabindex="2" v-on:keyup.esc="escape">
+              </div>
+            </div>
+          </form>
+        </article>
       </div>
     </script>
     <script type="text/x-template" id="lead-accelerator">
