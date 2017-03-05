@@ -417,7 +417,9 @@ h1, h2, h3, h4, h5 {
   margin-top: .3rem; }
 
 hr {
-  border-top: 0.4em double #16181D; }
+  border-top: 0.4em double #16181D;
+  border-left: none;
+  border-right: none; }
 
 p, h1, h2, h3, h4, h5, textarea {
   margin: auto; }
@@ -527,10 +529,10 @@ h5 {
       font-size: 1rem; } }
 
 .satnh {
-  font-size: 2.88651rem; }
+  font-size: 2.56578rem; }
   @media screen and (min-width: 50rem) {
     .satnh {
-      font-size: calc(2.88651rem + 3.07396 * ((100vw - 50rem) / 35)); } }
+      font-size: calc(2.56578rem + 3.39468 * ((100vw - 50rem) / 35)); } }
   @media screen and (min-width: 85rem) {
     .satnh {
       font-size: 5.96046rem; } }
@@ -550,7 +552,7 @@ p + hr {
   margin-top: 3.75rem; }
 
 hr + h1, hr + h2, hr + h3, hr + h4, hr + h5 {
-  margin-top: 3.75rem; }
+  margin-top: 1.5rem; }
 
 p + h1, p + h2, p + h3, p + h4, p + h5 {
   margin-top: 1.5rem; }

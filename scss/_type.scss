@@ -43,6 +43,8 @@ h1,h2,h3,h4,h5 {
 // Horizontal rule
 hr {
   border-top:       .4em double $vantablack-1;
+  border-left:      none;
+  border-right:     none;
 }
 
 // Center block-level type elements within grid within Grid
@@ -131,5 +133,5 @@ h5 {
 }
 
 .satnh {
-  @include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *1rem);
+  @include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *1rem);
 }
