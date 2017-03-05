@@ -14,19 +14,11 @@
     background-size: cover;
     background-position: center;
     height:         100%;
-    //filter:         opacity(80%);
-    .lettering {
-      padding-left: 10vw;
-      padding-top:  calc(50vh - 10vw);
-      width:        80vw;
-      @media screen and (min-width: $min-fluid) {
-        padding-left: 30vw;
-        width:      40vw;
-      }
-      @media screen and (min-width: $max-fluid) {
-        padding-top: 40vh;
-      }
-      filter:       opacity(60%);
-    }
   }
+}
+
+.satnh {
+  margin-top:       2rem + $nav-height;
+  vertical-align:   middle;
+  filter:           opacity(70%);
 }

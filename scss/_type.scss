@@ -100,6 +100,7 @@ h3{ font-size: $mod_1*$mod_1 *1rem; }
 h4{ font-size: $mod_1 *1rem; }
 h5{ font-size: 1rem; }
 .small { font-size: 1/$mod_1 *1rem; }
+.satnh { font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; }
 
 p,span,td,th,textarea,input,button {
   @include fluid-type($min-fluid, $max-fluid, 1rem, $mod_2 *1rem);
@@ -127,4 +128,8 @@ h5 {
 
 .small {
   @include fluid-type($min-fluid, $max-fluid, 1/$mod_1 *1rem, 1rem);
+}
+
+.satnh {
+  @include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *1rem);
 }
