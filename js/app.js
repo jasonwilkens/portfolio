@@ -16,10 +16,10 @@ var home = { template: '#home' },
     customerFlow = { template: '#customer-flow' },
     routes = [
       { path: '/', component: home, meta: { project: false } },
-      { path: '/work', component: work, meta: { project: false } },
-      { path: '/process', component: process, meta: { project: false } },
-      { path: '/about', component: about, meta: { project: false } },
-      { path: '/contact', component: contact, meta: { project: false } },
+      { path: '/work', component: work, meta: { project: false, visited: false } },
+      { path: '/process', component: process, meta: { project: false, visited: false } },
+      { path: '/about', component: about, meta: { project: false, visited: false } },
+      { path: '/contact', component: contact, meta: { project: false, visited: false } },
       { path: '/work/lead-accelerator', component: leadAccelerator, meta: { project: true, title: 'LinkedIn: Lead Accelerator' }},
       { path: '/work/mad-river', component: madRiver, meta: { project: true, title: 'LinkedIn: Mad River' }},
       { path: '/work/lead-ads', component: leadAds, meta: { project: true, title: 'LinkedIn: Lead Ads' }},
@@ -136,8 +136,15 @@ var home = { template: '#home' },
     rows = generateRows();
 
 
-router.afterEach(function () {
+router.afterEach(function() {
   scroll(0,0);
+});
+
+router.beforeEach(function(to, from, next) {
+  if (to.meta.visited === false) {
+    to.meta.visited = true;
+  }
+  next();
 });
 
 // Nav
@@ -151,7 +158,7 @@ Vue.component('nav-bar', {
 Vue.component('greeting', {
   template: '<h2>{{ message() }}</h2>',
   methods: {
-    message: function () {
+    message: function() {
       var hour = new Date().getHours();
       if (hour < 12) {
         return 'Good morning';
@@ -203,7 +210,7 @@ Vue.component('hierarchical-table', {
         return true;
       }
       if (rowObj.level === 'message') {
-        if (this.rows.find(function (row) {
+        if (this.rows.find(function(row) {
           return row.id === rowObj.campaignId;
         }).display === "collapsed") {
           return false;
@@ -211,10 +218,10 @@ Vue.component('hierarchical-table', {
           return true;
         }
       } else if (rowObj.level === 'creative') {
-        if (this.rows.find(function (row) {
+        if (this.rows.find(function(row) {
             return row.id === rowObj.messageId;
           }).display === "collapsed" ||
-          this.rows.find(function (row) {
+          this.rows.find(function(row) {
             return row.id === rowObj.campaignId;
           }).display === "collapsed") {
             return false;
@@ -224,7 +231,7 @@ Vue.component('hierarchical-table', {
       }
     },
     toggleRow: function(e) {
-      var targetRow = this.rows.findIndex(function (row) {
+      var targetRow = this.rows.findIndex(function(row) {
         return row.id === e.target.closest("a.row-toggle").dataset.id;
       });
       this.rows[targetRow].display === 'expanded' ?
@@ -241,6 +248,63 @@ Vue.component('contact-form', {
   methods: {
     escape: function(e) {
       e.target.blur();
+    }
+  }
+});
+
+// Guide
+
+Vue.component('guide', {
+  data: function() {
+    var data = {},
+        content = [
+      {
+        title: 'Work',
+        to: '/work',
+        description: 'Check out ',
+        link: 'some of my past projects.'
+      },
+      {
+        title: 'Process',
+        to: '/process',
+        description: 'I wrote down my thoughts on building web products, ',
+        link: 'find them here.'
+      },
+      {
+        title: 'About',
+        to: '/about',
+        description: 'Designers are different. ',
+        link: 'Here\'s what I\'m good at.'
+      },
+      {
+        title: 'Contact',
+        to: '/contact',
+        description: 'You\'ve seen most of my site. Want to ',
+        link: 'get in touch?'
+      },
+      {
+        title: 'Wow',
+        to: '/',
+        description: 'Thanks for checking everything out!',
+        link: ''
+      }
+    ];
+    data.content = content;
+    return data;
+  },
+  template: '#guide',
+  methods: {
+    routes: function(routeIndex) {
+      return routes[routeIndex].meta.visited ? 'visited' : 'unvisited';
+    },
+    suggested: function(contentType) {
+      var contentIndex = routes.findIndex(function(route) {
+        return route.meta.visited === false;
+      }) - 1;
+      if (contentIndex === -2) {
+        contentIndex = 4;
+      }
+      return this.content[contentIndex][contentType];
     }
   }
 });

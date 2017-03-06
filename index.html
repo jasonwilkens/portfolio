@@ -198,18 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-flex guide">
-          <article>
-            <h2>Process</h2>
-            <p>I wrote down my thoughts on building web products, <router-link to="/process">find them here.</router-link></p>
-            <ul class="pills" title="where you've been">
-              <li class="visited">Work</li>
-              <li class="unvisited">Process</li>
-              <li class="unvisited">About</li>
-              <li class="unvisited">Contact</li>
-            </ul>
-          </article>
-        </div>
+        <guide></guide>
       </div>
     </script>
     <script type="text/x-template" id="process">
@@ -267,18 +256,7 @@
             </article>
           </div>
         </div>
-        <div class="grid-flex guide">
-          <article>
-            <h2>About</h2>
-            <p>Designers are different. <router-link to="/about">Here's what I'm good at.</router-link></p>
-            <ul class="pills" title="where you've been">
-              <li class="visited">Work</li>
-              <li class="visited">Process</li>
-              <li class="unvisited">About</li>
-              <li class="unvisited">Contact</li>
-            </ul>
-          </article>
-        </div>
+        <guide></guide>
       </div>
     </script>
     <script type="text/x-template" id="about">
@@ -344,18 +322,7 @@
             <p>Making this site was a fun chance to play with <a href="https://vuejs.org/" target="_blank">Vue.js</a>, <a href="http://www.profoundgrid.com" target="_blank">Profound Grid</a>, and <a href="https://www.smashingmagazine.com/2016/05/fluid-typography/" target="_blank">fluid type</a>. I also wanted to put some of my code-based work in a portfolio without just taking screenshots of it. Finally, I wanted to have my thoughts on design in a place I can easily point people to. Check out the <a href="https://github.com/jasonwilkens/portfolio" target="_blank">GitHub repository</a> to inspect my work and <router-link to="/contact">drop me a line</router-link> if you have any feedback you'd like to share. Thanks for visiting!</p>
           </article>
         </div>
-        <div class="grid-flex guide">
-          <article>
-            <h2>Contact</h2>
-            <p>You've seen most of my site. Want to <router-link to="/contact">get in touch?</router-link></p>
-            <ul class="pills" title="where you've been">
-              <li class="visited">Work</li>
-              <li class="visited">Process</li>
-              <li class="visited">About</li>
-              <li class="unvisited">Contact</li>
-            </ul>
-          </article>
-        </div>
+        <guide></guide>
       </div>
     </script>
     <script type="text/x-template" id="contact">
@@ -384,6 +351,22 @@
               </div>
             </div>
           </form>
+        </article>
+      </div>
+    </script>
+    <script type="text/x-template" id="guide">
+      <div class="grid-flex guide">
+        <article>
+          <h2>{{ suggested('title') }}</h2>
+          <p>{{ suggested('description') }}
+            <router-link v-bind:to="suggested('to')">{{ suggested('link') }}</router-link>
+          </p>
+          <ul class="pills" title="where you've been">
+            <li v-bind:class="routes(1)">Work</li>
+            <li v-bind:class="routes(2)">Process</li>
+            <li v-bind:class="routes(3)">About</li>
+            <li v-bind:class="routes(4)">Contact</li>
+          </ul>
         </article>
       </div>
     </script>
