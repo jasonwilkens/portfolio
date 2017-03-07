@@ -258,37 +258,37 @@ Vue.component('guide', {
   data: function() {
     var data = {},
         content = [
-      {
-        title: 'Work',
-        to: '/work',
-        description: 'Check out ',
-        link: 'some of my past projects.'
-      },
-      {
-        title: 'Process',
-        to: '/process',
-        description: 'I wrote down my thoughts on building web products, ',
-        link: 'find them here.'
-      },
-      {
-        title: 'About',
-        to: '/about',
-        description: 'Designers are different. ',
-        link: 'Here\'s what I\'m good at.'
-      },
-      {
-        title: 'Contact',
-        to: '/contact',
-        description: 'You\'ve seen most of my site. Want to ',
-        link: 'get in touch?'
-      },
-      {
-        title: 'Wow',
-        to: '/',
-        description: 'Thanks for checking everything out!',
-        link: ''
-      }
-    ];
+          {
+            title: 'Work',
+            to: '/work',
+            description: 'Check out ',
+            link: 'some of my past projects.'
+          },
+          {
+            title: 'Process',
+            to: '/process',
+            description: 'I wrote down my thoughts on building web products, ',
+            link: 'find them here.'
+          },
+          {
+            title: 'About',
+            to: '/about',
+            description: 'Designers are different. ',
+            link: 'Here\'s what I\'m good at.'
+          },
+          {
+            title: 'Contact',
+            to: '/contact',
+            description: 'You\'ve seen most of my site. Want to ',
+            link: 'get in touch?'
+          },
+          {
+            title: 'Wow',
+            to: '/',
+            description: 'Thanks for checking everything out!',
+            link: ''
+          }
+        ];
     data.content = content;
     return data;
   },
