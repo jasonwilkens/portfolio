@@ -362,10 +362,10 @@
             <router-link v-bind:to="suggested('to')">{{ suggested('link') }}</router-link>
           </p>
           <ul class="pills" title="where you've been">
-            <li v-bind:class="routes(1)">Work</li>
-            <li v-bind:class="routes(2)">Process</li>
-            <li v-bind:class="routes(3)">About</li>
-            <li v-bind:class="routes(4)">Contact</li>
+            <li v-bind:class="routeVisited(1)">Work</li>
+            <li v-bind:class="routeVisited(2)">Process</li>
+            <li v-bind:class="routeVisited(3)">About</li>
+            <li v-bind:class="routeVisited(4)">Contact</li>
           </ul>
         </article>
       </div>

@@ -290,21 +290,27 @@ Vue.component('guide', {
           }
         ];
     data.content = content;
+    data.routes = routes;
     return data;
   },
   template: '#guide',
   methods: {
-    routes: function(routeIndex) {
+    routeVisited: function(routeIndex) {
       return routes[routeIndex].meta.visited ? 'visited' : 'unvisited';
     },
     suggested: function(contentType) {
-      var contentIndex = routes.findIndex(function(route) {
+      if (this.contentIndex === -2) {
+        return this.content[4][contentType];
+      } else {
+        return this.content[this.contentIndex][contentType];
+      }
+    }
+  },
+  computed: {
+    contentIndex: function() {
+      return this.routes.findIndex(function(route) {
         return route.meta.visited === false;
       }) - 1;
-      if (contentIndex === -2) {
-        contentIndex = 4;
-      }
-      return this.content[contentIndex][contentType];
     }
   }
 });
