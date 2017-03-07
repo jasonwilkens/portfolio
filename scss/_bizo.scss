@@ -59,12 +59,6 @@
   }
 }
 
-tr.message,tr.creative {
-  td:first-child {
-    width:          1em;
-  }
-}
-
 tr.creative {
   td:nth-child(2) {
     text-align:     right;
@@ -86,5 +80,6 @@ tr.creative .label {
 tr.campaign,tr.message {
   td:first-child {
     padding:        .4em .5em .1em;
+    width:          1em;
   }
 }

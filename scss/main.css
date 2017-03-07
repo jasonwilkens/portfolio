@@ -972,9 +972,6 @@ textarea + .input-row {
       .bizstrap-table a.row-toggle:active path {
         fill: #011F7F; }
 
-tr.message td:first-child, tr.creative td:first-child {
-  width: 1em; }
-
 tr.creative td:nth-child(2) {
   text-align: right; }
 
@@ -988,6 +985,7 @@ tr.creative .label {
   padding-left: 1.5em; }
 
 tr.campaign td:first-child, tr.message td:first-child {
-  padding: .4em .5em .1em; }
+  padding: .4em .5em .1em;
+  width: 1em; }
 
 /*# sourceMappingURL=main.css.map */
