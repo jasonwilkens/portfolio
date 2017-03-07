@@ -299,11 +299,9 @@ Vue.component('guide', {
       return routes[routeIndex].meta.visited ? 'visited' : 'unvisited';
     },
     suggested: function(contentType) {
-      if (this.contentIndex === -2) {
-        return this.content[4][contentType];
-      } else {
-        return this.content[this.contentIndex][contentType];
-      }
+      return this.contentIndex === -2 ?
+        this.content[4][contentType] :
+        this.content[this.contentIndex][contentType];
     }
   },
   computed: {
