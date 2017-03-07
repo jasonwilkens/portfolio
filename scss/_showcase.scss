@@ -1,7 +1,13 @@
 .job {
   position:         relative;
   padding-bottom:   $default-spacing * 2;
+  @media screen and (min-width: $phone-size) {
+    margin-left:    $default-spacing / 2;
+    margin-right:   $default-spacing / 2;
+  }
   @media screen and (min-width: $tablet-size) {
+    margin-left:    $default-spacing;
+    margin-right:   $default-spacing;
     padding-bottom: $default-spacing * 5;
   }
   .background {
@@ -91,6 +97,12 @@
     @media screen and (min-width: $tablet-size) {
       background-image: url("./../images/work/esurance-bg.jpg");
     }
+  }
+  @media screen and (min-width: $phone-size) {
+    margin-bottom:     $default-spacing / 2;
+  }
+  @media screen and (min-width: $tablet-size) {
+    margin-bottom:     $default-spacing;
   }
 }
 

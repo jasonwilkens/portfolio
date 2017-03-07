@@ -217,7 +217,7 @@ article {
     overflow: hidden;
     *zoom: 1; }
 
-.grid-flex + .job, .job + .job {
+.grid-flex + .job {
   margin-top: 0; }
 
 .job + .guide {
@@ -575,6 +575,15 @@ p + p {
     .grid-showcase + .grid-showcase {
       margin-top: 1.76rem; } }
 
+.job + .job {
+  margin-top: 0; }
+  @media screen and (min-width: 28rem) {
+    .job + .job {
+      margin-top: 0.75rem; } }
+  @media screen and (min-width: 50rem) {
+    .job + .job {
+      margin-top: 1.5rem; } }
+
 #nav-bar + div {
   margin-top: 0; }
 
@@ -634,8 +643,14 @@ table {
 .job {
   position: relative;
   padding-bottom: 3rem; }
+  @media screen and (min-width: 28rem) {
+    .job {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem; } }
   @media screen and (min-width: 50rem) {
     .job {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
       padding-bottom: 7.5rem; } }
   .job .background {
     position: absolute;
@@ -718,6 +733,12 @@ table {
     @media screen and (min-width: 50rem) {
       .job.esurance .background-image {
         background-image: url("./../images/work/esurance-bg.jpg"); } }
+  @media screen and (min-width: 28rem) {
+    .job.esurance {
+      margin-bottom: 0.75rem; } }
+  @media screen and (min-width: 50rem) {
+    .job.esurance {
+      margin-bottom: 1.5rem; } }
 
 .grid-showcase article {
   padding: 1rem .5rem 0; }

@@ -53,6 +53,16 @@ p + p {
   }
 }
 
+.job + .job {
+  margin-top:       0;
+  @media screen and (min-width: $phone-size) {
+    margin-top:     $default-spacing / 2;
+  }
+  @media screen and (min-width: $tablet-size) {
+    margin-top:     $default-spacing;
+  }
+}
+
 // Nav + Template container
 #nav-bar + div {
   margin-top: 0;

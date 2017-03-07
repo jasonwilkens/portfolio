@@ -45,7 +45,7 @@ $max_width:         $wide-grid-width;
   @include generate_grid_positions(div, 12);
 }
 
-.grid-flex + .job, .job + .job { 
+.grid-flex + .job {
   margin-top: 0; 
 }
 
