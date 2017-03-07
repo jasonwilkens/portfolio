@@ -633,10 +633,10 @@ table {
 
 .job {
   position: relative;
-  padding-bottom: 1.5rem; }
+  padding-bottom: 3rem; }
   @media screen and (min-width: 50rem) {
     .job {
-      padding-bottom: 5.25rem; } }
+      padding-bottom: 7.5rem; } }
   .job .background {
     position: absolute;
     width: 100%;
@@ -652,7 +652,7 @@ table {
     padding-top: 3rem; }
     @media screen and (min-width: 50rem) {
       .job .grid-max-width {
-        padding-top: 5.25rem; } }
+        padding-top: 7.5rem; } }
 
 .job.linkedin {
   background-color: #303336;
@@ -667,7 +667,13 @@ table {
     background-color: white;
     color: #0084bf; }
   .job.linkedin .background-image {
-    background-image: url("./../images/work/linkedin-bg.gif"); }
+    background-image: url("./../images/work/linkedin-bg-28rem.jpg"); }
+    @media screen and (min-width: 28rem) {
+      .job.linkedin .background-image {
+        background-image: url("./../images/work/linkedin-bg-50rem.jpg"); } }
+    @media screen and (min-width: 50rem) {
+      .job.linkedin .background-image {
+        background-image: url("./../images/work/linkedin-bg.jpg"); } }
 
 .job.bizo {
   background-color: #006386;
@@ -683,8 +689,13 @@ table {
     background-color: white;
     color: #0095D5; }
   .job.bizo .background-image {
-    background-image: url("./../images/work/bizo-bg.gif");
-    filter: opacity(0.05); }
+    background-image: url("./../images/work/bizo-bg-28rem.jpg"); }
+    @media screen and (min-width: 28rem) {
+      .job.bizo .background-image {
+        background-image: url("./../images/work/bizo-bg-50rem.jpg"); } }
+    @media screen and (min-width: 50rem) {
+      .job.bizo .background-image {
+        background-image: url("./../images/work/bizo-bg.jpg"); } }
 
 .job.esurance {
   background-color: #EEE;
@@ -700,7 +711,13 @@ table {
     background-color: white;
     color: #6699FF; }
   .job.esurance .background-image {
-    background-image: url("./../images/work/esurance-bg.gif"); }
+    background-image: url("./../images/work/esurance-bg-28rem.jpg"); }
+    @media screen and (min-width: 28rem) {
+      .job.esurance .background-image {
+        background-image: url("./../images/work/esurance-bg-50rem.jpg"); } }
+    @media screen and (min-width: 50rem) {
+      .job.esurance .background-image {
+        background-image: url("./../images/work/esurance-bg.jpg"); } }
 
 .grid-showcase article {
   padding: 1rem .5rem 0; }

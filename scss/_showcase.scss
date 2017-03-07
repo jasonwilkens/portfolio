@@ -1,8 +1,8 @@
 .job {
   position:         relative;
-  padding-bottom:   $default-spacing;
+  padding-bottom:   $default-spacing * 2;
   @media screen and (min-width: $tablet-size) {
-    padding-bottom: $default-spacing * 3.5;
+    padding-bottom: $default-spacing * 5;
   }
   .background {
     position:       absolute;
@@ -20,7 +20,7 @@
     position:       relative;
     padding-top:    $default-spacing * 2;
     @media screen and (min-width: $tablet-size) {
-      padding-top: $default-spacing * 3.5;
+      padding-top: $default-spacing * 5;
     }
   }
 }
@@ -35,7 +35,15 @@
     background-color: white;
     color:          $linkedin-blue;
   }
-  .background-image { background-image: url('./../images/work/linkedin-bg.gif'); }
+  .background-image {
+    background-image: url('./../images/work/linkedin-bg-28rem.jpg');
+    @media screen and (min-width: $phone-size) {
+      background-image: url("./../images/work/linkedin-bg-50rem.jpg");
+    }
+    @media screen and (min-width: $tablet-size) {
+      background-image: url("./../images/work/linkedin-bg.jpg");
+    }
+  }
 }
 
 .job.bizo {
@@ -52,8 +60,13 @@
     color:          $bizo-light-blue;
   }
   .background-image {
-    background-image: url('./../images/work/bizo-bg.gif');
-    filter: opacity(.05);
+    background-image: url('./../images/work/bizo-bg-28rem.jpg');
+    @media screen and (min-width: $phone-size) {
+      background-image: url("./../images/work/bizo-bg-50rem.jpg");
+    }
+    @media screen and (min-width: $tablet-size) {
+      background-image: url("./../images/work/bizo-bg.jpg");
+    }
   }
 }
 
@@ -70,7 +83,15 @@
     background-color: white;
     color:          $esurance-blue;
   }
-  .background-image { background-image: url('./../images/work/esurance-bg.gif'); }
+  .background-image {
+    background-image: url('./../images/work/esurance-bg-28rem.jpg');
+    @media screen and (min-width: $phone-size) {
+      background-image: url("./../images/work/esurance-bg-50rem.jpg");
+    }
+    @media screen and (min-width: $tablet-size) {
+      background-image: url("./../images/work/esurance-bg.jpg");
+    }
+  }
 }
 
 .grid-showcase {
