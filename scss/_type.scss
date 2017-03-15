@@ -133,5 +133,5 @@ h5 {
 }
 
 .satnh {
-  @include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *1rem);
+  @include fluid-type($min-fluid, $max-fluid, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *1rem);
 }
