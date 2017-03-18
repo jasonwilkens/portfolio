@@ -288,7 +288,7 @@ article {
       background-color: #7FDBB6;
       border-radius: 15%; }
       .nav-bar #global-nav a:hover .identity img {
-        filter: opacity(25%); }
+        filter: opacity(25%) grayscale(100%) contrast(1.2); }
     .nav-bar #global-nav a:active .identity {
       background-color: #011F7F; }
     .nav-bar #global-nav .nav-links {
