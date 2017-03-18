@@ -26,6 +26,8 @@
       float:        left;
       height:       2.9rem;
       margin:       .3rem;
+      border-radius: 15%;
+      transition:   background .10s cubic-bezier(.33,.66,.66,1);
       @media screen and (min-width: $min-line-length) {
         margin: .3rem .3rem .3rem 0;
       }
@@ -33,11 +35,11 @@
         height:     $nav-height - .6rem;
         width:      $nav-height - .6rem;
         border-radius: 15%;
+        transition: filter .30s cubic-bezier(.33,.66,.66,1);
       }
     }
     a:hover .identity {
       background-color: $mint;
-      border-radius: 15%;
       img {
         filter:     opacity(25%) grayscale(100%) contrast(1.2);
       }
