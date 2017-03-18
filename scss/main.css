@@ -430,7 +430,7 @@ hr {
 p svg {
   display: inline;
   height: 1.25rem;
-  margin: 0 -.2rem -.2rem 0; }
+  margin: 0 .2rem -.2rem 0; }
 
 svg.linkedin {
   fill: #0084bf; }

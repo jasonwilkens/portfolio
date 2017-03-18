@@ -18,7 +18,7 @@
       <div id="nav-bar" class="nav-bar">
         <div id="work-nav" v-if="$route.meta.project">
           <router-link to="/work">
-            <svg id="back" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <svg id="back" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" version="1.1" alt="back to Work">
               <g id="arrow">
                 <path  d="M285.977922,343.933766 L407.918008,343.933766 C413.437365,343.933766 417.911688,348.413043 417.911688,353.94054 L417.911688,377.904915 C417.911688,383.431503 413.431008,387.911688 407.918008,387.911688 L251.993681,387.911688 C249.236181,387.911688 246.739527,386.793637 244.931366,384.985401 C243.118279,383.168984 242,380.672332 242,377.918008 L242,221.993681 C242,216.474323 246.479277,212 252.006773,212 L275.971149,212 C281.497737,212 285.977922,216.48068 285.977922,221.993681 L285.977922,343.933766 Z" transform="translate(329.955844, 299.955844) rotate(-315.000000) translate(-329.955844, -299.955844)"/>
               </g>
@@ -321,17 +321,16 @@
             <h3>Social media</h3>
             <p>You can find me on
             <a href="https://www.linkedin.com/in/jasondwilkens/" target="_blank">
-            <svg class="linkedin" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <svg class="linkedin" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" alt="LinkedIn logo">
               <path d="M370.391,0H29.523C13.234,0,0,12.911,0,28.824V371.14C0,387.067,13.234,400,29.523,400h340.867
               C386.709,400,400,387.067,400,371.14V28.824C400,12.911,386.709,0,370.391,0z M118.635,340.853h-59.33V149.959h59.33V340.853z
                M88.984,123.865c-19.016,0-34.407-15.415-34.407-34.406c0-18.974,15.391-34.388,34.407-34.388c18.967,0,34.38,15.415,34.38,34.388
               C123.364,108.45,107.951,123.865,88.984,123.865z M340.847,340.853h-59.286V248.02c0-22.136-0.407-50.611-30.829-50.611
               c-30.869,0-35.607,24.114-35.607,49.012v94.433h-59.277V149.959h56.902v26.084h0.795c7.921-15.008,27.273-30.83,56.136-30.83
               c60.076,0,71.167,39.54,71.167,90.933V340.853z"/>
-            </svg>
-            professional</a> or
+            </svg>professional</a> or
             <a href="https://twitter.com/jasondwilkens" target="_blank">
-            <svg class="twitter" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <svg class="twitter" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" alt="Twitter logo">
               <path d="M350,400H50c-27.6,0-50-22.4-50-50V50C0,22.4,22.4,0,50,0h300c27.6,0,50,22.4,50,50v300
               C400,377.6,377.6,400,350,400z M153.6,301.6c94.3,0,145.9-78.2,145.9-145.9c0-2.2,0-4.4-0.1-6.6c10-7.2,18.7-16.3,25.6-26.6
               c-9.2,4.1-19.1,6.8-29.5,8.1c10.6-6.3,18.7-16.4,22.6-28.4c-9.9,5.9-20.9,10.1-32.6,12.4c-9.4-10-22.7-16.2-37.4-16.2
@@ -339,8 +338,7 @@
               c0,17.8,9.1,33.5,22.8,42.7c-8.4-0.3-16.3-2.6-23.2-6.4c0,0.2,0,0.4,0,0.7c0,24.8,17.7,45.6,41.1,50.3c-4.3,1.2-8.8,1.8-13.5,1.8
               c-3.3,0-6.5-0.3-9.6-0.9c6.5,20.4,25.5,35.2,47.9,35.6c-17.6,13.8-39.7,22-63.7,22c-4.1,0-8.2-0.2-12.2-0.7
               C97.7,293.1,124.7,301.6,153.6,301.6"/>
-            </svg>
-            unprofessional</a> networks.</p>
+            </svg>unprofessional</a> networks.</p>
             <h3>About this site</h3>
             <p>Making this site was a fun chance to play with <a href="https://vuejs.org/" target="_blank">Vue.js</a>, <a href="http://www.profoundgrid.com" target="_blank">Profound Grid</a>, and <a href="https://www.smashingmagazine.com/2016/05/fluid-typography/" target="_blank">fluid type</a>. I also wanted to put some of my code-based work in a portfolio without just taking screenshots of it. Finally, I wanted to have my thoughts on design in a place I can easily point people to. Check out the <a href="https://github.com/jasonwilkens/portfolio" target="_blank">GitHub repo</a> to inspect my work and <router-link to="/contact">drop me a line</router-link> if you have any feedback you'd like to share. Thanks for visiting!</p>
           </article>
@@ -526,7 +524,7 @@
           <tr v-for="item in rows" v-bind:class="item.level" v-show="showExpanded(item)">
             <td v-if="item.level === 'campaign'" v-bind:rowspan="findRowspan(item)" v-bind:class="item.display === 'expanded' ? 'message' : ''">
               <a class="row-toggle" href="#" v-bind:data-id="item.id">
-                <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" alt="toggle campaign">
                   <g id="triangle">
                     <path d="M167,33 L434,300 L167,567 L167,33 Z" v-bind:transform="item.display === 'expanded' ? 'rotate(90 300 300)' : ''" id="shape"></path>
                   </g>
@@ -535,7 +533,7 @@
             </td>
             <td v-if="item.level === 'message'" v-bind:rowspan="findRowspan(item)" v-bind:class="item.display === 'expanded' ? 'creative' : ''">
               <a class="row-toggle" href="#" v-bind:data-id="item.id">
-                <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" alt="toggle message">
                   <g id="triangle">
                     <path d="M167,33 L434,300 L167,567 L167,33 Z" v-bind:transform="item.display === 'expanded' ? 'rotate(90 300 300)' : ''" id="shape"></path>
                   </g>
