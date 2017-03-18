@@ -270,23 +270,27 @@ article {
     margin: auto; }
     .nav-bar #global-nav a {
       display: block; }
+    .nav-bar #global-nav .router-link-active img {
+      filter: grayscale(100%) contrast(1.2);
+      transition: filter 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
     .nav-bar #global-nav .identity {
       float: left;
       height: 2.9rem;
-      margin: .3rem;
-      filter: grayscale(100%) contrast(1.2);
-      transition: filter 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
+      margin: .3rem; }
       @media screen and (min-width: 35rem) {
         .nav-bar #global-nav .identity {
           margin: .3rem .3rem .3rem 0; } }
-      .nav-bar #global-nav .identity:hover {
-        filter: none; }
-        .nav-bar #global-nav .identity:hover a {
-          background: white; }
       .nav-bar #global-nav .identity img {
         height: 2.9rem;
         width: 2.9rem;
         border-radius: 15%; }
+    .nav-bar #global-nav a:hover .identity {
+      background-color: #7FDBB6;
+      border-radius: 15%; }
+      .nav-bar #global-nav a:hover .identity img {
+        filter: opacity(25%); }
+    .nav-bar #global-nav a:active .identity {
+      background-color: #011F7F; }
     .nav-bar #global-nav .nav-links {
       display: flex; }
       .nav-bar #global-nav .nav-links div {
