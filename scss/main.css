@@ -842,6 +842,17 @@ ul.pills {
     width: inherit;
     color: #818792; }
 
+.img-container-50 {
+  max-width: 50rem;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0.75rem;
+  border-top: 0.3rem solid #16181D; }
+  .img-container-50 p {
+    width: inherit;
+    color: #818792; }
+
 div[class^="img-container-"] + p {
   margin-top: 0.75rem; }
 
