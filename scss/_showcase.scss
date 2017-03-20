@@ -1,6 +1,8 @@
 .job {
   position:         relative;
   padding-bottom:   $default-spacing * 2;
+  background-color: white;
+  border-top:       .3rem solid $vantablack-1;
   @media screen and (min-width: $phone-size) {
     margin-left:    $default-spacing / 2;
     margin-right:   $default-spacing / 2;
@@ -32,17 +34,14 @@
 }
 
 .job.linkedin {
-  background-color: $linkedin-bg;
-  color:            $linkedin-copy;
-  h1,h2,h3,h4,h5    { color: $linkedin-headline; }
   h1 small, h2 small { color: $linkedin-subhead; }
   a p {
-    background-color: $linkedin-light-gray;
-    color:          $linkedin-blue;
+    background-color: $linkedin-blue;
+    color:          white;
   }  
   a:hover p {
-    background-color: lighten($linkedin-light-gray, 5%);
-    color: $linkedin-blue;
+    background-color: lighten($linkedin-blue, 5%);
+    color:          white;
   }
   a:focus p, a:active p {
     background-color: white;
@@ -60,16 +59,13 @@
 }
 
 .job.bizo {
-  background-color: $bizo-bg;
-  color:            $bizo-copy;
-  h1,h2,h3,h4,h5    { color: $bizo-headline; }
   h1 small, h2 small { color: $bizo-subhead; }
   a p {
-    background-color: lighten($bizo-dark-blue, 5%);
+    background-color: darken($bizo-red, 10%);
     color:          white;
   }
   a:hover p {
-    background-color: lighten($bizo-dark-blue, 10%);
+    background-color: darken($bizo-red, 5%);
     color:          white;    
   }
   a:focus p, a:active p {
@@ -88,9 +84,6 @@
 }
 
 .job.esurance {
-  background-color: $esurance-bg;
-  color:            $esurance-copy;
-  h1,h2,h3,h4,h5    { color: $esurance-headline; }
   h1 small, h2 small { color: $esurance-subhead; }
   a p {
     background-color: darken($esurance-light-purple, 10%);
@@ -157,7 +150,7 @@
     bottom:         0;
     width:          100%;
     background-color: $vantablack-5;
-    line-height:    3rem;
+    line-height:    2.75rem;
     transition:     background-color .3s, filter .3s;
     span {
       padding:      0 1rem;

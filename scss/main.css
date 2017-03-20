@@ -662,7 +662,9 @@ table {
 
 .job {
   position: relative;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  background-color: white;
+  border-top: 0.3rem solid #16181D; }
   @media screen and (min-width: 28rem) {
     .job {
       margin-left: 0.75rem;
@@ -689,86 +691,71 @@ table {
       .job .grid-max-width {
         padding-top: 7.5rem; } }
 
-.job.linkedin {
-  background-color: #283e4a;
-  color: rgba(255, 255, 255, 0.8); }
-  .job.linkedin h1, .job.linkedin h2, .job.linkedin h3, .job.linkedin h4, .job.linkedin h5 {
-    color: white; }
-  .job.linkedin h1 small, .job.linkedin h2 small {
-    color: #e1e9ee; }
-  .job.linkedin a p {
-    background-color: #e1e9ee;
-    color: #0084bf; }
-  .job.linkedin a:hover p {
-    background-color: #f1f5f7;
-    color: #0084bf; }
-  .job.linkedin a:focus p, .job.linkedin a:active p {
-    background-color: white;
-    color: #0084bf; }
-  .job.linkedin .background-image {
-    background-image: url("./../images/work/linkedin-bg-28rem.jpg"); }
-    @media screen and (min-width: 28rem) {
-      .job.linkedin .background-image {
-        background-image: url("./../images/work/linkedin-bg-50rem.jpg"); } }
-    @media screen and (min-width: 50rem) {
-      .job.linkedin .background-image {
-        background-image: url("./../images/work/linkedin-bg.jpg"); } }
-
-.job.bizo {
-  background-color: #00506d;
-  color: rgba(255, 255, 255, 0.85); }
-  .job.bizo h1, .job.bizo h2, .job.bizo h3, .job.bizo h4, .job.bizo h5 {
-    color: white; }
-  .job.bizo h1 small, .job.bizo h2 small {
-    color: white; }
-  .job.bizo a p {
-    background-color: #0076a0;
-    color: white; }
-  .job.bizo a:hover p {
-    background-color: #0089b9;
-    color: white; }
-  .job.bizo a:focus p, .job.bizo a:active p {
-    background-color: white;
-    color: #0095D5; }
-  .job.bizo .background-image {
-    background-image: url("./../images/work/bizo-bg-28rem.jpg"); }
-    @media screen and (min-width: 28rem) {
-      .job.bizo .background-image {
-        background-image: url("./../images/work/bizo-bg-50rem.jpg"); } }
-    @media screen and (min-width: 50rem) {
-      .job.bizo .background-image {
-        background-image: url("./../images/work/bizo-bg.jpg"); } }
-
-.job.esurance {
-  background-color: #EEE;
-  color: #585149; }
-  .job.esurance h1, .job.esurance h2, .job.esurance h3, .job.esurance h4, .job.esurance h5 {
-    color: #746b88; }
-  .job.esurance h1 small, .job.esurance h2 small {
-    color: #170939; }
-  .job.esurance a p {
-    background-color: #5c556b;
-    color: white; }
-  .job.esurance a:hover p {
-    background-color: #68607a;
-    color: white; }
-  .job.esurance a:focus p, .job.esurance a:active p {
-    background-color: white;
-    color: #6699FF; }
-  .job.esurance .background-image {
-    background-image: url("./../images/work/esurance-bg-28rem.jpg"); }
-    @media screen and (min-width: 28rem) {
-      .job.esurance .background-image {
-        background-image: url("./../images/work/esurance-bg-50rem.jpg"); } }
-    @media screen and (min-width: 50rem) {
-      .job.esurance .background-image {
-        background-image: url("./../images/work/esurance-bg.jpg"); } }
+.job.linkedin h1 small, .job.linkedin h2 small {
+  color: #0084bf; }
+.job.linkedin a p {
+  background-color: #0084bf;
+  color: white; }
+.job.linkedin a:hover p {
+  background-color: #0096d9;
+  color: white; }
+.job.linkedin a:focus p, .job.linkedin a:active p {
+  background-color: white;
+  color: #0084bf; }
+.job.linkedin .background-image {
+  background-image: url("./../images/work/linkedin-bg-28rem.jpg"); }
   @media screen and (min-width: 28rem) {
-    .job.esurance {
-      margin-bottom: 0.75rem; } }
+    .job.linkedin .background-image {
+      background-image: url("./../images/work/linkedin-bg-50rem.jpg"); } }
   @media screen and (min-width: 50rem) {
-    .job.esurance {
-      margin-bottom: 1.5rem; } }
+    .job.linkedin .background-image {
+      background-image: url("./../images/work/linkedin-bg.jpg"); } }
+
+.job.bizo h1 small, .job.bizo h2 small {
+  color: #dc171b; }
+.job.bizo a p {
+  background-color: #c51518;
+  color: white; }
+.job.bizo a:hover p {
+  background-color: #dc171b;
+  color: white; }
+.job.bizo a:focus p, .job.bizo a:active p {
+  background-color: white;
+  color: #0095D5; }
+.job.bizo .background-image {
+  background-image: url("./../images/work/bizo-bg-28rem.jpg"); }
+  @media screen and (min-width: 28rem) {
+    .job.bizo .background-image {
+      background-image: url("./../images/work/bizo-bg-50rem.jpg"); } }
+  @media screen and (min-width: 50rem) {
+    .job.bizo .background-image {
+      background-image: url("./../images/work/bizo-bg.jpg"); } }
+
+.job.esurance h1 small, .job.esurance h2 small {
+  color: #746b88; }
+.job.esurance a p {
+  background-color: #5c556b;
+  color: white; }
+.job.esurance a:hover p {
+  background-color: #68607a;
+  color: white; }
+.job.esurance a:focus p, .job.esurance a:active p {
+  background-color: white;
+  color: #6699FF; }
+.job.esurance .background-image {
+  background-image: url("./../images/work/esurance-bg-28rem.jpg"); }
+  @media screen and (min-width: 28rem) {
+    .job.esurance .background-image {
+      background-image: url("./../images/work/esurance-bg-50rem.jpg"); } }
+  @media screen and (min-width: 50rem) {
+    .job.esurance .background-image {
+      background-image: url("./../images/work/esurance-bg.jpg"); } }
+@media screen and (min-width: 28rem) {
+  .job.esurance {
+    margin-bottom: 0.75rem; } }
+@media screen and (min-width: 50rem) {
+  .job.esurance {
+    margin-bottom: 1.5rem; } }
 
 .grid-showcase article {
   padding: 1rem 1rem 0; }
@@ -798,7 +785,7 @@ table {
   bottom: 0;
   width: 100%;
   background-color: #5D636E;
-  line-height: 3rem;
+  line-height: 2.75rem;
   transition: background-color .3s, filter .3s; }
   .grid-showcase p span {
     padding: 0 1rem; }

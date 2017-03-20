@@ -43,10 +43,7 @@ $message-row:       lighten($vantablack-9, 4%);
 $creative-row:      lighten($vantablack-8, 12%);
 $control-icon:      $vantablack-6;
 
-$bizo-bg:           darken($bizo-dark-blue, 5%);
-$bizo-headline:     white;
-$bizo-subhead:      white;
-$bizo-copy:         $white85;
+$bizo-subhead:      darken($bizo-red, 5%);
 
 // Esurance colors
 $esurance-purple:   #170939;
@@ -55,10 +52,7 @@ $esurance-light-purple: #746b88;
 $esurance-light-gray: #EEE;
 $esurance-blue:     #6699FF;
 
-$esurance-bg:       $esurance-light-gray;
-$esurance-headline: $esurance-light-purple;
-$esurance-subhead:  $esurance-purple;
-$esurance-copy:     $esurance-gray;
+$esurance-subhead:  $esurance-light-purple;
 
 
 // LinkedIn colors
@@ -68,10 +62,7 @@ $linkedin-blue:     #0084bf;
 $linkedin-slate:    #283e4a;
 $linkedin-white-80: rgba(255,255,255,0.8);
 
-$linkedin-bg:       $linkedin-slate;
-$linkedin-headline: white;
-$linkedin-subhead:  $linkedin-light-gray;
-$linkedin-copy:     $linkedin-white-80;
+$linkedin-subhead:  $linkedin-blue;
 
 // Type
 $copy-font:         'Open Sans', Arial, sans-serif;
