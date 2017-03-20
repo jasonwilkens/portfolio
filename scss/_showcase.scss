@@ -2,7 +2,7 @@
   position:         relative;
   padding-bottom:   $default-spacing * 2;
   background-color: white;
-  border-top:       .3rem solid $vantablack-1;
+  border-top:       1px solid $vantablack-8;
   @media screen and (min-width: $phone-size) {
     margin-left:    $default-spacing / 2;
     margin-right:   $default-spacing / 2;

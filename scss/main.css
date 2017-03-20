@@ -664,7 +664,7 @@ table {
   position: relative;
   padding-bottom: 3rem;
   background-color: white;
-  border-top: 0.3rem solid #16181D; }
+  border-top: 1px solid #C7CACF; }
   @media screen and (min-width: 28rem) {
     .job {
       margin-left: 0.75rem;
