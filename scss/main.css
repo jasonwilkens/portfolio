@@ -776,7 +776,8 @@ table {
   display: block;
   position: relative;
   color: white;
-  font-weight: 300; }
+  font-weight: 300;
+  box-shadow: none; }
   .grid-showcase a:hover p {
     background-color: #16181D;
     color: #7FDBB6; }

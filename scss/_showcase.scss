@@ -130,6 +130,7 @@
     position:       relative;
     color:          white;
     font-weight:    300;
+    box-shadow:     none;
     &:hover p {
       background-color: $vantablack-1;
       color:        $mint;
