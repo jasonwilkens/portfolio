@@ -86,11 +86,11 @@
 .job.esurance {
   h1 small, h2 small { color: $esurance-subhead; }
   a p {
-    background-color: darken($esurance-light-purple, 10%);
+    background-color: lighten($esurance-purple, 10%);
     color:          white;
   }
   a:hover p {
-    background-color: darken($esurance-light-purple, 5%);
+    background-color: lighten($esurance-purple, 15%);
     color:          white;
   }
   a:focus p, a:active p {

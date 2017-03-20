@@ -732,12 +732,12 @@ table {
       background-image: url("./../images/work/bizo-bg.jpg"); } }
 
 .job.esurance h1 small, .job.esurance h2 small {
-  color: #746b88; }
+  color: #3b1791; }
 .job.esurance a p {
-  background-color: #5c556b;
+  background-color: #291065;
   color: white; }
 .job.esurance a:hover p {
-  background-color: #68607a;
+  background-color: #32137b;
   color: white; }
 .job.esurance a:focus p, .job.esurance a:active p {
   background-color: white;
