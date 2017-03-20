@@ -43,7 +43,7 @@ $message-row:       lighten($vantablack-9, 4%);
 $creative-row:      lighten($vantablack-8, 12%);
 $control-icon:      $vantablack-6;
 
-$bizo-bg:           $bizo-dark-blue;
+$bizo-bg:           darken($bizo-dark-blue, 5%);
 $bizo-headline:     white;
 $bizo-subhead:      white;
 $bizo-copy:         $white85;
@@ -63,12 +63,14 @@ $esurance-copy:     $esurance-gray;
 
 // LinkedIn colors
 $linkedin-dark-gray: #303336; 
+$linkedin-light-gray: #e1e9ee;
 $linkedin-blue:     #0084bf;
+$linkedin-slate:    #283e4a;
 $linkedin-white-80: rgba(255,255,255,0.8);
 
-$linkedin-bg:       $linkedin-dark-gray;
+$linkedin-bg:       $linkedin-slate;
 $linkedin-headline: white;
-$linkedin-subhead:  $linkedin-blue;
+$linkedin-subhead:  $linkedin-light-gray;
 $linkedin-copy:     $linkedin-white-80;
 
 // Type

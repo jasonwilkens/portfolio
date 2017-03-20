@@ -36,7 +36,14 @@
   color:            $linkedin-copy;
   h1,h2,h3,h4,h5    { color: $linkedin-headline; }
   h1 small, h2 small { color: $linkedin-subhead; }
-  a:hover p { color: $linkedin-blue; }
+  a p {
+    background-color: $linkedin-light-gray;
+    color:          $linkedin-blue;
+  }  
+  a:hover p {
+    background-color: lighten($linkedin-light-gray, 5%);
+    color: $linkedin-blue;
+  }
   a:focus p, a:active p {
     background-color: white;
     color:          $linkedin-blue;
@@ -57,8 +64,12 @@
   color:            $bizo-copy;
   h1,h2,h3,h4,h5    { color: $bizo-headline; }
   h1 small, h2 small { color: $bizo-subhead; }
+  a p {
+    background-color: lighten($bizo-dark-blue, 5%);
+    color:          white;
+  }
   a:hover p {
-    background-color: $bizo-light-blue;
+    background-color: lighten($bizo-dark-blue, 10%);
     color:          white;    
   }
   a:focus p, a:active p {
@@ -81,8 +92,12 @@
   color:            $esurance-copy;
   h1,h2,h3,h4,h5    { color: $esurance-headline; }
   h1 small, h2 small { color: $esurance-subhead; }
+  a p {
+    background-color: darken($esurance-light-purple, 10%);
+    color:          white;
+  }
   a:hover p {
-    background-color: $esurance-blue;
+    background-color: darken($esurance-light-purple, 5%);
     color:          white;
   }
   a:focus p, a:active p {
