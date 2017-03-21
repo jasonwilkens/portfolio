@@ -674,6 +674,8 @@ table {
       margin-left: 1.5rem;
       margin-right: 1.5rem;
       padding-bottom: 7.5rem; } }
+  .job h1, .job h2 {
+    color: #484E59; }
   .job .background {
     position: absolute;
     width: 100%;
@@ -732,12 +734,12 @@ table {
       background-image: url("./../images/work/bizo-bg.jpg"); } }
 
 .job.esurance h1 small, .job.esurance h2 small {
-  color: #3b1791; }
+  color: #32137b; }
 .job.esurance a p {
-  background-color: #291065;
+  background-color: #200c4f;
   color: white; }
 .job.esurance a:hover p {
-  background-color: #32137b;
+  background-color: #291065;
   color: white; }
 .job.esurance a:focus p, .job.esurance a:active p {
   background-color: white;
@@ -787,7 +789,7 @@ table {
   background-color: #5D636E;
   line-height: 2.75rem;
   transition: background-color .3s, filter .3s;
-  filter: opacity(0.85); }
+  filter: opacity(0.9); }
   .grid-showcase p span {
     padding: 0 1rem; }
 

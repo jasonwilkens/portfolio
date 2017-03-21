@@ -12,6 +12,9 @@
     margin-right:   $default-spacing;
     padding-bottom: $default-spacing * 5;
   }
+  h1,h2 {
+    color:          $vantablack-4;
+  }
   .background {
     position:       absolute;
     width:          100%;
@@ -86,11 +89,11 @@
 .job.esurance {
   h1 small, h2 small { color: $esurance-subhead; }
   a p {
-    background-color: lighten($esurance-purple, 10%);
+    background-color: lighten($esurance-purple, 5%);
     color:          white;
   }
   a:hover p {
-    background-color: lighten($esurance-purple, 15%);
+    background-color: lighten($esurance-purple, 10%);
     color:          white;
   }
   a:focus p, a:active p {
@@ -152,7 +155,7 @@
     background-color: $vantablack-5;
     line-height:    2.75rem;
     transition:     background-color .3s, filter .3s;
-    filter:         opacity(.85);
+    filter:         opacity(.9);
     span {
       padding:      0 1rem;
     }
