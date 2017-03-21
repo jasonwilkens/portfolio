@@ -786,7 +786,8 @@ table {
   width: 100%;
   background-color: #5D636E;
   line-height: 2.75rem;
-  transition: background-color .3s, filter .3s; }
+  transition: background-color .3s, filter .3s;
+  filter: opacity(0.85); }
   .grid-showcase p span {
     padding: 0 1rem; }
 
