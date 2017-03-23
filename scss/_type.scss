@@ -3,31 +3,31 @@
 body,textarea,input,button {
   font-family: 	    $copy-font;
   color:            $vantablack-1;
-  font-weight:      300;
+  font-weight:      $copy-weight;
   ::selection {
     background-color: $purple;
     color:          white;
   }
 }
 
-strong { font-weight: 400; }
+strong { font-weight: $copy-bold; }
 
 // Header Styles
 h1,h2,h3,h4,h5 { 
-  font-family: 	    $playfair-display;
-  font-weight: 	    900;
+  font-family: 	    $heading-font;
+  font-weight: 	    $heading-weight;
   color:            $vantablack-1;
   small {
     color:          $vantablack-6;
     font-family:    $copy-font;
-    font-weight:    300;
+    font-weight:    $copy-bold;
   }
 }
 
 // Styles
 .small { 
   color:            $vantablack-6;
-  font-weight: 	    400;
+  font-weight: 	    $copy-bold;
 }
 .big {
 // To do

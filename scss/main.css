@@ -394,9 +394,9 @@ article {
       background-image: url(./../images/process/process-header-big-screen-fw.jpg); } }
 
 body, textarea, input, button {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Yantramanav", sans-serif;
   color: #16181D;
-  font-weight: 300; }
+  font-weight: 400; }
   body ::selection, textarea ::selection, input ::selection, button ::selection {
     background-color: #011F7F;
     color: white; }
@@ -410,8 +410,8 @@ h1, h2, h3, h4, h5 {
   color: #16181D; }
   h1 small, h2 small, h3 small, h4 small, h5 small {
     color: #818792;
-    font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 300; }
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 400; }
 
 .small {
   color: #818792;
@@ -621,7 +621,6 @@ p + p {
   transform: translateY(-100%); }
 
 a {
-  font-weight: 400;
   text-decoration: none;
   color: inherit;
   -webkit-transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
@@ -732,7 +731,7 @@ table {
       background-image: url("./../images/work/bizo-bg.jpg"); } }
 
 .job.esurance h1 small, .job.esurance h2 small {
-  color: #32137b; }
+  color: #291065; }
 .job.esurance a p {
   background-color: #200c4f;
   color: white; }
@@ -862,7 +861,7 @@ div[class^="img-container-"] + p {
   margin-bottom: 1.5rem;
   padding-top: 0.75rem;
   border-top: 0.3rem solid #16181D;
-  color: #5D636E; }
+  color: #818792; }
   .sidebar p {
     width: inherit; }
 

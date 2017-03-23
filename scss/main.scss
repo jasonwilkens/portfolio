@@ -52,7 +52,7 @@ $esurance-light-purple: #746b88;
 $esurance-light-gray: #EEE;
 $esurance-blue:     #6699FF;
 
-$esurance-subhead:  lighten($esurance-purple, 15%);
+$esurance-subhead:  lighten($esurance-purple, 10%);
 
 
 // LinkedIn colors
@@ -65,8 +65,12 @@ $linkedin-white-80: rgba(255,255,255,0.8);
 $linkedin-subhead:  $linkedin-blue;
 
 // Type
-$copy-font:         'Open Sans', Arial, sans-serif;
-$playfair-display:  'Playfair Display', Georgia, serif;
+$copy-font:         'Yantramanav', sans-serif;
+$heading-font:      'Playfair Display', Georgia, serif;
+$copy-light:        300;
+$copy-weight:       400;
+$copy-bold:         400;
+$heading-weight:    900;
 
 // Type Scales
 $mod_1:             1.125; // small-screen scale
