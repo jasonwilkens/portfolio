@@ -270,7 +270,7 @@ Vue.component('guide', {
             title: 'Process',
             to: '/process',
             description: 'I wrote down my thoughts on ',
-            link: 'building web products.'
+            link: 'building products.'
           },
           {
             title: 'About',
