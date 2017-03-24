@@ -441,17 +441,17 @@ svg.twitter {
 .nowrap {
   white-space: nowrap; }
 
-p, h1, h2, h3, h4, h5, textarea {
+p, h1, h2, h3, h4, h5, textarea, #contact-feedback {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5, ul, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
+p, h1, h2, h3, h4, h5, ul, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
+  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
-  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table {
+  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
@@ -603,6 +603,9 @@ p + p {
   @media screen and (min-width: 50rem) {
     .job + .job {
       margin-top: 1.5rem; } }
+
+h1 + #contact-feedback {
+  margin-top: 1.5rem; }
 
 #nav-bar + div {
   margin-top: 0; }
@@ -907,6 +910,8 @@ div[class^="img-container-"] + p {
     background-color: #011F7F; }
   .contact-button:hover {
     background-color: #7FDBB6; }
+  .contact-button:disabled {
+    background-color: #A3A7AF; }
 
 .input-row {
   margin: auto; }
@@ -937,6 +942,36 @@ textarea {
   border-top-right-radius: .3rem;
   height: 30vh;
   line-height: 1.5rem; }
+
+#contact-feedback {
+  height: 30vh;
+  border-radius: .3rem;
+  line-height: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 5vh 3rem 1rem;
+  box-sizing: border-box; }
+
+#reset-form {
+  margin: 1rem 0;
+  text-align: left;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  -webkit-transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
+  box-shadow: inset 0 -0.2em 0 #7FDBB6; }
+  #reset-form:hover {
+    background: #7FDBB6; }
+  #reset-form:active {
+    background: #011F7F;
+    box-shadow: inset 0 -0.2em 0 #011F7F;
+    border-bottom: 0.1em solid #011F7F;
+    color: white; }
+
+.error {
+  box-shadow: 0 0 0 0.1rem #FA2A00; }
 
 ::-webkit-input-placeholder {
   color: #5D636E; }

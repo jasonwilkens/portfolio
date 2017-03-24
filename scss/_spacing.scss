@@ -63,6 +63,11 @@ p + p {
   }
 }
 
+// Contact form
+h1 + #contact-feedback {
+  margin-top:       1.5rem;
+}
+
 // Nav + Template container
 #nav-bar + div {
   margin-top: 0;

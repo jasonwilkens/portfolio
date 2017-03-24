@@ -41,6 +41,9 @@
   &:hover {
     background-color: $mint;
   }
+  &:disabled {
+    background-color: $vantablack-7;
+  }
 }
 
 .input-row {
@@ -77,6 +80,41 @@ textarea {
   border-top-right-radius: .3rem;
   height:           30vh;
   line-height:      1.5rem;
+}
+
+#contact-feedback {
+  height:           30vh;
+  border-radius:    .3rem;
+  line-height:      1.5rem;
+  background-color: $white85;
+  border:           1px solid $white45;
+  padding:          5vh 3rem 1rem;
+  box-sizing:       border-box;
+}
+
+#reset-form {
+  margin:           1rem 0;
+  text-align:       left;
+  cursor:           pointer;
+  background-color: transparent;
+  padding:          0;
+  border:           none;
+  -webkit-transition: background .10s cubic-bezier(.33,.66,.66,1);
+  transition:       background .10s cubic-bezier(.33,.66,.66,1);
+  box-shadow:       inset 0 -.2em 0 $mint;
+  &:hover {
+    background:     $mint;
+  }
+  &:active {
+    background:     $purple;
+    box-shadow:     inset 0 -.2em 0 $purple;
+    border-bottom:  .1em solid $purple;
+    color:          white;
+  }
+}
+
+.error {
+  box-shadow:       0 0 0 .1rem $red;
 }
 
 ::-webkit-input-placeholder { color: $vantablack-5; }

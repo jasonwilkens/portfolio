@@ -246,10 +246,77 @@ Vue.component('hierarchical-table', {
 // Contact form
 
 Vue.component('contact-form', {
+  data: function() {
+    var data = {
+      feedback: 'feedback',
+      formToggle: true,
+      reset: 'reset',
+      requestObj: {
+        access_token: '4srogcyl8xak9nd11qmgo6tq',
+        subject: '',
+        text: ''
+      }
+    };
+    return data;
+  },
   template: '#contact-form',
   methods: {
+    createParams: function() {
+      var formData = [];
+      for (var key in this.requestObj) {
+        formData.push(encodeURIComponent(key) + '=' + encodeURIComponent(this.requestObj[key]));
+      }
+      return formData.join('&');
+    },
     escape: function(e) {
       e.target.blur();
+    },
+    toggleForm: function() {
+      this.formToggle = !this.formToggle;
+    },
+    send: function(e) {
+      var sendButton = e.target,
+          subject = 'New message from ' + document.querySelector('#form-element [name="email"]').value,
+          textarea = document.querySelector('#form-element [name="message"]'),
+          text = textarea.value,
+          params,
+          request = new XMLHttpRequest(),
+          that = this;
+      if (text === '') {
+        textarea.setAttribute('placeholder', 'Your message can\'t be empty');
+        textarea.className = 'error';
+        return;
+      }
+      sendButton.disabled = true;
+      request.onreadystatechange = function() {
+        if (request.readyState == 4 && request.status == 200) {
+          that.onSuccess(request.response);
+        } else if (request.readyState == 4) {
+          that.onError(request.response);
+        }
+      }
+      this.requestObj.subject = subject;
+      this.requestObj.text = text;
+      params = this.createParams();
+
+      request.open('POST', 'https://postmail.invotes.com/send', true);
+      request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      request.send(params);
+    },
+    onError: function(response) {
+      this.feedback = 'There\'s a problem: ' + response;
+      this.reset = 'Try again';
+      this.toggleForm();
+    },
+    onSuccess: function() {
+      this.feedback = 'I\'ve got your message. Thanks for reaching out!';
+      this.reset = 'Reload';
+      this.toggleForm();
+    },
+    validateText: function(e) {
+      if (e.target.value !== '') {
+        e.target.className = '';
+      }
     }
   }
 });
