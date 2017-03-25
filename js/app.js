@@ -248,9 +248,10 @@ Vue.component('hierarchical-table', {
 Vue.component('contact-form', {
   data: function() {
     var data = {
-      feedback: 'feedback',
-      formToggle: true,
-      reset: 'reset',
+      feedback: sessionStorage.getItem('feedback') || 'feedback',
+      formToggle: sessionStorage.getItem('formToggle') === 'false' ?
+        JSON.parse(sessionStorage.getItem('formToggle')) : true,
+      reset: 'Reset',
       requestObj: {
         access_token: '4srogcyl8xak9nd11qmgo6tq',
         subject: '',
@@ -273,6 +274,8 @@ Vue.component('contact-form', {
     },
     toggleForm: function() {
       this.formToggle = !this.formToggle;
+      sessionStorage.setItem('formToggle', this.formToggle);
+      sessionStorage.setItem('feedback', this.feedback);
     },
     send: function(e) {
       var sendButton = e.target,
