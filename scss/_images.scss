@@ -26,3 +26,13 @@
 div[class^="img-container-"] + p {
   margin-top:       $default-spacing / 2;
 }
+
+.img-large {
+  display:          block;
+  margin-left:      auto;
+  margin-right:     auto;
+}
+
+@media screen and (min-width: $max-fluid) {
+  .img-large { max-width: 100%; }
+}

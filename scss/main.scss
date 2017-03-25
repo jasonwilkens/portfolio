@@ -34,6 +34,9 @@ $vantablack-9:      #ECEDEF;
 $gradient-left-right: linear-gradient(to right, $purple 0%, $mint 100%);
 $gradient-diagonal: linear-gradient(-90deg, $midnight, $brick);
 
+// Shadows
+$light-shadow:      0 .2rem 1rem 0px $black15;
+
 // Bizo colors
 $bizo-dark-blue:    #006386;
 $bizo-light-blue:   #0095D5;
@@ -84,7 +87,7 @@ $max-line-length:   50rem; // max line length for fluid scale
 // Spacing
 $default-spacing:   1.5rem;
 $header-spacing:    .75rem;
-$paragraph-spacing:	.75em;
+$paragraph-spacing:	1.5em;
 
 // Nav
 $nav-height:        3.5rem;

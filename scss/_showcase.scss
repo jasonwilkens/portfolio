@@ -123,7 +123,7 @@
     position:       relative;
     color:          white;
     font-weight:    $copy-light;
-    box-shadow:     none;
+    box-shadow:     $light-shadow;
     &:hover p {
       background-color: $vantablack-1;
       color:        $mint;

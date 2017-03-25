@@ -444,11 +444,11 @@ svg.twitter {
 p, h1, h2, h3, h4, h5, textarea, #contact-feedback {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5, ul, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback {
+p, h1, h2, h3, h4, h5, ul, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback, .img-large {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback {
+  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback, .img-large {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
   p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback {
@@ -568,17 +568,17 @@ h1 {
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
   margin-top: 0.75rem; }
 
-p + hr {
-  margin-top: 3.75rem; }
+p + h1, p + h2 {
+  margin-top: 5.25rem; }
 
-hr + h1, hr + h2, hr + h3, hr + h4, hr + h5 {
-  margin-top: 1.5rem; }
-
-p + h1, p + h2, p + h3, p + h4, p + h5 {
+p + h3, p + h4, p + h5 {
   margin-top: 1.5rem; }
 
 p + p {
-  margin-top: 0.75em; }
+  margin-top: 1.5em; }
+
+img + h1, img + h2, img + h3, img + h4, img + h5 {
+  margin-top: 1.5rem; }
 
 .grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-showcase, .grid-showcase + .grid-max-width, .nav + .grid-max-width {
   margin-top: 1.5rem; }
@@ -766,7 +766,7 @@ table {
   position: relative;
   color: white;
   font-weight: 300;
-  box-shadow: none; }
+  box-shadow: 0 0.2rem 1rem 0px rgba(0, 0, 0, 0.15); }
   .grid-showcase a:hover p {
     background-color: #16181D;
     color: #7FDBB6; }
@@ -857,6 +857,14 @@ ul.pills {
 div[class^="img-container-"] + p {
   margin-top: 0.75rem; }
 
+.img-large {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (min-width: 85rem) {
+  .img-large {
+    max-width: 100%; } }
 .sidebar {
   float: right;
   width: 20rem;

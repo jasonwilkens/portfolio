@@ -17,20 +17,20 @@ h1 + p,h2 + p,h3 + p,h4 + p,h5 + p {
   margin-top: 	    $header-spacing;
 }
 
-p + hr {
-  margin-top:       $header-spacing * 5;
+p + h1,p + h2 {
+  margin-top:       $default-spacing * 3.5;
 }
 
-hr + h1,hr + h2,hr + h3,hr + h4,hr + h5 {
-  margin-top:       $header-spacing * 2;
-}
-
-p + h1,p + h2,p + h3,p +h4, p+h5 {
+p + h3, p + h4, p + h5 {
   margin-top:       $default-spacing;
 }
 
 p + p {
   margin-top: 	    $paragraph-spacing;
+}
+
+img + h1,img + h2,img + h3,img + h4,img + h5 {
+  margin-top:       $default-spacing;
 }
 
 // Grids

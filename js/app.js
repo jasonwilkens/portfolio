@@ -310,7 +310,7 @@ Vue.component('contact-form', {
     },
     onSuccess: function() {
       this.feedback = 'I\'ve got your message. Thanks for reaching out!';
-      this.reset = 'Reload';
+      this.reset = 'Reset';
       this.toggleForm();
     },
     validateText: function(e) {
