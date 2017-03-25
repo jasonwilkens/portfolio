@@ -15,20 +15,20 @@ var home = { template: '#home' },
     quickCompare = { template: '#quick-compare' },
     customerFlow = { template: '#customer-flow' },
     routes = [
-      { path: '/', component: home, meta: { project: false } },
-      { path: '/work', component: work, meta: { project: false, visited: false } },
-      { path: '/process', component: process, meta: { project: false, visited: false } },
-      { path: '/about', component: about, meta: { project: false, visited: false } },
-      { path: '/contact', component: contact, meta: { project: false, visited: false } },
-      { path: '/work/lead-accelerator', component: leadAccelerator, meta: { project: true, title: 'LinkedIn: Lead Accelerator' }},
-      { path: '/work/mad-river', component: madRiver, meta: { project: true, title: 'LinkedIn: Mad River' }},
-      { path: '/work/lead-ads', component: leadAds, meta: { project: true, title: 'LinkedIn: Lead Ads' }},
-      { path: '/work/multichannel-nurturing', component: multichannelNurturing, meta: { project: true, title: 'Bizo: Multichannel Nurturing' }},
-      { path: '/work/analytics', component: analytics, meta: { project: true, title: 'Bizo: Analytics' }},
-      { path: '/work/building-products', component: buildingProducts, meta: { project: true, title: 'Bizo: Building Products' }},
-      { path: '/work/coverage-counselor', component: coverageCounselor, meta: { project: true, title: 'Esurance: Coverage Counselor' }},
-      { path: '/work/quick-compare', component: quickCompare, meta: { project: true, title: 'Esurance: Quick Compare' }},
-      { path: '/work/customer-flow', component: customerFlow, meta: { project: true, title: 'Esurance: Customer Flow' }}
+      { name: 'home', path: '/', component: home, meta: { project: false } },
+      { name: 'work', path: '/work', component: work, meta: { project: false, visited: false } },
+      { name: 'process', path: '/process', component: process, meta: { project: false, visited: false } },
+      { name: 'about', path: '/about', component: about, meta: { project: false, visited: false } },
+      { name: 'contact', path: '/contact', component: contact, meta: { project: false, visited: false } },
+      { name: 'leadAccelerator', path: '/work/lead-accelerator', component: leadAccelerator, meta: { project: true, title: 'LinkedIn: Lead Accelerator' }},
+      { name: 'madRiver', path: '/work/mad-river', component: madRiver, meta: { project: true, title: 'LinkedIn: Mad River' }},
+      { name: 'leadAds', path: '/work/lead-ads', component: leadAds, meta: { project: true, title: 'LinkedIn: Lead Ads' }},
+      { name: 'multichannelNurturing', path: '/work/multichannel-nurturing', component: multichannelNurturing, meta: { project: true, title: 'Bizo: Multichannel Nurturing' }},
+      { name: 'analytics', path: '/work/analytics', component: analytics, meta: { project: true, title: 'Bizo: Analytics' }},
+      { name: 'buildingProducts', path: '/work/building-products', component: buildingProducts, meta: { project: true, title: 'Bizo: Building Products' }},
+      { name: 'coverageCounselor', path: '/work/coverage-counselor', component: coverageCounselor, meta: { project: true, title: 'Esurance: Coverage Counselor' }},
+      { name: 'quickCompare', path: '/work/quick-compare', component: quickCompare, meta: { project: true, title: 'Esurance: Quick Compare' }},
+      { name: 'customerFlow', path: '/work/customer-flow', component: customerFlow, meta: { project: true, title: 'Esurance: Customer Flow' }}
     ],
     router = new VueRouter({
       routes
@@ -133,7 +133,13 @@ var home = { template: '#home' },
       }
       return messageTotal;
     },
-    rows = generateRows();
+    rows = generateRows(),
+    tracking = JSON.parse(localStorage.getItem('tracking')) || [
+      { name: 'work', visited: false },
+      { name: 'process', visited: false },
+      { name: 'about', visited: false },
+      { name: 'contact', visited: false }
+    ];
 
 
 router.afterEach(function() {
@@ -143,6 +149,10 @@ router.afterEach(function() {
 router.beforeEach(function(to, from, next) {
   if (to.meta.visited === false) {
     to.meta.visited = true;
+    tracking.find(function(page) {
+      return page.name === to.name;
+    }).visited = true;
+    localStorage.setItem('tracking', JSON.stringify(tracking));
   }
   next();
 });
@@ -364,24 +374,25 @@ Vue.component('guide', {
         ];
     data.content = content;
     data.routes = routes;
+    data.tracking = tracking;
     return data;
   },
   template: '#guide',
   methods: {
-    routeVisited: function(routeIndex) {
-      return routes[routeIndex].meta.visited ? 'visited' : 'unvisited';
+    routeVisited: function(trackingIndex) {
+      return this.tracking[trackingIndex].visited ? 'visited' : 'unvisited';
     },
     suggested: function(contentType) {
-      return this.contentIndex === -2 ?
+      return this.contentIndex === -1 ?
         this.content[4][contentType] :
         this.content[this.contentIndex][contentType];
     }
   },
   computed: {
     contentIndex: function() {
-      return this.routes.findIndex(function(route) {
-        return route.meta.visited === false;
-      }) - 1;
+      return this.tracking.findIndex(function(page) {
+        return page.visited === false;
+      });
     }
   }
 });
