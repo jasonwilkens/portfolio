@@ -373,7 +373,6 @@ Vue.component('guide', {
           }
         ];
     data.content = content;
-    data.routes = routes;
     data.tracking = tracking;
     return data;
   },
