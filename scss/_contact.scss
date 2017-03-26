@@ -65,19 +65,26 @@ textarea,input {
     outline:        none;
     box-shadow:     0 0 0 .1rem $purple;
   }
+  // remove iOS Safari muck
+  -webkit-appearance: none;
 }
 
 input {
   display:          block;
   height:           3.5rem;
   width:            100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: 0;
 }
 
 textarea {
   display:          block;
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   height:           30vh;
   line-height:      1.5rem;
 }
