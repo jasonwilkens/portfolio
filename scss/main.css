@@ -901,6 +901,7 @@ div[class^="img-container-"] + p {
   line-height: 1.5rem;
   float: right;
   margin-left: .75rem;
+  margin-top: 0;
   padding: 1rem 2rem;
   box-sizing: border-box;
   border-bottom-right-radius: .3rem;
