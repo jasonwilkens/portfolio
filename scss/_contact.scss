@@ -43,7 +43,7 @@
     background-color: $mint;
   }
   &:disabled {
-    background-color: $vantablack-7;
+    animation: pulse .5s infinite;
   }
 }
 
@@ -118,6 +118,19 @@ textarea {
     box-shadow:     inset 0 -.2em 0 $purple;
     border-bottom:  .1em solid $purple;
     color:          white;
+  }
+}
+
+// Send button animation
+@keyframes pulse {
+  0% {
+    background-color: $mint;
+  }
+  50% {
+    background-color: $vantablack-7;
+  }
+  100% {
+    background-color: $mint;
   }
 }
 

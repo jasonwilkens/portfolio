@@ -1,3 +1,13 @@
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .20s; }
+
+.fade-enter-active {
+  transition-delay: .20s; }
+
+.fade-enter, .fade-leave-active {
+  opacity: 0; }
+
 body {
   background-color: white;
   margin: 0; }
@@ -920,7 +930,7 @@ div[class^="img-container-"] + p {
   .contact-button:hover {
     background-color: #7FDBB6; }
   .contact-button:disabled {
-    background-color: #A3A7AF; }
+    animation: pulse .5s infinite; }
 
 .input-row {
   margin: auto; }
@@ -985,6 +995,13 @@ textarea {
     border-bottom: 0.1em solid #011F7F;
     color: white; }
 
+@keyframes pulse {
+  0% {
+    background-color: #7FDBB6; }
+  50% {
+    background-color: #A3A7AF; }
+  100% {
+    background-color: #7FDBB6; } }
 .error {
   box-shadow: 0 0 0 0.1rem #FA2A00; }
 

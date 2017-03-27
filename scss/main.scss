@@ -103,6 +103,20 @@ $phone-size:        28rem;
 $tablet-size:       50rem;
 $big-screen:        64rem;
 
+// Transition
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .20s;
+}
+
+.fade-enter-active {
+  transition-delay: .20s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity:          0;
+}
+
 // Site Defaults
 // -------------------------
 body { 
