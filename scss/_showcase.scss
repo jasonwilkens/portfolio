@@ -1,7 +1,7 @@
 .job {
   position:         relative;
   padding-bottom:   $default-spacing * 2;
-  background-color: $vantablack-9;
+  background:       repeating-linear-gradient(90deg, lighten($vantablack-9,3%) 0, lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem, repeating-linear-gradient(180deg, lighten($vantablack-9,3%) 0, lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem;
   border-top:       1px solid $vantablack-8;
   @media screen and (min-width: $phone-size) {
     margin-left:    $default-spacing / 2;

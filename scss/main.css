@@ -677,7 +677,7 @@ table {
 .job {
   position: relative;
   padding-bottom: 3rem;
-  background-color: #ECEDEF;
+  background: repeating-linear-gradient(90deg, #f4f5f6 0, #f4f5f6 5%, transparent 0, transparent 50%) 0/1rem 1rem, repeating-linear-gradient(180deg, #f4f5f6 0, #f4f5f6 5%, transparent 0, transparent 50%) 0/1rem 1rem;
   border-top: 1px solid #C7CACF; }
   @media screen and (min-width: 28rem) {
     .job {
