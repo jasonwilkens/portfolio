@@ -357,7 +357,9 @@ article {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to right, #011F7F 0%, #7FDBB6 100%);
-  position: relative; }
+  position: relative;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85); }
   .grid-flex .cover .cover-background {
     background-image: url("./../images/monument-cover-28rem-fw.jpg");
     background-size: cover;
@@ -371,9 +373,9 @@ article {
         background-image: url("./../images/monument-cover-fw.jpg"); } }
 
 .satnh {
-  margin-top: 5.5rem;
+  margin-top: 58vh;
   vertical-align: middle;
-  filter: opacity(80%); }
+  color: rgba(255, 255, 255, 0.85); }
 
 .header {
   min-height: 24vmin;
@@ -675,7 +677,7 @@ table {
 .job {
   position: relative;
   padding-bottom: 3rem;
-  background-color: white;
+  background-color: #ECEDEF;
   border-top: 1px solid #C7CACF; }
   @media screen and (min-width: 28rem) {
     .job {
@@ -686,6 +688,9 @@ table {
       margin-left: 1.5rem;
       margin-right: 1.5rem;
       padding-bottom: 7.5rem; } }
+  .job h2 {
+    font-family: "Yantramanav", sans-serif;
+    line-height: 1; }
   .job .background {
     position: absolute;
     width: 100%;
@@ -778,7 +783,7 @@ table {
   font-weight: 300;
   box-shadow: 0 0.2rem 1rem 0px rgba(0, 0, 0, 0.15); }
   .grid-showcase a:hover p {
-    background-color: #16181D;
+    background-color: #363A43;
     color: #7FDBB6; }
   .grid-showcase a:focus p, .grid-showcase a:active p {
     background-color: #011F7F; }
@@ -802,6 +807,13 @@ table {
   filter: opacity(0.9); }
   .grid-showcase p span {
     padding: 0 1rem; }
+
+@media screen and (min-width: 28rem) {
+  .last-job {
+    margin-bottom: 0.75rem; } }
+@media screen and (min-width: 50rem) {
+  .last-job {
+    margin-bottom: 1.5rem; } }
 
 .guide {
   color: white;
@@ -904,6 +916,7 @@ div[class^="img-container-"] + p {
     margin: auto;
     padding: 1.5rem 0 1rem; }
   .contact-background h1 {
+    text-align: left;
     color: white; }
 
 .contact-button {

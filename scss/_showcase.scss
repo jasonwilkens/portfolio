@@ -1,7 +1,7 @@
 .job {
   position:         relative;
   padding-bottom:   $default-spacing * 2;
-  background-color: white;
+  background-color: $vantablack-9;
   border-top:       1px solid $vantablack-8;
   @media screen and (min-width: $phone-size) {
     margin-left:    $default-spacing / 2;
@@ -11,6 +11,10 @@
     margin-left:    $default-spacing;
     margin-right:   $default-spacing;
     padding-bottom: $default-spacing * 5;
+  }
+  h2 {
+    font-family:    $copy-font;
+    line-height:    1;
   }
   .background {
     position:       absolute;
@@ -107,10 +111,10 @@
     }
   }
   @media screen and (min-width: $phone-size) {
-    margin-bottom:     $default-spacing / 2;
+    margin-bottom:  $default-spacing / 2;
   }
   @media screen and (min-width: $tablet-size) {
-    margin-bottom:     $default-spacing;
+    margin-bottom:  $default-spacing;
   }
 }
 
@@ -125,7 +129,7 @@
     font-weight:    $copy-light;
     box-shadow:     $light-shadow;
     &:hover p {
-      background-color: $vantablack-1;
+      background-color: $vantablack-3;
       color:        $mint;
     }
     &:focus p, &:active p {
@@ -156,5 +160,14 @@
     span {
       padding:      0 1rem;
     }
+  }
+}
+
+.last-job {
+  @media screen and (min-width: $phone-size) {
+    margin-bottom:  $default-spacing / 2;
+  }
+  @media screen and (min-width: $tablet-size) {
+    margin-bottom:  $default-spacing;
   }
 }
