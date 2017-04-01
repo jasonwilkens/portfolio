@@ -717,7 +717,6 @@ table {
   display: block;
   position: relative;
   color: white;
-  font-weight: 300;
   box-shadow: 0 0.2rem 1rem 0px rgba(0, 0, 0, 0.15); }
   .grid-showcase a:hover p {
     background-color: #363A43;
@@ -741,7 +740,7 @@ table {
   background-color: #5D636E;
   line-height: 2.75rem;
   transition: background-color .3s, filter .3s;
-  filter: opacity(0.9); }
+  filter: opacity(0.95); }
   .grid-showcase p span {
     padding: 0 1rem; }
 

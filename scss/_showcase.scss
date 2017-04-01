@@ -45,7 +45,6 @@
     display:        block;
     position:       relative;
     color:          white;
-    font-weight:    $copy-light;
     box-shadow:     $light-shadow;
     &:hover p {
       background-color: $vantablack-3;
@@ -75,7 +74,7 @@
     background-color: $vantablack-5;
     line-height:    2.75rem;
     transition:     background-color .3s, filter .3s;
-    filter:         opacity(.9);
+    filter:         opacity(.95);
     span {
       padding:      0 1rem;
     }
