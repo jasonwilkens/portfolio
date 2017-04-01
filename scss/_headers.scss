@@ -1,31 +1,21 @@
-// not being used atm
-.header {
-  min-height:       24vmin;
-  padding:          1rem;
-  background-color: white;
-  border:           .8rem solid transparent;
-  -moz-border-image: -moz-linear-gradient(top left, $mint 30%, $purple 60%, $mint 90%);
-  -webkit-border-image: -webkit-linear-gradient(top left, $mint 20%, $purple 60%, $mint 90%);
-  border-image:     linear-gradient(to bottom right, $mint 30%, $purple 60%, $mint 90%);
-  border-image-slice: 1;
+.header-title {
+  line-height:      7rem;
+  margin-top:       $nav-height;
+  color:            white;
+  text-shadow:      0 0 .3rem rgba(0,0,0,.15);
 }
 
-.header-img {
-  width:            100vw;
-  height:           6rem;
+.header-img-process {
   background-size:  cover;
   background-position: center;
-}
-
-.header-img.process {
-  background-image: url(./../images/process/process-header-28rem-fw.jpg);
+  background-image: url(./../images/process/process-header-28rem-adj2.jpg);
   @media screen and (min-width: $phone-size) {
-    background-image: url(./../images/process/process-header-50rem-fw.jpg);
+    background-image: url(./../images/process/process-header-50rem-adj2.jpg);
   }
   @media screen and (min-width: $tablet-size) {
-    background-image: url(./../images/process/process-header-fw.jpg);
+    background-image: url(./../images/process/process-header-adj2.jpg);
   }
   @media screen and (min-width: $big-screen) {
-    background-image: url(./../images/process/process-header-big-screen-fw.jpg);
+    background-image: url(./../images/process/process-header-big-screen-adj2.jpg);
   }
 }

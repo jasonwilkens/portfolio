@@ -9,12 +9,16 @@
 
 // Type
 h1 {
-  margin-top:       1.5rem + $nav-height;
+  margin-top:       $default-spacing + $nav-height;
   margin-bottom:    0;
 }
 
 h1 + p,h2 + p,h3 + p,h4 + p,h5 + p {
   margin-top: 	    $header-spacing;
+}
+
+h1.header-title + h2 {
+  margin-top:       $default-spacing * 2;
 }
 
 p + h1,p + h2 {
@@ -35,7 +39,7 @@ img + h1,img + h2,img + h3,img + h4,img + h5 {
 
 // Grids
 .grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-showcase, .grid-showcase + .grid-max-width, .nav + .grid-max-width {
-  margin-top:       1.5rem;
+  margin-top:       $default-spacing;
 }
 
 .grid-max-width + .grid-max-width {
@@ -65,7 +69,7 @@ img + h1,img + h2,img + h3,img + h4,img + h5 {
 
 // Contact form
 h1 + #contact-feedback {
-  margin-top:       1.5rem;
+  margin-top:       $default-spacing;
 }
 
 // Nav + Template container
