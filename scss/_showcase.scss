@@ -47,7 +47,7 @@
     color:          white;
     box-shadow:     $light-shadow;
     &:hover p {
-      background-color: $vantablack-3;
+      background-color: $vantablack-5;
       color:        $mint;
     }
     &:focus p, &:active p {
@@ -71,7 +71,7 @@
     position:       absolute;
     bottom:         0;
     width:          100%;
-    background-color: $vantablack-5;
+    background-color: $vantablack-7;
     line-height:    2.75rem;
     transition:     background-color .3s, filter .3s;
     filter:         opacity(.95);

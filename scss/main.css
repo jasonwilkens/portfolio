@@ -356,7 +356,7 @@ article {
 .grid-flex .cover {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to right, #011F7F 0%, #7FDBB6 100%);
+  background-color: #C7CACF;
   position: relative; }
   .grid-flex .cover .cover-background {
     background-image: url("./../images/monument-cover-28rem-adj.jpg");
@@ -719,7 +719,7 @@ table {
   color: white;
   box-shadow: 0 0.2rem 1rem 0px rgba(0, 0, 0, 0.15); }
   .grid-showcase a:hover p {
-    background-color: #363A43;
+    background-color: #5D636E;
     color: #7FDBB6; }
   .grid-showcase a:focus p, .grid-showcase a:active p {
     background-color: #011F7F; }
@@ -737,7 +737,7 @@ table {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #5D636E;
+  background-color: #A3A7AF;
   line-height: 2.75rem;
   transition: background-color .3s, filter .3s;
   filter: opacity(0.95); }
