@@ -17,7 +17,7 @@ I used theme colors from my two Twitter accounts as my primary interaction color
 
 Photographs
 -----------
-I took almost all the photographs used, and the rest were taken by coworkers. I stylized the background photos with [LunaPic](http://www.lunapic.com).
+I took almost all the photographs used, and the rest were taken by coworkers.
 
 Images
 ------
