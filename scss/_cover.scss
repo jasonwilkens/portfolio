@@ -3,8 +3,6 @@
   height:           100vh;
   background-image: $gradient-left-right;
   position:         relative;
-  text-align:       center;
-  color:            $white85;
   .cover-background {
     background-image: url("./../images/monument-cover-28rem-adj.jpg");
     @media screen and (min-width: $phone-size) {
@@ -22,5 +20,11 @@
 .satnh {
   margin-top:       58vh;
   vertical-align:   middle;
+  text-align:       center;
+  color:            $white85;
+}
+
+.cta {
+  text-align:       center;
   color:            $white85;
 }

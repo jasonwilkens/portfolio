@@ -357,9 +357,7 @@ article {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to right, #011F7F 0%, #7FDBB6 100%);
-  position: relative;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.85); }
+  position: relative; }
   .grid-flex .cover .cover-background {
     background-image: url("./../images/monument-cover-28rem-adj.jpg");
     background-size: cover;
@@ -375,6 +373,11 @@ article {
 .satnh {
   margin-top: 58vh;
   vertical-align: middle;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85); }
+
+.cta {
+  text-align: center;
   color: rgba(255, 255, 255, 0.85); }
 
 .header {
@@ -836,16 +839,16 @@ div[class^="img-container-"] + p {
   margin-top: 0.75rem; }
 
 .contact-background {
-  background-image: url("./../images/contact/contact-bg-28rem-fw.jpg");
+  background-image: url("./../images/contact/contact-bg-28rem-adj.jpg");
   background-size: cover;
   background-position: center;
   height: 100%; }
   @media screen and (min-width: 28rem) {
     .contact-background {
-      background-image: url("./../images/contact/contact-bg-50rem-fw.jpg"); } }
+      background-image: url("./../images/contact/contact-bg-50rem-adj.jpg"); } }
   @media screen and (min-width: 50rem) {
     .contact-background {
-      background-image: url("./../images/contact/contact-bg-fw.jpg"); } }
+      background-image: url("./../images/contact/contact-bg-adj.jpg"); } }
   .contact-background form {
     margin: auto;
     padding: 1.5rem 0 1rem; }
