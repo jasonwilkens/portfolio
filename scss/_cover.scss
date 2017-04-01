@@ -6,12 +6,12 @@
   text-align:       center;
   color:            $white85;
   .cover-background {
-    background-image: url("./../images/monument-cover-28rem-fw.jpg");
+    background-image: url("./../images/monument-cover-28rem-adj.jpg");
     @media screen and (min-width: $phone-size) {
-      background-image: url("./../images/monument-cover-50rem-fw.jpg");
+      background-image: url("./../images/monument-cover-50rem-adj.jpg");
     }
     @media screen and (min-width: $tablet-size) {
-      background-image: url("./../images/monument-cover-fw.jpg");
+      background-image: url("./../images/monument-cover-adj.jpg");
     }
     background-size: cover;
     background-position: center;

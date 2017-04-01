@@ -19,7 +19,6 @@
       display:      block;
     }
     .router-link-active img {
-      filter:     grayscale(100%) contrast(1.2);
       transition: filter .30s cubic-bezier(.33,.66,.66,1);
     }
     .identity {
@@ -32,6 +31,7 @@
         margin: .3rem .3rem .3rem 0;
       }
       img {
+        filter:     grayscale(80%) contrast(1.4);
         height:     $nav-height - .6rem;
         width:      $nav-height - .6rem;
         border-radius: 15%;

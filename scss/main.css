@@ -281,7 +281,6 @@ article {
     .nav-bar #global-nav a {
       display: block; }
     .nav-bar #global-nav .router-link-active img {
-      filter: grayscale(100%) contrast(1.2);
       transition: filter 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
     .nav-bar #global-nav .identity {
       float: left;
@@ -293,6 +292,7 @@ article {
         .nav-bar #global-nav .identity {
           margin: .3rem .3rem .3rem 0; } }
       .nav-bar #global-nav .identity img {
+        filter: grayscale(80%) contrast(1.4);
         height: 2.9rem;
         width: 2.9rem;
         border-radius: 15%;
@@ -361,16 +361,16 @@ article {
   text-align: center;
   color: rgba(255, 255, 255, 0.85); }
   .grid-flex .cover .cover-background {
-    background-image: url("./../images/monument-cover-28rem-fw.jpg");
+    background-image: url("./../images/monument-cover-28rem-adj.jpg");
     background-size: cover;
     background-position: center;
     height: 100%; }
     @media screen and (min-width: 28rem) {
       .grid-flex .cover .cover-background {
-        background-image: url("./../images/monument-cover-50rem-fw.jpg"); } }
+        background-image: url("./../images/monument-cover-50rem-adj.jpg"); } }
     @media screen and (min-width: 50rem) {
       .grid-flex .cover .cover-background {
-        background-image: url("./../images/monument-cover-fw.jpg"); } }
+        background-image: url("./../images/monument-cover-adj.jpg"); } }
 
 .satnh {
   margin-top: 58vh;
