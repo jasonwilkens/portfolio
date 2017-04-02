@@ -380,8 +380,8 @@ article {
   color: rgba(255, 255, 255, 0.85); }
 
 .header-title {
-  line-height: 7rem;
   margin-top: 3.5rem;
+  padding: 1.5rem 0;
   color: white;
   text-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.15); }
 
