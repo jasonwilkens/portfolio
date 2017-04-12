@@ -522,12 +522,17 @@
         <div class="grid-max-width">
           <article>
             <h1>Coverage Counselor</h1>
-            <p>This was the biggest and coolest project I worked on at Esurance. Esurance was experimenting with building additional tools to help our customers outside the context of getting a quote. Coverage Counselor was born out of the idea that we could help prospective customers make more informed choices about the type of coverage they should buy.</p>
-            <p>It was a value proposition I was passionate about &mdash; providing better information so that people could shop from a perspective of protecting themselves and others, instead of solely focusing on saving money.</p>
-            <p>I led the project as the product manager and UX designer. I got to assemble three awesome teammates to help me out: a copywriter, a visual designer, and a front-end developer.</p>
-            <h2>Challenges</h2>
-            <h2>Execution</h2>
-            <h2>Promotion</h2>
+            <h2>Problem</h2>
+            <p>Car insurance customers are very focused on price, sometimes too focused. If you purchase a policy with the lowest limits available and cause an accident that puts someone in the hospital, you could use up your insurance quickly and be on the hook for the rest.</p>
+            <p>I led the creation of a tool that provides better information so that people can shop from a perspective of protecting themselves and others, instead of solely focusing on saving money.</p>
+            <h2>Approach</h2>
+            <p>The key to the success of this project was getting a great team together. I was lucky to get a great writer, visual designer, and front-end developer to work with me while I focused on the product management and UX design.</p>
+            <p>One of the biggest hurdles was the regulatory and legal implications of the project. As an insurance company we can't recommend specific coverage to customers, so we needed to structure the app as an educational experience guided by customer actions.</p>
+            <p>We did in-person user research to test and refine our designs. One finding was that our experience seemed a little overwhelming, so we added introductory steps before each set of questions to center the user's expectations and introduce the next part of the experience.</p>
+            <h2>Solution</h2>
+            <p>The experience walks you through the main types of coverage (liability, vehicle, etc) and as you answer questions, it explains how that coverage works and shows personalized suggestions that might be appropriate.</p>
+            <p>When you have a personalized list of suggestions, we made it easy talk to an agent or purchase that coverage online. You can also email or print your suggestions so you can shop with them elsewhere.</p>
+            <p>Customers who went through the Coverage Counselor experience purchased higher levels of coverage. The tool was also a first of its kind in the space, so we were able to highlight it in our marketing efforts.</p>
           </article>
         </div>
       </div>
@@ -537,16 +542,16 @@
         <div class="grid-max-width">
           <article>
             <h1>Quick Compare</h1>
-            <p>Quick Compare is an experience built as an alternative to Esurance's regular quote flow, for prospective customers who enter ZIP codes where Esurance's rates aren't as competitive. I was the product manager and UX designer during it's development.</p>
-            <p>Instead of taking those customers through a long series of questions to get an uncompetitive price, I designed a single-page experience that shows estimated rates from Esurance and a few other companies, along with a few default inputs that could be changed to get closer to an accurately quoted price. In this way, customers can more easily see how Esurance's rates are likely to compare to other carriers in their area, and Esurance still benefits by selling traffic that they'd be unlikely to convert into policyholders.</p>
-            <p>Looking back, I think this was the earliest project where I felt compelled to take ownership of the front-end code for my design.</p>
-            <p>In my first design, I had all the controls at the top of the page, similar to common patterns for performing an advanced search. That similarity helped users grasp what they were looking at &mdash; that by tweaking the controls, they could alter the results below instantly.</p>
-            <p>The problem with this design (and it's pretty apparent from this mockup) is that there's a lot of controls here, and jamming them into that area was quite a challenge. It took a lot of finessing in Adobe Fireworks to get them all into that small space.</p>
-            <p>Naively, I thought that after shipping off this mock with the specs my work was finished and a product matching my design would come out the other side of the engineering process. I was disappointed to learn that this was not the case.</p>
-            <p>The finished product had a superficial resemblance to my mocks, but elements were out of alignment, some were bigger and some smaller, and the slider control was changed entirely to a dropdown, which was easier to implement. Pixel measurements I'd carefully overlaid onto the mocks were completely ignored.</p>
-            <p>I couldn't let it out like that, I needed to go back to the drawing board. I met with my engineer, who was very talented, but much more familiar with back-end engineering problems that creating web application interfaces. I got help from a producer on the website team, and started learning how to put my own design into CSS.</p>
-            <p>I took the opportunity to fix my layout by putting the controls into a left-side panel as well. It was a much more forgiving layout, and I knew that even if the engineers didn't use my CSS things would be less likely to go horribly wrong.</p>
-            <p>I learned a lot on this project and if I boiled it down to one important lesson, it would be: Don't ever mistake a mockup created on the canvas of a graphics tool for anything more than an approximation of what a final design might look like.</p>
+            <h2>Problem</h2>
+            <p>Car insurance prices vary by location, and there were ZIP codes where Esurance's rates weren't as low as our competitors. We wanted to find a way to monetize traffic that was visiting our site in these areas where people were unlikely to purchase from us.</p>
+            <h2>Approach</h2>
+            <p>Our main <router-link to="/work/customer-flow">Customer Flow</router-link> experience showed affiliate links along with a quote for people who were unlikely to purchase from us, but in this case it made sense to create an entirely separate experience.</p>
+            <p>Instead of taking customers through a long series of questions to get an uncompetitive price, I designed a single-page experience that shows estimated rates from Esurance and a few other companies, along with a few default inputs that could be changed to get closer to an accurately quoted price.</p>
+            <p>I prototyped and launched this one-page experience quickly, and was able to use the website tracking analytics and data from the partner phone traffic to improve the design.</p>
+            <h2>Solution</h2>
+            <p>If you're in a ZIP code where Esurance isn't competitive, we show competitor prices instantly. There's a form to personalize the generic prices in real time, but the main call to action is visible without taking any additional action.</p>
+            <p>Launching quickly and iterating based on our data made sense because of the way we could easily test changes to the design and quantify their impact. One major change was the form, which was originally in a horizontal bar at the top of the page reminiscent of an advanced search pattern. Putting it on the left side of the page eased several design challenges and helped users focus on the prices and calls to action first. Another was always keeping Esurance at the top of the list, and maintaining a way to continue online with us for those customers set on doing so.</p>
+            <p>This design proved to be a success, and outperformed Customer Flow in a lot of ZIP codes where Esurance rates were higher.</p>
           </article>
         </div>
       </div>
