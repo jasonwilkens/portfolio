@@ -388,6 +388,7 @@ article {
 .header-img-process {
   background-size: cover;
   background-position: center;
+  background-color: #C7CACF;
   background-image: url(./../images/process/process-header-28rem-adj2.jpg); }
   @media screen and (min-width: 28rem) {
     .header-img-process {

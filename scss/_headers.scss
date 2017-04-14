@@ -8,6 +8,7 @@
 .header-img-process {
   background-size:  cover;
   background-position: center;
+  background-color: $vantablack-8;
   background-image: url(./../images/process/process-header-28rem-adj2.jpg);
   @media screen and (min-width: $phone-size) {
     background-image: url(./../images/process/process-header-50rem-adj2.jpg);
