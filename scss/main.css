@@ -593,6 +593,9 @@ h2 + .project-image, h3 + .project-image, h4 + .project-image, h5 + .project-ima
 p + h1, p + h2, p + h3, p + h4, p + h5 {
   margin-top: 1.5rem; }
 
+h1 + h2, h2 + h3, h3 + h4, h4 + h5 {
+  margin-top: 1.5rem; }
+
 p + p {
   margin-top: 1.5em; }
 
