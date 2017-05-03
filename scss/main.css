@@ -263,7 +263,7 @@ article {
   margin-top: 0; }
 
 .nav-bar {
-  box-shadow: 0 0.2rem 1rem 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.15);
   position: fixed;
   top: 0;
   width: 100%;
@@ -451,14 +451,14 @@ svg.twitter {
 p, h1, h2, h3, h4, h5, textarea, #contact-feedback {
   margin: auto; }
 
-p, h1, h2, h3, h4, h5, ul, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback, .img-large {
+p, h1, h2, h3, h4, h5, ul, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback, .img-large, .project-image {
   width: 100%; }
 
 @media screen and (min-width: 35rem) {
-  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback, .img-large {
+  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback, .img-large, .project-image {
     width: calc(35rem + 15 * ((100vw - 50rem) / 35)); } }
 @media screen and (min-width: 85rem) {
-  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback {
+  p, h1, h2, h3, h4, h5, ul, #global-nav, #work-nav, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback, .project-image {
     width: 50rem; } }
 h1, h2, h3, h4, h5 {
   padding: 0;
@@ -575,13 +575,7 @@ h1 {
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
   margin-top: 0.5rem; }
 
-h1.header-title + h2 {
-  margin-top: 3rem; }
-
-p + h1, p + h2 {
-  margin-top: 5.25rem; }
-
-p + h3, p + h4, p + h5 {
+p + h1, p + h2, p + h3, p + h4, p + h5 {
   margin-top: 1.5rem; }
 
 p + p {
@@ -622,6 +616,12 @@ h1 + #contact-feedback {
 
 .margins-off > * {
   margin-top: 0; }
+
+.sidebar * + * {
+  margin-top: .45rem; }
+
+.break {
+  margin-top: 4.5rem; }
 
 .headroom {
   will-change: transform;
@@ -712,7 +712,7 @@ table {
   display: block;
   position: relative;
   color: white;
-  box-shadow: 0 0.2rem 1rem 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.15); }
   .grid-showcase a:hover p {
     background-color: #5D636E;
     color: #7FDBB6; }
@@ -818,6 +818,12 @@ div[class^="img-container-"] + p {
 @media screen and (min-width: 85rem) {
   .img-large {
     max-width: 100%; } }
+.project-image {
+  display: block;
+  box-shadow: 0 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto; }
+
 .sidebar {
   float: right;
   width: 20rem;
@@ -1027,5 +1033,8 @@ tr.creative .label {
 tr.campaign td:first-child, tr.message td:first-child {
   padding: .4em .5em .1em;
   width: 1em; }
+
+article.project h2, article.project h3, article.project h4, article.project h5 {
+  font-family: "Yantramanav", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

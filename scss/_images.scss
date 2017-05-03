@@ -36,3 +36,10 @@ div[class^="img-container-"] + p {
 @media screen and (min-width: $max-fluid) {
   .img-large { max-width: 100%; }
 }
+
+.project-image {
+  display:          block;
+  box-shadow:       $light-shadow;
+  margin-left:      auto;
+  margin-right:     auto;
+}

@@ -35,7 +35,7 @@ $gradient-left-right: linear-gradient(to right, $purple 0%, $mint 100%);
 $gradient-diagonal: linear-gradient(-90deg, $midnight, $brick);
 
 // Shadows
-$light-shadow:      0 .2rem 1rem 0px $black15;
+$light-shadow:      0 .2rem .5rem 0px $black15;
 
 // Bizo colors
 $bizo-dark-blue:    #006386;
@@ -151,3 +151,4 @@ article { padding: 0 1rem; }
 @import 'sidebar';
 @import 'contact';
 @import 'bizo';
+@import 'projects';

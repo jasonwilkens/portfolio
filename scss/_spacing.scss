@@ -17,15 +17,7 @@ h1 + p,h2 + p,h3 + p,h4 + p,h5 + p {
   margin-top: 	    $header-spacing;
 }
 
-h1.header-title + h2 {
-  margin-top:       $default-spacing * 2;
-}
-
-p + h1,p + h2 {
-  margin-top:       $default-spacing * 3.5;
-}
-
-p + h3, p + h4, p + h5 {
+p + h1,p + h2,p + h3,p + h4,p + h5 {
   margin-top:       $default-spacing;
 }
 
@@ -80,4 +72,14 @@ h1 + #contact-feedback {
 // Remove default spacing
 .margins-off > * {
   margin-top:       0;
+}
+
+// Images in sidebar
+.sidebar * + * {
+  margin-top:       .45rem;
+}
+
+// Break
+.break {
+  margin-top:       $default-spacing * 3;
 }
