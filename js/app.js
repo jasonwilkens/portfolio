@@ -166,7 +166,7 @@ Vue.component('nav-bar', {
 // Greeting on About page
 
 Vue.component('greeting', {
-  template: '<h2>{{ message() }}</h2>',
+  template: '<h2 class="heading-style">{{ message() }}</h2>',
   methods: {
     message: function() {
       var hour = new Date().getHours();

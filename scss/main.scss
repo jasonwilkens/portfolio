@@ -71,9 +71,8 @@ $linkedin-subhead:  $linkedin-blue;
 // Type
 $copy-font:         'Yantramanav', sans-serif;
 $heading-font:      'Playfair Display', Georgia, serif;
-$copy-light:        300;
 $copy-weight:       400;
-$copy-bold:         400;
+$copy-bold:         500;
 $heading-weight:    900;
 
 // Type Scales
@@ -151,4 +150,3 @@ article { padding: 0 1rem; }
 @import 'sidebar';
 @import 'contact';
 @import 'bizo';
-@import 'projects';

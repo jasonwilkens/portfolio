@@ -309,7 +309,7 @@ article {
       .nav-bar #global-nav .nav-links a {
         line-height: 3.5rem; }
       .nav-bar #global-nav .nav-links .router-link-active {
-        font-weight: 400;
+        font-weight: 500;
         border-bottom: 0.1em solid #16181D;
         transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
         box-shadow: inset 0 -0.2em 0 #16181D; }
@@ -346,7 +346,7 @@ article {
         fill: #C7CACF; }
     .nav-bar #work-nav #project-name {
       line-height: 3.5rem;
-      font-weight: 400;
+      font-weight: 500;
       border-left: 1px solid #C7CACF;
       padding-left: 1.5rem;
       word-wrap: break-word;
@@ -409,20 +409,29 @@ body, textarea, input, button {
     color: white; }
 
 strong {
-  font-weight: 400; }
+  font-weight: 500; }
 
-h1, h2, h3, h4, h5 {
+h1 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 900;
   color: #16181D; }
-  h1 small, h2 small, h3 small, h4 small, h5 small {
+
+.heading-style {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900; }
+
+h2, h3, h4, h5 {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 500;
+  color: #16181D; }
+  h2 small, h3 small, h4 small, h5 small {
     color: #818792;
     font-family: "Yantramanav", sans-serif;
     font-weight: 400; }
 
 .small {
   color: #818792;
-  font-weight: 400; }
+  font-weight: 500; }
 
 .floating-caption {
   color: #818792;
@@ -690,7 +699,6 @@ table {
       margin-right: 1.5rem;
       padding-bottom: 7.5rem; } }
   .job h2 {
-    font-family: "Yantramanav", sans-serif;
     line-height: 1; }
   .job .background {
     position: absolute;
@@ -755,13 +763,15 @@ table {
   background-color: #0B0C0E;
   padding: 0 0 1.5rem 0; }
   .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 900;
     color: white;
     margin-top: 3rem; }
 
 ul.pills {
   margin: auto;
   list-style-type: none;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 3rem;
   padding: 0;
   color: #16181D; }
@@ -996,7 +1006,7 @@ textarea + .input-row {
     min-width: 1em;
     white-space: nowrap; }
   .bizstrap-table th {
-    font-weight: 400; }
+    font-weight: 500; }
   .bizstrap-table .label {
     width: 10rem; }
   .bizstrap-table td:nth-child(n+3), .bizstrap-table th:nth-child(n+2) {
@@ -1036,8 +1046,5 @@ tr.creative .label {
 tr.campaign td:first-child, tr.message td:first-child {
   padding: .4em .5em .1em;
   width: 1em; }
-
-article.project h2, article.project h3, article.project h4, article.project h5 {
-  font-family: "Yantramanav", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
