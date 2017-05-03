@@ -346,7 +346,7 @@ article {
         fill: #C7CACF; }
     .nav-bar #work-nav #project-name {
       line-height: 3.5rem;
-      font-weight: 500;
+      font-weight: 400;
       border-left: 1px solid #C7CACF;
       padding-left: 1.5rem;
       word-wrap: break-word;
@@ -459,9 +459,11 @@ svg.twitter {
 
 p, h1, h2, h3, h4, h5, textarea, #contact-feedback {
   margin-left: auto;
-  margin-right: auto;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em; }
+  margin-right: auto; }
+
+p, h1, h2, h3, h4, h5 {
+  margin-top: auto;
+  margin-bottom: auto; }
 
 p, h1, h2, h3, h4, h5, ul, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback, .img-large, .project-image {
   width: 100%; }
