@@ -458,7 +458,10 @@ svg.twitter {
   white-space: nowrap; }
 
 p, h1, h2, h3, h4, h5, textarea, #contact-feedback {
-  margin: auto; }
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
 
 p, h1, h2, h3, h4, h5, ul, .nav-max, textarea, .input-row, .bizstrap-table-container, .bizstrap-table, #contact-feedback, .img-large, .project-image {
   width: 100%; }
