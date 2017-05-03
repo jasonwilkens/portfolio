@@ -575,6 +575,9 @@ h1 {
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
   margin-top: 0.5rem; }
 
+h2 + .project-image, h3 + .project-image, h4 + .project-image, h5 + .project-image {
+  margin-top: 0.5rem; }
+
 p + h1, p + h2, p + h3, p + h4, p + h5 {
   margin-top: 1.5rem; }
 
