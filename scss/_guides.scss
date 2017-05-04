@@ -38,6 +38,7 @@ ul.pills {
 .related-projects {
   border-top:       .4em double $vantablack-7;
   padding-top:    $default-spacing;
+  padding-bottom: $default-spacing;
   @media screen and (min-width: $phone-size) {
     background:     $graph-paper;
   }
