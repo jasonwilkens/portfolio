@@ -755,7 +755,7 @@ table {
         padding-top: 7.5rem; } }
 
 .grid-showcase article, .grid-related-projects article {
-  padding: 1rem; }
+  padding: 1rem 1rem 0; }
 .grid-showcase a, .grid-related-projects a {
   display: block;
   position: relative;
