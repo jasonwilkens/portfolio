@@ -227,12 +227,6 @@ article {
     overflow: hidden;
     *zoom: 1; }
 
-.grid-flex + .job {
-  margin-top: 0; }
-
-.job + .guide {
-  margin-top: 0; }
-
 @media screen and (min-width: 32rem) {
   .grid-showcase {
     max-width: 32rem;
@@ -260,6 +254,46 @@ article {
       clear: none; } }
 .grid-flex > div, .grid-showcase > div {
   min-height: 3rem;
+  margin-top: 0; }
+
+.grid-related-projects {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1; }
+  .grid-related-projects div {
+    float: left;
+    margin-right: -100%;
+    width: 100%; }
+  .grid-related-projects div:nth-child(1n+1) {
+    margin-left: 0%;
+    margin-bottom: 2%;
+    clear: both;
+    overflow: hidden;
+    *zoom: 1; }
+
+@media screen and (min-width: 35rem) {
+  .grid-related-projects {
+    max-width: 52rem; }
+    .grid-related-projects div {
+      float: left;
+      margin-right: -100%;
+      width: 49%; }
+    .grid-related-projects div:nth-child(2n+1) {
+      margin-left: 0%;
+      margin-bottom: 2%;
+      clear: both;
+      overflow: hidden;
+      *zoom: 1; }
+    .grid-related-projects div:nth-child(2n+2) {
+      margin-left: 51%;
+      margin-bottom: 2%;
+      clear: none; } }
+@media screen and (min-width: 50rem) {
+  .grid-related-projects article {
+    padding: 0; } }
+.grid-related-projects > div {
   margin-top: 0; }
 
 .nav-bar {
@@ -614,7 +648,7 @@ img + h1, img + h2, img + h3, img + h4, img + h5 {
   margin-top: 3rem; }
 
 .grid-showcase + .grid-showcase {
-  margin-top: 0%; }
+  margin-top: 2%; }
   @media screen and (min-width: 85rem) {
     .grid-showcase + .grid-showcase {
       margin-top: 1.76rem; } }
@@ -627,6 +661,12 @@ img + h1, img + h2, img + h3, img + h4, img + h5 {
   @media screen and (min-width: 50rem) {
     .job + .job {
       margin-top: 1.5rem; } }
+
+.grid-flex + .job {
+  margin-top: 0; }
+
+.job + .guide {
+  margin-top: 0; }
 
 h1 + #contact-feedback {
   margin-top: 1.5rem; }
@@ -708,46 +748,35 @@ table {
       padding-bottom: 7.5rem; } }
   .job h2 {
     line-height: 1; }
-  .job .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0; }
-    .job .background .background-image {
-      width: 100%;
-      height: 100%;
-      filter: opacity(0.1);
-      background-position: center; }
   .job .grid-max-width {
-    position: relative;
     padding-top: 3rem; }
     @media screen and (min-width: 50rem) {
       .job .grid-max-width {
         padding-top: 7.5rem; } }
 
-.grid-showcase article {
-  padding: 1rem 1rem 0; }
-.grid-showcase a {
+.grid-showcase article, .grid-related-projects article {
+  padding: 1rem; }
+.grid-showcase a, .grid-related-projects a {
   display: block;
   position: relative;
   color: white;
   box-shadow: 0 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.15); }
-  .grid-showcase a:hover p {
+  .grid-showcase a:hover p, .grid-related-projects a:hover p {
     background-color: #5D636E;
     color: #7FDBB6; }
-  .grid-showcase a:focus p, .grid-showcase a:active p {
+  .grid-showcase a:focus p, .grid-showcase a:active p, .grid-related-projects a:focus p, .grid-related-projects a:active p {
     background-color: #011F7F; }
-  .grid-showcase a:active {
+  .grid-showcase a:active, .grid-related-projects a:active {
     box-shadow: none;
     border-bottom: none;
     background: none; }
-.grid-showcase img {
+.grid-showcase img, .grid-related-projects img {
   width: 100%;
   vertical-align: middle; }
-.grid-showcase div {
+.grid-showcase div, .grid-related-projects div {
   background-color: transparent;
   background-clip: content-box; }
-.grid-showcase p {
+.grid-showcase p, .grid-related-projects p {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -755,7 +784,7 @@ table {
   line-height: 2.75rem;
   transition: background-color .3s, filter .3s;
   filter: opacity(0.95); }
-  .grid-showcase p span {
+  .grid-showcase p span, .grid-related-projects p span {
     padding: 0 1rem; }
 
 @media screen and (min-width: 28rem) {
@@ -794,6 +823,17 @@ ul.pills {
     background-color: #5D636E; }
   ul.pills li + li {
     margin-left: 0.3rem; }
+
+.related-projects {
+  border-top: 0.4em double #A3A7AF;
+  padding-top: 1.5rem; }
+  @media screen and (min-width: 28rem) {
+    .related-projects {
+      background: repeating-linear-gradient(90deg, #f4f5f6 0, #f4f5f6 5%, transparent 0, transparent 50%) 0/1rem 1rem, repeating-linear-gradient(180deg, #f4f5f6 0, #f4f5f6 5%, transparent 0, transparent 50%) 0/1rem 1rem; } }
+  @media screen and (min-width: 50rem) {
+    .related-projects {
+      padding-top: 3rem;
+      padding-bottom: 3rem; } }
 
 .img-container-25 {
   max-width: 25rem;
@@ -843,16 +883,20 @@ div[class^="img-container-"] + p {
   display: block;
   box-shadow: 0 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.15);
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  clear: both; }
 
 .sidebar {
   float: right;
   width: 20rem;
-  margin-left: 1.5rem;
+  margin-left: 4.5rem;
   margin-bottom: 1.5rem;
   padding-top: 0.75rem;
   border-top: 0.3rem solid #16181D;
   color: #818792; }
+  @media screen and (min-width: 28rem) {
+    .sidebar {
+      margin-left: 1.5rem; } }
   .sidebar p {
     width: inherit; }
 

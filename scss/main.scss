@@ -33,6 +33,7 @@ $vantablack-9:      #ECEDEF;
 // Gradients
 $gradient-left-right: linear-gradient(to right, $purple 0%, $mint 100%);
 $gradient-diagonal: linear-gradient(-90deg, $midnight, $brick);
+$graph-paper: repeating-linear-gradient(90deg, lighten($vantablack-9,3%) 0, lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem, repeating-linear-gradient(180deg, lighten($vantablack-9,3%) 0, lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem;
 
 // Shadows
 $light-shadow:      0 .2rem .5rem 0px $black15;

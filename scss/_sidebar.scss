@@ -1,7 +1,10 @@
 .sidebar {
   float:            right;
   width:            20rem;
-  margin-left:      $default-spacing;
+  margin-left:      $default-spacing * 3;
+  @media screen and (min-width: $phone-size) {
+    margin-left:    $default-spacing;
+  }
   margin-bottom:    $default-spacing;
   padding-top:      $default-spacing / 2;
   border-top:       .3rem solid $vantablack-1;

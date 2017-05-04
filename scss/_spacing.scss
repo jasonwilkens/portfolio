@@ -67,6 +67,14 @@ img + h1,img + h2,img + h3,img + h4,img + h5 {
   }
 }
 
+.grid-flex + .job {
+  margin-top: 0; 
+}
+
+.job + .guide {
+  margin-top: 0;
+}
+
 // Contact form
 h1 + #contact-feedback {
   margin-top:       $default-spacing;

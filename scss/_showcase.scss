@@ -5,7 +5,7 @@
   @media screen and (min-width: $phone-size) {
     margin-left:    $default-spacing / 2;
     margin-right:   $default-spacing / 2;
-    background:       repeating-linear-gradient(90deg, lighten($vantablack-9,3%) 0, lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem, repeating-linear-gradient(180deg, lighten($vantablack-9,3%) 0, lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem;
+    background:     $graph-paper;
   }
   @media screen and (min-width: $tablet-size) {
     margin-left:    $default-spacing;
@@ -15,20 +15,7 @@
   h2 {
     line-height:    1;
   }
-  .background {
-    position:       absolute;
-    width:          100%;
-    height:         100%;
-    z-index:        0;
-    .background-image {
-      width:        100%;
-      height:       100%;
-      filter:       opacity(.1);
-      background-position: center;
-    }
-  }
   .grid-max-width {
-    position:       relative;
     padding-top:    $default-spacing * 2;
     @media screen and (min-width: $tablet-size) {
       padding-top: $default-spacing * 5;
@@ -36,9 +23,9 @@
   }
 }
 
-.grid-showcase {
+.grid-showcase,.grid-related-projects {
   article {
-    padding:        1rem 1rem 0;
+    padding:        1rem;
   }
   a {
     display:        block;

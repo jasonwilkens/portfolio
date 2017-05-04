@@ -45,14 +45,6 @@ $max_width:         $wide-grid-width;
   @include generate_grid_positions(div, 12);
 }
 
-.grid-flex + .job {
-  margin-top: 0; 
-}
-
-.job + .guide {
-  margin-top: 0;
-}
-
 @media screen and (min-width: $showcase-1-max) {
   $max_width:       $showcase-1-max;
 
@@ -74,5 +66,36 @@ $max_width:         $wide-grid-width;
 
 .grid-flex > div, .grid-showcase > div { 
   min-height:       3rem;
+  margin-top:       0;
+}
+
+// Grid 4, related projects
+$container_margin:  auto;
+$gutter_width:      2%;
+$max_width:         100%;
+
+.grid-related-projects {
+  max-width:        100%;
+  @include container();
+  @include clearfix();
+  div{@include column(12);}
+  @include generate_grid_positions(div, 12);
+}
+
+@media screen and (min-width: $min-line-length) {
+  $max_width:       $max-line-length;
+  
+  .grid-related-projects {
+    max-width:      $max-line-length + 2rem;
+    div{@include column(6);}
+    @include generate_grid_positions(div, 6);
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .grid-related-projects article { padding: 0; }
+}
+
+.grid-related-projects > div {
   margin-top:       0;
 }
