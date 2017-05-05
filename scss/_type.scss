@@ -77,7 +77,7 @@ svg.twitter {
 }
 
 // Center block-level type elements within grid within Grid
-p,h1,h2,h3,h4,h5,textarea,#contact-feedback {
+p,h1,h2,h3,h4,h5,textarea,#contact-feedback,iframe {
   margin-left:      auto;
   margin-right:     auto;
 }
@@ -102,7 +102,8 @@ p,h1,h2,h3,h4,h5 {
     & {
       font-size: 	$min-font-size;
       @media screen and (min-width: $min-vw) {
-        font-size: 	calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        font-size: 	calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * 
+          ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
       }
       @media screen and (min-width: $max-vw) {
         font-size: 	$max-font-size;
@@ -114,12 +115,22 @@ p,h1,h2,h3,h4,h5 {
 }
 
 // Line Lenth
-p,h1,h2,h3,h4,h5,ul,.nav-max,textarea,.input-row,.bizstrap-table-container,.bizstrap-table,#contact-feedback,.img-large,.project-image { width: 100%; }
+p,h1,h2,h3,h4,h5,ul,.nav-max,textarea,.input-row,.bizstrap-table-container,
+.bizstrap-table,#contact-feedback,.img-large,.project-image {
+  width: 100%;
+}
 @media screen and (min-width: $min-line-length) {
-  p,h1,h2,h3,h4,h5,ul,#global-nav,#work-nav,textarea,.input-row,.bizstrap-table-container,.bizstrap-table,#contact-feedback,.img-large,.project-image { width: calc(#{$min-line-length} + #{strip-unit($max-line-length - $min-line-length)} * ((100vw - #{$min-fluid}) / #{strip-unit($max-fluid - $min-fluid)})) };
+  p,h1,h2,h3,h4,h5,ul,#global-nav,#work-nav,textarea,.input-row,.bizstrap-table-container,
+  .bizstrap-table,#contact-feedback,.img-large,.project-image {
+    width: calc(#{$min-line-length} + #{strip-unit($max-line-length - $min-line-length)} * 
+      ((100vw - #{$min-fluid}) / #{strip-unit($max-fluid - $min-fluid)}))
+  };
 }
 @media screen and (min-width: $max-fluid) {
-  p,h1,h2,h3,h4,h5,ul,#global-nav,#work-nav,textarea,.input-row,.bizstrap-table-container,.bizstrap-table,#contact-feedback,.project-image { width: $max-line-length; }
+  p,h1,h2,h3,h4,h5,ul,#global-nav,#work-nav,textarea,.input-row,.bizstrap-table-container,
+  .bizstrap-table,#contact-feedback,.project-image { 
+    width: $max-line-length;
+  }
 }
 
 

@@ -1,0 +1,18 @@
+.iframe-container {
+  position:         relative;
+  padding-bottom:   56.25%;
+  padding-top:      4rem;
+  height:           0;
+  overflow:         hidden;
+  box-shadow:       $light-shadow;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+  position:         absolute;
+  top:              0;
+  left:             0;
+  height:           100%;
+  width:            100%;
+}
