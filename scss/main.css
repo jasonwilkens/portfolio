@@ -986,6 +986,9 @@ textarea {
   border-bottom-right-radius: 0;
   height: 30vh;
   line-height: 1.5rem; }
+  @media screen and (min-width: 28rem) {
+    textarea {
+      height: 45vh; } }
 
 #contact-feedback {
   height: 30vh;

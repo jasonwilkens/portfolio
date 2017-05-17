@@ -90,6 +90,9 @@ textarea {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   height:           30vh;
+  @media screen and (min-width: $phone-size) {
+    height:         45vh;
+  }
   line-height:      1.5rem;
 }
 
