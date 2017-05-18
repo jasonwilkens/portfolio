@@ -37,6 +37,10 @@ img + h1,img + h2,img + h3,img + h4,img + h5 {
   margin-top:       $default-spacing;
 }
 
+div[class^="img-container-"] + p,.project-image + p {
+  margin-top:       $default-spacing / 2;
+}
+
 // Grids
 .grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-showcase, .grid-showcase + .grid-max-width, .nav + .grid-max-width {
   margin-top:       $default-spacing;
@@ -90,9 +94,13 @@ h1 + #contact-feedback {
   margin-top:       0;
 }
 
-// Images in sidebar
+// Sidebar
 .sidebar * + * {
   margin-top:       .45rem;
+}
+
+.sidebar + p {
+  margin-top:       $default-spacing / 2;
 }
 
 // Break

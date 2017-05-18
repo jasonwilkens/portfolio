@@ -648,17 +648,69 @@
         <div class="grid-max-width">
           <article>
             <h1>Quick Compare</h1>
+            <img class="project-image"
+              src="images/work/esurance/quick-compare/home.png" alt="Esurance home page"
+            />
+            <p class="floating-caption">Depending on your ZIP code, hitting "go" takes you into <router-link to="/work/customer-flow">Customer Flow</router-link> or Quick Compare.</p>
             <h2>Problem</h2>
             <p>Car insurance prices vary by location, and there were ZIP codes where Esurance's rates weren't as low as our competitors. We wanted to find a way to monetize traffic that was visiting our site in these areas where people were unlikely to purchase from us.</p>
             <h2>Approach</h2>
-            <p>Our main <router-link to="/work/customer-flow">Customer Flow</router-link> experience showed affiliate links along with a quote for people who were unlikely to purchase from us, but in this case it made sense to create an entirely separate experience.</p>
+            <div class="sidebar">
+              <img src="images/work/esurance/quick-compare/top-form-square.png" alt="Alternate design for Quick Compare"/>
+              <p>An early design with the form on top.</p>
+            </div>
+            <p>Our main <router-link to="/work/customer-flow">Customer Flow</router-link> experience already included affiliate links along with a quote for people who were unlikely to purchase from us, but in this case it made sense to create an entirely separate experience.</p>
             <p>Instead of taking customers through a long series of questions to get an uncompetitive price, I designed a single-page experience that shows estimated rates from Esurance and a few other companies, along with a few default inputs that could be changed to get closer to an accurately quoted price.</p>
             <p>I prototyped and launched this one-page experience quickly, and was able to use the website tracking analytics and data from the partner phone traffic to improve the design.</p>
             <h2>Solution</h2>
+            <img class="project-image"
+              src="images/work/esurance/quick-compare/full-page-version.png" alt="Quick Compare design"
+            />
+            <div class="sidebar">
+              <img src="images/work/esurance/quick-compare/syndicated.png" alt="Version for syndication"/>
+              <p>I also developed a version for syndication on other websites.</p>
+            </div>
             <p>If you're in a ZIP code where Esurance isn't competitive, we show competitor prices instantly. There's a form to personalize the generic prices in real time, but the main call to action is visible without taking any additional action.</p>
             <p>Launching quickly and iterating based on our data made sense because of the way we could easily test changes to the design and quantify their impact. One major change was the form, which was originally in a horizontal bar at the top of the page reminiscent of an advanced search pattern. Putting it on the left side of the page eased several design challenges and helped users focus on the prices and calls to action first. Another was always keeping Esurance at the top of the list, and maintaining a way to continue online with us for those customers set on doing so.</p>
             <p>This design proved to be a success, and outperformed Customer Flow in a lot of ZIP codes where Esurance rates were higher.</p>
           </article>
+        </div>
+        <div class="grid-flex related-projects">
+          <article>
+            <h2>Related projects</h2>
+          </article>
+          <div class="grid-related-projects">
+            <div>
+              <article>
+                <router-link to="/work/coverage-counselor">
+                  <img
+                    srcset="images/work/esurance/coverage-counselor/coverage-counselor-960x640.jpg 960w,
+                            images/work/esurance/coverage-counselor/coverage-counselor-874x583.jpg 874w,
+                            images/work/esurance/coverage-counselor/coverage-counselor-480x320.jpg 480w,
+                            images/work/esurance/coverage-counselor/coverage-counselor-437x291.jpg 437w"
+                    sizes="(min-width:70rem) 960w, 100vw"
+                    src="images/work/esurance/coverage-counselor/coverage-counselor-960x640.jpg" alt="Coverage Counselor"
+                  />
+                  <p><span>Coverage Counselor</span></p>
+                </router-link>
+              </article>
+            </div>
+            <div>
+              <article>
+                <router-link to="/work/customer-flow">
+                  <img
+                    srcset="images/work/esurance/customer-flow/customer-flow-960x640.gif 960w,
+                            images/work/esurance/customer-flow/customer-flow-874x583.gif 874w,
+                            images/work/esurance/customer-flow/customer-flow-480x320.gif 480w,
+                            images/work/esurance/customer-flow/customer-flow-437x291.gif 437w"
+                    sizes="(min-width:70rem) 960w, 100vw"
+                    src="images/work/esurance/customer-flow/customer-flow-960x640.jpg" alt="Customer Flow"
+                  />
+                  <p><span>Customer Flow</span></p>
+                </router-link>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </script>

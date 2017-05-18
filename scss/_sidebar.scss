@@ -12,8 +12,7 @@
   p {
     width:          inherit;
   }
-}
-
-.sidebar + p {
-  margin-top:       $default-spacing / 2;
+  img {
+    box-shadow:     $light-shadow;
+  }
 }

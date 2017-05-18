@@ -641,6 +641,9 @@ p + p {
 img + h1, img + h2, img + h3, img + h4, img + h5 {
   margin-top: 1.5rem; }
 
+div[class^="img-container-"] + p, .project-image + p {
+  margin-top: 0.75rem; }
+
 .grid-flex + .grid-max-width, .grid-max-width + .grid-flex, .grid-max-width + .grid-showcase, .grid-showcase + .grid-max-width, .nav + .grid-max-width {
   margin-top: 1.5rem; }
 
@@ -682,6 +685,9 @@ h1 + #contact-feedback {
 
 .sidebar * + * {
   margin-top: .45rem; }
+
+.sidebar + p {
+  margin-top: 0.75rem; }
 
 .break {
   margin-top: 4.5rem; }
@@ -872,9 +878,6 @@ ul.pills {
     width: inherit;
     color: #818792; }
 
-div[class^="img-container-"] + p {
-  margin-top: 0.75rem; }
-
 .img-large {
   display: block;
   margin-left: auto;
@@ -903,9 +906,8 @@ div[class^="img-container-"] + p {
       margin-left: 1.5rem; } }
   .sidebar p {
     width: inherit; }
-
-.sidebar + p {
-  margin-top: 0.75rem; }
+  .sidebar img {
+    box-shadow: 0 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.15); }
 
 .contact-background {
   background-image: url("./../images/contact/contact-bg-28rem-adj.jpg");
