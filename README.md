@@ -17,7 +17,7 @@ I used theme colors from my two Twitter accounts as my primary interaction color
 
 Photographs
 -----------
-I took almost all the photographs used, and the rest were taken by coworkers.
+I took almost all the photographs used, and the rest were taken by coworkers. I used media queries in my CSS to make background images responsive. For images that were part of my content, I used the srcset attribute to make them responsive.
 
 Images
 ------
