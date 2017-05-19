@@ -1,4 +1,4 @@
 DirectoryIndex index.html
 RewriteEngine on
 RewriteBase /
-RewriteRule (.*) index.html/$1 [R=301,L]
+RewriteRule (.*) /$1 [R=301,L ]
