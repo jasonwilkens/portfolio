@@ -1,5 +1,1 @@
 DirectoryIndex index.html
-Redirect 301 /work index.html/work
-Redirect 301 /process index.html/process
-Redirect 301 /about index.html/about
-Redirect 301 /contact index.html/contact
