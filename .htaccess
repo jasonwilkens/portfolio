@@ -1,2 +1,2 @@
 DirectoryIndex index.html
-Options +FollowSymLinks
+Redirect * index.html*
