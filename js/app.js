@@ -329,7 +329,7 @@ Vue.component('contact-form', {
     validateText: function(e) {
       if (e.target.value !== '') {
         e.target.className = '';
-        e.target.setAttribute('placeholder', 'Write a message');
+        e.target.setAttribute('placeholder', 'Your message');
       }
     }
   }

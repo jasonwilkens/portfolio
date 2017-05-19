@@ -431,7 +431,7 @@
           <h1>Contact</h1>
           <transition name="fade">
             <form id="form-element" v-if="formToggle">
-              <textarea placeholder="Write a message" tabindex="1" v-on:keyup.esc="escape" v-on:blur="validateText" name="message"></textarea>
+              <textarea placeholder="Your message" tabindex="1" v-on:keyup.esc="escape" v-on:blur="validateText" name="message"></textarea>
               <div class="input-row">
                 <button class="contact-button" tabindex="3" v-on:keyup.esc="escape" v-on:click.prevent="send" type="submit">Send</button>
                 <div class="input-container">
