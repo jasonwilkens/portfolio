@@ -1,2 +1,1 @@
 DirectoryIndex index.html
-RedirectMatch ^/(.*) index.html/$1
