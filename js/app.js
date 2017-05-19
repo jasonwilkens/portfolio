@@ -142,11 +142,6 @@ var home = { template: '#home' },
       { name: 'contact', visited: false }
     ];
 
-
-router.afterEach(function() {
-  scroll(0,0);
-});
-
 router.beforeEach(function(to, from, next) {
   if (to.meta.visited === false) {
     to.meta.visited = true;
