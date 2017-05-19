@@ -1,2 +1,2 @@
 DirectoryIndex index.html
-Redirect /work index.html/work
+RedirectMatch (.*) index.html/$1
