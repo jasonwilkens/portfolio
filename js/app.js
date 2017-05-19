@@ -31,7 +31,8 @@ var home = { template: '#home' },
       { name: 'customerFlow', path: '/work/customer-flow', component: customerFlow, meta: { project: true, title: 'Esurance: Customer Flow' }}
     ],
     router = new VueRouter({
-      routes
+      mode: 'history',
+      routes: routes
     }),
     campaigns = [
       {
