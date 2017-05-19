@@ -366,7 +366,7 @@ Vue.component('guide', {
             link: 'get in touch?'
           },
           {
-            title: 'Wow',
+            title: 'Nice',
             to: '/',
             description: 'Thanks for checking everything out!',
             link: ''
