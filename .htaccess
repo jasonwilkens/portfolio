@@ -1,2 +1,1 @@
 DirectoryIndex index.html
-RedirectMatch ^/(.*) https://quiet-dusk-35598.herokuapp.com/index.html
