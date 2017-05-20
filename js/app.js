@@ -20,18 +20,18 @@ var home = { template: '#home' },
       { name: 'process', path: '/process', component: process, meta: { project: false, visited: false } },
       { name: 'about', path: '/about', component: about, meta: { project: false, visited: false } },
       { name: 'contact', path: '/contact', component: contact, meta: { project: false, visited: false } },
-      { name: 'leadAccelerator', path: '/work/lead-accelerator', component: leadAccelerator, meta: { project: true, title: 'LinkedIn: Lead Accelerator' } },
-      { name: 'madRiver', path: '/work/mad-river', component: madRiver, meta: { project: true, title: 'LinkedIn: Mad River' } },
-      { name: 'leadGenForms', path: '/work/lead-gen-forms', component: leadGenForms, meta: { project: true, title: 'LinkedIn: Lead Gen Forms' } },
-      { name: 'multichannelNurturing', path: '/work/multichannel-nurturing', component: multichannelNurturing, meta: { project: true, title: 'Bizo: Multichannel Nurturing' } },
-      { name: 'analytics', path: '/work/analytics', component: analytics, meta: { project: true, title: 'Bizo: Analytics' } },
-      { name: 'bizoDesignSystem', path: '/work/bizo-design-system', component: bizoDesignSystem, meta: { project: true, title: 'Bizo: Design System' } },
-      { name: 'coverageCounselor', path: '/work/coverage-counselor', component: coverageCounselor, meta: { project: true, title: 'Esurance: Coverage Counselor' } },
-      { name: 'quickCompare', path: '/work/quick-compare', component: quickCompare, meta: { project: true, title: 'Esurance: Quick Compare' } },
-      { name: 'customerFlow', path: '/work/customer-flow', component: customerFlow, meta: { project: true, title: 'Esurance: Customer Flow' } }
+      { name: 'leadAccelerator', path: '/lead-accelerator', component: leadAccelerator, meta: { project: true, title: 'LinkedIn: Lead Accelerator' } },
+      { name: 'madRiver', path: '/mad-river', component: madRiver, meta: { project: true, title: 'LinkedIn: Mad River' } },
+      { name: 'leadGenForms', path: '/lead-gen-forms', component: leadGenForms, meta: { project: true, title: 'LinkedIn: Lead Gen Forms' } },
+      { name: 'multichannelNurturing', path: '/multichannel-nurturing', component: multichannelNurturing, meta: { project: true, title: 'Bizo: Multichannel Nurturing' } },
+      { name: 'analytics', path: '/analytics', component: analytics, meta: { project: true, title: 'Bizo: Analytics' } },
+      { name: 'bizoDesignSystem', path: '/bizo-design-system', component: bizoDesignSystem, meta: { project: true, title: 'Bizo: Design System' } },
+      { name: 'coverageCounselor', path: '/coverage-counselor', component: coverageCounselor, meta: { project: true, title: 'Esurance: Coverage Counselor' } },
+      { name: 'quickCompare', path: '/quick-compare', component: quickCompare, meta: { project: true, title: 'Esurance: Quick Compare' } },
+      { name: 'customerFlow', path: '/customer-flow', component: customerFlow, meta: { project: true, title: 'Esurance: Customer Flow' } }
     ],
     router = new VueRouter({
-      mode: 'history',
+      //mode: 'history',
       routes: routes,
       scrollBehavior (to, from, savedPosition) {
         if (savedPosition) {
