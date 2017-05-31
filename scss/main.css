@@ -726,7 +726,8 @@ a:active {
 
 table {
   margin: 1rem auto;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  width: calc(100% - 2rem); }
   table th {
     text-align: left;
     padding: 0 .3em; }
@@ -735,8 +736,15 @@ table {
   table tr + tr td {
     padding-top: .75rem;
     border-top: 1px solid #C7CACF; }
-  table td + td {
-    padding-left: 6rem; }
+  table p {
+    width: 100%;
+    margin: .3rem .3rem 0; }
+  @media screen and (min-width: 35rem) {
+    table {
+      width: calc(35rem + 15 *  ((100vw - 50rem) / 35) - 3rem); } }
+  @media screen and (min-width: 85rem) {
+    table {
+      width: 46rem; } }
 
 .emoji {
   height: 1.5em;

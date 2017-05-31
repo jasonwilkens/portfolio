@@ -12,7 +12,16 @@ table {
     padding-top:    .75rem;
     border-top:     1px solid $vantablack-8;
   }
-  td + td {
-    padding-left:   6rem;
+  p {
+    width:          100%;
+    margin:         .3rem .3rem 0;
+  }
+  width:            calc(100% - 2rem);
+  @media screen and (min-width: $min-line-length) {
+    width:          calc(#{$min-line-length} + #{strip-unit($max-line-length - $min-line-length)} * 
+                    ((100vw - #{$min-fluid}) / #{strip-unit($max-fluid - $min-fluid)}) - 3rem);
+  }
+  @media screen and (min-width: $max-fluid) {
+    width:          $max-line-length - 4rem;
   }
 }
