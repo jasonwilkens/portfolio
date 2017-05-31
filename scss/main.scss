@@ -31,9 +31,10 @@ $vantablack-8:      #C7CACF;
 $vantablack-9:      #ECEDEF;
 
 // Gradients
-$gradient-left-right: linear-gradient(to right, $purple 0%, $mint 100%);
-$gradient-diagonal: linear-gradient(-90deg, $midnight, $brick);
-$graph-paper: repeating-linear-gradient(90deg, lighten($vantablack-9,3%) 0, lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem, repeating-linear-gradient(180deg, lighten($vantablack-9,3%) 0, lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem;
+$graph-paper:       repeating-linear-gradient(90deg, lighten($vantablack-9,3%) 0,
+                    lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem,
+                    repeating-linear-gradient(180deg, lighten($vantablack-9,3%) 0,
+                    lighten($vantablack-9,3%) 5%, transparent 0, transparent 50%) 0 / 1rem 1rem;
 
 // Shadows
 $light-shadow:      0 .2rem .5rem 0px $black15;
@@ -48,16 +49,12 @@ $message-row:       lighten($mint, 30%);
 $creative-row:      lighten($mint, 25%);
 $control-icon:      $vantablack-6;
 
-$bizo-subhead:      darken($bizo-red, 5%);
-
 // Esurance colors
 $esurance-purple:   #170939;
 $esurance-gray:     #585149;
 $esurance-light-purple: #746b88;
 $esurance-light-gray: #EEE;
 $esurance-blue:     #6699FF;
-
-$esurance-subhead:  lighten($esurance-purple, 10%);
 
 
 // LinkedIn colors
@@ -66,8 +63,6 @@ $linkedin-light-gray: #e1e9ee;
 $linkedin-blue:     #0084bf;
 $linkedin-slate:    #283e4a;
 $linkedin-white-80: rgba(255,255,255,0.8);
-
-$linkedin-subhead:  $linkedin-blue;
 
 // Type
 $copy-font:         'Yantramanav', sans-serif;
