@@ -9,7 +9,7 @@ I used [Sass](http://sass-lang.com/) to write my CSS, [Profound Grid](http://www
 
 Type
 ----
-I used [Google Fonts](https://fonts.google.com/) (Playfair Display and Yantramanav) for my typefaces, and the fluid type pattern described [here](https://www.smashingmagazine.com/2016/05/fluid-typography/) to make the type responsive.
+I used [Google Fonts](https://fonts.google.com/) (Teko and Yantramanav) for my typefaces, and the fluid type pattern described [here](https://www.smashingmagazine.com/2016/05/fluid-typography/) to make the type responsive.
 
 Color
 -----
