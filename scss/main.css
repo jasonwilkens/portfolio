@@ -690,6 +690,15 @@ h1 + #contact-feedback {
 .sidebar + p {
   margin-top: 1.5rem; }
 
+h1 + .sidebar + p, h2 + .sidebar + p, h3 + .sidebar + p, h4 + .sidebar + p, h5 + .sidebar + p {
+  margin-top: 0; }
+
+h1 + .sidebar, h2 + .sidebar, h3 + .sidebar, h4 + .sidebar, h5 + .sidebar {
+  margin-top: .5em; }
+
+p + .sidebar {
+  margin-top: 2em; }
+
 .break {
   margin-top: 4.5rem; }
 
