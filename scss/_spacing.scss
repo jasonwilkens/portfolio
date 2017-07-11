@@ -18,7 +18,7 @@ h1 + p,h2 + p,h3 + p,h4 + p,h5 + p {
 }
 
 h2 + .project-image,h3 + .project-image,h4 + .project-image,h5 + .project-image {
-  margin-top: 	    $header-spacing;
+  margin-top: 	    $default-spacing / 3;
 }
 
 p + h1,p + h2,p + h3,p + h4,p + h5 {
@@ -38,7 +38,11 @@ img + h1,img + h2,img + h3,img + h4,img + h5 {
 }
 
 div[class^="img-container-"] + p,.project-image + p {
-  margin-top:       $default-spacing / 2;
+  margin-top:       $default-spacing;
+}
+
+div[class^="img-container-"] + .floating-caption,.project-image + .floating-caption {
+  margin-top:       $default-spacing / 5;
 }
 
 // Grids
