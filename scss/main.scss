@@ -66,10 +66,10 @@ $linkedin-white-80: rgba(255,255,255,0.8);
 
 // Type
 $copy-font:         'Yantramanav', sans-serif;
-$heading-font:      'Playfair Display', Georgia, serif;
+$heading-font:      'Teko', Georgia, serif;
 $copy-weight:       400;
 $copy-bold:         500;
-$heading-weight:    900;
+$heading-weight:    500;
 
 // Type Scales
 $mod_1:             1.125; // small-screen scale
@@ -81,7 +81,7 @@ $max-line-length:   50rem; // max line length for fluid scale
 
 // Spacing
 $default-spacing:   1.5rem;
-$header-spacing:    .5rem;
+$header-spacing:    0;
 $paragraph-spacing:	1.5em;
 
 // Nav

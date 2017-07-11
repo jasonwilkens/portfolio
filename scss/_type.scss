@@ -25,13 +25,11 @@ h1 {
 }
 
 h2,h3,h4,h5 {
-  font-family:      $copy-font;
-  font-weight: 	    $copy-bold;
+  font-family:      $heading-font;
+  font-weight: 	    $heading-weight;
   color:            $vantablack-1;
   small {
     color:          $vantablack-6;
-    font-family:    $copy-font;
-    font-weight:    $copy-weight;
   }
 }
 
