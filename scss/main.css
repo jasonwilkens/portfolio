@@ -687,6 +687,9 @@ h1 + #contact-feedback {
 .sidebar * + * {
   margin-top: .45rem; }
 
+.sidebar + p {
+  margin-top: 1.5rem; }
+
 .break {
   margin-top: 4.5rem; }
 

@@ -99,6 +99,10 @@ h1 + #contact-feedback {
   margin-top:       .45rem;
 }
 
+.sidebar + p {
+  margin-top:       $default-spacing;
+}
+
 // Break
 .break {
   margin-top:       $default-spacing * 3;
