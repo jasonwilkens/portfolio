@@ -1,6 +1,6 @@
 .header-title {
   margin-top:       $nav-height;
-  padding:          $default-spacing 0;
+  padding:          $default-spacing + .5rem 0 $default-spacing;
   color:            white;
   text-shadow:      0 0 .3rem rgba(0,0,0,.15);
 }

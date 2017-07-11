@@ -415,7 +415,7 @@ article {
 
 .header-title {
   margin-top: 3.5rem;
-  padding: 1.5rem 0;
+  padding: 2rem 0 1.5rem;
   color: white;
   text-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.15); }
 
@@ -446,22 +446,20 @@ strong {
   font-weight: 500; }
 
 h1 {
-  font-family: "Playfair Display", Georgia, serif;
-  font-weight: 900;
+  font-family: "Teko", Georgia, serif;
+  font-weight: 500;
   color: #16181D; }
 
 .heading-style {
-  font-family: "Playfair Display", Georgia, serif;
-  font-weight: 900; }
+  font-family: "Teko", Georgia, serif;
+  font-weight: 500; }
 
 h2, h3, h4, h5 {
-  font-family: "Yantramanav", sans-serif;
+  font-family: "Teko", Georgia, serif;
   font-weight: 500;
   color: #16181D; }
   h2 small, h3 small, h4 small, h5 small {
-    color: #818792;
-    font-family: "Yantramanav", sans-serif;
-    font-weight: 400; }
+    color: #818792; }
 
 .small {
   color: #818792;
@@ -623,14 +621,14 @@ h5 {
   margin-bottom: 0; }
 
 h1 {
-  margin-top: 5rem;
+  margin-top: 5.5rem;
   margin-bottom: 0; }
 
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
-  margin-top: 0.5rem; }
+  margin-top: 0; }
 
 h2 + .project-image, h3 + .project-image, h4 + .project-image, h5 + .project-image {
-  margin-top: 0.5rem; }
+  margin-top: 0; }
 
 p + h1, p + h2, p + h3, p + h4, p + h5 {
   margin-top: 1.5rem; }
@@ -688,9 +686,6 @@ h1 + #contact-feedback {
 
 .sidebar * + * {
   margin-top: .45rem; }
-
-.sidebar + p {
-  margin-top: 0.75rem; }
 
 .break {
   margin-top: 4.5rem; }
@@ -820,8 +815,8 @@ table {
   background-color: #0B0C0E;
   padding: 0 0 1.5rem 0; }
   .guide h1, .guide h2, .guide h3, .guide h4, .guide h5 {
-    font-family: "Playfair Display", Georgia, serif;
-    font-weight: 900;
+    font-family: "Teko", Georgia, serif;
+    font-weight: 500;
     color: white;
     margin-top: 3rem; }
 

@@ -9,7 +9,7 @@
 
 // Type
 h1 {
-  margin-top:       $default-spacing + $nav-height;
+  margin-top:       $default-spacing + $nav-height + .5rem;
   margin-bottom:    0;
 }
 
@@ -97,10 +97,6 @@ h1 + #contact-feedback {
 // Sidebar
 .sidebar * + * {
   margin-top:       .45rem;
-}
-
-.sidebar + p {
-  margin-top:       $default-spacing / 2;
 }
 
 // Break
