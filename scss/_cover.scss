@@ -4,12 +4,12 @@
   background-color: $vantablack-8;
   position:         relative;
   .cover-background {
-    background-image: url("./../images/monument-cover-28rem-adj.jpg");
+    background-image: url("./../images/monument-cover-28rem.jpg");
     @media screen and (min-width: $phone-size) {
-      background-image: url("./../images/monument-cover-50rem-adj.jpg");
+      background-image: url("./../images/monument-cover-50rem.jpg");
     }
     @media screen and (min-width: $tablet-size) {
-      background-image: url("./../images/monument-cover-adj.jpg");
+      background-image: url("./../images/monument-cover.jpg");
     }
     background-size: cover;
     background-position: center;

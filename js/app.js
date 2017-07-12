@@ -31,7 +31,7 @@ var home = { template: '#home' },
       { name: 'customerFlow', path: '/customer-flow', component: customerFlow, meta: { project: true, title: 'Esurance: Customer Flow' } }
     ],
     router = new VueRouter({
-      mode: 'history',
+      //mode: 'history',
       routes: routes,
       scrollBehavior (to, from, savedPosition) {
         if (savedPosition) {

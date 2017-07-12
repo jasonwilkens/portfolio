@@ -9,14 +9,14 @@
   background-size:  cover;
   background-position: center;
   background-color: $vantablack-8;
-  background-image: url(./../images/process/process-header-28rem-adj2.jpg);
+  background-image: url(./../images/process/process-header-28rem.jpg);
   @media screen and (min-width: $phone-size) {
-    background-image: url(./../images/process/process-header-50rem-adj2.jpg);
+    background-image: url(./../images/process/process-header-50rem.jpg);
   }
   @media screen and (min-width: $tablet-size) {
-    background-image: url(./../images/process/process-header-adj2.jpg);
+    background-image: url(./../images/process/process-header.jpg);
   }
   @media screen and (min-width: $big-screen) {
-    background-image: url(./../images/process/process-header-big-screen-adj2.jpg);
+    background-image: url(./../images/process/process-header-big-screen.jpg);
   }
 }

@@ -325,7 +325,6 @@ article {
         .nav-bar #global-nav .identity {
           margin: .3rem .3rem .3rem 0; } }
       .nav-bar #global-nav .identity img {
-        filter: grayscale(80%) contrast(1.4);
         height: 2.9rem;
         width: 2.9rem;
         border-radius: 15%;
@@ -392,16 +391,16 @@ article {
   background-color: #C7CACF;
   position: relative; }
   .grid-flex .cover .cover-background {
-    background-image: url("./../images/monument-cover-28rem-adj.jpg");
+    background-image: url("./../images/monument-cover-28rem.jpg");
     background-size: cover;
     background-position: center;
     height: 100%; }
     @media screen and (min-width: 28rem) {
       .grid-flex .cover .cover-background {
-        background-image: url("./../images/monument-cover-50rem-adj.jpg"); } }
+        background-image: url("./../images/monument-cover-50rem.jpg"); } }
     @media screen and (min-width: 50rem) {
       .grid-flex .cover .cover-background {
-        background-image: url("./../images/monument-cover-adj.jpg"); } }
+        background-image: url("./../images/monument-cover.jpg"); } }
 
 .satnh {
   margin-top: 58vh;
@@ -423,16 +422,16 @@ article {
   background-size: cover;
   background-position: center;
   background-color: #C7CACF;
-  background-image: url(./../images/process/process-header-28rem-adj2.jpg); }
+  background-image: url(./../images/process/process-header-28rem.jpg); }
   @media screen and (min-width: 28rem) {
     .header-img-process {
-      background-image: url(./../images/process/process-header-50rem-adj2.jpg); } }
+      background-image: url(./../images/process/process-header-50rem.jpg); } }
   @media screen and (min-width: 50rem) {
     .header-img-process {
-      background-image: url(./../images/process/process-header-adj2.jpg); } }
+      background-image: url(./../images/process/process-header.jpg); } }
   @media screen and (min-width: 64rem) {
     .header-img-process {
-      background-image: url(./../images/process/process-header-big-screen-adj2.jpg); } }
+      background-image: url(./../images/process/process-header-big-screen.jpg); } }
 
 body, textarea, input, button {
   font-family: "Yantramanav", sans-serif;
@@ -931,16 +930,16 @@ ul.pills {
     box-shadow: 0 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.15); }
 
 .contact-background {
-  background-image: url("./../images/contact/contact-bg-28rem-adj.jpg");
+  background-image: url("./../images/contact/contact-bg-28rem.jpg");
   background-size: cover;
   background-position: center;
   height: 100%; }
   @media screen and (min-width: 28rem) {
     .contact-background {
-      background-image: url("./../images/contact/contact-bg-50rem-adj.jpg"); } }
+      background-image: url("./../images/contact/contact-bg-50rem.jpg"); } }
   @media screen and (min-width: 50rem) {
     .contact-background {
-      background-image: url("./../images/contact/contact-bg-adj.jpg"); } }
+      background-image: url("./../images/contact/contact-bg.jpg"); } }
   .contact-background form {
     margin: auto;
     padding: 1.5rem 0 1rem; }
