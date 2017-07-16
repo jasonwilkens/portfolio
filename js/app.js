@@ -33,7 +33,7 @@ var home = { template: '#home' },
     router = new VueRouter({
       mode: 'history',
       routes: routes,
-      scrollBehavior (to, from, savedPosition) {
+      scrollBehavior: function (to, from, savedPosition) {
         if (savedPosition) {
           return savedPosition
         } else {
@@ -142,7 +142,7 @@ var home = { template: '#home' },
       return messageTotal;
     },
     rows = generateRows(),
-    tracking = JSON.parse(localStorage.getItem('tracking')) || [
+    tracking = localStorage ? JSON.parse(localStorage.getItem('tracking')) : [
       { name: 'work', visited: false },
       { name: 'process', visited: false },
       { name: 'about', visited: false },
@@ -152,10 +152,12 @@ var home = { template: '#home' },
 router.beforeEach(function(to, from, next) {
   if (to.meta.visited === false) {
     to.meta.visited = true;
-    tracking.find(function(page) {
-      return page.name === to.name;
-    }).visited = true;
-    localStorage.setItem('tracking', JSON.stringify(tracking));
+    if (tracking.find) {
+      tracking.find(function(page) {
+        return page.name === to.name;
+      }).visited = true;
+      localStorage.setItem('tracking', JSON.stringify(tracking));
+    }
   }
   next();
 });
@@ -260,10 +262,19 @@ Vue.component('hierarchical-table', {
 
 Vue.component('contact-form', {
   data: function() {
-    var data = {
+    var data = sessionStorage ? {
       feedback: sessionStorage.getItem('feedback') || 'feedback',
       formToggle: sessionStorage.getItem('formToggle') === 'false' ?
         JSON.parse(sessionStorage.getItem('formToggle')) : true,
+      reset: 'Reset',
+      requestObj: {
+        access_token: '4srogcyl8xak9nd11qmgo6tq',
+        subject: '',
+        text: ''
+      }
+    } : {
+      feedback: 'feedback',
+      formToggle: 'true',
       reset: 'Reset',
       requestObj: {
         access_token: '4srogcyl8xak9nd11qmgo6tq',
@@ -392,9 +403,11 @@ Vue.component('guide', {
   },
   computed: {
     contentIndex: function() {
-      return this.tracking.findIndex(function(page) {
-        return page.visited === false;
-      });
+      if (this.tracking.findIndex) {
+        return this.tracking.findIndex(function(page) {
+          return page.visited === false;
+        });
+      } else { return 0; }
     }
   }
 });
@@ -403,7 +416,7 @@ Vue.component('guide', {
 
 var app = new Vue({
   el: '#app',
-  router
+  router: router
 });
 
 // Headroom JS
