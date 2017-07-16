@@ -142,7 +142,7 @@ var home = { template: '#home' },
       return messageTotal;
     },
     rows = generateRows(),
-    tracking = localStorage ? JSON.parse(localStorage.getItem('tracking')) : [
+    tracking = localStorage && localStorage.getItem('tracking') ? JSON.parse(localStorage.getItem('tracking')) : [
       { name: 'work', visited: false },
       { name: 'process', visited: false },
       { name: 'about', visited: false },
@@ -152,7 +152,7 @@ var home = { template: '#home' },
 router.beforeEach(function(to, from, next) {
   if (to.meta.visited === false) {
     to.meta.visited = true;
-    if (tracking.find) {
+    if (tracking) {
       tracking.find(function(page) {
         return page.name === to.name;
       }).visited = true;
@@ -247,12 +247,14 @@ Vue.component('hierarchical-table', {
     },
     toggleRow: function(e) {
       if (e.target.closest("a.row-toggle")) {
-        var targetRow = this.rows.findIndex(function(row) {
+        var targetRowIndex,
+            targetRow = this.rows.some(function(row, index) {
+          targetRowIndex = index;
           return row.id === e.target.closest("a.row-toggle").dataset.id;
         });
-        this.rows[targetRow].display === 'expanded' ?
-          this.rows[targetRow].display = 'collapsed' :
-          this.rows[targetRow].display = 'expanded';
+        this.rows[targetRowIndex].display === 'expanded' ?
+          this.rows[targetRowIndex].display = 'collapsed' :
+          this.rows[targetRowIndex].display = 'expanded';
       }
     }
   }
