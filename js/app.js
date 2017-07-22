@@ -1,3 +1,67 @@
+// Polyfils
+
+if (!Array.prototype.find) {
+  Array.prototype.find = function(test) {
+    for (i = 0; i < this.length; i++) {
+      if (test(this[i]) === true) {
+        return this[i];
+      }
+    }
+  }
+}
+
+
+if (!Array.prototype.findIndex) {
+  Array.prototype.findIndex = function(test) {
+    for (i = 0; i < this.length; i++) {
+      if (test(this[i]) === true) {
+        return i;
+      }
+    }
+    return -1;
+  }
+}
+
+if (!Array.prototype.forEach) {
+  Array.prototype.forEach = function(test) {
+    for (i = 0; i < this.length; i++) {
+      test(this[i]);
+    }
+  }
+}
+
+if (!window.Element.prototype.matches) {
+  window.Element.prototype.matches = window.Element.prototype.msMatchesSelector ||
+    window.Element.prototype.mozMatchesSelector || window.Element.prototype.webkitMatchesSelector ||
+    function matches(selector) {
+    var element = this;
+    var elements = (element.document || element.ownerDocument).querySelectorAll(selector);
+    var index = 0;
+
+    while (elements[index] && elements[index] !== element) {
+      ++index;
+    }
+
+    return Boolean(elements[index]);
+  };
+}
+
+if (!window.Element.prototype.closest) {
+  window.Element.prototype.closest = function(selector) {
+    var element = this;
+
+    while (element && element.nodeType === 1) {
+      if (element.matches(selector)) {
+        return element;
+      }
+
+      element = element.parentNode;
+    }
+
+    return null;
+  };
+}
+
 // Vue Routes
 
 var home = { template: '#home' },
@@ -156,7 +220,9 @@ router.beforeEach(function(to, from, next) {
       tracking.find(function(page) {
         return page.name === to.name;
       }).visited = true;
-      localStorage.setItem('tracking', JSON.stringify(tracking));
+      if (localStorage) {
+        localStorage.setItem('tracking', JSON.stringify(tracking));
+      }
     }
   }
   next();
@@ -300,8 +366,10 @@ Vue.component('contact-form', {
     },
     toggleForm: function() {
       this.formToggle = !this.formToggle;
-      sessionStorage.setItem('formToggle', this.formToggle);
-      sessionStorage.setItem('feedback', this.feedback);
+      if (sessionStorage) {
+        sessionStorage.setItem('formToggle', this.formToggle);
+        sessionStorage.setItem('feedback', this.feedback);  
+      }
     },
     send: function(e) {
       var sendButton = e.target,
@@ -405,11 +473,9 @@ Vue.component('guide', {
   },
   computed: {
     contentIndex: function() {
-      if (this.tracking.findIndex) {
-        return this.tracking.findIndex(function(page) {
-          return page.visited === false;
-        });
-      } else { return 0; }
+      return this.tracking.findIndex(function(page) {
+        return page.visited === false;
+      });
     }
   }
 });
