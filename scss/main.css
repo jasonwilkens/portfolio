@@ -1108,6 +1108,15 @@ textarea + .input-row {
       border-bottom: none; }
       .bizstrap-table a.row-toggle:active path {
         fill: #011F7F; }
+  .bizstrap-table .svg-container {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    position: relative; }
+  .bizstrap-table svg {
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 tr.creative td:nth-child(2) {
   text-align: right; }
@@ -1122,7 +1131,7 @@ tr.creative .label {
   padding-left: 1.5em; }
 
 tr.campaign td:first-child, tr.message td:first-child {
-  padding: .4em .5em .1em;
+  padding: .5em .5em .1em;
   width: 1em; }
 
 .iframe-container {
