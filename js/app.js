@@ -401,7 +401,7 @@ Vue.component('contact-form', {
       request.send(params);
     },
     onError: function(response) {
-      this.feedback = 'There\'s a problem: ' + response;
+      this.feedback = 'Looks like there\'s a problem with PostMail.' + response;
       this.reset = 'Try again';
       this.toggleForm();
     },
