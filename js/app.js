@@ -334,33 +334,16 @@ Vue.component('contact-form', {
       feedback: sessionStorage.getItem('feedback') || 'feedback',
       formToggle: sessionStorage.getItem('formToggle') === 'false' ?
         JSON.parse(sessionStorage.getItem('formToggle')) : true,
-      reset: 'Reset',
-      requestObj: {
-        access_token: '4srogcyl8xak9nd11qmgo6tq',
-        subject: '',
-        text: ''
-      }
+      reset: 'Reset'
     } : {
       feedback: 'feedback',
       formToggle: 'true',
-      reset: 'Reset',
-      requestObj: {
-        access_token: '4srogcyl8xak9nd11qmgo6tq',
-        subject: '',
-        text: ''
-      }
+      reset: 'Reset'
     };
     return data;
   },
   template: '#contact-form',
   methods: {
-    createParams: function() {
-      var formData = [];
-      for (var key in this.requestObj) {
-        formData.push(encodeURIComponent(key) + '=' + encodeURIComponent(this.requestObj[key]));
-      }
-      return formData.join('&');
-    },
     escape: function(e) {
       e.target.blur();
     },
@@ -373,11 +356,11 @@ Vue.component('contact-form', {
     },
     send: function(e) {
       var sendButton = e.target,
-          subject = 'New message from ' + document.querySelector('#form-element [name="email"]').value,
           textarea = document.querySelector('#form-element [name="message"]'),
           text = textarea.value,
-          params,
           request = new XMLHttpRequest(),
+          form = document.querySelector('#form-element'),
+          formData = new FormData(form);
           that = this;
       if (text === '') {
         textarea.setAttribute('placeholder', 'Your message can\'t be empty');
@@ -392,16 +375,13 @@ Vue.component('contact-form', {
           that.onError(request.response);
         }
       }
-      this.requestObj.subject = subject;
-      this.requestObj.text = text;
-      params = this.createParams();
 
-      request.open('POST', 'https://postmail.invotes.com/send', true);
-      request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      request.send(params);
+      request.open('POST', 'https://enformed.io/m6hlzpa9', true);
+      request.setRequestHeader('accept', 'application/json');
+      request.send(formData);
     },
     onError: function(response) {
-      this.feedback = 'Looks like there\'s a problem with PostMail.' + response;
+      this.feedback = 'Looks like there\'s a problem with my mail service. ' + response;
       this.reset = 'Try again';
       this.toggleForm();
     },
