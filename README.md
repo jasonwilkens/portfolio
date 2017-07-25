@@ -25,7 +25,7 @@ The non-photographic images are all SVG. I created a few SVGs for things like ar
 
 Contact Form
 ------------
-I use [PostMail](https://postmail.invotes.com/) to send me messages from my contact form.
+I use [Enformed](http://www.enformed.io/) to send me messages from my contact form.
 
 Hosting
 -------
